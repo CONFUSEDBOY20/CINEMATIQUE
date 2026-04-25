@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState, useMemo, useCallback } from "react";
-import { mockMovies, mockUsers, mockAdmins, mockReviews } from "../constants";
+import React, { createContext, useContext, useState, useMemo, useCallback, useEffect } from "react";
+import { mockUsers, mockAdmins, mockReviews } from "../constants";
 
 type User = any;
 type Movie = any;
@@ -31,7 +31,28 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [page, setPage] = useState<string>("auth");
   const [pageParams, setPageParams] = useState<any>(null);
-  const [movies] = useState<Movie[]>(mockMovies);
+  const [movies, setMovies] = useState<Movie[]>([]);
+  const [loadingMovies, setLoadingMovies] = useState(true);
+
+  useEffect(() => {
+    const cached = localStorage.getItem('cinematique_movies_cache');
+    if (cached) {
+      setMovies(JSON.parse(cached));
+      setLoadingMovies(false);
+    } else {
+      fetch('/movies.json')
+        .then(res => res.json())
+        .then(data => {
+          localStorage.setItem('cinematique_movies_cache', JSON.stringify(data));
+          setMovies(data);
+          setLoadingMovies(false);
+        })
+        .catch(err => {
+          console.error("Failed to load movies:", err);
+          setLoadingMovies(false);
+        });
+    }
+  }, []);
   const [watchlist, setWatchlist] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [registerMode, setRegisterMode] = useState(false);
@@ -80,6 +101,14 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setWatchlist(watchlist.filter((w) => w !== id));
   };
 
+
+  if (loadingMovies) {
+    return (
+      <div className="min-h-screen bg-brand-black flex items-center justify-center">
+        <div className="w-16 h-16 border-4 border-brand-gold border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
+      </div>
+    );
+  }
 
   return (
     <AppContext.Provider value={{

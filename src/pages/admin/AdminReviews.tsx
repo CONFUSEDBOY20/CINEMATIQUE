@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Check, X, Flag, MessageSquare } from 'lucide-react';
-import { mockReviews, mockUsers, mockMovies } from '../../constants';
+import { mockReviews, mockUsers } from '../../constants';
+import { useAppContext } from '../../context/AppContext';
 
 export function AdminReviews() {
+  const { movies } = useAppContext();
   const [filter, setFilter] = useState('all');
 
   const filtered = mockReviews.filter(r => {
@@ -33,7 +35,7 @@ export function AdminReviews() {
       <div className="space-y-4">
         {filtered.map(r => {
           const user = mockUsers.find(u => u.id === r.userId);
-          const movie = mockMovies.find(m => m.id === r.movieId);
+          const movie = movies.find(m => m.id === r.movieId);
           return (
             <div key={r.id} className="bg-[#111] border border-[#222] rounded-xl p-6 flex flex-col md:flex-row gap-6">
               <div className="flex-1">
