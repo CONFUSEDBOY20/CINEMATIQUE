@@ -89,7 +89,6 @@ app.get('/api/movies', async (req, res) => {
 app.post('/api/login', async (req, res) => {
   try {
     const { email, password } = req.body;
-    // In a real app, use bcrypt to compare hashed passwords
     const user = await User.findOne({ email, password });
     if (user) {
       const userObj = user.toObject();
@@ -100,6 +99,23 @@ app.post('/api/login', async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({ error: 'Login failed' });
+  }
+});
+
+// Register
+app.post('/api/register', async (req, res) => {
+  try {
+    const { name, email, password } = req.body;
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ error: 'Email already exists' });
+    }
+    const user = await User.create({ name, email, password });
+    const userObj = user.toObject();
+    userObj.id = userObj._id.toString();
+    res.json(userObj);
+  } catch (error) {
+    res.status(500).json({ error: 'Registration failed' });
   }
 });
 

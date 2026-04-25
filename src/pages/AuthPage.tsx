@@ -4,17 +4,20 @@ import { Mail, Lock, User, Key, ArrowRight, Film } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 export function AuthPage() {
-  const { login } = useAppContext();
+  const { login, register } = useAppContext();
   const [isAdminMode, setIsAdminMode] = useState(false);
   const [isRegister, setIsRegister] = useState(false);
   
   const [email, setEmail] = useState('user@demo.com');
   const [password, setPassword] = useState('password');
+  const [name, setName] = useState('');
   const [adminKey, setAdminKey] = useState('secret');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (isAdminMode) {
+    if (isRegister) {
+      register(name, email, password);
+    } else if (isAdminMode) {
       login(email, password, true, adminKey);
     } else {
       login(email, password, false);
@@ -79,7 +82,14 @@ export function AuthPage() {
                   <label className="block text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold mb-2">Full Name</label>
                   <div className="relative">
                     <User className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
-                    <input type="text" placeholder="John Doe" className="w-full bg-black/50 border border-white/10 rounded-full pl-12 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-brand-gold transition-colors" />
+                    <input 
+                      type="text" 
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="John Doe" 
+                      className="w-full bg-black/50 border border-white/10 rounded-full pl-12 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-brand-gold transition-colors" 
+                      required={isRegister}
+                    />
                   </div>
                 </div>
               </motion.div>

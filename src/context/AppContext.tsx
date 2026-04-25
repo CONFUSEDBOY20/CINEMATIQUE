@@ -14,7 +14,8 @@ interface AppState {
 }
 
 interface AppContextType extends AppState {
-  login: (email: string, pass: string, isAdmin?: boolean, adminKey?: string) => void;
+  login: (email: string, pass: string, isAdmin?: boolean, adminKey?: string) => Promise<void>;
+  register: (name: string, email: string, pass: string) => Promise<void>;
   logout: () => void;
   navigate: (page: string, params?: any) => void;
   pageParams: any;
@@ -64,8 +65,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [searchQuery, setSearchQuery] = useState("");
   const [registerMode, setRegisterMode] = useState(false);
 
-  const login = (email: string, pass: string, isAdmin = false, adminKey = "") => {
-    // Mock login
+  const login = async (email: string, pass: string, isAdmin = false, adminKey = "") => {
     if (isAdmin) {
       if (adminKey === "secret") {
         setUser(mockAdmins[0]);
@@ -74,17 +74,59 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         alert("Invalid admin key");
       }
     } else {
-      const u = mockUsers.find((u) => u.email === email);
-      if (u) {
+      try {
+        const response = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password: pass })
+        });
+
+        if (response.ok) {
+          const u = await response.json();
+          setUser(u);
+          setWatchlist(u.watchlist || []);
+          setPage("home");
+        } else {
+          // Fallback to mock data if API fails or user not found
+          const u = mockUsers.find((u) => u.email === email);
+          if (u) {
+            setUser(u);
+            setWatchlist(u.watchlist || []);
+            setPage("home");
+          } else {
+            alert("Invalid credentials");
+          }
+        }
+      } catch (error) {
+        console.error("Login API error:", error);
+        // Final fallback
+        const u = mockUsers[0];
         setUser(u);
-        setWatchlist(u.watchlist || []);
-        setPage("home");
-      } else {
-        // Fallback for demo
-        setUser(mockUsers[0]);
-        setWatchlist(mockUsers[0].watchlist || []);
         setPage("home");
       }
+    }
+  };
+
+  const register = async (name: string, email: string, pass: string) => {
+    try {
+      const response = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password: pass })
+      });
+
+      if (response.ok) {
+        const u = await response.json();
+        setUser(u);
+        setWatchlist([]);
+        setPage("home");
+      } else {
+        const err = await response.json();
+        alert(err.error || "Registration failed");
+      }
+    } catch (error) {
+      console.error("Registration API error:", error);
+      alert("Could not connect to registration server.");
     }
   };
 
@@ -120,7 +162,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   return (
     <AppContext.Provider value={{
       user, page, movies, watchlist, searchQuery,
-      login, logout, navigate, pageParams,
+      login, register, logout, navigate, pageParams,
       addToWatchlist, removeFromWatchlist, setSearchQuery,
       registerMode, setRegisterMode
     }}>
