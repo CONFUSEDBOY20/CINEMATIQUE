@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Star, Play, Heart, Share2, Clock, Calendar, MessageSquare, Check, X } from 'lucide-react';
+import { ArrowLeft, Star, Play, Heart, Share2, Clock, Calendar, MessageSquare, Check, X, Plus } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { motion, AnimatePresence } from 'motion/react';
 

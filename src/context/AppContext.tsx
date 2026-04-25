@@ -35,7 +35,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [loadingMovies, setLoadingMovies] = useState(true);
 
   useEffect(() => {
-    const cached = localStorage.getItem('cinematique_movies_cache');
+    const cached = localStorage.getItem('cinematique_movies_cache_v2');
     if (cached) {
       setMovies(JSON.parse(cached));
       setLoadingMovies(false);
@@ -43,7 +43,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       fetch('/movies.json')
         .then(res => res.json())
         .then(data => {
-          localStorage.setItem('cinematique_movies_cache', JSON.stringify(data));
+          localStorage.setItem('cinematique_movies_cache_v2', JSON.stringify(data));
           setMovies(data);
           setLoadingMovies(false);
         })
