@@ -1,9 +1,12 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import fs from 'fs';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { Movie } from './models/Movie.js';
 import { User } from './models/User.js';
+
+import { MongoMemoryServer } from 'mongodb-memory-server';
 
 dotenv.config();
 
@@ -14,13 +17,55 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-if (process.env.MONGODB_URI) {
-  mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log('Connected to MongoDB Atlas'))
-    .catch(err => console.error('MongoDB connection error:', err));
-} else {
-  console.warn('WARNING: MONGODB_URI is not set. Database operations will fail.');
+const connectDB = async () => {
+  if (process.env.MONGODB_URI) {
+    try {
+      await mongoose.connect(process.env.MONGODB_URI);
+      console.log('✅ Connected to MongoDB Atlas');
+    } catch (err) {
+      console.error('❌ MongoDB connection error:', err);
+    }
+  } else {
+    console.warn('⚠️ MONGODB_URI not found. Starting In-Memory MongoDB for testing...');
+    try {
+      const mongoServer = await MongoMemoryServer.create();
+      const uri = mongoServer.getUri();
+      await mongoose.connect(uri);
+      console.log('✅ In-Memory MongoDB started at:', uri);
+      
+      // Auto-seed for testing if in-memory
+      console.log('🌱 Auto-seeding test data...');
+      await seedData();
+    } catch (err) {
+      console.error('❌ In-Memory MongoDB failed:', err);
+    }
+  }
+};
+
+async function seedData() {
+  try {
+    const moviesPath = './public/movies.json';
+    if (fs.existsSync(moviesPath)) {
+      const moviesData = JSON.parse(fs.readFileSync(moviesPath, 'utf8'));
+      const sanitized = moviesData.map(({ id, ...rest }) => rest);
+      await Movie.insertMany(sanitized.slice(0, 50)); // Seed 50 for fast testing
+      console.log('✅ Seeded 50 movies to in-memory DB');
+    }
+    
+    await User.create({
+      name: "Test User",
+      email: "test@test.com",
+      password: "password",
+      role: "user",
+      status: "active"
+    });
+    console.log('✅ Created test user: test@test.com / password');
+  } catch (err) {
+    console.error('❌ Seeding failed:', err);
+  }
 }
+
+connectDB();
 
 // API Routes
 

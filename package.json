@@ -36,6 +36,7 @@
     "autoprefixer": "^10.4.21",
     "concurrently": "^9.2.1",
     "gh-pages": "^6.3.0",
+    "mongodb-memory-server": "^11.0.1",
     "nodemon": "^3.1.14",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
