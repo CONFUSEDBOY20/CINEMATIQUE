@@ -6,24 +6,33 @@ import { MovieCard } from '../components/MovieCard';
 export function SearchPage() {
   const { movies } = useAppContext();
   const [query, setQuery] = useState('');
+  const [debouncedQuery, setDebouncedQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('All');
   const [viewMode, setViewMode] = useState<'grid'|'list'>('grid');
   const [visibleCount, setVisibleCount] = useState(30);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedQuery(query);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [query]);
+
+  useEffect(() => {
     setVisibleCount(30);
-  }, [query, selectedGenre]);
+  }, [debouncedQuery, selectedGenre]);
 
   const genres = ['All', 'Action', 'Sci-Fi', 'Drama', 'Comedy', 'Thriller', 'Horror', 'Romance'];
 
   const filteredMovies = useMemo(() => {
+    const q = debouncedQuery.toLowerCase();
     return movies.filter((m: any) => {
-      const matchQuery = m.title.toLowerCase().includes(query.toLowerCase()) || 
-                         m.cast.some((c: string) => c.toLowerCase().includes(query.toLowerCase()));
+      const matchQuery = m.title.toLowerCase().includes(q) || 
+                         m.cast.some((c: string) => c.toLowerCase().includes(q));
       const matchGenre = selectedGenre === 'All' || m.genres.includes(selectedGenre);
       return matchQuery && matchGenre;
     });
-  }, [movies, query, selectedGenre]);
+  }, [movies, debouncedQuery, selectedGenre]);
 
   const displayedMovies = useMemo(() => filteredMovies.slice(0, visibleCount), [filteredMovies, visibleCount]);
 

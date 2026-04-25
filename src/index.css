@@ -44,3 +44,24 @@
 .glass-panel {
   @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl;
 }
+
+/* Performance Optimizations */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 5000px;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+img {
+  @apply bg-brand-gray; /* Show dark background while loading */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+

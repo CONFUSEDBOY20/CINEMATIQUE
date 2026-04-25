@@ -1,7 +1,8 @@
+import React, { memo } from 'react';
 import { Star, Play, Heart, Share2 } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 
-export function MovieCard({ movie }: { movie: any }) {
+export const MovieCard = memo(({ movie }: { movie: any }) => {
   const { navigate, watchlist, addToWatchlist, removeFromWatchlist } = useAppContext();
   const isWatchlisted = watchlist.includes(movie.id);
 
@@ -61,4 +62,4 @@ export function MovieCard({ movie }: { movie: any }) {
       </div>
     </div>
   );
-}
+});
