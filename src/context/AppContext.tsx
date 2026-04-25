@@ -40,8 +40,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setMovies(JSON.parse(cached));
       setLoadingMovies(false);
     } else {
-      fetch('/movies.json')
-        .then(res => res.json())
+      fetch('/api/movies')
+        .then(res => {
+          if (!res.ok) throw new Error("API failed");
+          return res.json();
+        })
+        .catch(err => {
+          console.warn("Backend API not connected, falling back to static movies.json", err);
+          return fetch('/movies.json').then(r => r.json());
+        })
         .then(data => {
           localStorage.setItem('cinematique_movies_cache_v2', JSON.stringify(data));
           setMovies(data);
