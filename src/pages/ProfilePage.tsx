@@ -1,165 +1,523 @@
-import { useState } from 'react';
-import { Camera, Edit3, Settings, Star, Heart, Clock } from 'lucide-react';
+import React, { useState, useRef, useCallback } from 'react';
+import {
+  Camera, Edit3, Save, X, Heart, Star, Clock,
+  Lock, Eye, EyeOff, CheckCircle2, AlertCircle,
+  Loader2, Trash2, User as UserIcon, ImagePlus, ShieldCheck
+} from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import { useAppContext } from '../context/AppContext';
 
+const ALL_GENRES = [
+  'Action', 'Adventure', 'Animation', 'Comedy', 'Crime',
+  'Documentary', 'Drama', 'Fantasy', 'Horror', 'Mystery',
+  'Romance', 'Sci-Fi', 'Thriller', 'Western', 'Musical'
+];
+
+type Tab = 'info' | 'genres' | 'password';
+
 export function ProfilePage() {
-  const { user, watchlist } = useAppContext();
-  const [isEditing, setIsEditing] = useState(false);
-  const [name, setName] = useState(user?.name || '');
+  const { user, watchlist, updateProfile, changePassword } = useAppContext();
+
+  // ── Tab state ──────────────────────────────────────────────────────────────
+  const [tab, setTab] = useState<Tab>('info');
+
+  // ── Info form state ────────────────────────────────────────────────────────
+  const [name, setName]             = useState(user?.name || '');
+  const [bio, setBio]               = useState(user?.bio || '');
+  const [avatarPreview, setAvatarPreview]     = useState<string>(user?.avatar || '');
+  const [coverPreview, setCoverPreview]       = useState<string>(user?.coverPhoto || '');
+  const [infoLoading, setInfoLoading]         = useState(false);
+  const [infoMsg, setInfoMsg]                 = useState<{ ok: boolean; text: string } | null>(null);
+
+  // ── Genre state ────────────────────────────────────────────────────────────
+  const [genres, setGenres]         = useState<string[]>(user?.genres || []);
+  const [genreLoading, setGenreLoading]       = useState(false);
+  const [genreMsg, setGenreMsg]               = useState<{ ok: boolean; text: string } | null>(null);
+
+  // ── Password form state ────────────────────────────────────────────────────
+  const [currentPw, setCurrentPw]   = useState('');
+  const [newPw, setNewPw]           = useState('');
+  const [confirmPw, setConfirmPw]   = useState('');
+  const [showCurrent, setShowCurrent]         = useState(false);
+  const [showNew, setShowNew]                 = useState(false);
+  const [showConfirm, setShowConfirm]         = useState(false);
+  const [pwLoading, setPwLoading]             = useState(false);
+  const [pwMsg, setPwMsg]                     = useState<{ ok: boolean; text: string } | null>(null);
+
+  // ── File input refs ────────────────────────────────────────────────────────
+  const avatarInputRef = useRef<HTMLInputElement>(null);
+  const coverInputRef  = useRef<HTMLInputElement>(null);
+
+  // ── Image helpers ──────────────────────────────────────────────────────────
+  const readFile = (file: File): Promise<string> =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+
+  const handleAvatarPick = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const dataUrl = await readFile(file);
+    setAvatarPreview(dataUrl);
+    e.target.value = '';
+  }, []);
+
+  const handleCoverPick = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const dataUrl = await readFile(file);
+    setCoverPreview(dataUrl);
+    e.target.value = '';
+  }, []);
+
+  // ── Save info ──────────────────────────────────────────────────────────────
+  const handleSaveInfo = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name.trim()) { setInfoMsg({ ok: false, text: 'Name cannot be empty' }); return; }
+    setInfoLoading(true); setInfoMsg(null);
+    const result = await updateProfile({
+      name: name.trim(),
+      bio,
+      avatar: avatarPreview,
+      coverPhoto: coverPreview,
+    });
+    setInfoLoading(false);
+    setInfoMsg({ ok: result.ok, text: result.ok ? 'Profile updated!' : result.error || 'Update failed' });
+  };
+
+  // ── Save genres ────────────────────────────────────────────────────────────
+  const toggleGenre = (g: string) => {
+    setGenres(prev => prev.includes(g) ? prev.filter(x => x !== g) : [...prev, g]);
+  };
+
+  const handleSaveGenres = async () => {
+    setGenreLoading(true); setGenreMsg(null);
+    const result = await updateProfile({ genres });
+    setGenreLoading(false);
+    setGenreMsg({ ok: result.ok, text: result.ok ? 'Genres saved!' : result.error || 'Failed' });
+  };
+
+  // ── Change password ────────────────────────────────────────────────────────
+  const handleChangePassword = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setPwMsg(null);
+    if (!currentPw || !newPw || !confirmPw) { setPwMsg({ ok: false, text: 'All fields are required' }); return; }
+    if (newPw.length < 6)  { setPwMsg({ ok: false, text: 'New password must be at least 6 characters' }); return; }
+    if (newPw !== confirmPw) { setPwMsg({ ok: false, text: 'New passwords do not match' }); return; }
+    setPwLoading(true);
+    const result = await changePassword(currentPw, newPw);
+    setPwLoading(false);
+    if (result.ok) {
+      setPwMsg({ ok: true, text: 'Password changed successfully!' });
+      setCurrentPw(''); setNewPw(''); setConfirmPw('');
+    } else {
+      setPwMsg({ ok: false, text: result.error || 'Failed to change password' });
+    }
+  };
+
+  // ── Avatar display ─────────────────────────────────────────────────────────
+  const avatarInitial = user?.name?.[0]?.toUpperCase() || 'U';
 
   return (
-    <div className="p-4 md:p-8 max-w-4xl mx-auto min-h-screen">
-      <div className="relative mb-16 mt-8">
-        <div className="h-48 rounded-3xl bg-black border border-white/10 overflow-hidden relative shadow-2xl">
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-crimson/20 to-brand-gold/10"></div>
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
-        </div>
-        
-        <div className="absolute -bottom-12 left-8 flex items-end gap-6">
-          <div className="relative group">
-            <div className="w-24 h-24 md:w-32 md:h-32 bg-brand-crimson flex items-center justify-center text-4xl md:text-5xl font-bold border border-white/20 shadow-[0_0_30px_rgba(229,9,20,0.4)] text-white" style={{borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%'}}>
-              {user?.avatar || 'U'}
+    <div className="min-h-screen pb-12">
+
+      {/* ── Cover Photo ────────────────────────────────────────────────────── */}
+      <div className="relative h-52 md:h-64 overflow-hidden group">
+        {coverPreview ? (
+          <img src={coverPreview} alt="Cover" className="w-full h-full object-cover" />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-crimson/30 via-brand-black to-brand-gold/20" />
+        )}
+        <div className="absolute inset-0 bg-black/30" />
+
+        {/* Change cover button */}
+        <button
+          onClick={() => coverInputRef.current?.click()}
+          className="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 text-white text-xs uppercase tracking-widest font-bold"
+        >
+          <ImagePlus className="w-5 h-5" /> Change Cover Photo
+        </button>
+        <input ref={coverInputRef} type="file" accept="image/*" className="hidden" onChange={handleCoverPick} />
+      </div>
+
+      {/* ── Avatar + Name header ────────────────────────────────────────────── */}
+      <div className="max-w-4xl mx-auto px-4 md:px-8">
+        <div className="relative flex items-end gap-5 -mt-14 mb-6">
+          {/* Avatar */}
+          <div className="relative group flex-shrink-0 z-10">
+            <div
+              className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-brand-black overflow-hidden bg-brand-crimson flex items-center justify-center shadow-[0_0_30px_rgba(229,9,20,0.4)]"
+            >
+              {avatarPreview
+                ? <img src={avatarPreview} alt="Avatar" className="w-full h-full object-cover" />
+                : <span className="text-4xl font-bold text-white font-serif">{avatarInitial}</span>
+              }
             </div>
-            <button className="absolute bottom-0 right-0 w-8 h-8 md:w-10 md:h-10 bg-brand-gold rounded-full flex items-center justify-center text-brand-black border border-white/40 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
-              <Camera className="w-4 h-4 md:w-5 md:h-5" />
+            <button
+              onClick={() => avatarInputRef.current?.click()}
+              className="absolute inset-0 rounded-full bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+              title="Change photo"
+            >
+              <Camera className="w-6 h-6 text-white" />
             </button>
+            <input ref={avatarInputRef} type="file" accept="image/*" className="hidden" onChange={handleAvatarPick} />
           </div>
-          <div className="mb-2">
-            <h1 className="text-2xl md:text-4xl font-serif font-bold uppercase tracking-tighter">{user?.name}</h1>
-            <p className="text-brand-gold text-[10px] uppercase font-bold tracking-[0.2em] md:text-xs">Member since {user?.joinDate}</p>
+
+          {/* Name & join date */}
+          <div className="pb-2">
+            <h1 className="text-2xl md:text-3xl font-serif font-bold uppercase tracking-tight">{user?.name}</h1>
+            <p className="text-brand-gold text-[10px] uppercase font-bold tracking-[0.2em]">
+              {user?.email}
+            </p>
           </div>
         </div>
-        
-        <div className="absolute -bottom-6 right-4 md:right-8 flex gap-3">
-          <button 
-            onClick={() => setIsEditing(!isEditing)}
-            className="flex items-center gap-2 bg-white/5 border border-white/10 px-6 py-3 rounded-full hover:bg-white/10 transition-colors text-[10px] uppercase tracking-widest font-bold backdrop-blur-md"
+
+        {/* ── Stats row ───────────────────────────────────────────────────── */}
+        <div className="grid grid-cols-3 gap-3 mb-8">
+          {[
+            { icon: <Heart className="w-4 h-4 text-brand-crimson" />, label: 'Watchlist', value: watchlist.length },
+            { icon: <Star className="w-4 h-4 text-brand-gold" />, label: 'Reviews', value: 0 },
+            { icon: <Clock className="w-4 h-4 text-blue-400" />, label: 'Hrs Watched', value: 142 },
+          ].map(s => (
+            <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center backdrop-blur-xl">
+              <div className="flex justify-center mb-1">{s.icon}</div>
+              <div className="text-2xl font-bold font-serif text-brand-gold">{s.value}</div>
+              <div className="text-[9px] uppercase tracking-widest text-white/40 font-bold">{s.label}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── Edit Tabs ────────────────────────────────────────────────────── */}
+        <div className="flex gap-1 bg-white/5 border border-white/10 p-1 rounded-2xl mb-6">
+          {([
+            { id: 'info',     label: 'Profile Info',  icon: <UserIcon className="w-3.5 h-3.5" /> },
+            { id: 'genres',   label: 'Genres',        icon: <Star className="w-3.5 h-3.5" /> },
+            { id: 'password', label: 'Password',      icon: <ShieldCheck className="w-3.5 h-3.5" /> },
+          ] as { id: Tab; label: string; icon: React.ReactNode }[]).map(t => (
+            <button
+              key={t.id}
+              onClick={() => setTab(t.id)}
+              className={`flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl text-[10px] uppercase tracking-widest font-bold transition-all ${
+                tab === t.id ? 'bg-brand-gold text-brand-black shadow' : 'text-white/40 hover:text-white'
+              }`}
+            >
+              {t.icon} <span className="hidden sm:inline">{t.label}</span>
+            </button>
+          ))}
+        </div>
+
+        {/* ── Tab Panels ──────────────────────────────────────────────────── */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={tab}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.2 }}
           >
-            <Edit3 className="w-4 h-4" />
-            {isEditing ? 'Save Profile' : 'Edit Profile'}
-          </button>
-          <button className="w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 rounded-full hover:bg-white/10 transition-colors backdrop-blur-md">
-            <Settings className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24">
-        <div className="md:col-span-1 space-y-6">
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10 shadow-xl backdrop-blur-xl">
-            <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-6 flex items-center gap-4">
-              Your Stats <span className="h-px flex-1 bg-white/10"></span>
-            </h3>
-            <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3 text-white/60">
-                  <Heart className="w-4 h-4 text-brand-crimson" />
-                  <span className="text-xs uppercase tracking-widest font-bold">Watchlist</span>
-                </div>
-                <span className="font-bold text-lg text-brand-gold font-serif">{watchlist.length}</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3 text-white/60">
-                  <Star className="w-4 h-4 text-brand-gold" />
-                  <span className="text-xs uppercase tracking-widest font-bold">Reviews</span>
-                </div>
-                <span className="font-bold text-lg text-brand-gold font-serif">{user?.id === 'u1' ? '2' : '0'}</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3 text-white/60">
-                  <Clock className="w-4 h-4 text-blue-400" />
-                  <span className="text-xs uppercase tracking-widest font-bold">Hours Watched</span>
-                </div>
-                <span className="font-bold text-lg text-brand-gold font-serif">142</span>
-              </div>
-            </div>
-          </div>
+            {/* ── INFO TAB ───────────────────────────────────────────────── */}
+            {tab === 'info' && (
+              <form onSubmit={handleSaveInfo} className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-xl space-y-6">
+                <SectionTitle icon={<Edit3 className="w-4 h-4" />}>Edit Profile Info</SectionTitle>
 
-          <div className="bg-white/5 rounded-3xl p-8 border border-white/10 shadow-xl backdrop-blur-xl">
-            <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-6 flex items-center gap-4">
-              Genres <span className="h-px flex-1 bg-white/10"></span>
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {user?.genres?.map((g: string) => (
-                <span key={g} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-medium">
-                  {g}
-                </span>
-              ))}
-              {isEditing && (
-                <button className="px-3 py-1 border border-dashed border-white/20 rounded-full text-xs font-medium text-gray-400 hover:text-white">
-                  + Add Genre
-                </button>
-              )}
-            </div>
-          </div>
-        </div>
+                {/* Avatar & Cover quick-change buttons */}
+                <div className="flex flex-wrap gap-3">
+                  <button
+                    type="button"
+                    onClick={() => avatarInputRef.current?.click()}
+                    className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:border-brand-gold hover:text-brand-gold transition-all"
+                  >
+                    <Camera className="w-4 h-4" /> Change Avatar
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => coverInputRef.current?.click()}
+                    className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:border-brand-gold hover:text-brand-gold transition-all"
+                  >
+                    <ImagePlus className="w-4 h-4" /> Change Cover
+                  </button>
+                  {avatarPreview && (
+                    <button
+                      type="button"
+                      onClick={() => setAvatarPreview('')}
+                      className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:border-red-400 hover:text-red-400 transition-all"
+                    >
+                      <Trash2 className="w-4 h-4" /> Remove Avatar
+                    </button>
+                  )}
+                </div>
 
-        <div className="md:col-span-2">
-          {isEditing ? (
-            <div className="bg-white/5 rounded-3xl p-8 border border-white/10 shadow-xl backdrop-blur-xl">
-              <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-8 flex items-center gap-4">
-                Edit Information <span className="h-px flex-1 bg-white/10"></span>
-              </h3>
-              <div className="space-y-6">
+                {/* Avatar live preview */}
+                {avatarPreview && (
+                  <div className="flex items-center gap-4 p-4 bg-black/30 rounded-2xl border border-white/10">
+                    <img src={avatarPreview} alt="Preview" className="w-14 h-14 rounded-full object-cover border-2 border-brand-gold" />
+                    <div>
+                      <p className="text-xs font-bold text-white/60 uppercase tracking-widest">Avatar Preview</p>
+                      <p className="text-[10px] text-white/30 mt-1">This is how your avatar will appear</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Name */}
                 <div>
-                  <label className="block text-[10px] uppercase font-bold tracking-widest text-white/40 mb-2">Full Name</label>
-                  <input 
-                    type="text" 
+                  <FieldLabel>Full Name</FieldLabel>
+                  <input
+                    type="text"
                     value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="w-full bg-black/50 border border-white/10 rounded-full py-4 px-6 text-white text-sm focus:outline-none focus:border-brand-gold transition-colors"
+                    onChange={e => setName(e.target.value)}
+                    placeholder="Your display name"
+                    className={inputCls}
                   />
                 </div>
+
+                {/* Email (read-only) */}
                 <div>
-                  <label className="block text-[10px] uppercase font-bold tracking-widest text-white/40 mb-2">Email Address</label>
-                  <input 
-                    type="email" 
-                    value={user?.email}
+                  <FieldLabel>Email Address</FieldLabel>
+                  <input
+                    type="email"
+                    value={user?.email || ''}
                     disabled
-                    className="w-full bg-black/50 border border-white/5 rounded-full py-4 px-6 text-white/40 cursor-not-allowed text-sm"
+                    className={`${inputCls} opacity-40 cursor-not-allowed`}
                   />
-                  <p className="text-[10px] text-white/20 uppercase tracking-widest mt-2 ml-4">Email cannot be changed.</p>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div>
-              <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 mb-8 flex items-center gap-4">
-                Recent Activity <span className="h-px flex-1 bg-white/10"></span>
-              </h3>
-              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-[1px] before:bg-gradient-to-b before:from-transparent before:via-white/20 before:to-transparent">
-                
-                <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border border-brand-gold bg-black text-brand-gold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-[0_0_15px_rgba(255,215,0,0.3)]">
-                    <Star className="w-4 h-4 fill-current" />
-                  </div>
-                  <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm shadow-xl">
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="font-bold text-brand-gold text-[10px] uppercase tracking-widest">Rating Added</div>
-                      <time className="font-mono text-[9px] uppercase tracking-widest text-white/40">2 Days Ago</time>
-                    </div>
-                    <div className="text-sm text-white/80 leading-relaxed">You rated <span className="font-bold text-white uppercase tracking-wider font-serif">Dune: Part Two</span> 5 stars.</div>
-                  </div>
+                  <p className="text-[10px] text-white/20 uppercase tracking-widest mt-1.5 ml-2">Cannot be changed</p>
                 </div>
 
-                <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border border-brand-crimson bg-black text-brand-crimson shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 shadow-[0_0_15px_rgba(229,9,20,0.3)]">
-                    <Heart className="w-4 h-4 fill-current" />
+                {/* Bio */}
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <FieldLabel>Bio</FieldLabel>
+                    <span className="text-[10px] text-white/30">{bio.length}/300</span>
                   </div>
-                  <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 rounded-2xl border border-white/5 bg-white/5 backdrop-blur-sm shadow-xl">
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="font-bold text-brand-crimson text-[10px] uppercase tracking-widest">Added to Watchlist</div>
-                      <time className="font-mono text-[9px] uppercase tracking-widest text-white/40">1 Week Ago</time>
-                    </div>
-                    <div className="text-sm text-white/80 leading-relaxed">You added <span className="font-bold text-white uppercase tracking-wider font-serif">Oppenheimer</span> to your watchlist.</div>
-                  </div>
+                  <textarea
+                    value={bio}
+                    onChange={e => setBio(e.target.value.slice(0, 300))}
+                    rows={3}
+                    placeholder="Tell the world about your taste in cinema…"
+                    className="w-full bg-black/50 border border-white/10 rounded-2xl py-3 px-5 text-white text-sm focus:outline-none focus:border-brand-gold transition-colors resize-none placeholder-white/20"
+                  />
                 </div>
 
+                <FormMsg msg={infoMsg} />
+
+                <button
+                  type="submit"
+                  disabled={infoLoading}
+                  className="w-full py-4 rounded-full bg-brand-gold text-brand-black text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-yellow-400 transition-all disabled:opacity-60 shadow-[0_0_20px_rgba(255,215,0,0.25)]"
+                >
+                  {infoLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
+                  {infoLoading ? 'Saving…' : 'Save Profile'}
+                </button>
+              </form>
+            )}
+
+            {/* ── GENRES TAB ─────────────────────────────────────────────── */}
+            {tab === 'genres' && (
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-xl space-y-6">
+                <SectionTitle icon={<Star className="w-4 h-4" />}>
+                  Favourite Genres
+                  <span className="ml-2 text-white/30 text-xs">({genres.length} selected)</span>
+                </SectionTitle>
+                <p className="text-white/40 text-xs">Select all genres you enjoy — this shapes your recommendations.</p>
+
+                <div className="flex flex-wrap gap-2.5">
+                  {ALL_GENRES.map(g => {
+                    const active = genres.includes(g);
+                    return (
+                      <motion.button
+                        key={g}
+                        type="button"
+                        whileTap={{ scale: 0.93 }}
+                        onClick={() => toggleGenre(g)}
+                        className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest border transition-all ${
+                          active
+                            ? 'bg-brand-gold text-brand-black border-brand-gold shadow-[0_0_12px_rgba(255,215,0,0.3)]'
+                            : 'bg-white/5 border-white/10 text-white/60 hover:border-white/30 hover:text-white'
+                        }`}
+                      >
+                        {active && <span className="mr-1">✓</span>}
+                        {g}
+                      </motion.button>
+                    );
+                  })}
+                </div>
+
+                {/* Selected list */}
+                {genres.length > 0 && (
+                  <div className="flex flex-wrap gap-2 pt-2 border-t border-white/10">
+                    {genres.map(g => (
+                      <span key={g} className="flex items-center gap-1 px-3 py-1 bg-brand-gold/10 border border-brand-gold/30 rounded-full text-xs font-bold text-brand-gold">
+                        {g}
+                        <button onClick={() => toggleGenre(g)} className="hover:text-red-400 transition-colors ml-1">
+                          <X className="w-3 h-3" />
+                        </button>
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <FormMsg msg={genreMsg} />
+
+                <button
+                  type="button"
+                  onClick={handleSaveGenres}
+                  disabled={genreLoading}
+                  className="w-full py-4 rounded-full bg-brand-gold text-brand-black text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-yellow-400 transition-all disabled:opacity-60 shadow-[0_0_20px_rgba(255,215,0,0.25)]"
+                >
+                  {genreLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
+                  {genreLoading ? 'Saving…' : 'Save Genres'}
+                </button>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+
+            {/* ── PASSWORD TAB ───────────────────────────────────────────── */}
+            {tab === 'password' && (
+              <form onSubmit={handleChangePassword} className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-xl space-y-5">
+                <SectionTitle icon={<Lock className="w-4 h-4" />}>Change Password</SectionTitle>
+
+                <PwField
+                  label="Current Password"
+                  value={currentPw}
+                  onChange={setCurrentPw}
+                  show={showCurrent}
+                  toggle={() => setShowCurrent(p => !p)}
+                  autoComplete="current-password"
+                />
+                <PwField
+                  label="New Password"
+                  value={newPw}
+                  onChange={setNewPw}
+                  show={showNew}
+                  toggle={() => setShowNew(p => !p)}
+                  autoComplete="new-password"
+                  hint="Minimum 6 characters"
+                />
+                <PwField
+                  label="Confirm New Password"
+                  value={confirmPw}
+                  onChange={setConfirmPw}
+                  show={showConfirm}
+                  toggle={() => setShowConfirm(p => !p)}
+                  autoComplete="new-password"
+                />
+
+                {/* Strength bar */}
+                {newPw && (
+                  <PasswordStrength password={newPw} />
+                )}
+
+                <FormMsg msg={pwMsg} />
+
+                <button
+                  type="submit"
+                  disabled={pwLoading}
+                  className="w-full py-4 rounded-full bg-brand-crimson text-white text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-red-700 transition-all disabled:opacity-60 shadow-[0_0_20px_rgba(229,9,20,0.25)]"
+                >
+                  {pwLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <ShieldCheck className="w-4 h-4" />}
+                  {pwLoading ? 'Updating…' : 'Update Password'}
+                </button>
+              </form>
+            )}
+          </motion.div>
+        </AnimatePresence>
       </div>
+    </div>
+  );
+}
+
+// ── Sub-components ─────────────────────────────────────────────────────────────
+
+const inputCls =
+  'w-full bg-black/50 border border-white/10 rounded-full py-3.5 px-5 text-white text-sm focus:outline-none focus:border-brand-gold transition-colors placeholder-white/20';
+
+function FieldLabel({ children }: { children: React.ReactNode }) {
+  return (
+    <label className="block text-[10px] uppercase font-bold tracking-[0.2em] text-white/40 mb-2">
+      {children}
+    </label>
+  );
+}
+
+function SectionTitle({ icon, children }: { icon: React.ReactNode; children: React.ReactNode }) {
+  return (
+    <h3 className="flex items-center gap-2 text-xs font-bold tracking-[0.3em] uppercase text-white/60 pb-4 border-b border-white/10">
+      {icon}{children}
+    </h3>
+  );
+}
+
+function FormMsg({ msg }: { msg: { ok: boolean; text: string } | null }) {
+  if (!msg) return null;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -4 }}
+      animate={{ opacity: 1, y: 0 }}
+      className={`flex items-center gap-2 px-4 py-3 rounded-xl border text-sm ${
+        msg.ok
+          ? 'bg-green-500/10 border-green-500/30 text-green-300'
+          : 'bg-red-500/10 border-red-500/30 text-red-300'
+      }`}
+    >
+      {msg.ok
+        ? <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
+        : <AlertCircle className="w-4 h-4 flex-shrink-0" />}
+      {msg.text}
+    </motion.div>
+  );
+}
+
+function PwField({
+  label, value, onChange, show, toggle, autoComplete, hint
+}: {
+  label: string; value: string; onChange: (v: string) => void;
+  show: boolean; toggle: () => void; autoComplete: string; hint?: string;
+}) {
+  return (
+    <div>
+      <FieldLabel>{label}</FieldLabel>
+      <div className="relative flex items-center bg-black/50 border border-white/10 rounded-full px-5 py-3.5 focus-within:border-brand-gold transition-colors">
+        <Lock className="w-4 h-4 text-white/30 mr-3 flex-shrink-0" />
+        <input
+          type={show ? 'text' : 'password'}
+          value={value}
+          onChange={e => onChange(e.target.value)}
+          autoComplete={autoComplete}
+          placeholder="••••••••"
+          className="flex-1 bg-transparent text-sm text-white placeholder-white/20 focus:outline-none"
+        />
+        <button type="button" onClick={toggle} tabIndex={-1} className="ml-3 text-white/30 hover:text-white/70 transition-colors">
+          {show ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+        </button>
+      </div>
+      {hint && <p className="text-[10px] text-white/20 uppercase tracking-widest mt-1.5 ml-3">{hint}</p>}
+    </div>
+  );
+}
+
+function PasswordStrength({ password }: { password: string }) {
+  const score = [
+    password.length >= 8,
+    /[A-Z]/.test(password),
+    /[0-9]/.test(password),
+    /[^A-Za-z0-9]/.test(password),
+  ].filter(Boolean).length;
+
+  const labels = ['Weak', 'Fair', 'Good', 'Strong'];
+  const colors = ['bg-red-500', 'bg-orange-400', 'bg-yellow-400', 'bg-green-400'];
+
+  return (
+    <div>
+      <div className="flex gap-1.5 mb-1">
+        {[0, 1, 2, 3].map(i => (
+          <div key={i} className={`h-1 flex-1 rounded-full transition-all ${i < score ? colors[score - 1] : 'bg-white/10'}`} />
+        ))}
+      </div>
+      <p className="text-[10px] uppercase tracking-widest text-white/30 ml-1">
+        Strength: <span className="text-white/60">{labels[score - 1] || 'Very Weak'}</span>
+      </p>
     </div>
   );
 }

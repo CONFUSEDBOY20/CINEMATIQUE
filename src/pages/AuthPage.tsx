@@ -1,174 +1,440 @@
-import { useState } from 'react';
+import React, { useState, useId } from 'react';
 import { useAppContext } from '../context/AppContext';
-import { Mail, Lock, User, Key, ArrowRight, Film } from 'lucide-react';
+import {
+  Mail, Lock, User, ArrowRight, Film,
+  Eye, EyeOff, CheckCircle2, AlertCircle, Loader2, ShieldAlert
+} from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+
+type Mode = 'login' | 'register' | 'admin';
+
+interface FieldError {
+  email?: string;
+  password?: string;
+  confirmPassword?: string;
+  name?: string;
+  form?: string;
+}
 
 export function AuthPage() {
   const { login, register } = useAppContext();
-  const [isAdminMode, setIsAdminMode] = useState(false);
-  const [isRegister, setIsRegister] = useState(false);
-  
-  const [email, setEmail] = useState('user@demo.com');
-  const [password, setPassword] = useState('password');
-  const [name, setName] = useState('');
-  const [adminKey, setAdminKey] = useState('secret');
+  const id = useId();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [mode, setMode] = useState<Mode>('login');
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<FieldError>({});
+  const [success, setSuccess] = useState('');
+
+  const [name, setName]                       = useState('');
+  const [email, setEmail]                     = useState('');
+  const [password, setPassword]               = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirm, setShowConfirm]   = useState(false);
+
+  const clearErrors = () => setErrors({});
+
+  const switchMode = (m: Mode) => {
+    setMode(m);
+    clearErrors();
+    setSuccess('');
+    setName('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    setShowPassword(false);
+    setShowConfirm(false);
+  };
+
+  // ── Validation ─────────────────────────────────────────────────────────────
+  const validate = (): boolean => {
+    const e: FieldError = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (mode === 'register' && !name.trim()) {
+      e.name = 'Full name is required';
+    }
+    if (!email) {
+      e.email = 'Email is required';
+    } else if (!emailRegex.test(email)) {
+      e.email = 'Enter a valid email address';
+    }
+    if (!password) {
+      e.password = 'Password is required';
+    } else if (mode === 'register' && password.length < 6) {
+      e.password = 'Password must be at least 6 characters';
+    }
+    if (mode === 'register' && password !== confirmPassword) {
+      e.confirmPassword = 'Passwords do not match';
+    }
+    setErrors(e);
+    return Object.keys(e).length === 0;
+  };
+
+  // ── Submit ──────────────────────────────────────────────────────────────────
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (isRegister) {
-      register(name, email, password);
-    } else if (isAdminMode) {
-      login(email, password, true, adminKey);
-    } else {
-      login(email, password, false);
+    clearErrors();
+    if (!validate()) return;
+
+    setLoading(true);
+    try {
+      if (mode === 'register') {
+        const result = await register(name.trim(), email.trim(), password);
+        if (!result.ok) setErrors({ form: result.error });
+      } else {
+        // Both 'login' and 'admin' use email+password.
+        // Server returns role='admin' → AppContext routes to admin_dashboard.
+        const result = await login(email.trim(), password);
+        if (!result.ok) setErrors({ form: result.error });
+      }
+    } finally {
+      setLoading(false);
     }
   };
 
+  const isRegister = mode === 'register';
+  const isAdmin    = mode === 'admin';
+
   return (
     <div className="min-h-screen relative flex items-center justify-center p-4">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0" 
+      {/* Background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop")' }}
       >
-        <div className="absolute inset-0 bg-brand-black/80 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-brand-black/85 backdrop-blur-sm" />
       </div>
 
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.95 }}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.97 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="glass-panel w-full max-w-md rounded-2xl p-8 relative z-10 shadow-2xl overflow-hidden"
+        transition={{ duration: 0.35, ease: 'easeOut' }}
+        className="glass-panel w-full max-w-md rounded-2xl p-8 relative z-10 shadow-2xl"
       >
-        <div className="text-center mb-10">
-          <div className="w-16 h-16 rounded-full border border-brand-gold flex items-center justify-center mx-auto mb-4 p-1">
+        {/* Logo */}
+        <div className="text-center mb-8">
+          <div className="w-16 h-16 rounded-full border border-brand-gold flex items-center justify-center mx-auto mb-4">
             <div className="w-full h-full bg-brand-black rounded-full flex items-center justify-center text-brand-gold">
-               <Film className="w-6 h-6" />
+              {isAdmin ? <ShieldAlert className="w-6 h-6 text-brand-crimson" /> : <Film className="w-6 h-6" />}
             </div>
           </div>
-          <div className="text-4xl font-bold tracking-tighter text-brand-gold font-serif mb-2">CINE<span className="text-white">MATIQUE</span></div>
-          <p className="text-white/40 text-xs uppercase tracking-[0.3em] font-medium">Premium Experience</p>
+          <div className="text-4xl font-bold tracking-tighter text-brand-gold font-serif mb-1">
+            CINE<span className="text-white">MATIQUE</span>
+          </div>
+          <p className="text-white/40 text-xs uppercase tracking-[0.3em] font-medium">
+            {isRegister ? 'Create your account' : isAdmin ? 'Admin portal' : 'Premium Experience'}
+          </p>
         </div>
 
-        {/* Tab Switcher */}
-        {!isRegister && (
-          <div className="flex bg-white/5 border border-white/10 p-1 rounded-full mb-8">
-            <button
-              type="button"
-              onClick={() => setIsAdminMode(false)}
-              className={`flex-1 py-2 text-xs uppercase tracking-widest font-bold rounded-full transition-all ${!isAdminMode ? 'bg-white text-brand-black shadow' : 'text-white/40 hover:text-white'}`}
+        {/* Mode Tabs — only for non-admin */}
+        <AnimatePresence mode="wait">
+          {!isAdmin && (
+            <motion.div
+              key="tabs"
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              className="flex bg-white/5 border border-white/10 p-1 rounded-full mb-7"
             >
-              Member
-            </button>
-            <button
-              type="button"
-              onClick={() => { setIsAdminMode(true); setIsRegister(false); setEmail('admin@demo.com'); }}
-              className={`flex-1 py-2 text-xs uppercase tracking-widest font-bold rounded-full transition-all ${isAdminMode ? 'bg-brand-crimson text-white shadow' : 'text-white/40 hover:text-white'}`}
+              <TabBtn active={!isRegister} onClick={() => switchMode('login')}>Sign In</TabBtn>
+              <TabBtn active={isRegister}  onClick={() => switchMode('register')}>Create Account</TabBtn>
+            </motion.div>
+          )}
+          {isAdmin && (
+            <motion.div
+              key="admin-tabs"
+              initial={{ opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              className="flex bg-brand-crimson/10 border border-brand-crimson/30 p-1 rounded-full mb-7"
             >
-              Admin
-            </button>
-          </div>
-        )}
+              <div className="flex-1 py-2 text-xs uppercase tracking-widest font-bold rounded-full text-center text-brand-crimson bg-brand-crimson/20">
+                Admin Login
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
+        {/* Form */}
+        <form onSubmit={handleSubmit} noValidate className="space-y-4">
           <AnimatePresence mode="popLayout">
+            {/* Name — register only */}
             {isRegister && (
               <motion.div
+                key="name-field"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
-                className="space-y-4"
+                transition={{ duration: 0.2 }}
               >
-                <div>
-                  <label className="block text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold mb-2">Full Name</label>
-                  <div className="relative">
-                    <User className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
-                    <input 
-                      type="text" 
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="John Doe" 
-                      className="w-full bg-black/50 border border-white/10 rounded-full pl-12 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-brand-gold transition-colors" 
-                      required={isRegister}
-                    />
-                  </div>
-                </div>
+                <FieldLabel htmlFor={`${id}-name`} error={errors.name}>Full Name</FieldLabel>
+                <InputWrapper icon={<User className="w-4 h-4" />} error={!!errors.name}>
+                  <input
+                    id={`${id}-name`}
+                    type="text"
+                    autoComplete="name"
+                    value={name}
+                    onChange={e => { setName(e.target.value); setErrors(p => ({ ...p, name: undefined })); }}
+                    placeholder="John Doe"
+                    className={inputClass}
+                  />
+                </InputWrapper>
+                <FieldError msg={errors.name} />
               </motion.div>
             )}
           </AnimatePresence>
 
+          {/* Email */}
           <div>
-            <label className="block text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold mb-2">Email Address</label>
-            <div className="relative">
-              <Mail className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
-              <input 
-                type="email" 
+            <FieldLabel htmlFor={`${id}-email`} error={errors.email}>Email Address</FieldLabel>
+            <InputWrapper icon={<Mail className="w-4 h-4" />} error={!!errors.email} accent={isAdmin ? 'crimson' : 'gold'}>
+              <input
+                id={`${id}-email`}
+                type="email"
+                autoComplete="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@domain.com" 
-                className="w-full bg-black/50 border border-white/10 rounded-full pl-12 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-brand-gold transition-colors" 
+                onChange={e => { setEmail(e.target.value); setErrors(p => ({ ...p, email: undefined })); }}
+                placeholder={isAdmin ? 'admin@cinematique.com' : 'you@domain.com'}
+                className={inputClass}
               />
-            </div>
+            </InputWrapper>
+            <FieldError msg={errors.email} />
           </div>
 
+          {/* Password */}
           <div>
-            <label className="block text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold mb-2">Password</label>
-            <div className="relative">
-              <Lock className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
-              <input 
-                type="password" 
+            <FieldLabel htmlFor={`${id}-pass`} error={errors.password}>
+              {isAdmin ? 'Admin Password' : 'Password'}
+            </FieldLabel>
+            <InputWrapper
+              icon={<Lock className="w-4 h-4" />}
+              error={!!errors.password}
+              accent={isAdmin ? 'crimson' : 'gold'}
+              suffix={
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(p => !p)}
+                  className="text-white/30 hover:text-white/70 transition-colors focus:outline-none"
+                  tabIndex={-1}
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              }
+            >
+              <input
+                id={`${id}-pass`}
+                type={showPassword ? 'text' : 'password'}
+                autoComplete={isRegister ? 'new-password' : 'current-password'}
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••" 
-                className="w-full bg-black/50 border border-white/10 rounded-full pl-12 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-brand-gold transition-colors" 
+                onChange={e => { setPassword(e.target.value); setErrors(p => ({ ...p, password: undefined })); }}
+                placeholder="••••••••"
+                className={inputClass}
               />
-            </div>
+            </InputWrapper>
+            <FieldError msg={errors.password} />
           </div>
 
           <AnimatePresence mode="popLayout">
-            {isAdminMode && (
+            {/* Confirm Password — register only */}
+            {isRegister && (
               <motion.div
+                key="confirm-field"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: 'auto' }}
                 exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.2 }}
               >
-                <label className="block text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold mb-2 mt-5">Secret Admin Key</label>
-                <div className="relative">
-                  <Key className="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-white/40" />
-                  <input 
-                    type="password" 
-                    value={adminKey}
-                    onChange={(e) => setAdminKey(e.target.value)}
-                    placeholder="Enter secret key (demo: secret)" 
-                    className="w-full bg-black/50 border border-white/10 rounded-full pl-12 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-brand-crimson transition-colors" 
+                <FieldLabel htmlFor={`${id}-confirm`} error={errors.confirmPassword}>Confirm Password</FieldLabel>
+                <InputWrapper
+                  icon={<CheckCircle2 className="w-4 h-4" />}
+                  error={!!errors.confirmPassword}
+                  suffix={
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirm(p => !p)}
+                      className="text-white/30 hover:text-white/70 transition-colors focus:outline-none"
+                      tabIndex={-1}
+                    >
+                      {showConfirm ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                    </button>
+                  }
+                >
+                  <input
+                    id={`${id}-confirm`}
+                    type={showConfirm ? 'text' : 'password'}
+                    autoComplete="new-password"
+                    value={confirmPassword}
+                    onChange={e => { setConfirmPassword(e.target.value); setErrors(p => ({ ...p, confirmPassword: undefined })); }}
+                    placeholder="••••••••"
+                    className={inputClass}
                   />
-                </div>
+                </InputWrapper>
+                <FieldError msg={errors.confirmPassword} />
+              </motion.div>
+            )}
+
+            {/* Admin info notice */}
+            {isAdmin && (
+              <motion.div
+                key="admin-notice"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.2 }}
+                className="bg-brand-crimson/10 border border-brand-crimson/20 rounded-2xl px-4 py-3"
+              >
+                <p className="text-[10px] font-bold text-brand-crimson uppercase tracking-widest mb-1">Admin Portal</p>
+                <p className="text-xs text-white/50">Sign in with your admin email and password. Access is verified server-side.</p>
               </motion.div>
             )}
           </AnimatePresence>
 
-          <button 
+          {/* Form-level error / success */}
+          <AnimatePresence>
+            {errors.form && (
+              <motion.div
+                key="form-error"
+                initial={{ opacity: 0, y: -4 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -4 }}
+                className="flex items-center gap-2 bg-red-500/10 border border-red-500/30 rounded-xl px-4 py-3"
+              >
+                <AlertCircle className="w-4 h-4 text-red-400 flex-shrink-0" />
+                <p className="text-red-300 text-sm">{errors.form}</p>
+              </motion.div>
+            )}
+            {success && (
+              <motion.div
+                key="form-success"
+                initial={{ opacity: 0, y: -4 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-xl px-4 py-3"
+              >
+                <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0" />
+                <p className="text-green-300 text-sm">{success}</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Submit */}
+          <button
             type="submit"
-            className={`w-full py-4 rounded-full text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3 transition-all duration-300 mt-6 ${isAdminMode ? 'bg-brand-crimson hover:bg-red-700 text-white shadow-[0_0_20px_rgba(229,9,20,0.3)]' : 'bg-brand-gold text-brand-black hover:bg-yellow-400 shadow-[0_0_20px_rgba(255,215,0,0.3)]'}`}
+            id="auth-submit-btn"
+            disabled={loading}
+            className={`w-full py-4 rounded-full text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-3 transition-all duration-300 mt-2 disabled:opacity-60 disabled:cursor-not-allowed
+              ${isAdmin
+                ? 'bg-brand-crimson hover:bg-red-700 text-white shadow-[0_0_20px_rgba(229,9,20,0.3)]'
+                : 'bg-brand-gold text-brand-black hover:bg-yellow-400 shadow-[0_0_20px_rgba(255,215,0,0.3)]'
+              }`}
           >
-            {isRegister ? 'Create Account' : 'Sign In'}
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            {loading ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
+              <>
+                {isRegister ? 'Create Account' : isAdmin ? 'Access Admin' : 'Sign In'}
+                <ArrowRight className="w-4 h-4" />
+              </>
+            )}
           </button>
         </form>
 
-        {!isAdminMode && (
-          <div className="mt-8 text-center text-[10px] uppercase tracking-widest text-white/40 font-bold">
-            {isRegister ? (
-              <>Already have an account? <button onClick={() => setIsRegister(false)} className="text-brand-gold hover:text-white transition-colors ml-1">Sign in</button></>
-            ) : (
-              <>Don't have an account? <button onClick={() => setIsRegister(true)} className="text-brand-gold hover:text-white transition-colors ml-1">Register now</button></>
-            )}
-          </div>
-        )}
-        
-        <div className="mt-8 pt-6 border-t border-white/5 text-center text-[10px] text-white/20 uppercase tracking-widest">
-          <p>Demo credentials pre-filled.</p>
+        {/* Footer links */}
+        <div className="mt-6 text-center space-y-3">
+          {!isAdmin && (
+            <p className="text-[11px] uppercase tracking-widest text-white/40 font-bold">
+              {isRegister ? (
+                <>Already have an account?{' '}
+                  <button id="switch-to-login" onClick={() => switchMode('login')} className="text-brand-gold hover:text-white transition-colors ml-1">
+                    Sign In
+                  </button>
+                </>
+              ) : (
+                <>Don&apos;t have an account?{' '}
+                  <button id="switch-to-register" onClick={() => switchMode('register')} className="text-brand-gold hover:text-white transition-colors ml-1">
+                    Register Now
+                  </button>
+                </>
+              )}
+            </p>
+          )}
+
+          <button
+            id="toggle-admin-mode"
+            onClick={() => switchMode(isAdmin ? 'login' : 'admin')}
+            className="text-[10px] uppercase tracking-widest text-white/20 hover:text-white/50 transition-colors font-bold"
+          >
+            {isAdmin ? '← Back to Member Login' : 'Admin Access'}
+          </button>
         </div>
       </motion.div>
     </div>
+  );
+}
+
+// ── Sub-components ─────────────────────────────────────────────────────────────
+
+const inputClass =
+  "w-full bg-transparent text-sm text-white placeholder-white/30 focus:outline-none";
+
+function FieldLabel({ htmlFor, children, error }: { htmlFor: string; children: React.ReactNode; error?: string }) {
+  return (
+    <label
+      htmlFor={htmlFor}
+      className={`block text-[10px] uppercase tracking-[0.2em] font-bold mb-2 transition-colors ${error ? 'text-red-400' : 'text-white/40'}`}
+    >
+      {children}
+    </label>
+  );
+}
+
+function InputWrapper({
+  icon, children, error, suffix, accent = 'gold'
+}: {
+  icon: React.ReactNode;
+  children: React.ReactNode;
+  error?: boolean;
+  suffix?: React.ReactNode;
+  accent?: 'gold' | 'crimson';
+}) {
+  const borderColor = error
+    ? 'border-red-500/60'
+    : accent === 'crimson'
+      ? 'border-white/10 focus-within:border-brand-crimson'
+      : 'border-white/10 focus-within:border-brand-gold';
+
+  return (
+    <div className={`relative flex items-center bg-black/50 border rounded-full pl-4 pr-4 py-3 transition-colors ${borderColor}`}>
+      <span className={`mr-3 flex-shrink-0 transition-colors ${error ? 'text-red-400' : 'text-white/30'}`}>{icon}</span>
+      <div className="flex-1">{children}</div>
+      {suffix && <span className="ml-3 flex-shrink-0">{suffix}</span>}
+    </div>
+  );
+}
+
+function FieldError({ msg }: { msg?: string }) {
+  if (!msg) return null;
+  return (
+    <motion.p
+      initial={{ opacity: 0, y: -4 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="text-red-400 text-xs mt-1.5 ml-4 flex items-center gap-1"
+    >
+      <AlertCircle className="w-3 h-3" />
+      {msg}
+    </motion.p>
+  );
+}
+
+function TabBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`flex-1 py-2 text-xs uppercase tracking-widest font-bold rounded-full transition-all ${active ? 'bg-white text-brand-black shadow' : 'text-white/40 hover:text-white'}`}
+    >
+      {children}
+    </button>
   );
 }

@@ -61,13 +61,15 @@ export function UserLayout() {
         <div className="mt-auto px-8">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full border border-brand-gold p-0.5">
-                <div className="w-full h-full bg-brand-gray rounded-full flex items-center justify-center text-[10px] font-bold text-white">
-                  {user?.avatar || 'U'}
+              <div className="w-10 h-10 rounded-full border border-brand-gold p-0.5 flex-shrink-0">
+                <div className="w-full h-full bg-brand-gray rounded-full overflow-hidden flex items-center justify-center text-[10px] font-bold text-white">
+                  {user?.avatar
+                    ? <img src={user.avatar} alt="avatar" className="w-full h-full object-cover" />
+                    : user?.name?.[0]?.toUpperCase() || 'U'}
                 </div>
               </div>
-              <div className="text-left">
-                <p className="text-xs uppercase tracking-widest font-bold">{user?.name}</p>
+              <div className="text-left min-w-0">
+                <p className="text-xs uppercase tracking-widest font-bold truncate">{user?.name}</p>
               </div>
             </div>
           </div>
