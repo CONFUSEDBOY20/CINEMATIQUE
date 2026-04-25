@@ -1,0 +1,24176 @@
+export const mockMovies = [
+  {
+    id: "1",
+    title: "Leave the World Behind",
+    year: 2023,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.3,
+    synopsis: "Leave the World Behind is an upcoming psychological thriller film written, directed and produced by Sam Esmail, based on the 2020 the novel of the same name by Rumaan Alam. The film stars Julia Roberts, Mahershala Ali, Ethan Hawke, Myha'la Herrold, Farrah Mackenzie, Charlie Evans, and Kevin Bacon.",
+    cast: [
+      "Julia Roberts",
+      "Mahershala Ali",
+      "Ethan Hawke"
+    ],
+    runtime: "147 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjI0YzhjZjAtMzg3ZS00NTFhLWFkYjctMjE5ZGExNTk1MmJkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjI0YzhjZjAtMzg3ZS00NTFhLWFkYjctMjE5ZGExNTk1MmJkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "2",
+    title: "Wish",
+    year: 2023,
+    genres: [
+      "Animated"
+    ],
+    rating: 4.2,
+    synopsis: "Walt Disney Animation Studios is an American animation studio headquartered in Burbank, California, the original feature film division of The Walt Disney Company. The studio's films are also often called \"Disney Classics\", or \"Disney Animated Canon\".",
+    cast: [
+      "Ariana DeBose",
+      "Alan Tudyk"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2UyZTAxZDctODI5Mi00MDczLWI4OWMtNTliZjEyMmEyN2FkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2UyZTAxZDctODI5Mi00MDczLWI4OWMtNTliZjEyMmEyN2FkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "3",
+    title: "Leo",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Leo.",
+    cast: [
+      "Adam Sandler",
+      "Bill Burr",
+      "Cecily Strong"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjdiNmZhNzctMjEzNi00OGM4LWEzYTctZWYxNzY5NTBjZTYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjdiNmZhNzctMjEzNi00OGM4LWEzYTctZWYxNzY5NTBjZTYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "4",
+    title: "Aquaman and the Lost Kingdom",
+    year: 2023,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.3,
+    synopsis: "Aquaman and the Lost Kingdom is an upcoming American superhero film based on the DC Comics character Aquaman. Produced by DC Studios, the Safran Company, and Atomic Monster Productions, and set for distribution by Warner Bros. Pictures, it is intended to be the sequel to Aquaman (2018), and the 15th and final installment in the DC Extended Universe (DCEU). The film is directed by James Wan from a screenplay written by David Leslie Johnson-McGoldrick, and stars Jason Momoa as Arthur Curry / Aquaman alongside Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Temuera Morrison, and Nicole Kidman.",
+    cast: [
+      "Jason Momoa",
+      "Amber Heard",
+      "Willem Dafoe"
+    ],
+    runtime: "113 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "5",
+    title: "Wonka",
+    year: 2023,
+    genres: [
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 4,
+    synopsis: "Wonka is an upcoming musical fantasy film directed by Paul King, who co-wrote the screenplay with Simon Farnaby. The film serves as a prequel to the 1964 novel Charlie and the Chocolate Factory by Roald Dahl and stars Timothée Chalamet as the titular character, following his early days as an eccentric chocolatier. Keegan-Michael Key, Rowan Atkinson, Sally Hawkins, Olivia Colman, and Jim Carter star in supporting roles.",
+    cast: [
+      "Timothée Chalamet",
+      "Keegan-Michael Key",
+      "Sally Hawkins"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Y1N2ZhNjctYjVhZC00MDg2LWFhNTItMzI3ZjAwZDhjYmFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Y1N2ZhNjctYjVhZC00MDg2LWFhNTItMzI3ZjAwZDhjYmFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "6",
+    title: "Napoleon",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Historical"
+    ],
+    rating: 4.7,
+    synopsis: "Napoleon is an upcoming epic historical drama film directed and produced by Ridley Scott and written by David Scarpa. It stars Joaquin Phoenix as Napoleon and depicts the French leader's rise to power. The film is scheduled to be theatrically released by Sony Pictures Releasing on November 22, 2023, before streaming on Apple TV+ at a later date.",
+    cast: [
+      "Joaquin Phoenix",
+      "Vanessa Kirby",
+      "Tahar Rahim"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGQ1NGUxNDUtNjg3Yi00ZTZjLWIwOTUtNDBjYWY5ZjVmZGI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGQ1NGUxNDUtNjg3Yi00ZTZjLWIwOTUtNDBjYWY5ZjVmZGI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "7",
+    title: "Magazine Dreams",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "Magazine Dreams is a 2023 American drama film written and directed by Elijah Bynum. It stars Jonathan Majors, Haley Bennett, Taylour Paige, Mike O'Hearn, Harrison Page and Harriet Sansom Harris.",
+    cast: [
+      "Jonathan Majors",
+      "Haley Bennett",
+      "Taylour Paige"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTBkYjk0YzMtNDAwYy00ZTU4LTg2MGUtZWVjNzFiZmE3NzUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTBkYjk0YzMtNDAwYy00ZTU4LTg2MGUtZWVjNzFiZmE3NzUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "8",
+    title: "Rebel Moon",
+    year: 2023,
+    genres: [
+      "Science Fiction"
+    ],
+    rating: 4.4,
+    synopsis: "Rebel Moon is an upcoming American epic space opera film directed by Zack Snyder from a screenplay he co-wrote with Shay Hatten and Kurt Johnstad, based on a story he also created with Johnstad. Produced by The Stone Quarry and Grand Electric, and distributed by Netflix. The film features an ensemble cast that includes Sofia Boutella, Charlie Hunnam, Ray Fisher, Djimon Hounsou, Jena Malone, Corey Stoll, Ed Skrein, Cleopatra Coleman, Fra Fee, Cary Elwes, and Anthony Hopkins.",
+    cast: [
+      "Sofia Boutella",
+      "Charlie Hunnam",
+      "Ray Fisher"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTRmOTk2ZDYtY2Q3Mi00MGYwLWFjNDQtYTliODc3NzM1ZjBlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTRmOTk2ZDYtY2Q3Mi00MGYwLWFjNDQtYTliODc3NzM1ZjBlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "9",
+    title: "Thanksgiving",
+    year: 2023,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4.2,
+    synopsis: "Thanksgiving is an upcoming American slasher film directed by Eli Roth and produced by Roger Birnbaum, from a screenplay written by Roth and Jeff Rendell. It is based on Roth's mock trailer of the same name from Grindhouse (2007). The film stars Addison Rae and Patrick Dempsey.",
+    cast: [
+      "Addison Rae",
+      "Patrick Dempsey",
+      "Gina Gershon"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzhiZTkyM2UtNjU2MC00MjcxLWJhZGYtODQ0MDViN2UxMzAwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzhiZTkyM2UtNjU2MC00MjcxLWJhZGYtODQ0MDViN2UxMzAwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "10",
+    title: "The Color Purple",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Musical",
+      "Historical"
+    ],
+    rating: 4.4,
+    synopsis: "The Color Purple is an upcoming American musical coming-of-age period drama film directed by Blitz Bazawule and adapted for the screen by Marcus Gardley from the 2005 stage musical of the same name, which is in turn based on Alice Walker's 1982 Pulitzer Prize-winning novel of the same name. It is the second film adaptation of the novel, following Steven Spielberg's 1985 film adaptation. Spielberg and Quincy Jones return to produce this version, along with the stage musical's producers Scott Sanders and Oprah Winfrey, the latter of whom also starred in the 1985 film as Sofia.",
+    cast: [
+      "Fantasia Barrino",
+      "Colman Domingo",
+      "Corey Hawkins"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2MyZjBlMGItNThkMi00YWExLThlZmUtZmI2MGM3YWE3YTY1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2MyZjBlMGItNThkMi00YWExLThlZmUtZmI2MGM3YWE3YTY1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "11",
+    title: "Dune: Part Two",
+    year: 2023,
+    genres: [
+      "Science Fiction"
+    ],
+    rating: 4.4,
+    synopsis: "Dune: Part Two is an upcoming American epic science fiction film directed by Denis Villeneuve from a screenplay by Villeneuve, Jon Spaihts, and Eric Roth. The direct sequel to the 2021 film, it is the second of a two-part adaptation of the 1965 novel Dune by Frank Herbert and will cover roughly the second half of the book. Timothée Chalamet, Rebecca Ferguson, Josh Brolin, Stellan Skarsgård, Dave Bautista, Stephen McKinley Henderson, Zendaya, Charlotte Rampling, and Javier Bardem reprise their roles from the first film, with Florence Pugh, Austin Butler, Christopher Walken, Léa Seydoux, Souheila Yacoub, and Tim Blake Nelson joining the ensemble cast.",
+    cast: [
+      "Timothée Chalamet",
+      "Zendaya",
+      "Rebecca Ferguson"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "12",
+    title: "Trolls Band Together",
+    year: 2023,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Musical"
+    ],
+    rating: 4,
+    synopsis: "Trolls Band Together is an upcoming American computer-animated musical comedy film produced by DreamWorks Animation and distributed by Universal Pictures, based on the Good Luck Trolls dolls from Thomas Dam. It is directed by Walt Dohrn and co-directed by Tim Heitz, from a screenplay by Elizabeth Tippet and the writing team of Jonathan Aibel and Glenn Berger. The film serves as the sequel to Trolls World Tour (2020) and the third installment in the Trolls franchise. Anna Kendrick, Justin Timberlake, Zooey Deschanel, Christopher Mintz-Plasse, Icona Pop, Anderson .Paak, Ron Funches, Kenan Thompson, Kunal Nayyar, and Dohrn reprise their voice roles from its predecessors, with newcomers Eric André, Kid Cudi, Daveed Diggs, Troye Sivan, Camila Cabello, Amy Schumer, Andrew Rannells, RuPaul, and Zosia Mamet joining the ensemble voice cast. In the film, Poppy (Kendrick) and Branch (Timberlake), who are officially a couple, attempt to rescue Floyd (Sivan) while reuniting Branch's brothers after the boyband phenomenon, BroZone, was disbanded.",
+    cast: [
+      "Anna Kendrick",
+      "Justin Timberlake",
+      "Kenan Thompson"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2EzNTY0N2MtMTAyZS00ZTIwLTk5MmUtNWJhMmIwYmM5OWFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2EzNTY0N2MtMTAyZS00ZTIwLTk5MmUtNWJhMmIwYmM5OWFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "13",
+    title: "The Holdovers",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 3.9,
+    synopsis: "The Holdovers is an upcoming American comedy-drama film directed by Alexander Payne, written by David Hemingson and starring Paul Giamatti.",
+    cast: [
+      "Paul Giamatti",
+      "Dominic Sessa",
+      "Da'Vine Joy Randolph"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWY3MjUzZTctOTI5ZC00MDA5LTk4ZTMtZWJjNjRmMzE4ZmI2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWY3MjUzZTctOTI5ZC00MDA5LTk4ZTMtZWJjNjRmMzE4ZmI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "14",
+    title: "Pain Hustlers",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.4,
+    synopsis: "Pain Hustlers is an upcoming American conspiracy drama film directed by David Yates from a screenplay by Wells Tower, based on a 2018 New York Times Magazine article, \"The Pain Hustlers\", by Evan Hughes and his subsequent novel The Hard Sell released in 2022. It stars Emily Blunt, Chris Evans, Andy García, Catherine O'Hara, Jay Duplass, Brian d'Arcy James, and Chloe Coleman.",
+    cast: [
+      "Emily Blunt",
+      "Chris Evans",
+      "Andy Garcia"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTc2ZTlkYWQtZmU2ZC00ZTFjLWFmOTAtMmRlZDYwMGVkYjhmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTc2ZTlkYWQtZmU2ZC00ZTFjLWFmOTAtMmRlZDYwMGVkYjhmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "15",
+    title: "A Family Affair",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "A Family Affair is an upcoming American romantic comedy film directed by Richard LaGravenese and written by Carrie Solomon. The film stars Nicole Kidman, Zac Efron, Joey King, Liza Koshy, and Kathy Bates.",
+    cast: [
+      "Nicole Kidman",
+      "Zac Efron",
+      "Joey King"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDQyMWFkMGMtNjhiMS00MzgyLWFmOGYtNzA3MGNjNGVhMGI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDQyMWFkMGMtNjhiMS00MzgyLWFmOGYtNzA3MGNjNGVhMGI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "16",
+    title: "The Marvels",
+    year: 2023,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.1,
+    synopsis: "The Marvels is an upcoming American superhero film based on Marvel Comics featuring the characters Carol Danvers / Captain Marvel, Kamala Khan / Ms. Marvel, and Monica Rambeau. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is intended to be the sequel to the film Captain Marvel (2019), a continuation of the television series Ms. Marvel (2022), and the 33rd film in the Marvel Cinematic Universe (MCU). The film is directed by Nia DaCosta from a screenplay she co-wrote with Megan McDonnell, Elissa Karasik, and Zeb Wells. It stars Brie Larson as Carol Danvers, Iman Vellani as Kamala Khan, and Teyonah Parris as Monica Rambeau, alongside Samuel L. Jackson. In the film, Danvers, Khan, and Rambeau begin swapping places with each other every time they use their powers and must team-up.",
+    cast: [
+      "Brie Larson",
+      "Teyonah Parris",
+      "Iman Vellani"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzczOWM4MzItMWMyOS00ZDczLWIxMzctNzBmYTgzOTI1MzI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzczOWM4MzItMWMyOS00ZDczLWIxMzctNzBmYTgzOTI1MzI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "17",
+    title: "The Killer",
+    year: 2023,
+    genres: [
+      "Action",
+      "Noir",
+      "Thriller"
+    ],
+    rating: 4.8,
+    synopsis: "The Killer is an upcoming American neo-noir action thriller film directed by David Fincher and with a screenplay by Andrew Kevin Walker. The film is based on the French graphic novel series of the same name by Alexis Nolent and Luc Jacamon. The film stars Michael Fassbender, Charles Parnell, Arliss Howard, Sophie Charlotte, and Tilda Swinton.",
+    cast: [
+      "Michael Fassbender",
+      "Charles Parnell",
+      "Arliss Howard"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQ1MWNkNGQtMzI2ZC00OTJiLTljZDMtZTUxNDljNTI1MTk0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQ1MWNkNGQtMzI2ZC00OTJiLTljZDMtZTUxNDljNTI1MTk0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "18",
+    title: "The Underdoggs",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of The Underdoggs.",
+    cast: [
+      "Snoop Dogg",
+      "Tika Sumpter",
+      "Mike Epps"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWY0MDBmYzEtZDJjNC00MTQ0LWJkZTgtZjQ3YTAyNjU4ZTdhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWY0MDBmYzEtZDJjNC00MTQ0LWJkZTgtZjQ3YTAyNjU4ZTdhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "19",
+    title: "Saw X",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 3.7,
+    synopsis: "Saw X is an upcoming American horror film directed by Kevin Greutert and written by Josh Stolberg and Peter Goldfinger. The film is the tenth installment overall in the Saw film series, and stars Tobin Bell, Shawnee Smith, Synnøve Macody Lund, Steven Brand, and Michael Beach.",
+    cast: [
+      "Tobin Bell",
+      "Shawnee Smith",
+      "Synnøve Macody Lund"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODRmMzAwMWItZjI5MS00NDYyLWFjMmMtZGUwYjQ1ZTBkNmYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODRmMzAwMWItZjI5MS00NDYyLWFjMmMtZGUwYjQ1ZTBkNmYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "20",
+    title: "Five Nights at Freddy's",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.9,
+    synopsis: "Five Nights at Freddy's is an upcoming American supernatural horror film directed by Emma Tammi, from a screenplay she co-wrote with Scott Cawthon and Seth Cuddeback, based on the video game franchise of the same name created and developed by Cawthon. It stars Josh Hutcherson, Matthew Lillard, Mary Stuart Masterson, Piper Rubio, Kat Conner Sterling, and Elizabeth Lail.",
+    cast: [
+      "Josh Hutcherson",
+      "Matthew Lillard",
+      "Mary Stuart Masterson"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "21",
+    title: "Ordinary Angels",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.4,
+    synopsis: "Ordinary Angels is an upcoming American drama film directed by Jon Gunn and starring Hilary Swank, Alan Ritchson, Emily Mitchell, and Nancy Travis.",
+    cast: [
+      "Hilary Swank",
+      "Alan Ritchson",
+      "Emily Mitchell"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzg3OTliZDMtNTBhYy00OGMzLTlhZmUtMDMyNjQ4NDc4MDk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzg3OTliZDMtNTBhYy00OGMzLTlhZmUtMDMyNjQ4NDc4MDk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "22",
+    title: "Kraven the Hunter",
+    year: 2023,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.2,
+    synopsis: "Kraven the Hunter is an upcoming American superhero film based on the Marvel Comics character of the same name, produced by Columbia Pictures in association with Marvel. Distributed by Sony Pictures Releasing, it is intended to be the fourth film in Sony's Spider-Man Universe (SSU). The film is being directed by J. C. Chandor from a screenplay by Art Marcum & Matt Holloway and Richard Wenk, and stars Aaron Taylor-Johnson in the title role alongside Ariana DeBose and Fred Hechinger.",
+    cast: [
+      "Aaron Taylor-Johnson",
+      "Ariana DeBose",
+      "Alessandro Nivola"
+    ],
+    runtime: "113 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDU0YTI5ODAtN2NmMS00YTg3LTgyNDItN2RmOWEzOTkzZjcyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "23",
+    title: "True Love",
+    year: 2023,
+    genres: [
+      "Science Fiction"
+    ],
+    rating: 3.9,
+    synopsis: "True Love is an upcoming American science fiction film directed, written and co-produced by Gareth Edwards. The film stars John David Washington, Gemma Chan, Ralph Ineson, Allison Janney, and Ken Watanabe.",
+    cast: [
+      "John David Washington",
+      "Gemma Chan",
+      "Ralph Ineson"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODUwNjIzODAtNjI0MS00ZDNkLWE0NjgtNmEzZjIyOTEyNTNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODUwNjIzODAtNjI0MS00ZDNkLWE0NjgtNmEzZjIyOTEyNTNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "24",
+    title: "Dumb Money",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.4,
+    synopsis: "Dumb Money is an upcoming American biographical comedy-drama film directed by Craig Gillespie, from a script by Lauren Schuker Blum and Rebecca Angelo, based on the book The Antisocial Network: The GameStop Short Squeeze and the Ragtag Group of Amateur Traders That Brought Wall Street to Its Knees by Ben Mezrich. The film chronicles the GameStop short squeeze from January 2021, and stars an ensemble cast featuring Paul Dano, Sebastian Stan, Seth Rogen, and Pete Davidson. Teddy Schwarzman, Aaron Ryder, and Gillespie are producing the project. The film will be released theatrically on October 20, 2023, by Stage 6 Films and Sony Pictures Releasing.",
+    cast: [
+      "Paul Dano",
+      "Sebastian Stan",
+      "Seth Rogen"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGVkOTcyOGEtYzEyMy00OWI4LWE3ZWItZTZkYTIzZmY2MGIyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGVkOTcyOGEtYzEyMy00OWI4LWE3ZWItZTZkYTIzZmY2MGIyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "25",
+    title: "Next Goal Wins",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Sports"
+    ],
+    rating: 3.8,
+    synopsis: "Next Goal Wins is an upcoming sports comedy-drama film directed by Taika Waititi, who co-wrote the screenplay with Iain Morris. The film is based on the 2014 documentary of the same name by Mike Brett and Steve Jamison about Dutch-American coach Thomas Rongen's efforts to lead the American Samoa national football team, considered the weakest football team in the world, to qualification for the 2014 FIFA World Cup.",
+    cast: [
+      "Michael Fassbender",
+      "Oscar Kightley",
+      "David Fane"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYThhZjU4MTYtNDI5Ni00NTE0LTk2NjUtZmZhMGFiNDhiNDM4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYThhZjU4MTYtNDI5Ni00NTE0LTk2NjUtZmZhMGFiNDhiNDM4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "26",
+    title: "Damsel",
+    year: 2023,
+    genres: [
+      "Fantasy"
+    ],
+    rating: 4,
+    synopsis: "Damsel is an upcoming American fantasy film directed by Juan Carlos Fresnadillo, written by Dan Mazeau, and starring Millie Bobby Brown, Nick Robinson, Angela Bassett, Robin Wright, Ray Winstone, Brooke Carter, and Shohreh Aghdashloo. It is set for release on Netflix on October 13, 2023.",
+    cast: [
+      "Millie Bobby Brown",
+      "Angela Bassett",
+      "Robin Wright"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTAzODc1ZjUtNGQwZS00YTc2LTliNzQtMDdlNzllNmU5Yzk4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTAzODc1ZjUtNGQwZS00YTc2LTliNzQtMDdlNzllNmU5Yzk4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "27",
+    title: "Killers of the Flower Moon",
+    year: 2023,
+    genres: [
+      "Crime",
+      "Drama",
+      "Western"
+    ],
+    rating: 4,
+    synopsis: "Killers of the Flower Moon is an upcoming American Western crime drama film directed by Martin Scorsese, from a screenplay he co-wrote with Eric Roth, based on the best-selling 2017 non-fiction book Killers of the Flower Moon: The Osage Murders and the Birth of the FBI by David Grann. Its plot centers on a series of Oklahoma murders in the Osage Nation during the 1920s, committed after oil was discovered on tribal land. The film stars Leonardo DiCaprio, who also serves as an executive producer, alongside Jesse Plemons, Lily Gladstone, Brendan Fraser, John Lithgow and Robert De Niro. It marks the seventh collaboration between Scorsese and DiCaprio as well as the eleventh collaboration between Scorsese and De Niro.",
+    cast: [
+      "Leonardo DiCaprio",
+      "Robert De Niro",
+      "Jesse Plemons"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWY5ZDVjNTUtODI5Yy00MjFhLWEyM2EtYzZjM2VjZTI0MTBjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWY5ZDVjNTUtODI5Yy00MjFhLWEyM2EtYzZjM2VjZTI0MTBjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "28",
+    title: "The Book of Clarence",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.8,
+    synopsis: "The Book of Clarence is an upcoming American epic film written and directed by Jeymes Samuel. The film is due for release on September 22, 2023.",
+    cast: [
+      "LaKeith Stanfield",
+      "Omar Sy",
+      "RJ Cyler"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGRkOWUzMGQtOTJkMy00ZDVkLTkxM2MtZTU3MGExYzQ1ZjRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGRkOWUzMGQtOTJkMy00ZDVkLTkxM2MtZTU3MGExYzQ1ZjRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "29",
+    title: "PAW Patrol: The Mighty Movie",
+    year: 2023,
+    genres: [
+      "Action",
+      "Adventure",
+      "Animated",
+      "Comedy"
+    ],
+    rating: 4.8,
+    synopsis: "PAW Patrol: The Mighty Movie is an upcoming Canadian computer-animated action-adventure comedy film based on the television series PAW Patrol created by Keith Chapman. Produced by Spin Master Entertainment, the toy company behind the series, with animation provided by Mikros Image, and released by Paramount Pictures and Nickelodeon Movies, it is the sequel to the 2021 film PAW Patrol: The Movie and the second film under the Spin Master Entertainment banner. Directed by Cal Brunker and written by Bob Barlen, it features elements from the Mighty Pups sub-theme of the main show. In the film, the PAW Patrol pups, who are given superpowers when a magical meteor crash lands in Adventure City, must stop the supervillains when Mayor Humdinger escaped from prison and teams up with Victoria Vance by planning to steal the superpowers for themselves, before its too late.",
+    cast: [
+      "Kristen Bell",
+      "Christian Convery",
+      "Mckenna Grace"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTM3NWM4ZTUtYjNhMC00Mzg1LWFmM2QtNGQ0NDg1NzkzYWY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTM3NWM4ZTUtYjNhMC00Mzg1LWFmM2QtNGQ0NDg1NzkzYWY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "30",
+    title: "Untitled The Exorcist film",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.7,
+    synopsis: "The untitled The Exorcist film is an upcoming American supernatural horror film directed by David Gordon Green, with a screenplay he co-wrote with Peter Sattler, from a story he co-authored with Scott Teems and Danny McBride. It stars Leslie Odom Jr., Ellen Burstyn, Ann Dowd and Jennifer Nettles.",
+    cast: [
+      "Leslie Odom Jr.",
+      "Ellen Burstyn",
+      "Ann Dowd"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzE1MGE3ZGEtNDg1Yi00MDE1LTgxYzEtZmEyMGQzNGE1OWJkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzE1MGE3ZGEtNDg1Yi00MDE1LTgxYzEtZmEyMGQzNGE1OWJkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "31",
+    title: "The Expendables 4",
+    year: 2023,
+    genres: [
+      "Action"
+    ],
+    rating: 3.5,
+    synopsis: "The Expendables 4 is an upcoming American action film directed by Scott Waugh, with a script co-written by Kurt Wimmer, Tad Daggerhart and Max Adams, from an original story by Kurt Wimmer, Spenser Cohen and Tad Daggerhart. It is the fourth installment in The Expendables franchise and the sequel to The Expendables 3 (2014), starring an ensemble cast including Jason Statham, Dolph Lundgren, Randy Couture, and Sylvester Stallone reprising their roles from previous films, alongside 50 Cent, Megan Fox, Andy García, Tony Jaa, Jacob Scipio, Iko Uwais, Levy Tran and Eddie Hall.",
+    cast: [
+      "Jason Statham",
+      "50 Cent",
+      "Megan Fox"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjgyMmRmM2EtYWY5ZC00ZTllLWJhM2QtMGRlNGEzMWEzYzllXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjgyMmRmM2EtYWY5ZC00ZTllLWJhM2QtMGRlNGEzMWEzYzllXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "32",
+    title: "The Hill",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Sports",
+      "Biography"
+    ],
+    rating: 4.2,
+    synopsis: "The Hill is an upcoming American biographical sports drama film directed by Jeff Celentano and written by Angelo Pizzo and Scott Marshall Smith. It stars Dennis Quaid, Colin Ford, Joelle Carter, Randy Houser, Bonnie Bedelia and Scott Glenn.",
+    cast: [
+      "Colin Ford",
+      "Dennis Quaid",
+      "Joelle Carter"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTU4NzA4MDEwNF5BMl5BanBnXkFtZTgwMTQxODYzNjM@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTU4NzA4MDEwNF5BMl5BanBnXkFtZTgwMTQxODYzNjM@._V1_.jpg"
+  },
+  {
+    id: "33",
+    title: "A Haunting in Venice",
+    year: 2023,
+    genres: [
+      "Mystery"
+    ],
+    rating: 4.7,
+    synopsis: "A Haunting in Venice is an upcoming American mystery film directed by Kenneth Branagh, based on Hallowe'en Party by Agatha Christie. The film is a sequel to Murder on the Orient Express (2017) and Death on the Nile (2022). Branagh reprises his role as Hercule Poirot, alongside Kyle Allen, Camille Cottin, Jamie Dornan, Tina Fey, Jude Hill, Kelly Reilly, and Michelle Yeoh.",
+    cast: [
+      "Kyle Allen",
+      "Kenneth Branagh",
+      "Camille Cottin"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTgwODdhZTMtYTFiNy00NzI1LTkwZWEtNjI2NWZiMzFmMjJlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTgwODdhZTMtYTFiNy00NzI1LTkwZWEtNjI2NWZiMzFmMjJlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "34",
+    title: "The Nun 2",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.7,
+    synopsis: "The Nun 2 is an upcoming American gothic supernatural horror film directed by Michael Chaves and written by Akela Cooper, Ian Goldberg, and Richard Naing from a story by Cooper. It serves as the sequel to The Nun (2018) and the ninth installment in The Conjuring Universe franchise. The film stars Storm Reid, Taissa Farmiga, and Anna Popplewell. Wan and Peter Safran return as co-producers, with Judson Scott also serving as a producer.",
+    cast: [
+      "Storm Reid",
+      "Taissa Farmiga",
+      "Anna Popplewell"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTE2N2UwOTktZmRlNi00NDllLWFlZDYtZDNiOTdjNDgxNGM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTE2N2UwOTktZmRlNi00NDllLWFlZDYtZDNiOTdjNDgxNGM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "35",
+    title: "Lift",
+    year: 2023,
+    genres: [
+      "Action",
+      "Comedy",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Lift is an upcoming American heist action comedy thriller film directed by F. Gary Gray, written by Dan Kunka and Jeremy Doner, and co-produced by and starring Kevin Hart with Gugu Mbatha-Raw, Vincent D’Onofrio, Úrsula Corberó, Billy Magnussen, Jacob Batalon, Jean Reno, and Sam Worthington.",
+    cast: [
+      "Kevin Hart",
+      "Gugu Mbatha-Raw",
+      "Vincent D’Onofrio"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWRkYmNiNDUtYTY0OC00YTZlLTlmMTYtMTJhMTU4OTBkMDY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWRkYmNiNDUtYTY0OC00YTZlLTlmMTYtMTJhMTU4OTBkMDY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "36",
+    title: "My Big Fat Greek Wedding 3",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "My Big Fat Greek Wedding 3 is an upcoming American romantic comedy film written and directed by Nia Vardalos. The film stars Vardalos, John Corbett, Elena Kampouris, Andrea Martin, and Lainie Kazan. It is the third installment in the My Big Fat Greek Wedding series. Filming began on June 22, 2022 in Athens, Greece, and wrapped on August 10.",
+    cast: [
+      "Nia Vardalos",
+      "John Corbett",
+      "Louis Mandylor"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTIwYThiOGYtZTdmMS00MjUyLWIxMGQtMjY0NDc3ZDFlOTA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTIwYThiOGYtZTdmMS00MjUyLWIxMGQtMjY0NDc3ZDFlOTA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "37",
+    title: "The Equalizer 3",
+    year: 2023,
+    genres: [
+      "Action"
+    ],
+    rating: 4.1,
+    synopsis: "The Equalizer 3 is an upcoming American vigilante action film directed by Antoine Fuqua. It is the sequel to the 2018 film The Equalizer 2, which was based on the TV series of the same name. The film stars Denzel Washington, Dakota Fanning, Sonia Ammar and Remo Girone. Washington and Fanning reuniting on-screen for the first time since 2004's Man on Fire. It follows retired U.S. Marine and former CIA officer Robert McCall. The film is the fifth collaboration between Washington and Fuqua, following Training Day (2001), The Equalizer (2014), The Magnificent Seven (2016), and The Equalizer 2 (2018).",
+    cast: [
+      "Denzel Washington",
+      "Dakota Fanning"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTM1OTAyYmQtY2ZiZS00NTRlLWEyZDYtZWMyYjMyOTE2YWE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTM1OTAyYmQtY2ZiZS00NTRlLWEyZDYtZWMyYjMyOTE2YWE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "38",
+    title: "Challengers",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Sports",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Challengers is an upcoming American romantic sports comedy film directed by Luca Guadagnino from a screenplay by Justin Kuritzkes. Its cast includes Zendaya, Mike Faist, and Josh O'Connor.",
+    cast: [
+      "Zendaya",
+      "Mike Faist",
+      "Josh O'Connor"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTcyZGIyODctZGJhOS00MWUyLWI5ZWEtMjg4YzhkMDczMDBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTcyZGIyODctZGJhOS00MWUyLWI5ZWEtMjg4YzhkMDczMDBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "39",
+    title: "Please Don't Destroy",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.8,
+    synopsis: "Please Don't Destroy is a comedy group in New York City consisting of Ben Marshall, John Higgins, and Martin Herlihy, who began collaborating as students at New York University. The group was originally founded in 2017 and based on an act titled Please Don't Destroy My Farm. The troupe performed monthly comedy shows, appeared at the New York Comedy Festival and produced sketch videos posted to YouTube. During the COVID-19 pandemic, they began creating shorter videos for TikTok and Twitter.",
+    cast: [
+      "John Higgins",
+      "Martin Herlihy"
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTg2YjYyMjItNWJlYi00OTVmLWE2NTYtOWViMjhmYjk5OWM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTg2YjYyMjItNWJlYi00OTVmLWE2NTYtOWViMjhmYjk5OWM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "40",
+    title: "They Listen",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.7,
+    synopsis: "They Listen is an upcoming American horror film written and directed by Chris Weitz. It stars Katherine Waterston, John Cho and Lukita Maxwell. Jason Blum and Weitz produce through their Blumhouse Productions and Depth of Field banners respectively, alongside Andrew Miano.",
+    cast: [
+      "John Cho",
+      "Katherine Waterston"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGFlMGU1ZmYtYmVkNy00ZDhjLWE4MWYtN2FhZjVlMTNjOWYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGFlMGU1ZmYtYmVkNy00ZDhjLWE4MWYtN2FhZjVlMTNjOWYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "41",
+    title: "Sympathy for the Devil",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.1,
+    synopsis: "Sympathy for the Devil is an upcoming American psychological horror film written by Luke Paradise, directed by Yuval Adler and starring Joel Kinnaman and Nicolas Cage.",
+    cast: [
+      "Joel Kinnaman",
+      "Nicolas Cage",
+      "Kaiwi Lyman-Mersereau"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGEzMDc1NWYtNTM1Yi00MjNlLTg3ODEtNjcxZTk1NjI2MzMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGEzMDc1NWYtNTM1Yi00MjNlLTg3ODEtNjcxZTk1NjI2MzMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "42",
+    title: "Haunted Mansion",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.8,
+    synopsis: "Haunted Mansion is an upcoming American supernatural horror comedy film directed by Justin Simien from a screenplay by Katie Dippold. The film stars LaKeith Stanfield, Tiffany Haddish, Owen Wilson, Danny DeVito, Rosario Dawson, Chase W. Dillon, Dan Levy, Jamie Lee Curtis, and Jared Leto. Produced by Walt Disney Pictures and Rideback, it is the second theatrical film adaptation of Walt Disney's theme park attraction The Haunted Mansion, following the 2003 film of the same name. In the film, Gabbie (Dawson) and Travis (Dillon) enlists the aid of a team to help exorcise the mansion and destroy the ghosts around them.",
+    cast: [
+      "LaKeith Stanfield",
+      "Tiffany Haddish",
+      "Owen Wilson"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmQ5ZDY0NjYtNzdlNC00ZWI4LTkwZDItNjNiNTRhZjNmN2RiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmQ5ZDY0NjYtNzdlNC00ZWI4LTkwZDItNjNiNTRhZjNmN2RiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "43",
+    title: "Blue Beetle",
+    year: 2023,
+    genres: [
+      "Superhero"
+    ],
+    rating: 3.9,
+    synopsis: "Blue Beetle is an upcoming American superhero film based on the DC Comics character Jaime Reyes / Blue Beetle, produced by DC Studios and the Safran Company, and directed by Angel Manuel Soto from a screenplay by Gareth Dunnet-Alcocer. It is intended to be the 14th film in the DC Extended Universe (DCEU). The film stars Xolo Maridueña as Jaime Reyes / Blue Beetle alongside Adriana Barraza, Damián Alcázar, Elpidia Carrillo, Bruna Marquezine, Raoul Max Trujillo, Susan Sarandon, and George Lopez.",
+    cast: [
+      "Xolo Maridueña",
+      "Adriana Barraza",
+      "Damián Alcázar"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTEyYzQzOTMtMWExNi00OWNjLTgwMDUtNzY0YjhmZDBiMTk2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTEyYzQzOTMtMWExNi00OWNjLTgwMDUtNzY0YjhmZDBiMTk2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "44",
+    title: "Gran Turismo",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Sports",
+      "Biography",
+      "Teen"
+    ],
+    rating: 4.4,
+    synopsis: "Gran Turismo is an upcoming American biographical coming of age sports drama film directed by Neill Blomkamp from a screenplay by Jason Hall and Zach Baylin. Produced by Columbia Pictures, PlayStation Productions, Trigger Street Productions, and 2.0 Entertainment, the film is based on the video game series of the same name developed by Polyphony Digital. Also based on a true story, the film stars Archie Madekwe as Jann Mardenborough, a teenage Gran Turismo player aspiring to be a race car driver. It also stars David Harbour, Orlando Bloom, Darren Barnet, Geri Halliwell Horner, and Djimon Hounsou.",
+    cast: [
+      "David Harbour",
+      "Orlando Bloom",
+      "Archie Madekwe"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjA0N2YyNmYtZDk4Ny00ODE2LThmZWQtNGJiMDk0YzhiNzE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjA0N2YyNmYtZDk4Ny00ODE2LThmZWQtNGJiMDk0YzhiNzE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "45",
+    title: "They Cloned Tyrone",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Mystery",
+      "Science Fiction"
+    ],
+    rating: 3.7,
+    synopsis: "They Cloned Tyrone is an upcoming American science fiction comedy mystery film directed by Juel Taylor in his feature film directorial debut, from a screenplay by Taylor and Tony Rettenmaier. The film stars John Boyega, Teyonah Parris, Kiefer Sutherland, and Jamie Foxx. Foxx also serves as a producer of the film.",
+    cast: [
+      "John Boyega",
+      "Teyonah Parris",
+      "Kiefer Sutherland"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDBlZDQ2NzYtNDU4Ny00MjZkLTk0YjctODg2NGZkODkwY2I1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDBlZDQ2NzYtNDU4Ny00MjZkLTk0YjctODg2NGZkODkwY2I1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "46",
+    title: "Cobweb",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.8,
+    synopsis: "Cobweb is an upcoming American horror film directed by Samuel Bodin in his feature directorial debut. It stars Woody Norman, Antony Starr, Lizzy Caplan, and Cleopatra Coleman. The film's screenplay by Chris Thomas Devlin was included in the 2018 Black List.",
+    cast: [
+      "Woody Norman",
+      "Antony Starr",
+      "Lizzy Caplan"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDY5ZGIwZjUtMmVhZi00OTBlLTk5ZTctOTY3Y2VlMGM1ZjI0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDY5ZGIwZjUtMmVhZi00OTBlLTk5ZTctOTY3Y2VlMGM1ZjI0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "47",
+    title: "White Bird: A Wonder Story",
+    year: 2023,
+    genres: [
+      "Drama",
+      "War"
+    ],
+    rating: 4,
+    synopsis: "White Bird: A Wonder Story is an upcoming American war drama film directed by Marc Forster and written by Mark Bomback, based on the 2019 graphic novel of the same name by R. J. Palacio. A spin-off, prequel and \"companion piece\" to the 2017 coming-of-age film Wonder, based on Palacio's 2012 novel, the film stars Ariella Glaser, Orlando Schwerdt, Bryce Gheisar, Gillian Anderson, and Helen Mirren, with Gheisar reprising his role as Julian from Wonder.",
+    cast: [
+      "Ariella Glaser",
+      "Orlando Schwerdt",
+      "Bryce Gheisar"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWJlNzBjNDctMzkxYi00NjRlLWE4MTUtYjU4NDc3OWY4ZjI2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWJlNzBjNDctMzkxYi00NjRlLWE4MTUtYjU4NDc3OWY4ZjI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "48",
+    title: "Heart of Stone",
+    year: 2023,
+    genres: [
+      "Action",
+      "Spy",
+      "Thriller"
+    ],
+    rating: 3.8,
+    synopsis: "Heart of Stone is an upcoming American spy action thriller film directed by Tom Harper from a screenplay by Greg Rucka and Allison Schroeder and a story by Rucka. The film stars Gal Gadot, Jamie Dornan, and Alia Bhatt.",
+    cast: [
+      "Gal Gadot",
+      "Jamie Dornan",
+      "Alia Bhatt"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTM5OTQ2ZTYtY2EzMC00Zjc3LTg3NWEtZWI4OTdlMjcwMGFlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTM5OTQ2ZTYtY2EzMC00Zjc3LTg3NWEtZWI4OTdlMjcwMGFlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "49",
+    title: "Meg 2: The Trench",
+    year: 2023,
+    genres: [
+      "Science Fiction"
+    ],
+    rating: 3.5,
+    synopsis: "Meg 2: The Trench is an upcoming science fiction film directed by Ben Wheatley, and written by Dean Georgaris, and Jon and Erich Hoeber, based on the 1999 book The Trench by Steve Alten. Serving as a sequel to the 2018 film The Meg, the film stars Jason Statham, Wu Jing, Sienna Guillory, Cliff Curtis, Skyler Samuels, Page Kennedy, Shuya Sophia Cai and Sergio Peris-Mencheta",
+    cast: [
+      "Jason Statham",
+      "Sienna Guillory",
+      "Cliff Curtis"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGNiOTFkYTUtMDdiMi00YmJlLTkzOTAtMGViYWRhZjY3ODhkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGNiOTFkYTUtMDdiMi00YmJlLTkzOTAtMGViYWRhZjY3ODhkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "50",
+    title: "Dreamin' Wild",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 5,
+    synopsis: "Dreamin' Wild is a 2022 American biographical drama film, written, directed, and produced by Bill Pohlad. It follows the life of singer-musician brothers Donnie and Joe Emerson. It stars Casey Affleck, Walton Goggins, Zooey Deschanel, Noah Jupe, Jack Dylan Grazer, Chris Messina, and Beau Bridges.",
+    cast: [
+      "Casey Affleck",
+      "Walton Goggins",
+      "Zooey Deschanel"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODU5N2ZiM2ItMWY4Yi00MWI1LTljZmYtYTBiODFiNTkzZTFlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODU5N2ZiM2ItMWY4Yi00MWI1LTljZmYtYTBiODFiNTkzZTFlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "51",
+    title: "Barbie",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.7,
+    synopsis: "Barbie is an upcoming comedy film directed by Greta Gerwig, who co-wrote it with Noah Baumbach. Based on the Barbie fashion dolls by Mattel, the film is the first live-action Barbie film after several computer-animated direct-to-video and streaming television films. The film stars Margot Robbie and Ryan Gosling as Barbie and Ken, respectively, alongside a large ensemble supporting cast.",
+    cast: [
+      "Margot Robbie",
+      "Ryan Gosling",
+      "America Ferrera"
+    ],
+    runtime: "99 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "52",
+    title: "Oppenheimer",
+    year: 2023,
+    genres: [
+      "Biography"
+    ],
+    rating: 4.6,
+    synopsis: "Oppenheimer is an upcoming biographical film written and directed by Christopher Nolan. It is based on American Prometheus, a biography written by Kai Bird and Martin J. Sherwin. The film stars Cillian Murphy as J. Robert Oppenheimer, an American theoretical physicist credited with being the \"father of the atomic bomb\" for his role in the Manhattan Project—the World War II undertaking that developed the first nuclear weapons, with a supporting ensemble cast that includes Emily Blunt, Robert Downey Jr., Matt Damon, Rami Malek, Florence Pugh, Benny Safdie, Michael Angarano, Josh Hartnett and Kenneth Branagh. It is a co-production between Universal Pictures, Syncopy Inc. and Atlas Entertainment, with Nolan producing the film alongside Emma Thomas and Charles Roven.",
+    cast: [
+      "Cillian Murphy",
+      "Emily Blunt",
+      "Matt Damon"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "53",
+    title: "Harold and the Purple Crayon",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.9,
+    synopsis: "Harold and the Purple Crayon is an upcoming American film directed by Carlos Saldanha, in his live-action directorial debut. It is based on the 1955 children’s book of the same name written by Crockett Johnson, and will star Zachary Levi, Lil Rel Howery, Zooey Deschanel, Ravi Patel, Camille Guaty, Tanya Reynolds, and Pete Gardner.",
+    cast: [
+      "Zachary Levi",
+      "Lil Rel Howery",
+      "Zooey Deschanel"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzM0MmUyNDgtZmYwNi00ZGI2LWJhNjYtMDQzMzhjOTcyNjdhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzM0MmUyNDgtZmYwNi00ZGI2LWJhNjYtMDQzMzhjOTcyNjdhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "54",
+    title: "No Hard Feelings",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Teen",
+      "Erotic"
+    ],
+    rating: 3.9,
+    synopsis: "No Hard Feelings is an upcoming American coming of age sex comedy film directed by Gene Stupnitsky from a screenplay he co-wrote with John Phillips. Jennifer Lawrence produces and stars alongside Andrew Barth Feldman. Appearing in supporting roles are Matthew Broderick, Laura Benanti, Natalie Morales, Scott MacArthur and Ebon Moss-Bachrach.",
+    cast: [
+      "Jennifer Lawrence",
+      "Andrew Barth Feldman",
+      "Laura Benanti"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjk1NmZiNzYtZGUyYi00YzEwLTgwNWQtM2VmOWFmMGIwZDM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjk1NmZiNzYtZGUyYi00YzEwLTgwNWQtM2VmOWFmMGIwZDM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "55",
+    title: "Biosphere",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Biosphere.",
+    cast: [
+      "Sterling K. Brown",
+      "Mark Duplass"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDMxZTU2NGQtOTAxMi00Y2FjLWEzOTQtNjU2OWIxZDg5OTMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDMxZTU2NGQtOTAxMi00Y2FjLWEzOTQtNjU2OWIxZDg5OTMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "56",
+    title: "Ruby Gillman, Teenage Kraken",
+    year: 2023,
+    genres: [
+      "Action",
+      "Animated",
+      "Comedy",
+      "Fantasy"
+    ],
+    rating: 3.8,
+    synopsis: "Ruby Gillman, Teenage Kraken is an upcoming American computer-animated coming-of-age fantasy action-comedy film produced by DreamWorks Animation and distributed by Universal Pictures. It is directed by Kirk DeMicco and co-directed by Faryn Pearl, from a screenplay written by DeMicco and Pam Brady, and a story by Brady, Brian C. Brown, and Elliott DiGuiseppi. The film features an ensemble voice cast including Lana Condor, Toni Collette, Annie Murphy, Sam Richardson, Liza Koshy, Will Forte, Colman Domingo, Jaboukie Young-White, Blue Chapman, Eduardo Franco, Ramona Young, Echo Kellum, Nicole Byer, and Jane Fonda. In the film, sixteen-year-old Ruby Gillman (Condor) is desperate to fit in at Oceanside High, but when she breaks her mother's (Collette) rule about going on the beach with any would-be friends, Ruby discovers that she is a direct descendant of the warrior Kraken queens and is destined to inherit the throne from her commanding grandmother, the Warrior Queen of the Seven Seas (Fonda).",
+    cast: [
+      "Lana Condor",
+      "Toni Collette",
+      "Annie Murphy"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjIzMDI5N2YtYzY0Mi00MzU5LWFiNGEtZDI4Yjc2MmI2NWNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjIzMDI5N2YtYzY0Mi00MzU5LWFiNGEtZDI4Yjc2MmI2NWNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "57",
+    title: "Joy Ride",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.1,
+    synopsis: "Joy Ride is a 2023 American comedy film directed by Adele Lim, in her feature directorial debut, and written by Cherry Chevapravatdumrong and Teresa Hsiao, from a story by Lim, Chevapravatdumrong and Hsiao. The film stars Ashley Park, Sherry Cola, Stephanie Hsu, and Sabrina Wu.",
+    cast: [
+      "Ashley Park",
+      "Sherry Cola",
+      "Stephanie Hsu"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODhlNjFkNWEtNDMzNi00YjE1LWI3N2QtNzBmZjIyNTlkZjA2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODhlNjFkNWEtNDMzNi00YjE1LWI3N2QtNzBmZjIyNTlkZjA2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "58",
+    title: "The Perfect Find",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "The Perfect Find is an upcoming American romantic comedy film written by Leigh Davenport and directed by Numa Perrier. It is based on the book of the same name by Tia Williams. The film stars Gina Torres, Keith Powers, and Gabrielle Union, who is also a co-producer.",
+    cast: [
+      "Gabrielle Union",
+      "Keith Powers",
+      "Gina Torres"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODM3NDliMmItZmZkOS00N2FhLTk3ZTQtMDljZDhjNWEyNDYyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODM3NDliMmItZmZkOS00N2FhLTk3ZTQtMDljZDhjNWEyNDYyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "59",
+    title: "Theater Camp",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.7,
+    synopsis: "Theater Camp is a 2023 American comedy film directed by Molly Gordon and Nick Lieberman in their directorial debuts, from a screenplay by Gordon, Lieberman, Ben Platt, and Noah Galvin. A feature-length adaptation of the 2020 short film of the same name, the film features an ensemble cast, led by Gordon, Platt, Galvin, Jimmy Tatro, Patti Harrison, Ayo Edebiri, Alan Kim, and Amy Sedaris. Will Ferrell serves as a producer under his Gloria Sanchez Productions banner.",
+    cast: [
+      "Molly Gordon",
+      "Ben Platt",
+      "Noah Galvin"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDMzNzdhYTctOTg4MC00MGZjLWI2ZmEtZTE2YjU4MWM3NGM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDMzNzdhYTctOTg4MC00MGZjLWI2ZmEtZTE2YjU4MWM3NGM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "60",
+    title: "Insidious: The Red Door",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.3,
+    synopsis: "Insidious: The Red Door is an upcoming American supernatural horror film directed by Patrick Wilson in his directorial debut, with a screenplay by Scott Teems from a story by series creator Leigh Whannell. The film is a direct sequel to Insidious (2010) and Insidious: Chapter 2 (2013), and serves as both the fifth installment in the Insidious franchise and the fifth installment in terms of chronology. Wilson, Rose Byrne, Ty Simpkins and Andrew Astor reprise their roles from the films.",
+    cast: [
+      "Ty Simpkins",
+      "Patrick Wilson",
+      "Rose Byrne"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWMwMmY2MzUtZDc1Ni00MDlmLThhOWUtYjVlNmQzMGFkMzZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWMwMmY2MzUtZDc1Ni00MDlmLThhOWUtYjVlNmQzMGFkMzZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "61",
+    title: "Extraction 2",
+    year: 2023,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 4.3,
+    synopsis: "Extraction 2 is an upcoming American action thriller film directed by Sam Hargrave and written by Joe Russo, based on the graphic novel Ciudad by Ande Parks, Joe Russo, Anthony Russo, Fernando León González, and Eric Skillman. A sequel to the 2020 film, Chris Hemsworth, Golshifteh Farahani and Adam Bessa reprise their roles, with Olga Kurylenko, Daniel Bernhardt and Tinatin Dalakishvili joining the cast.",
+    cast: [
+      "Chris Hemsworth",
+      "Golshifteh Farahani",
+      "Adam Bessa"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGQwNDdhODAtY2Y0Ni00YzFhLTk1OGUtY2RkMDAzNzBmZjAxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGQwNDdhODAtY2Y0Ni00YzFhLTk1OGUtY2RkMDAzNzBmZjAxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "62",
+    title: "The Boogeyman",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.6,
+    synopsis: "The Boogeyman is an upcoming American supernatural horror film directed by Rob Savage from a screenplay by Scott Beck, Bryan Woods and Mark Heyman, based on the 1973 short story of the same name by Stephen King. The film stars Madison Hu, Vivien Lyra Blair, Sophie Thatcher, David Dastmalchian, Chris Messina, and Jaynie Verdin.",
+    cast: [
+      "Sophie Thatcher",
+      "Chris Messina",
+      "Vivien Lyra Blair"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzIzOThmYjAtMTEwMy00ZmEwLWIzOGMtYjZkYmI3ODk0OGQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzIzOThmYjAtMTEwMy00ZmEwLWIzOGMtYjZkYmI3ODk0OGQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "63",
+    title: "The Blackening",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.6,
+    synopsis: "The Blackening is a 2022 American comedy horror film directed by Tim Story and co-written by Tracy Oliver and Dewayne Perkins, who also stars. Expanded from a 2018 short film by the improv comedy troupe 3Peat, the film follows an all-Black group of friends who encounter a killer while staying at a cabin in the woods.",
+    cast: [
+      "Grace Byers",
+      "Jermaine Fowler",
+      "Melvin Gregg"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDI3NTRjNmItYjBkMS00OGRhLTk2MTEtNWM4OTA1MGU5NWExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDI3NTRjNmItYjBkMS00OGRhLTk2MTEtNWM4OTA1MGU5NWExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "64",
+    title: "Strays",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.7,
+    synopsis: "Strays is an upcoming American comedy film directed and produced by Josh Greenbaum. The film stars Will Ferrell, Jamie Foxx, Will Forte, Isla Fisher, Randall Park, Josh Gad, Harvey Guillén, Rob Riggle, Brett Gelman, Jamie Demetriou, and Sofia Vergara.",
+    cast: [
+      "Will Ferrell",
+      "Jamie Foxx",
+      "Will Forte"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDZjN2E2MDYtZWY4ZS00NGMxLWE3MjktYTQ3MzY2ZmNlMTY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDZjN2E2MDYtZWY4ZS00NGMxLWE3MjktYTQ3MzY2ZmNlMTY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "65",
+    title: "Elemental",
+    year: 2023,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Elemental is an upcoming American computer-animated romantic comedy-drama film produced by Walt Disney Pictures and Pixar Animation Studios and distributed by Walt Disney Studios Motion Pictures. Directed by Peter Sohn and produced by Denise Ream, it is written by John Hoberg, Kat Likkel, Brenda Hsueh, and Sohn. The overall twenty-seventh feature film produced by the studio, the film stars the voices of Leah Lewis, Mamoudou Athie, Ronnie del Carmen, Shila Ommi, Wendi McLendon-Covey, Catherine O'Hara, Mason Wertheimer, Joe Pera, and Matt Yang King. Set in a world inhabited by anthropomorphic elements of nature, the story depicts the bond between a fire element Ember Lumen (Lewis) and a water element Wade Ripple (Athie), who cannot touch each other but discover how much they have in common.",
+    cast: [
+      "Leah Lewis",
+      "Mamoudou Athie",
+      "Ronnie del Carmen"
+    ],
+    runtime: "147 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjU2MjE1OGItZjdmYS00ZmIyLTljNjYtOWI5ZGRkZjM4NDEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjU2MjE1OGItZjdmYS00ZmIyLTljNjYtOWI5ZGRkZjM4NDEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "66",
+    title: "You Hurt My Feelings",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.2,
+    synopsis: "You Hurt My Feelings is a 2023 American comedy-drama film written, directed and produced by Nicole Holofcener. It stars Julia Louis-Dreyfus, Tobias Menzies, Michaela Watkins, Arian Moayed and Jeannie Berlin.",
+    cast: [
+      "Julia Louis-Dreyfus",
+      "Tobias Menzies",
+      "Michaela Watkins"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGRkNzg2ODctMGYxMi00YzAzLTk1OTMtOWVhMThjOGZhNjkyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGRkNzg2ODctMGYxMi00YzAzLTk1OTMtOWVhMThjOGZhNjkyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "67",
+    title: "The Flash",
+    year: 2023,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4,
+    synopsis: "The Flash is an upcoming American superhero film based on the DC Comics character of the same name. Produced by DC Studios, Double Dream, and the Disco Factory, and set for distribution by Warner Bros. Pictures, it is intended to be the 13th installment in the DC Extended Universe (DCEU). The film is directed by Andy Muschietti from a screenplay by Christina Hodson and stars Ezra Miller as Barry Allen / The Flash alongside Sasha Calle, Michael Shannon, Ron Livingston, Maribel Verdú, Kiersey Clemons, Antje Traue, and Michael Keaton. In the film, Barry travels back in time to prevent his mother's murder, which brings unintended consequences.",
+    cast: [
+      "Ezra Miller",
+      "Sasha Calle",
+      "Michael Shannon"
+    ],
+    runtime: "94 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjU0ZjZhNDQtMDhkYi00OWQyLWE3NGYtNzBlY2VmM2I4ZDg5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjU0ZjZhNDQtMDhkYi00OWQyLWE3NGYtNzBlY2VmM2I4ZDg5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "68",
+    title: "Asteroid City",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Science Fiction",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Asteroid City is an upcoming American science fiction romantic comedy drama film written, directed and co-produced by Wes Anderson, based on a story by Anderson and Roman Coppola. The film follows the transformative events that occur at an annual Junior Stargazer convention in 1955. It features a large ensemble cast that includes Jason Schwartzman, Scarlett Johansson, Tom Hanks, Jeffrey Wright, Tilda Swinton, Bryan Cranston, Edward Norton, Adrien Brody, Liev Schreiber, Hope Davis, Steve Park, Rupert Friend, Maya Hawke, Steve Carell, Matt Dillon, Hong Chau, Willem Dafoe, Margot Robbie, Tony Revolori, Jake Ryan, and Jeff Goldblum.",
+    cast: [
+      "Jason Schwartzman",
+      "Scarlett Johansson",
+      "Tom Hanks"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjY2YjYxNjEtNDJkYi00ZmJjLWIwYTEtNjEyZDgzY2M5ZDc3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjY2YjYxNjEtNDJkYi00ZmJjLWIwYTEtNjEyZDgzY2M5ZDc3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "69",
+    title: "Past Lives",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Past Lives is a 2023 American romantic drama film written and directed by Celine Song in her feature directorial debut. The film stars Greta Lee, Teo Yoo and John Magaro, and follows a reunion between two childhood friends as they contemplate their relationship and their own lives.",
+    cast: [
+      "Greta Lee",
+      "Teo Yoo",
+      "John Magaro"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQyMTNhNjUtN2VmYy00NWRhLTkwOTctMGVmNTBmNDIxYjZhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQyMTNhNjUtN2VmYy00NWRhLTkwOTctMGVmNTBmNDIxYjZhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "70",
+    title: "Flamin' Hot",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.1,
+    synopsis: "Flamin' Hot is a 2023 American biographical drama film directed by Eva Longoria, and written by Lewis Colick and Linda Yvette. It stars Jesse Garcia, Annie Gonzalez, Emilio Rivera, Dennis Haysbert, Matt Walsh, and Tony Shalhoub. It is based on the memoir A Boy, a Burrito and a Cookie: From Janitor to Executive by Richard Montañez, and on the life stories of Montañez and Judy Montañez.",
+    cast: [
+      "Jesse Garcia",
+      "Annie Gonzalez",
+      "Dennis Haysbert"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjk0ZDljYmUtZDVmZC00NjU2LTg1NDItNTk2NDFlOGJiNjJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjk0ZDljYmUtZDVmZC00NjU2LTg1NDItNTk2NDFlOGJiNjJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "71",
+    title: "Master Gardener",
+    year: 2023,
+    genres: [
+      "Crime",
+      "Independent",
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Master Gardener is a 2022 American independent crime thriller film written and directed by Paul Schrader and starring Joel Edgerton, Sigourney Weaver, and Quintessa Swindell. The film had its world premiere at the 79th Venice International Film Festival on September 3, 2022.",
+    cast: [
+      "Joel Edgerton",
+      "Sigourney Weaver",
+      "Quintessa Swindell"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDMwN2U3OWQtNGUwMi00M2M3LThmMGQtYWVjZjE3NmQxOWIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDMwN2U3OWQtNGUwMi00M2M3LThmMGQtYWVjZjE3NmQxOWIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "72",
+    title: "About My Father",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4,
+    synopsis: "About My Father is an upcoming American comedy film directed by Laura Terruso from a screenplay by Sebastian Maniscalco and Austen Earl. The film stars Maniscalco and is loosely based on his life and his relationship with his father, played by Robert De Niro. Leslie Bibb, Anders Holm, David Rasche, and Kim Cattrall co-star in supporting roles.",
+    cast: [
+      "Sebastian Maniscalco",
+      "Robert De Niro",
+      "Leslie Bibb"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmQ2YjA3NzgtNWZjYS00ZTEwLTkxZDUtOTE5OWU5ZGRiMmQ0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmQ2YjA3NzgtNWZjYS00ZTEwLTkxZDUtOTE5OWU5ZGRiMmQ0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "73",
+    title: "Kandahar",
+    year: 2023,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.6,
+    synopsis: "Kandahar is an upcoming American action thriller film directed by Ric Roman Waugh, written by Mitchell LaFortune, and produced by Gerard Butler, who also stars in the film alongside Ali Fazal. The film is scheduled to be released in theaters on May 26, 2023, by Open Road Films.",
+    cast: [
+      "Gerard Butler",
+      "Ali Fazal",
+      "Olivia-Mai Barrett"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTQ5NTlkZTctODdmMi00Nzc1LWI0NTMtYmY0MDhjZTBkYjI2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTQ5NTlkZTctODdmMi00Nzc1LWI0NTMtYmY0MDhjZTBkYjI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "74",
+    title: "Knights of the Zodiac",
+    year: 2023,
+    genres: [
+      "Action",
+      "Fantasy"
+    ],
+    rating: 3.5,
+    synopsis: "Knights of the Zodiac  is a 2023 action fantasy film directed by Tomasz Bagiński from a screenplay by Josh Campbell, Matt Stuecken, and Kiel Murray, based on the manga Saint Seiya by Masami Kurumada. The film stars Mackenyu, Famke Janssen, Madison Iseman, Diego Tinoco, Mark Dacascos, Nick Stahl, and Sean Bean.",
+    cast: [
+      "Mackenyu",
+      "Famke Janssen",
+      "Madison Iseman"
+    ],
+    runtime: "144 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTVmMjZiN2QtYzgzYy00ZThjLThmZDQtYjVhNWFkMTkyMTM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTVmMjZiN2QtYzgzYy00ZThjLThmZDQtYjVhNWFkMTkyMTM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "75",
+    title: "Fast X",
+    year: 2023,
+    genres: [
+      "Action"
+    ],
+    rating: 4.1,
+    synopsis: "Fast X is an upcoming American action film directed by Louis Leterrier from a screenplay by Justin Lin, Zach Dean, and Dan Mazeau. It is the sequel to F9 (2021), serving as the tenth and penultimate main installment, and the eleventh full-length film in the Fast & Furious franchise. The film stars an ensemble cast including Vin Diesel, Michelle Rodriguez, Tyrese Gibson, Chris \"Ludacris\" Bridges, Jason Momoa, Nathalie Emmanuel, Jordana Brewster, John Cena, Jason Statham, Sung Kang, Alan Ritchson, Daniela Melchior, Scott Eastwood, Helen Mirren, Charlize Theron, Brie Larson, and Rita Moreno.",
+    cast: [
+      "Vin Diesel",
+      "Michelle Rodriguez",
+      "Tyrese Gibson"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzEwZjczOTktYzU1OS00YjJlLTgyY2UtNWEzODBlN2RjZDEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "76",
+    title: "Crater",
+    year: 2023,
+    genres: [
+      "Adventure",
+      "Science Fiction"
+    ],
+    rating: 3.7,
+    synopsis: "Crater is an upcoming American coming-of-age science fiction adventure film directed by Kyle Patrick Alvarez from a screenplay by John Griffin and story by Griffin and Rpin Suwannath. It stars Isaiah Russell-Bailey, Mckenna Grace, Billy Barratt, Orson Hong, Thomas Boyce, and Scott Mescudi. The film is scheduled to be released on Disney+ on May 12, 2023.",
+    cast: [
+      "Isaiah Russell-Bailey",
+      "Mckenna Grace",
+      "Billy Barratt"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmY4NWMzMjAtZjIzMC00NzgxLWI3OWQtMjZkNzQzYzY3NDJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmY4NWMzMjAtZjIzMC00NzgxLWI3OWQtMjZkNzQzYzY3NDJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "77",
+    title: "The Machine",
+    year: 2023,
+    genres: [
+      "Action",
+      "Comedy"
+    ],
+    rating: 4.2,
+    synopsis: "The Machine is an upcoming American action comedy film directed by Peter Atencio inspired by the 2016 stand-up routine of the same name created by Bert Kreischer, who also stars as a fictionalized version of himself. The film also stars Mark Hamill, Jess Gabor, Jimmy Tatro, Stephanie Kurtzuba and Mercedes De La Cruz.",
+    cast: [
+      "Bert Kreischer",
+      "Mark Hamill",
+      "Jimmy Tatro"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWYxZTM1ZGMtMjg5MC00NzcyLTk0ZTEtZWI0ZThkNDJiYjZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWYxZTM1ZGMtMjg5MC00NzcyLTk0ZTEtZWI0ZThkNDJiYjZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "78",
+    title: "Monica",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.9,
+    synopsis: "Monica is a 2022 drama film directed by Andrea Pallaoro, from a screenplay by Pallaoro and Orlando Tirado. It stars Trace Lysette, Patricia Clarkson, Emily Browning, and Adriana Barraza.",
+    cast: [
+      "Trace Lysette",
+      "Patricia Clarkson",
+      "Emily Browning"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://upload.wikimedia.org/wikipedia/en/3/3a/Monica_%282022_film%29.jpg",
+    backdropUrl: "https://upload.wikimedia.org/wikipedia/en/3/3a/Monica_%282022_film%29.jpg"
+  },
+  {
+    id: "79",
+    title: "White Men Can't Jump",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Sports"
+    ],
+    rating: 3.7,
+    synopsis: "White Men Can't Jump is an upcoming American sports comedy film directed by Charles \"Calmatic\" Kidd II and written by Kenya Barris and Doug Hall. It is a remake of the 1992 film of the same name. It stars Sinqua Walls and Jack Harlow in the lead roles, while Lance Reddick, Teyana Taylor, and Laura Harrier also in the supporting roles.",
+    cast: [
+      "Sinqua Walls",
+      "Jack Harlow",
+      "Teyana Taylor"
+    ],
+    runtime: "120 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTE1ZmEyNDgtMjQyOS00YzUyLTlkMjYtNmJkYWUyZDJjYjczXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTE1ZmEyNDgtMjQyOS00YzUyLTlkMjYtNmJkYWUyZDJjYjczXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "80",
+    title: "The Little Mermaid",
+    year: 2023,
+    genres: [
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 4.3,
+    synopsis: "The Little Mermaid is an upcoming American musical fantasy film directed by Rob Marshall from a screenplay written by David Magee. It is a live-action adaptation of Disney's 1989 animated film of the same name, which itself is loosely based on the 1837 fairy tale of the same title by Hans Christian Andersen. The film stars Halle Bailey in the titular role, Jonah Hauer-King, Daveed Diggs, Awkwafina, Jacob Tremblay, Noma Dumezweni, Javier Bardem, and Melissa McCarthy.",
+    cast: [
+      "Halle Bailey",
+      "Jonah Hauer-King",
+      "Daveed Diggs"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTM4MWY0OTEtY2E4ZC00NDdhLThkY2ItYTlmNWQxNTNkZTRmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTM4MWY0OTEtY2E4ZC00NDdhLThkY2ItYTlmNWQxNTNkZTRmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "81",
+    title: "Hypnotic",
+    year: 2023,
+    genres: [
+      "Action",
+      "Science Fiction",
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "Hypnotic is a 2023 American science fiction action thriller film co-written and directed by Robert Rodriguez. The film features an ensemble cast that includes Ben Affleck, Alice Braga, J. D. Pardo, Hala Finley, Dayo Okeniyi, Jeff Fahey, Jackie Earle Haley, and William Fichtner.",
+    cast: [
+      "Ben Affleck",
+      "Alice Braga",
+      "William Fichtner"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzUyNzBjMjQtNmJhOS00M2U0LTg0MWEtZDVmYmNjNGY2N2U4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzUyNzBjMjQtNmJhOS00M2U0LTg0MWEtZDVmYmNjNGY2N2U4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "82",
+    title: "Somewhere in Queens",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.7,
+    synopsis: "Somewhere in Queens is a 2022 American comedy film directed by Ray Romano from a screenplay by Romano and Mark Stegemann. The film stars Romano and Laurie Metcalf. It premiered at the Tribeca Film Festival on June 10, 2022. It is scheduled to be released in the United States on April 21, 2023, by Roadside Attractions and Lionsgate.",
+    cast: [
+      "Ray Romano",
+      "Laurie Metcalf",
+      "Jacob Ward"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2ZiMjliMmUtZWVlYS00ZGJkLWI1NmMtYzllNmM0YmI2NzNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2ZiMjliMmUtZWVlYS00ZGJkLWI1NmMtYzllNmM0YmI2NzNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "83",
+    title: "The Mother",
+    year: 2023,
+    genres: [
+      "Action",
+      "Drama"
+    ],
+    rating: 3.7,
+    synopsis: "The Mother is an upcoming American action drama film directed by Niki Caro with a screenplay by Misha Green, Andrea Berloff and Peter Craig, from a story by Green. The film stars Jennifer Lopez, Joseph Fiennes, Omari Hardwick, and Gael García Bernal.",
+    cast: [
+      "Jennifer Lopez",
+      "Joseph Fiennes",
+      "Omari Hardwick"
+    ],
+    runtime: "94 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWM0NTIzMWEtOWU1ZC00OTEyLThmNTItYjM1N2Y1MDllMGYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWM0NTIzMWEtOWU1ZC00OTEyLThmNTItYjM1N2Y1MDllMGYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "84",
+    title: "Love Again",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Love Again is an upcoming American romantic comedy-drama film written and directed by James C. Strouse. It is an English-language remake of the 2016 German film SMS für Dich, itself based on a novel by Sofie Cramer. The film stars Priyanka Chopra Jonas, Sam Heughan, and Celine Dion portraying a fictionalized version of herself in her first film role.",
+    cast: [
+      "Priyanka Chopra",
+      "Sam Heughan",
+      "Russell Tovey"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGYzYzRhNWEtYWY5ZS00NWUyLWIzOTUtY2VkODIyNjc5NDNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGYzYzRhNWEtYWY5ZS00NWUyLWIzOTUtY2VkODIyNjc5NDNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "85",
+    title: "Chevalier",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.3,
+    synopsis: "Chevalier is a 2022 American biographical drama film directed by Stephen Williams and written by Stefani Robinson. It is based on the life of the titular French-Caribbean musician Joseph Bologne, Chevalier de Saint-Georges, played by Kelvin Harrison Jr. The film also stars Samara Weaving, Lucy Boynton, Marton Csokas, Alex Fitzalan, and Minnie Driver.",
+    cast: [
+      "Kelvin Harrison Jr.",
+      "Samara Weaving",
+      "Lucy Boynton"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2Q1NDIyNDAtMzZiMy00ZTE5LTk3NzYtYWI0ZDdlODE3ZTI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2Q1NDIyNDAtMzZiMy00ZTE5LTk3NzYtYWI0ZDdlODE3ZTI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "86",
+    title: "Sisu",
+    year: 2023,
+    genres: [
+      "Action",
+      "Historical"
+    ],
+    rating: 3.5,
+    synopsis: "Sisu is a 2022 historical action film written and directed by Jalmari Helander. Set in Finnish Lapland during World War II, the film follows a gold prospector who attempts to secure his gold from a Nazi death squad led by a brutal Schutzstaffel officer. Shot in 2021 in Lapland with a budget of about six million euros, the film stars Jorma Tommila, Aksel Hennie, Jack Doolan and Mimosa Willamo.",
+    cast: [
+      "Jorma Tommila",
+      "Aksel Hennie",
+      "Jack Doolan"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjAxN2RmYjktMDE2OS00MWM5LThlZTQtZDY4YzAxMWQyZWY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjAxN2RmYjktMDE2OS00MWM5LThlZTQtZDY4YzAxMWQyZWY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "87",
+    title: "Big George Foreman",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Sports",
+      "Biography"
+    ],
+    rating: 3.8,
+    synopsis: "Big George Foreman is an upcoming American biographical sports drama film directed by George Tillman Jr. The film focuses on the life of world heavyweight boxing champion George Foreman, played by Khris Davis. It also stars Jasmine Mathews, John Magaro, Sullivan Jones, Lawrence Gilliard Jr., Sonja Sohn, and Forest Whitaker.",
+    cast: [
+      "Khris Davis",
+      "Jasmine Mathews",
+      "John Magaro"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWM3N2JiYzMtOTY0NS00OWY2LWJmMjktZTU1YWEyYWY2OTg3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWM3N2JiYzMtOTY0NS00OWY2LWJmMjktZTU1YWEyYWY2OTg3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "88",
+    title: "Book Club: The Next Chapter",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Book Club: The Next Chapter is an upcoming American romantic comedy film, written and directed by Bill Holderman, and starring Diane Keaton, Jane Fonda, Candice Bergen and Mary Steenburgen. The film is a sequel to 2018 film Book Club.",
+    cast: [
+      "Diane Keaton",
+      "Jane Fonda",
+      "Candice Bergen"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjQ5ZjlmOTAtMGQxNy00YWUxLThlZWYtYjM4NTQyMTBiZDUwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjQ5ZjlmOTAtMGQxNy00YWUxLThlZWYtYjM4NTQyMTBiZDUwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "89",
+    title: "A Tourist's Guide to Love",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "A Tourist's Guide to Love is an upcoming romantic comedy film directed by Steven K. Tsuchida and written by Eirene Donohue. It stars Rachael Leigh Cook, Scott Ly, Missi Pyle, Ben Feldman, Nondumiso Tembe and Andrew Barth Feldman.",
+    cast: [
+      "Rachael Leigh Cook",
+      "Scott Ly",
+      "Missi Pyle"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2U5MGViODMtZWJiZS00YTI0LWJjNjctYmNjODEyZjcxYmQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2U5MGViODMtZWJiZS00YTI0LWJjNjctYmNjODEyZjcxYmQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "90",
+    title: "Peter Pan & Wendy",
+    year: 2023,
+    genres: [
+      "Adventure",
+      "Fantasy"
+    ],
+    rating: 3.9,
+    synopsis: "Peter Pan & Wendy is an upcoming American fantasy adventure film directed by David Lowery from a screenplay he co-wrote with Toby Halbrooks. Jim Whitaker served as producer on the Walt Disney Pictures production, which is a live-action adaptation of Walt Disney's 1953 animated film Peter Pan, in turn based on the 1904 play Peter Pan; or, the Boy Who Wouldn't Grow Up by J. M. Barrie. The film stars Alexander Molony and Ever Anderson in the title roles. Jude Law, Yara Shahidi, Alyssa Wapanatâhk, Joshua Pickering, Jacobi Jupe, Molly Parker, Alan Tudyk, and Jim Gaffigan also appear in supporting roles.",
+    cast: [
+      "Jude Law",
+      "Alexander Molony",
+      "Ever Anderson"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmNkZGM0ODctNjA1OS00Y2Q4LTk5ZmQtNzhmNTgyODIyMjdlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmNkZGM0ODctNjA1OS00Y2Q4LTk5ZmQtNzhmNTgyODIyMjdlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "91",
+    title: "The Covenant",
+    year: 2023,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 4.3,
+    synopsis: "Guy Ritchie's The Covenant is an upcoming action thriller film co-written, co-produced and directed by Guy Ritchie. The film stars Jake Gyllenhaal and Dar Salim, and is scheduled to be released theatrically in the United States on April 21, 2023, by Metro-Goldwyn-Mayer.",
+    cast: [
+      "Jake Gyllenhaal",
+      "Dar Salim",
+      "Antony Starr"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDY2NmI1YzAtYmE2OS00NTY4LWJjM2UtNjQzMDliYzc5MzUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDY2NmI1YzAtYmE2OS00NTY4LWJjM2UtNjQzMDliYzc5MzUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "92",
+    title: "Quasi",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Quasi.",
+    cast: [
+      "Jay Chandrasekhar",
+      "Kevin Heffernan",
+      "Steve Lemme"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjQ0Y2FmM2UtYjRhNy00NzBkLTljMmUtNDZjNzY2NmYzNzExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjQ0Y2FmM2UtYjRhNy00NzBkLTljMmUtNDZjNzY2NmYzNzExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "93",
+    title: "Sweetwater",
+    year: 2023,
+    genres: [
+      "Independent",
+      "Sports",
+      "Biography"
+    ],
+    rating: 4.7,
+    synopsis: "Sweetwater is an upcoming American sports biographical independent film directed and written by Martin Guigui. It stars Everett Osborne, Cary Elwes, Jeremy Piven, Richard Dreyfuss and Kevin Pollak. Osborne portrays Nat Clifton as the film depicts the true story of his career in the 1950s, starting with the Harlem Globetrotters before becoming the second African-American to sign a contract with the National Basketball Association (NBA).",
+    cast: [
+      "Everett Osborne",
+      "Cary Elwes",
+      "Jeremy Piven"
+    ],
+    runtime: "138 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjM1NzUyNjE0MF5BMl5BanBnXkFtZTgwNTIwMzkyMDE@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjM1NzUyNjE0MF5BMl5BanBnXkFtZTgwNTIwMzkyMDE@._V1_.jpg"
+  },
+  {
+    id: "94",
+    title: "Beau Is Afraid",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.7,
+    synopsis: "Beau Is Afraid is a 2023 American surrealist black comedy horror film written, directed, and co-produced by Ari Aster. The film stars Joaquin Phoenix as the titular Beau Wassermann, a mild-mannered but paranoia-ridden man who embarks on a surreal odyssey to his hometown for his mother's funeral, confronting his greatest fears along the way. The film also includes a supporting ensemble cast that includes Patti LuPone, Nathan Lane, Amy Ryan, Kylie Rogers, Parker Posey, Stephen McKinley Henderson, Hayley Squires, Michael Gandolfini, Zoe Lister-Jones, and Richard Kind.",
+    cast: [
+      "Joaquin Phoenix",
+      "Nathan Lane",
+      "Amy Ryan"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTdmYmQ5MjctYzU3NS00N2I0LTkwYTYtZWMxNTVhOTRkODA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTdmYmQ5MjctYzU3NS00N2I0LTkwYTYtZWMxNTVhOTRkODA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "95",
+    title: "Mafia Mamma",
+    year: 2023,
+    genres: [
+      "Action",
+      "Comedy"
+    ],
+    rating: 4.6,
+    synopsis: "Mafia Mamma is an upcoming American action comedy film directed by Catherine Hardwicke, from a screenplay by Michael J. Feldman and Debbie Jhoon, and based on an original story by Amanda Sthers. It stars Toni Collette as an American woman who travels to Italy following the death of her grandfather, who she finds out was a mafia Don. Monica Bellucci and Sophia Nomvete also star.",
+    cast: [
+      "Toni Collette",
+      "Monica Bellucci",
+      "Sophia Nomvete"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2M4NjA5ZjEtMWIwYy00MjE2LTg4YWQtMDlmZGNlMjBjYzE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2M4NjA5ZjEtMWIwYy00MjE2LTg4YWQtMDlmZGNlMjBjYzE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "96",
+    title: "Renfield",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.5,
+    synopsis: "Renfield is a 2023 American supernatural comedy horror film directed and co-produced by Chris McKay and written by Ryan Ridley from an original idea by Robert Kirkman. Featuring characters from Bram Stoker's 1897 novel Dracula, the film stars Nicholas Hoult as the title character and Nicolas Cage as Dracula, with Awkwafina, Ben Schwartz, Adrian Martinez, and Shohreh Aghdashloo in supporting roles.",
+    cast: [
+      "Nicholas Hoult",
+      "Nicolas Cage",
+      "Awkwafina"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDY2MWVmMTUtMTBkMS00ZWI4LWFlMDQtYjE0ZWM2NTc2NWExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDY2MWVmMTUtMTBkMS00ZWI4LWFlMDQtYjE0ZWM2NTc2NWExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "97",
+    title: "Ghosted",
+    year: 2023,
+    genres: [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Ghosted is an upcoming American romantic comedy action-adventure film directed by Dexter Fletcher and written by Rhett Reese, Paul Wernick, Chris McKenna, and Erik Sommers, from a story by Reese and Wernick. The film stars Chris Evans and Ana de Armas. Produced by Apple Studios and Skydance Media, it is set to be released by Apple TV+ on April 21, 2023.",
+    cast: [
+      "Chris Evans",
+      "Ana de Armas",
+      "Adrien Brody"
+    ],
+    runtime: "144 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDI0YzJjZTctNjU0MS00Y2Y3LThkNDgtNWMxYWVlZjVkYzYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDI0YzJjZTctNjU0MS00Y2Y3LThkNDgtNWMxYWVlZjVkYzYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "98",
+    title: "Rare Objects",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Rare Objects.",
+    cast: [
+      "Katie Holmes",
+      "Alan Cumming",
+      "Julie Mayorga"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTk5ZTE3ODctYzI0Yy00ODMzLTkyYTgtNjA4Y2FhZTEwNTMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTk5ZTE3ODctYzI0Yy00ODMzLTkyYTgtNjA4Y2FhZTEwNTMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "99",
+    title: "Evil Dead Rise",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.8,
+    synopsis: "Evil Dead Rise is a 2023 American supernatural horror film written and directed by Lee Cronin. It is the fifth installment of the Evil Dead film series. The film stars Lily Sullivan and Alyssa Sutherland as two estranged sisters trying to survive and save their family from demonic creatures. Morgan Davies, Gabrielle Echols, and Nell Fisher appear in supporting roles.",
+    cast: [
+      "Lily Sullivan",
+      "Alyssa Sutherland",
+      "Morgan Davies"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "100",
+    title: "The Pope's Exorcist",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.8,
+    synopsis: "The Pope's Exorcist is a 2023 American supernatural horror film directed by Julius Avery, and starring Russell Crowe as Father Gabriele Amorth. The film also stars Daniel Zovatto, Alex Essoe and Franco Nero. It is based on Amorth's memoirs An Exorcist Tells His Story and An Exorcist: More Stories.",
+    cast: [
+      "Russell Crowe",
+      "Alex Essoe",
+      "Daniel Zovatto"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWFhZGRiNjItNjAzNC00NjdlLTk5YWUtOTNkNzYwMTE4YzA3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWFhZGRiNjItNjAzNC00NjdlLTk5YWUtOTNkNzYwMTE4YzA3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "101",
+    title: "Air",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Sports",
+      "Biography"
+    ],
+    rating: 4.3,
+    synopsis: "Air is a 2023 American biographical sports drama film directed by Ben Affleck from a screenplay written by Alex Convery. It is based on true events about the origin of Air Jordan, a basketball shoeline, of which a Nike employee seeks to strike a business deal with rookie player Michael Jordan. The film stars Matt Damon, Affleck, Jason Bateman, Marlon Wayans, Chris Messina, Chris Tucker, and Viola Davis.",
+    cast: [
+      "Matt Damon",
+      "Ben Affleck",
+      "Jason Bateman"
+    ],
+    runtime: "120 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjdjYzJkZmUtZDNiMC00MzQ0LWE2MGEtYTk4ZGM4NzFkMzM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjdjYzJkZmUtZDNiMC00MzQ0LWE2MGEtYTk4ZGM4NzFkMzM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "102",
+    title: "On a Wing and a Prayer",
+    year: 2023,
+    genres: [
+      "Biography"
+    ],
+    rating: 3.6,
+    synopsis: "On a Wing and a Prayer is a 2023 American biographical survival film directed by Sean McNamara and starring Dennis Quaid, Heather Graham, and Jesse Metcalfe. It was released on April 7, 2023.",
+    cast: [
+      "Dennis Quaid",
+      "Heather Graham",
+      "Jesse Metcalfe"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDc3NzdiMzYtN2M4Ni00Yzc4LTgwMjMtYzcxYzRmZTljZjExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDc3NzdiMzYtN2M4Ni00Yzc4LTgwMjMtYzcxYzRmZTljZjExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "103",
+    title: "Beautiful Disaster",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Beautiful Disaster.",
+    cast: [
+      "Dylan Sprouse",
+      "Virginia Gardner",
+      "Austin North"
+    ],
+    runtime: "147 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODc5ZDVmYWItODM2Ni00MGYyLWIwNGUtZmEzNjVlYjc5NGY0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODc5ZDVmYWItODM2Ni00MGYyLWIwNGUtZmEzNjVlYjc5NGY0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "104",
+    title: "Showing Up",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "Showing Up is a 2022 American comedy-drama film co-written and directed by Kelly Reichardt, in her fourth collaboration with actress Michelle Williams.",
+    cast: [
+      "Michelle Williams",
+      "Hong Chau",
+      "Maryann Plunkett"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzNhNDNmMWUtMjQyMi00OTdkLWI2YWItMzUyNzI4ZDY0NmMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzNhNDNmMWUtMjQyMi00OTdkLWI2YWItMzUyNzI4ZDY0NmMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "105",
+    title: "Chupa",
+    year: 2023,
+    genres: [
+      "Adventure",
+      "Fantasy"
+    ],
+    rating: 4.8,
+    synopsis: "Chupa is a 2023 American fantasy adventure film directed by Jonás Cuarón, and starring Demián Bichir and Christian Slater. Produced by 26th Street Pictures, it was released on April 7, 2023, on Netflix.",
+    cast: [
+      "Demián Bichir",
+      "Christian Slater",
+      "Evan Whitten"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGI0YWNiYmUtNzRlYi00YWI1LTk1MmEtNzcyOTQzNDM5MTUxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGI0YWNiYmUtNzRlYi00YWI1LTk1MmEtNzcyOTQzNDM5MTUxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "106",
+    title: "The Super Mario Bros. Movie",
+    year: 2023,
+    genres: [
+      "Adventure",
+      "Animated"
+    ],
+    rating: 4.2,
+    synopsis: "The Super Mario Bros. Movie is a 2023 American computer-animated adventure film based on Nintendo's Mario video game franchise. Produced by Illumination, Universal Pictures, and Nintendo, and distributed by Universal, it was directed by Aaron Horvath and Michael Jelenic from a screenplay by Matthew Fogel. The ensemble voice cast includes Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black, Keegan-Michael Key, Seth Rogen, and Fred Armisen. The film features an origin story for the brothers Mario and Luigi, Italian-American plumbers who are transported to an alternate world and become entangled in a battle between the Mushroom Kingdom, led by Princess Peach, and the Koopas, led by Bowser.",
+    cast: [
+      "Chris Pratt",
+      "Anya Taylor-Joy",
+      "Charlie Day"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGZlN2EzOTYtMzUzOS00NTM3LTg0MTQtZDVjZGM4YmJlNWNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGZlN2EzOTYtMzUzOS00NTM3LTg0MTQtZDVjZGM4YmJlNWNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "107",
+    title: "How to Blow Up a Pipeline",
+    year: 2023,
+    genres: [
+      "Action"
+    ],
+    rating: 4.2,
+    synopsis: "How to Blow Up a Pipeline is a 2022 environmentalist action film directed by Daniel Goldhaber, who co-wrote the screenplay with Ariela Barer and Jordan Sjol. It relies on ideas advanced in Andreas Malm's 2021 book of the same name, published by Verso Books. It stars Barer, Kristine Froseth, Lukas Gage, Forrest Goodluck, Sasha Lane, Jayme Lawson, Marcus Scribner, Jake Weary and Irene Bedard.",
+    cast: [
+      "Ariela Barer",
+      "Kristine Froseth",
+      "Lukas Gage"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmE2OGJiZjAtZWY4OS00YjdmLTk5NGMtNjYzNWVlZGI5MWZkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmE2OGJiZjAtZWY4OS00YjdmLTk5NGMtNjYzNWVlZGI5MWZkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "108",
+    title: "Paint",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.1,
+    synopsis: "Paint is a 2023 American comedy film written and directed by Brit McAdams. The film stars Owen Wilson, Michaela Watkins, Ciara Renée, Stephen Root, Wendi McLendon-Covey, Lucy Freyer, Lusia Strus, and Michael Pemberton.",
+    cast: [
+      "Owen Wilson",
+      "Michaela Watkins",
+      "Wendi McLendon-Covey"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGZmZWE5MDUtMTMxNi00MjA1LThiYzYtZmRmMzdkNTZlZDA4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGZmZWE5MDUtMTMxNi00MjA1LThiYzYtZmRmMzdkNTZlZDA4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "109",
+    title: "One True Loves",
+    year: 2023,
+    genres: [
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "One True Loves is a 2023 American romance film directed and produced by Andy Fickman as an adaptation of the 2016 novel of the same name by Taylor Jenkins Reid. It stars Phillipa Soo, Simu Liu and Luke Bracey.",
+    cast: [
+      "Phillipa Soo",
+      "Simu Liu",
+      "Luke Bracey"
+    ],
+    runtime: "122 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjE4YTczN2MtNzYzMC00YjY4LWJhNDYtOThkMGE0YjUwOTQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjE4YTczN2MtNzYzMC00YjY4LWJhNDYtOThkMGE0YjUwOTQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "110",
+    title: "Praise This",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Musical"
+    ],
+    rating: 3.6,
+    synopsis: "Praise This is a 2023 American musical comedy film directed by Tina Gordon and starring Chloe Bailey and Anjelika Washington.",
+    cast: [
+      "Chloe Bailey",
+      "Anjelika Washington",
+      "Philip Fornah"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmYxMDdjM2QtY2ViYy00Njg0LThhN2YtNTc3ZDljYTAwOTU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmYxMDdjM2QtY2ViYy00Njg0LThhN2YtNTc3ZDljYTAwOTU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "111",
+    title: "Assassin",
+    year: 2023,
+    genres: [
+      "Action",
+      "Science Fiction"
+    ],
+    rating: 4.4,
+    synopsis: "Assassin is a 2023 American science fiction action film starring Nomzamo Mbatha, Dominic Purcell and Bruce Willis. It was directed by Jesse Atlas, in his feature film directorial debut, written by Aaron Wolfe, and is based on Atlas and Wolfe's short film Let Them Die Like Lovers.",
+    cast: [
+      "Nomzamo Mbatha",
+      "Dominic Purcell",
+      "Bruce Willis"
+    ],
+    runtime: "139 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2Y0Mzg3NTctODcwYS00ODI1LWJjYjAtMzk5YjZkNTUyMTkxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2Y0Mzg3NTctODcwYS00ODI1LWJjYjAtMzk5YjZkNTUyMTkxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "112",
+    title: "Murder Mystery 2",
+    year: 2023,
+    genres: [
+      "Action",
+      "Comedy",
+      "Mystery"
+    ],
+    rating: 4.8,
+    synopsis: "Murder Mystery 2 is a 2023 American action comedy mystery film directed by Jeremy Garelick and written by James Vanderbilt. It is a sequel to the 2019 film Murder Mystery, and stars Adam Sandler and Jennifer Aniston.",
+    cast: [
+      "Adam Sandler",
+      "Jennifer Aniston",
+      "Mélanie Laurent"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWU3OWYwNjAtNWExZS00ODY4LTgwMGQtNzliMzM2MjEyNDBkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWU3OWYwNjAtNWExZS00ODY4LTgwMGQtNzliMzM2MjEyNDBkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "113",
+    title: "Malum",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.4,
+    synopsis: "Malum is a 2023 American horror film directed by Anthony DiBlasi, who co-wrote the film with Scott Poiley. It is a reboot/reimagining of the 2014 film Last Shift, also directed by DiBlasi. Malum stars Jessica Sula, Eric Olson, Chaney Morrow and Candice Coke.",
+    cast: [
+      "Jessica Sula",
+      "Candice Coke",
+      "Chaney Morrow"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWE0NzVhOTktOTViZi00NmQzLWJmMzQtN2FlNzE4NDZlYWE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWE0NzVhOTktOTViZi00NmQzLWJmMzQtN2FlNzE4NDZlYWE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "114",
+    title: "The Tutor",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of The Tutor.",
+    cast: [
+      "Garrett Hedlund",
+      "Noah Schnapp",
+      "Victoria Justice"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDJjZmIwMzgtNDBjZC00YWE3LWFlNzMtM2MyOTdiZWJhYWY3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDJjZmIwMzgtNDBjZC00YWE3LWFlNzMtM2MyOTdiZWJhYWY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "115",
+    title: "Space Oddity",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Science Fiction",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Space Oddity is an American romantic comedy science fiction film directed by Kyra Sedgwick.",
+    cast: [
+      "Kyle Allen",
+      "Alexandra Shipp",
+      "Madeline Brewer"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOThmMjU0YTktNDA2OS00ZDIwLWIzZGQtNjNlMWNmODI1MDNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOThmMjU0YTktNDA2OS00ZDIwLWIzZGQtNjNlMWNmODI1MDNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "116",
+    title: "Tetris",
+    year: 2023,
+    genres: [
+      "Thriller",
+      "Biography"
+    ],
+    rating: 4.8,
+    synopsis: "Tetris is a 2023 biographical thriller film directed by Jon S. Baird, written by Noah Pink, and starring Taron Egerton, Nikita Efremov, Sofia Lebedeva, Anthony Boyle, Toby Jones and Roger Allam. It is based on true events around the race to license and patent the video game Tetris in the late 1980s during the Cold War.",
+    cast: [
+      "Taron Egerton",
+      "Nikita Yefremov",
+      "Roger Allam"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDZhY2Y4ZGQtODk4MC00NGQwLWFiMWItNzU2M2Q3Nzk2MmVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDZhY2Y4ZGQtODk4MC00NGQwLWFiMWItNzU2M2Q3Nzk2MmVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "117",
+    title: "Spinning Gold",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 3.6,
+    synopsis: "Spinning Gold is a 2023 American biographical drama film written and directed by Timothy Scott Bogart. It is based on the life of his father, Casablanca Records founder Neil Bogart.",
+    cast: [
+      "Jeremy Jordan",
+      "Wiz Khalifa",
+      "Jason Isaacs"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzk0M2JmNjQtMjAxYy00MGU4LWIzMjAtNjQ1MGRlMTg5MGFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzk0M2JmNjQtMjAxYy00MGU4LWIzMjAtNjQ1MGRlMTg5MGFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "118",
+    title: "A Good Person",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "A Good Person is a 2023 American drama film written, directed, and produced by Zach Braff. The film stars Florence Pugh, Molly Shannon, Chinaza Uche, Celeste O'Connor, and Morgan Freeman.",
+    cast: [
+      "Florence Pugh",
+      "Molly Shannon",
+      "Chinaza Uche"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTJmYWM4ZjUtYzI5NC00MTM3LWI4YTUtYmE4ODAyOGYzNjlkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTJmYWM4ZjUtYzI5NC00MTM3LWI4YTUtYmE4ODAyOGYzNjlkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "119",
+    title: "Acidman",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Science Fiction"
+    ],
+    rating: 4.9,
+    synopsis: "Acidman is a 2022 American science fiction drama film directed by Alex Lehmann and written by Lehmann and Chris Dowling. It stars Thomas Haden Church and Dianna Agron.",
+    cast: [
+      "Thomas Haden Church",
+      "Dianna Agron"
+    ],
+    runtime: "138 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWRlZTMxOGEtNjQxYS00YTk1LWExYWQtMDk3MWUxNGY3ZTg0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWRlZTMxOGEtNjQxYS00YTk1LWExYWQtMDk3MWUxNGY3ZTg0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "120",
+    title: "A Thousand and One",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.6,
+    synopsis: "A Thousand and One is a 2023 American drama film, written and directed by A.V. Rockwell. It stars Teyana Taylor, Will Catlett, Josiah Cross, Aven Courtney and Aaron Kingsley Adetola. It had its world premiere at the 2023 Sundance Film Festival on January 22, 2023 and won the Grand Jury Prize. It was released on March 31, 2023, by Focus Features.",
+    cast: [
+      "Teyana Taylor",
+      "Will Catlett",
+      "Josiah Cross"
+    ],
+    runtime: "147 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2IyMThlOWEtNjk4Ni00MjViLThiMmUtZDNkNTU4MjVhNTBkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2IyMThlOWEtNjk4Ni00MjViLThiMmUtZDNkNTU4MjVhNTBkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "121",
+    title: "Shazam! Fury of the Gods",
+    year: 2023,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.1,
+    synopsis: "Shazam! Fury of the Gods is a 2023 American superhero film based on the DC character Shazam. Produced by New Line Cinema, DC Films, and the Safran Company, and distributed by Warner Bros. Pictures, it is the sequel to Shazam! (2019) and the 12th installment in the DC Extended Universe (DCEU). Directed by David F. Sandberg, produced by Peter Safran, and written by Henry Gayden and Chris Morgan, it stars Zachary Levi, Asher Angel, Jack Dylan Grazer, Rachel Zegler, Adam Brody, Ross Butler, D. J. Cotrona, Grace Fulton, Meagan Good, Lucy Liu, Djimon Hounsou and Helen Mirren. In the film, Billy Batson / Shazam and his foster siblings fight the Daughters of Atlas.",
+    cast: [
+      "Zachary Levi",
+      "Asher Angel",
+      "Jack Dylan Grazer"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjdlYzAwYTMtMWJlOC00OTQ5LWJhMmYtMDhjNGY4M2RhMGU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjdlYzAwYTMtMWJlOC00OTQ5LWJhMmYtMDhjNGY4M2RhMGU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "122",
+    title: "Chang Can Dunk",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Sports"
+    ],
+    rating: 4.6,
+    synopsis: "Chang Can Dunk is a 2023 American sports-drama film written and directed by Jingyi Shao in his feature length debut, starring Bloom Li, Dexter Darden, Ben Wang, Zoe Renee, Chase Liefeld and Mardy Ma. The film is an underdog coming-of-age story, involving high school basketball and the titular character's determination to overcome expectations.",
+    cast: [
+      "Bloom Li",
+      "Ben Wang",
+      "Dexter Darden"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjZmM2FlMTktMTgyNy00NjJjLTlmYzAtNGUwZDc0NDZlMzQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjZmM2FlMTktMTgyNy00NjJjLTlmYzAtNGUwZDc0NDZlMzQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "123",
+    title: "Supercell",
+    year: 2023,
+    genres: [
+      "Action",
+      "Disaster"
+    ],
+    rating: 4.5,
+    synopsis: "Supercell is a 2023 American disaster action film directed by Herbert James Winterstern from a screenplay that he wrote with Anna Elizabeth James. It stars Skeet Ulrich, Anne Heche, Daniel Diemer, Jordan Kristine Seamón and Alec Baldwin.",
+    cast: [
+      "Skeet Ulrich",
+      "Anne Heche",
+      "Daniel Diemer"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDgwMjAzMGMtZTAyZC00MDhjLThkYWItMDZmODBlNmM0MmUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDgwMjAzMGMtZTAyZC00MDhjLThkYWItMDZmODBlNmM0MmUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "124",
+    title: "Wildflower",
+    year: 2023,
+    genres: [
+      "Teen"
+    ],
+    rating: 3.9,
+    synopsis: "Wildflower is a 2022 American coming of age film directed by Matt Smukler and written by Jana Savage from a story from Smukler and Savage. It stars Kiernan Shipka, Dash Mihok, Charlie Plummer, Alexandra Daddario, Reid Scott, Erika Alexander, Samantha Hyde and Jacki Weaver.",
+    cast: [
+      "Kiernan Shipka",
+      "Dash Mihok",
+      "Charlie Plummer"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWY0ODBhZmYtOTg3Mi00ZGMwLWE3MjMtYmJiZjY1Y2Q4NjFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWY0ODBhZmYtOTg3Mi00ZGMwLWE3MjMtYmJiZjY1Y2Q4NjFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "125",
+    title: "The Magician's Elephant",
+    year: 2023,
+    genres: [
+      "Adventure",
+      "Animated",
+      "Fantasy"
+    ],
+    rating: 4.5,
+    synopsis: "The Magician's Elephant is a 2023 computer-animated fantasy adventure film directed by Wendy Rogers, written by Martin Hynes and produced by Julia Pistor. Based on the 2009 novel of the same name by Kate DiCamillo, the film features the voices of Noah Jupe, Mandy Patinkin, Natasia Demetriou, Benedict Wong, Miranda Richardson and Aasif Mandvi. Animated by Animal Logic, the film was distributed by Netflix and released on March 17, 2023. The film received mixed reviews from critics.",
+    cast: [
+      "Noah Jupe",
+      "Benedict Wong",
+      "Sian Clifford"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzc5ZjMxZmQtNTg5Ny00NjBlLWI3YzctMDA0ODFjNDY1ODAzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzc5ZjMxZmQtNTg5Ny00NjBlLWI3YzctMDA0ODFjNDY1ODAzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "126",
+    title: "John Wick: Chapter 4",
+    year: 2023,
+    genres: [
+      "Action",
+      "Noir",
+      "Thriller"
+    ],
+    rating: 4.7,
+    synopsis: "John Wick: Chapter 4 is a 2023 American neo-noir action thriller film directed by Chad Stahelski and written by Shay Hatten and Michael Finch. The sequel to John Wick: Chapter 3 – Parabellum (2019) and the fourth installment in the John Wick franchise, it stars Keanu Reeves as the title character, alongside Donnie Yen, Bill Skarsgård, Laurence Fishburne, Hiroyuki Sanada, Shamier Anderson, Lance Reddick, Rina Sawayama, Scott Adkins, Clancy Brown, and Ian McShane. In the film, John Wick sets out to get revenge on the High Table and those who left him for dead.",
+    cast: [
+      "Keanu Reeves",
+      "Donnie Yen",
+      "Bill Skarsgård"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2Q2ZmI5ZjUtNWVhMC00YzJkLTlmYjMtY2RmZDhkNzEzYjZhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2Q2ZmI5ZjUtNWVhMC00YzJkLTlmYjMtY2RmZDhkNzEzYjZhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "127",
+    title: "Boston Strangler",
+    year: 2023,
+    genres: [
+      "Crime",
+      "Drama",
+      "Historical"
+    ],
+    rating: 4.9,
+    synopsis: "Boston Strangler is a 2023 American historical crime drama film written and directed by Matt Ruskin. It is based on the true story of the Boston Strangler, who, in 1960s Boston, killed 13 women. The film stars Keira Knightley as Loretta McLaughlin, the reporter who broke the news for the Boston Record American, with Carrie Coon, Alessandro Nivola, Chris Cooper, David Dastmalchian, and Morgan Spector.",
+    cast: [
+      "Keira Knightley",
+      "Carrie Coon",
+      "Alessandro Nivola"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2ZlNThhOGYtNTUwNC00MWVhLTg2NzQtMWRmOWE2YjFkODZiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2ZlNThhOGYtNTUwNC00MWVhLTg2NzQtMWRmOWE2YjFkODZiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "128",
+    title: "Moving On",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.8,
+    synopsis: "Moving On is a 2022 American comedy film written and directed by Paul Weitz. The film stars Jane Fonda, Lily Tomlin, Malcolm McDowell, Sarah Burns, and Richard Roundtree.",
+    cast: [
+      "Jane Fonda",
+      "Lily Tomlin",
+      "Malcolm McDowell"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDgxM2JmN2MtNjUzNy00ZDAwLTg1ODQtMmQzZDEzZWI3NDkwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDgxM2JmN2MtNjUzNy00ZDAwLTg1ODQtMmQzZDEzZWI3NDkwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "129",
+    title: "Champions",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Sports"
+    ],
+    rating: 4.7,
+    synopsis: "Champions is a 2023 American sports comedy film directed by Bobby Farrelly in his solo directorial debut, from a screenplay written by Mark Rizzo. It is an English-language remake of the 2018 Spanish film of the same name. The film stars Woody Harrelson as a temperamental minor-league basketball coach who after an arrest must coach a team of players with intellectual disabilities as community service; Kaitlin Olson, Ernie Hudson, and Cheech Marin also star.",
+    cast: [
+      "Woody Harrelson",
+      "Kaitlin Olson",
+      "Ernie Hudson"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWM0OWZiZTctN2IxZi00NTY2LWEwZjctOWRiNzYzMTg3NzM0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWM0OWZiZTctN2IxZi00NTY2LWEwZjctOWRiNzYzMTg3NzM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "130",
+    title: "Southern Gospel",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Southern Gospel.",
+    cast: [
+      "Max Ehrich",
+      "Katelyn Nacon",
+      "J. Alphonse Nicholson"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjA5MjA0NTEtNTUxMC00YWE3LWE3YTMtZDE3ODgxZjI4ODJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjA5MjA0NTEtNTUxMC00YWE3LWE3YTMtZDE3ODgxZjI4ODJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "131",
+    title: "65",
+    year: 2023,
+    genres: [
+      "Action",
+      "Science Fiction",
+      "Thriller"
+    ],
+    rating: 4.8,
+    synopsis: "65 is a 2023 American science fiction action thriller film written and directed by Scott Beck and Bryan Woods and starring Adam Driver and Ariana Greenblatt. It is a co-production between Columbia Pictures, Bron Creative, Raimi Productions, TSG Entertainment, and Beck/Woods. In the film, a pilot crashes on an unknown planet, which turns out to be Earth during the Cretaceous period, and fights to survive the dangerous prehistoric environment.",
+    cast: [
+      "Adam Driver",
+      "Ariana Greenblatt",
+      "Chloe Coleman"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWQ2NjUyNWMtNDhlYy00Y2Y3LThlZTYtNzI3ODhiYjQ5YmFjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWQ2NjUyNWMtNDhlYy00Y2Y3LThlZTYtNzI3ODhiYjQ5YmFjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "132",
+    title: "Creed III",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Sports"
+    ],
+    rating: 4.3,
+    synopsis: "Creed III is a 2023 American sports drama film directed, produced by and starring Michael B. Jordan from a screenplay by Keenan Coogler and Zach Baylin. It is the sequel to Creed II (2018), the third in the Creed film series, and the ninth overall in the Rocky film series. It also stars Tessa Thompson, Jonathan Majors, Wood Harris, Mila Davis-Kent, Florian Munteanu and Phylicia Rashad. In the film, the accomplished and recently retired boxer Adonis Creed (Jordan) comes face-to-face with his childhood friend and former boxing prodigy Damian Anderson (Majors).",
+    cast: [
+      "Michael B. Jordan",
+      "Tessa Thompson",
+      "Jonathan Majors"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWY0MTRmY2YtMzBlYi00NjlkLThkZWYtMmE2NzJiZmIzODFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWY0MTRmY2YtMzBlYi00NjlkLThkZWYtMmE2NzJiZmIzODFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "133",
+    title: "Children of the Corn",
+    year: 2023,
+    genres: [
+      "Slasher",
+      "Supernatural"
+    ],
+    rating: 4.6,
+    synopsis: "Children of the Corn is a 2020 American supernatural slasher film written and directed by Kurt Wimmer. It stars Elena Kampouris, Kate Moyer, Callan Mulvey and Bruce Spence. The film is the third adaptation of Stephen King's short story \"Children of the Corn\" (1977).",
+    cast: [
+      "Elena Kampouris",
+      "Kate Moyer",
+      "Callan Mulvey"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjFmZjhkNDYtZThjZi00YWY4LWFkYjMtNDM3YjkyODMxZDNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjFmZjhkNDYtZThjZi00YWY4LWFkYjMtNDM3YjkyODMxZDNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "134",
+    title: "Linoleum",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Science Fiction"
+    ],
+    rating: 4.5,
+    synopsis: "Linoleum is a 2022 American science fiction comedy-drama film written and directed by Colin West and starring Jim Gaffigan. It premiered at the 2022 South by Southwest festival on March 12, 2022. It was released in select theaters in the United States on February 24, 2023, by Shout! Studios.",
+    cast: [
+      "Jim Gaffigan",
+      "Rhea Seehorn",
+      "Katelyn Nacon"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmY4YjcxMWUtODdlOC00YzZjLTk0MDEtNTVkMWFmZDE5YmZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmY4YjcxMWUtODdlOC00YzZjLTk0MDEtNTVkMWFmZDE5YmZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "135",
+    title: "Scream VI",
+    year: 2023,
+    genres: [
+      "Slasher"
+    ],
+    rating: 3.6,
+    synopsis: "Scream VI is a 2023 American slasher film directed by Matt Bettinelli-Olpin and Tyler Gillett, and written by James Vanderbilt and Guy Busick. It is the sequel to Scream (2022) and the sixth installment in the Scream film series. The film stars Melissa Barrera, Jenna Ortega, Jasmin Savoy Brown, Mason Gooding, Hayden Panettiere, and Courteney Cox, all reprising their roles from previous installments, alongside Josh Segarra, Jack Champion, Devyn Nekoda, Liana Liberato, Tony Revolori, Samara Weaving, Henry Czerny, and Dermot Mulroney joining the ensemble cast. Scream VI follows a new Ghostface killer who targets the survivors of the \"Woodsboro legacy attacks\" in New York City. Like its predecessors, the film combines the violence of the slasher genre with elements of black comedy and a \"whodunit\" mystery, and satirizes the trends of film franchises and subversion of audience expectations.",
+    cast: [
+      "Melissa Barrera",
+      "Jasmin Savoy Brown",
+      "Jack Champion"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDZkYzk3YTEtYTQ5MS00MzQ5LTg0NjUtOTgzODA5N2EyYTQ1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDZkYzk3YTEtYTQ5MS00MzQ5LTg0NjUtOTgzODA5N2EyYTQ1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "136",
+    title: "Hunt Her, Kill Her",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Hunt Her, Kill Her.",
+    cast: [
+      "Natalie Terrazzino",
+      "JC Oakley III",
+      "Larry Bunton"
+    ],
+    runtime: "144 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjNkOGNiZTUtYzRlYS00ZmQ2LTg3MDUtOGRhMWNjNmFjZTdiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjNkOGNiZTUtYzRlYS00ZmQ2LTg3MDUtOGRhMWNjNmFjZTdiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "137",
+    title: "A Little White Lie",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Independent"
+    ],
+    rating: 4.3,
+    synopsis: "A Little White Lie is a 2022 American independent comedy film written and directed by Michael Maren and based on the 2013 novel Shriver by Chris Belden. It stars Michael Shannon, Kate Hudson, Don Johnson, and Zach Braff. The film is about a handyman with the same name as a famous writer who is mistakenly invited to a literary festival and is welcomed by fans and writers, but is exposed as an imposter when the real Shriver arrives.",
+    cast: [
+      "Michael Shannon",
+      "Kate Hudson",
+      "Don Johnson"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjIzZjRmNzYtYjA3YS00ZGNmLWExNDMtMTY5YWUxY2NhZjUxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjIzZjRmNzYtYjA3YS00ZGNmLWExNDMtMTY5YWUxY2NhZjUxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "138",
+    title: "God's Time",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of God's Time.",
+    cast: [
+      "Ben Groh",
+      "Dion Costelloe",
+      "Liz Caribel Sierra"
+    ],
+    runtime: "113 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWVmNDE0ZWEtNGQ5MC00ODJjLTgyY2MtNDNjNjRjZDc0Y2RjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWVmNDE0ZWEtNGQ5MC00ODJjLTgyY2MtNDNjNjRjZDc0Y2RjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "139",
+    title: "Unseen",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 4.8,
+    synopsis: "Unseen is a 2023 American horror thriller film directed by Yoko Okumura in her directorial debut and written by Salvatore Cardoni and Brian Rawlins. The film stars Midori Francis, Jolene Purdy and Missi Pyle. Jason Blum serves as an executive producer through his Blumhouse Television banner.",
+    cast: [
+      "Midori Francis",
+      "Jolene Purdy",
+      "Missi Pyle"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTE1NTM4MDQtOWE0NC00ODE0LTgyZTUtZTUxZDY5OWVhZmFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTE1NTM4MDQtOWE0NC00ODE0LTgyZTUtZTUxZDY5OWVhZmFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "140",
+    title: "Bruiser",
+    year: 2023,
+    genres: [
+      "Drama",
+      "War"
+    ],
+    rating: 4.1,
+    synopsis: "Bruiser is a 2022 American drama film written by Ben Medina and Miles Warren, directed by Warren and starring Trevante Rhodes, Shamier Anderson, Jalyn Hall and Shinelle Azoroh.",
+    cast: [
+      "Trevante Rhodes",
+      "Jalyn Hall",
+      "Shinelle Azoroh"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjc3ODZlM2YtNDQxMi00N2FlLThhM2ItODVjMDBlYjg0MzdhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjc3ODZlM2YtNDQxMi00N2FlLThhM2ItODVjMDBlYjg0MzdhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "141",
+    title: "Cocaine Bear",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Horror",
+      "Thriller"
+    ],
+    rating: 3.8,
+    synopsis: "Cocaine Bear is a 2023 American comedy horror thriller film directed by Elizabeth Banks and written by Jimmy Warden. It is loosely inspired by the true story of the \"Cocaine Bear\", an American black bear that ingested nearly 75 lb (34 kg) of lost cocaine. It stars Keri Russell, O'Shea Jackson Jr., Christian Convery, Alden Ehrenreich, Brooklynn Prince, Isiah Whitlock Jr., Margo Martindale, and Ray Liotta. The film is dedicated to Liotta, who died in May 2022.",
+    cast: [
+      "Keri Russell",
+      "O'Shea Jackson Jr.",
+      "Christian Convery"
+    ],
+    runtime: "122 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjg3MmNiNWQtOWI1OS00MjE2LWFhYzYtMWY0NWRhZmVkMGFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjg3MmNiNWQtOWI1OS00MjE2LWFhYzYtMWY0NWRhZmVkMGFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "142",
+    title: "We Have a Ghost",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.1,
+    synopsis: "We Have a Ghost is 2023 American supernatural horror comedy film written and directed by Christopher Landon, based on the 2017 short story \"Ernest\" by Geoff Manaugh. It stars David Harbour, Jahi Winston, Tig Notaro, Jennifer Coolidge, and Anthony Mackie. It was released on February 24, 2023, by Netflix and received mixed reviews from film critics.",
+    cast: [
+      "David Harbour",
+      "Anthony Mackie",
+      "Jahi Di'Allo Winston"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDk0ZTA3ZTQtODE3OC00MmUyLWE3N2MtMGI4N2E3Y2NhZjMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDk0ZTA3ZTQtODE3OC00MmUyLWE3N2MtMGI4N2E3Y2NhZjMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "143",
+    title: "The Outwaters",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 3.8,
+    synopsis: "The Outwaters is a 2022 American horror film written, directed by, and starring Robbie Banfitch. It is presented as found footage from memory cards belonging to a group of friends who venture into the Mojave Desert to shoot a music video, where they encounter mysterious and threatening phenomena.",
+    cast: [
+      "Robbie Banfitch",
+      "Angela Basolis",
+      "Scott Schamell"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDYzYzRlMmMtNmNjOS00NjM0LTg3Y2MtMDExZjYxOGQwNzg0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDYzYzRlMmMtNmNjOS00NjM0LTg3Y2MtMDExZjYxOGQwNzg0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "144",
+    title: "Magic Mike's Last Dance",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4,
+    synopsis: "Magic Mike's Last Dance is a 2023 American comedy-drama film directed by Steven Soderbergh, written by Reid Carolin, and produced by Channing Tatum. It is the third installment in the Magic Mike trilogy, following Magic Mike (2012) and Magic Mike XXL (2015). The film stars Channing Tatum as the titular retired male stripper, who leaves Florida for London to help a socialite produce a stage play.",
+    cast: [
+      "Channing Tatum",
+      "Salma Hayek Pinault"
+    ],
+    runtime: "113 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzk2NGRmNDEtNDQ3ZC00NWZjLTlhYTUtM2M2MmM5YzljYzZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzk2NGRmNDEtNDQ3ZC00NWZjLTlhYTUtM2M2MmM5YzljYzZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "145",
+    title: "Somebody I Used to Know",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Somebody I Used to Know is a 2023 American romantic comedy film directed by Dave Franco and co-written with his wife Alison Brie. The film stars Brie, Jay Ellis and Kiersey Clemons. It was released on Amazon Prime Video on February 10, 2023.",
+    cast: [
+      "Alison Brie",
+      "Jay Ellis",
+      "Kiersey Clemons"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjc2MTAzMjYtMDc0Yy00NjliLWEyYzQtN2IwMTJiODIxYThjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjc2MTAzMjYtMDc0Yy00NjliLWEyYzQtN2IwMTJiODIxYThjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "146",
+    title: "Sharper",
+    year: 2023,
+    genres: [
+      "Crime",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Sharper is a 2023 American crime thriller film directed by Benjamin Caron and written by Brian Gatewood and Alessandro Tanaka. The film stars Julianne Moore, Sebastian Stan, Justice Smith, Briana Middleton, and John Lithgow.",
+    cast: [
+      "Julianne Moore",
+      "Sebastian Stan",
+      "Justice Smith"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmRhNWQ3YmUtODc3NC00MTk0LTg2NGQtZDIxMjY5NWYwOTMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmRhNWQ3YmUtODc3NC00MTk0LTg2NGQtZDIxMjY5NWYwOTMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "147",
+    title: "Your Place or Mine",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Your Place or Mine is a 2023 American romantic comedy film written and directed by Aline Brosh McKenna in her directorial debut. The film stars Reese Witherspoon and Ashton Kutcher as best friends who decide to swap houses for a week. Jesse Williams, Zoë Chao, Wesley Kimmel, Tig Notaro, and Steve Zahn also star. The film was released on Netflix on February 10, 2023. It received mixed to negative reviews from critics, who criticised the lack of chemistry between Witherspoon and Kutcher.",
+    cast: [
+      "Reese Witherspoon",
+      "Ashton Kutcher",
+      "Jesse Williams"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjRiMjBkNGMtYTRkMi00MWRiLWE3OTUtZjljZTQ0NTBjOTE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjRiMjBkNGMtYTRkMi00MWRiLWE3OTUtZjljZTQ0NTBjOTE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "148",
+    title: "Jesus Revolution",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "Jesus Revolution is a 2023 American Christian drama film directed by Jon Erwin and Brent McCorkle. Based on the book of the same name, the film follows youth minister Greg Laurie, Christian hippie Lonnie Frisbee, and pastor Chuck Smith as they take part in the Jesus movement in California during the late 1960s. Anna Grace Barlow and Kimberly Williams-Paisley also star. The film was theatrically released in the United States on February 24, 2023, by Lionsgate. The film received mixed reviews from critics but was well-received by audiences, and has grossed $51.7 million.",
+    cast: [
+      "Joel Courtney",
+      "Anna Grace Barlow",
+      "Jonathan Roumie"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzk5MTRjMDctNTAzMy00MmVmLWIxMGItODY5ZDdiZDk3YmUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzk5MTRjMDctNTAzMy00MmVmLWIxMGItODY5ZDdiZDk3YmUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "149",
+    title: "Luther: The Fallen Sun",
+    year: 2023,
+    genres: [
+      "Crime",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Luther: The Fallen Sun is a 2023 crime thriller film directed by Jamie Payne and written by Neil Cross. It serves as a film continuation of Luther. The film stars Idris Elba, reprising his role as John Luther, with Cynthia Erivo and Andy Serkis.",
+    cast: [
+      "Idris Elba",
+      "Cynthia Erivo",
+      "Andy Serkis"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDFmYzdjOGYtMWY3MC00ZjQ0LWJiYjgtODc3ZDUzZmM4MmQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDFmYzdjOGYtMWY3MC00ZjQ0LWJiYjgtODc3ZDUzZmM4MmQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "150",
+    title: "Consecration",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Supernatural",
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "Consecration is a 2023 supernatural horror-thriller film directed by Cristopher Smith from a script he co-wrote with Laurie Cook, and starring Jena Malone, Danny Huston and Janet Suzman. Shot in Scotland on the Isle of Skye, the film was released in the United Kingdom and United States on February 10, 2023.",
+    cast: [
+      "Jena Malone",
+      "Danny Huston",
+      "Janet Suzman"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjI3YjQ3YjAtMTEzMC00ZmQ0LTk2ZmYtMTdjYTYyMWY1ZjJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjI3YjQ3YjAtMTEzMC00ZmQ0LTk2ZmYtMTdjYTYyMWY1ZjJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "151",
+    title: "Fear",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.3,
+    synopsis: "Fear is a 2023 American horror film directed by Deon Taylor and starring Joseph Sikora, Andrew Bachelor, Annie Ilonzeh, Ruby Modine, Iddo Goldberg, Terrence Jenkins, Jessica Allain, and Tip \"T.I.\" Harris.",
+    cast: [
+      "Joseph Sikora",
+      "King Bach",
+      "Annie Ilonzeh"
+    ],
+    runtime: "120 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmNiNDEyYjUtN2YzYi00MTBlLWIzNzYtOGM2YWUzNTY4ZDNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmNiNDEyYjUtN2YzYi00MTBlLWIzNzYtOGM2YWUzNTY4ZDNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "152",
+    title: "Shotgun Wedding",
+    year: 2023,
+    genres: [
+      "Action",
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Shotgun Wedding is a 2022 American romantic action comedy film directed by Jason Moore and written by Mark Hammer. It stars Jennifer Lopez, Josh Duhamel, Sônia Braga, Jennifer Coolidge, Lenny Kravitz, and Cheech Marin. After being filmed from February to April of 2021 in Boston and the Dominican Republic, Shotgun Wedding was released in Singapore on December 28, 2022, and was released on January 27, 2023, by Amazon Studios via Prime Video.",
+    cast: [
+      "Jennifer Lopez",
+      "Josh Duhamel",
+      "Sônia Braga"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGI5ZGYyMmQtYzVmZC00YWI0LTgwYTUtNjdmZmY5YjQwMDhlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGI5ZGYyMmQtYzVmZC00YWI0LTgwYTUtNjdmZmY5YjQwMDhlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "153",
+    title: "Maybe I Do",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Maybe I Do is a 2023 American romantic comedy film written and directed by Michael Jacobs, based on his own play Cheaters, and starring Diane Keaton, Richard Gere, Susan Sarandon, Emma Roberts, Luke Bracey, and William H. Macy. It is Jacobs' feature directorial debut.",
+    cast: [
+      "Diane Keaton",
+      "Richard Gere",
+      "Susan Sarandon"
+    ],
+    runtime: "94 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDVjNDYxMDctMWM0OS00Y2Y4LWFhM2EtNDEzZjNhYmUwOTM1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDVjNDYxMDctMWM0OS00Y2Y4LWFhM2EtNDEzZjNhYmUwOTM1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "154",
+    title: "80 for Brady",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Sports"
+    ],
+    rating: 3.9,
+    synopsis: "80 for Brady is a 2023 American sports comedy film directed by Kyle Marvin, written by Sarah Haskins and Emily Halpern, and produced by former NFL quarterback Tom Brady. The film follows four lifelong friends who travel to watch Brady and his New England Patriots play in Super Bowl LI in 2017. Billy Porter, Rob Corddry, Alex Moffat, and Guy Fieri also star.",
+    cast: [
+      "Lily Tomlin",
+      "Jane Fonda",
+      "Rita Moreno"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTU3NDgwYmMtNGFlMi00MzhhLWI4ZmItYTU0NTM3NjJiNTYyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTU3NDgwYmMtNGFlMi00MzhhLWI4ZmItYTU0NTM3NjJiNTYyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "155",
+    title: "Knock at the Cabin",
+    year: 2023,
+    genres: [
+      "Horror"
+    ],
+    rating: 3.5,
+    synopsis: "Knock at the Cabin is a 2023 American apocalyptic psychological horror film written and directed by M. Night Shyamalan, who wrote the screenplay from an initial draft by Steve Desmond and Michael Sherman. It is based on the 2018 novel The Cabin at the End of the World by Paul G. Tremblay, the first adaptation of one of his works. The film stars Dave Bautista, Jonathan Groff, Ben Aldridge, Nikki Amuka-Bird, Kristen Cui, Abby Quinn, and Rupert Grint. In the film, a family vacationing at a remote cabin are suddenly held hostage by four strangers, who ask something unimaginable.",
+    cast: [
+      "Dave Bautista",
+      "Jonathan Groff",
+      "Ben Aldridge"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzU1ODIzYjAtNjUzNi00YmNjLWI5ZDAtNDgzOWY3MDU1OThlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzU1ODIzYjAtNjUzNi00YmNjLWI5ZDAtNDgzOWY3MDU1OThlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "156",
+    title: "The Locksmith",
+    year: 2023,
+    genres: [
+      "Thriller"
+    ],
+    rating: 3.9,
+    synopsis: "The Locksmith is a 2023 American thriller film directed by Nicolas Harvard in his feature directorial debut. John Glosser, Joe Russo, Chris LaMont, and Ben Kabialis wrote the screenplay based on an original story by Blair Kroeber.",
+    cast: [
+      "Ryan Phillippe",
+      "Kate Bosworth",
+      "Ving Rhames"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTY5MWUxMzYtMmYzYS00MDM0LWI4MzMtYWZlZDZmZGI1MTE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTY5MWUxMzYtMmYzYS00MDM0LWI4MzMtYWZlZDZmZGI1MTE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "157",
+    title: "You People",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "You People is a 2023 American romantic comedy film directed by Kenya Barris, which he co-wrote with Jonah Hill. The film features an ensemble cast that includes Hill, Lauren London, David Duchovny, Nia Long, Julia Louis-Dreyfus, and Eddie Murphy. Its plot focuses on an interracial and interreligious couple, namely a white Jewish man and a Black NOI woman, and how their families reckon with modern love amid culture clashes, societal expectations and generational differences. Set in the Los Angeles area, two Millennials meet by chance and go into uncharted waters in their dating lives.",
+    cast: [
+      "Jonah Hill",
+      "Lauren London",
+      "David Duchovny"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmQ4MjY2YmYtNDhjZi00ODZmLWFkYmItZmY3YTRmZGMzZjJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmQ4MjY2YmYtNDhjZi00ODZmLWFkYmItZmY3YTRmZGMzZjJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "158",
+    title: "Freedom's Path",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Historical",
+      "War"
+    ],
+    rating: 4,
+    synopsis: "Freedom's Path is a 2022 historical war drama film written, directed and produced by Brett Smith in his feature length debut. It stars Gerran Howell, RJ Cyler, and Ewen Bremner. Based on the American Civil War, it won multiple film festival awards in 2022 and had a limited theatrical run from February 3, 2023.",
+    cast: [
+      "Gerran Howell",
+      "RJ Cyler",
+      "Ewen Bremner"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDE0MDA0OTUtYjBiMi00ZmY0LWIzYzUtMGFmZmQyNmM5MTc5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDE0MDA0OTUtYjBiMi00ZmY0LWIzYzUtMGFmZmQyNmM5MTc5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "159",
+    title: "Life Upside Down",
+    year: 2023,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Life Upside Down is a 2022 American romantic comedy film directed and written by Cecilia Miniucchi. It stars Bob Odenkirk, Danny Huston, Radha Mitchell and Rosie Fellner.",
+    cast: [
+      "Danny Huston",
+      "Radha Mitchell",
+      "Bob Odenkirk"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjBhZTg3NWItNDY4MS00NzljLTllYjAtMWM0ZjYwZTg1MzMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjBhZTg3NWItNDY4MS00NzljLTllYjAtMWM0ZjYwZTg1MzMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "160",
+    title: "Baby Ruby",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 4.5,
+    synopsis: "Baby Ruby is a 2022 American psychological horror-thriller film written and directed by Bess Wohl, in her directorial debut. It stars Noémie Merlant, Kit Harington, and Meredith Hagner.",
+    cast: [
+      "Noémie Merlant",
+      "Kit Harington",
+      "Meredith Hagner"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzIwNGIwZDAtMjE3NC00MGM5LWI0MDEtMDZhZWU0ZWNhMmU3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzIwNGIwZDAtMjE3NC00MGM5LWI0MDEtMDZhZWU0ZWNhMmU3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "161",
+    title: "Missing",
+    year: 2023,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Missing is a 2023 American screenlife thriller film written and directed by Will Merrick and Nick Johnson from a story by Sev Ohanian and Aneesh Chaganty, who also produced the film with Natalie Qasabian. The film is a standalone sequel to Searching (2018). It stars Storm Reid, Joaquim de Almeida, Ken Leung, Amy Landecker, Daniel Henney, and Nia Long. Its plot follows June Allen, a teenager who tries to find her missing mother after she disappears on vacation in Colombia with her new boyfriend.",
+    cast: [
+      "Storm Reid",
+      "Joaquim de Almeida",
+      "Ken Leung"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGVkMGU0NDktNTFlMC00ZWI5LWI5OGUtYmVjZTEzOTM4MTI5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGVkMGU0NDktNTFlMC00ZWI5LWI5OGUtYmVjZTEzOTM4MTI5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "162",
+    title: "Plane",
+    year: 2023,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "Plane is a 2023 American action thriller film directed by Jean-François Richet from a screenplay by Charles Cumming and J. P. Davis. The film stars Gerard Butler, Mike Colter, Yoson An, and Tony Goldwyn. The plot centers on a pilot (Butler) allying with a prisoner (Colter) to save his passengers from a hostile territory they landed in for an emergency landing.",
+    cast: [
+      "Gerard Butler",
+      "Mike Colter",
+      "Yoson An"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDAyYjZmNjctOWE2Mi00ZDBiLWE2YjEtMWM1YmM0NmYzOGQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDAyYjZmNjctOWE2Mi00ZDBiLWE2YjEtMWM1YmM0NmYzOGQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "163",
+    title: "The Devil Conspiracy",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 4.3,
+    synopsis: "The Devil Conspiracy is a 2022 science fiction horror film written and produced by Ed Alan and directed by Nathan Frankowski. It stars Alice Orr-Ewing, Joe Doyle, Eveline Hall, Peter Mensah, Joe Anderson, Spencer Wilding, Brian Caspe and James Faulkner.",
+    cast: [
+      "Alice Orr-Ewing",
+      "Joe Doyle",
+      "Eveline Hall"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzBhMjg0ZWYtYmRmYi00NGQxLWE0YzgtZDJjMWYzOTBjZTg0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzBhMjg0ZWYtYmRmYi00NGQxLWE0YzgtZDJjMWYzOTBjZTg0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "164",
+    title: "Dog Gone",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.5,
+    synopsis: "Dog Gone is a 2023 American biographical drama film directed by Stephen Herek. It was released by Netflix on January 13, 2023.",
+    cast: [
+      "Rob Lowe",
+      "Johnny Berchtold",
+      "Kimberly Williams-Paisley"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzUxMWJjMDgtOGRhZC00NjA5LWI3OWQtYzM1NzI4ZmVkOGYyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzUxMWJjMDgtOGRhZC00NjA5LWI3OWQtYzM1NzI4ZmVkOGYyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "165",
+    title: "Sick",
+    year: 2023,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4,
+    synopsis: "Sick is a 2022 American slasher film directed by John Hyams and written by Kevin Williamson and Katelyn Crabb. The film stars Gideon Adlon, Beth Million, and Dylan Sprayberry.",
+    cast: [
+      "Gideon Adlon",
+      "Bethlehem Million",
+      "Marc Menchaca"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDFjZDI5NzUtZGM0Yy00ZGMyLWIwMDMtM2ZiYzc1MWIxYzBlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDFjZDI5NzUtZGM0Yy00ZGMyLWIwMDMtM2ZiYzc1MWIxYzBlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "166",
+    title: "The Drop",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.3,
+    synopsis: "The Drop is a 2022 American black comedy film directed by Sarah Adina Smith, written by Smith and Joshua Leonard, and starring Anna Konkle and Jermaine Fowler. It premiered at the 2022 Tribeca Film Festival and was released on Hulu on January 13, 2023.",
+    cast: [
+      "Anna Konkle",
+      "Jermaine Fowler",
+      "Jillian Bell"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGNlMDM4ODUtZjYxMy00MjkxLThjNGQtYmM3MDZiMWRkMmNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGNlMDM4ODUtZjYxMy00MjkxLThjNGQtYmM3MDZiMWRkMmNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "167",
+    title: "Teen Wolf: The Movie",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Supernatural",
+      "Teen",
+      "Thriller"
+    ],
+    rating: 3.5,
+    synopsis: "Teen Wolf: The Movie is a 2023 American supernatural thriller teen drama film directed by Russell Mulcahy and written by Jeff Davis. The film is a continuation of the MTV series Teen Wolf and features most of the cast reprising their roles, including Tyler Posey, Crystal Reed, Tyler Hoechlin, Holland Roden, Colton Haynes, Shelley Hennig, Dylan Sprayberry, Linden Ashby, Melissa Ponzio, and JR Bourne. It follows werewolf Scott McCall (Posey) as he protects his California town from a new threat.",
+    cast: [
+      "Tyler Posey",
+      "Crystal Reed",
+      "Tyler Hoechlin"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjZhOTliNTMtZGVlOS00NDgwLWE5MzctM2VlNTY1OWE3YzRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjZhOTliNTMtZGVlOS00NDgwLWE5MzctM2VlNTY1OWE3YzRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "168",
+    title: "The Son",
+    year: 2023,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.7,
+    synopsis: "The Son is a 2022 drama film directed by Florian Zeller from a screenplay written by himself and Christopher Hampton. It is based on Zeller's 2018 stage play of the same name. Anthony Hopkins has a minor appearance in this film playing the main character's father. The film stars Hugh Jackman, Laura Dern, Vanessa Kirby, Zen McGrath, Hugh Quarshie, and Anthony Hopkins.",
+    cast: [
+      "Hugh Jackman",
+      "Laura Dern",
+      "Vanessa Kirby"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjE4ZTJmMWQtNWI2My00NjhhLTkwYmEtODk5YzM0YzNkNjJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjE4ZTJmMWQtNWI2My00NjhhLTkwYmEtODk5YzM0YzNkNjJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "169",
+    title: "Kids vs. Aliens",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 3.9,
+    synopsis: "Kids vs. Aliens is a 2022 American science fiction horror film directed by Jason Eisener and written by John Davies and Eisener. It is the second spin-off film in the V/H/S franchise and a feature-length adaptation of \"Slumber Party Alien Abduction\", Eisener's segment from the 2013 anthology horror film V/H/S/2. It stars Dominic Mariche, Phoebe Rex, Calem MacDonald and Asher Grayson.",
+    cast: [
+      "Dominic Mariche",
+      "Phoebe Rex",
+      "Calem MacDonald"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWU4YzEyNzgtMGJjYS00NjE0LThlMDQtYTM4YjhiNGJiMTdjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWU4YzEyNzgtMGJjYS00NjE0LThlMDQtYTM4YjhiNGJiMTdjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "170",
+    title: "House Party",
+    year: 2023,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.5,
+    synopsis: "House Party is a 2023 American comedy film directed by Calmatic from a screenplay by Jamal Olori and Stephen Glover, serving as a reboot and remake of the 1990 film of the same name. The film stars Tosin Cole, Jacob Latimore, Karen Obilom, D.C. Young Fly, and Kid Cudi, and follows two young aspiring club promoters working as house cleaners who throw a party at their latest job site: LeBron James' mansion. It is produced by New Line Cinema and James and Maverick Carter's SpringHill Company.",
+    cast: [
+      "Tosin Cole",
+      "Jacob Latimore",
+      "Karen Obilom"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDI0ODMxMjktMDM1NS00NDJlLTljMzktMTQ5NGI5NmZlZjdkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDI0ODMxMjktMDM1NS00NDJlLTljMzktMTQ5NGI5NmZlZjdkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "171",
+    title: "Women Talking",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.8,
+    synopsis: "Women Talking is a 2022 drama film written and directed by Sarah Polley. It is based on the Canadian 2018 novel of the same name by Miriam Toews, and inspired by the gas-facilitated rapes that occurred at the Manitoba Colony, a remote and isolated Mennonite community in Bolivia. It features an ensemble cast that includes Rooney Mara, Claire Foy, Jessie Buckley, Judith Ivey, Ben Whishaw, and Frances McDormand, who also served as a producer on the film.",
+    cast: [
+      "Rooney Mara",
+      "Claire Foy",
+      "Jessie Buckley"
+    ],
+    runtime: "99 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzM2YzEzOTktNTJiNy00YjAwLWI2N2YtNjBkZWM5Y2U1OTRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzM2YzEzOTktNTJiNy00YjAwLWI2N2YtNjBkZWM5Y2U1OTRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "172",
+    title: "M3GAN",
+    year: 2023,
+    genres: [
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 4.8,
+    synopsis: "M3GAN is a 2022 American science fiction horror film directed by Gerard Johnstone, written by Akela Cooper from a story by Cooper and James Wan, and starring Allison Williams and Violet McGraw, with Amie Donald physically portraying M3GAN and Jenna Davis voicing the character. Its plot follows the eponymous artificially intelligent doll who develops self-awareness and becomes hostile toward anyone who comes between her and her human companion.",
+    cast: [
+      "Allison Williams",
+      "Violet McGraw",
+      "Amie Donald"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjU1ZWMxYTUtNzQ1ZC00ZTcxLTg0NTMtMzY1ZmQyZjhmYjMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjU1ZWMxYTUtNzQ1ZC00ZTcxLTg0NTMtMzY1ZmQyZjhmYjMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "173",
+    title: "The Old Way",
+    year: 2023,
+    genres: [
+      "Western"
+    ],
+    rating: 5,
+    synopsis: "The Old Way is a 2023 American Western film directed by Brett Donowho, from a screenplay by Carl W. Lucas, and starring Nicolas Cage as a retired gunman on a mission to find the outlaws who killed his wife.",
+    cast: [
+      "Nicolas Cage",
+      "Ryan Kiera Armstrong"
+    ],
+    runtime: "138 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjUwNTcyMTEtMDRjMi00OTg5LWI1NzAtM2FjZmY3MDg5Y2NiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjUwNTcyMTEtMDRjMi00OTg5LWI1NzAtM2FjZmY3MDg5Y2NiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "174",
+    title: "Babylon",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Historical"
+    ],
+    rating: 3.6,
+    synopsis: "Babylon is a 2022 American epic period black comedy-drama film written and directed by Damien Chazelle. It features an ensemble cast including Brad Pitt, Margot Robbie, Diego Calva, Jean Smart, Jovan Adepo, and Li Jun Li. It chronicles the rise and fall of multiple characters during Hollywood's transition from silent to sound films in the late 1920s.",
+    cast: [
+      "Brad Pitt",
+      "Margot Robbie",
+      "Diego Calva"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGY3M2NkN2QtZTdhOS00YTNjLTgyYmMtMGY3Y2U0OTk2NjA0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGY3M2NkN2QtZTdhOS00YTNjLTgyYmMtMGY3Y2U0OTk2NjA0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "175",
+    title: "Puss in Boots: The Last Wish",
+    year: 2022,
+    genres: [
+      "Adventure",
+      "Animated"
+    ],
+    rating: 3.9,
+    synopsis: "Puss in Boots: The Last Wish is a 2022 American computer-animated adventure film produced by DreamWorks Animation and distributed by Universal Pictures. The sequel to the spin-off film Puss in Boots (2011) and the sixth installment in the Shrek franchise, the film was directed by Joel Crawford and co-directed by Januel Mercado. Based on the character from Shrek 2 (2004) and inspired by the eponymous fairy tale, the film's screenplay was written by Paul Fisher and Tommy Swerdlow, with a story by Swerdlow and Tom Wheeler. The voice cast of Puss in Boots: The Last Wish includes Antonio Banderas and Salma Hayek Pinault reprising their respective roles as the titular character and Kitty Softpaws, and are joined by Harvey Guillén, Florence Pugh, Olivia Colman, Ray Winstone, Samson Kayo, John Mulaney, Wagner Moura, Da'Vine Joy Randolph, and Anthony Mendez, who voice new characters introduced in the film. Set after Shrek Forever After (2010), the film follows Puss in Boots as he journeys to find the mystical Last Wish for the Wishing Star by teaming up with Kitty and Perrito (Guillén) to restore the first eight of his nine lives, by wishing on the mystical Last Wishing Star. They must race against Goldilocks and her Three Bears Crime Family, and \"Big\" Jack Horner (Mulaney), who all desire the star; Puss must also avoid a mysterious hooded wolf (Moura), who plots to kill him.",
+    cast: [
+      "Antonio Banderas",
+      "Salma Hayek",
+      "Harvey Guillén"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzg0MWUzMjctYjVlOS00NzVjLWIwZDMtNzg1YzNkYzdjNTMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzg0MWUzMjctYjVlOS00NzVjLWIwZDMtNzg1YzNkYzdjNTMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "176",
+    title: "A Man Called Otto",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "A Man Called Otto is a 2022 American comedy-drama film directed by Marc Forster from a screenplay by David Magee. It is the second film adaptation of the 2012 novel A Man Called Ove by Fredrik Backman after the 2015 Swedish film of the same name. The film stars Tom Hanks in the title role, with Mariana Treviño, Rachel Keller, and Manuel Garcia-Rulfo.",
+    cast: [
+      "Tom Hanks",
+      "Mariana Treviño",
+      "Rachel Keller"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjY5YWJjODYtNDUzNy00ZGMyLTk3NTQtN2EzZmFhZTFmMDNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjY5YWJjODYtNDUzNy00ZGMyLTk3NTQtN2EzZmFhZTFmMDNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "177",
+    title: "Alice, Darling",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Alice, Darling is a 2022 psychological thriller film directed by Mary Nighy, in her directorial debut, from a screenplay by Alanna Francis. The film stars Anna Kendrick, Kaniehtiio Horn, Charlie Carrick, and Wunmi Mosaku.",
+    cast: [
+      "Anna Kendrick",
+      "Kaniehtiio Horn",
+      "Charlie Carrick"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODExMmRjYTAtZTI1OS00MjRkLWI4NTQtMTY3NDYyYjY5ZDBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODExMmRjYTAtZTI1OS00MjRkLWI4NTQtMTY3NDYyYjY5ZDBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "178",
+    title: "Avatar: The Way of Water",
+    year: 2022,
+    genres: [
+      "Science Fiction"
+    ],
+    rating: 4.2,
+    synopsis: "Avatar: The Way of Water is a 2022 American epic science fiction film directed and produced by James Cameron. He co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno. Distributed by 20th Century Studios, it is the sequel to Avatar (2009) and the second installment in the Avatar film series. Cast members Sam Worthington, Zoe Saldaña, Stephen Lang, Joel David Moore, CCH Pounder, Giovanni Ribisi, Dileep Rao, and Matt Gerald reprise their roles from the original film, with Sigourney Weaver returning in an additional role while Kate Winslet joined the cast. It follows a blue-skinned humanoid Na'vi named Jake Sully (Worthington) as he and his family, under renewed human threat, seek refuge with the aquatic Metkayina clan of Pandora, a habitable exomoon on which they live.",
+    cast: [
+      "Sam Worthington",
+      "Zoe Saldaña",
+      "Sigourney Weaver"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWI0Y2NkOWEtMmM2OC00MjQ3LWI1YzItZGQxYzQ3NzI4NWZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWI0Y2NkOWEtMmM2OC00MjQ3LWI1YzItZGQxYzQ3NzI4NWZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "179",
+    title: "5000 Blankets",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of 5000 Blankets.",
+    cast: [
+      "Anna Camp",
+      "Rob Mayes",
+      "Carson Minniear"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTg3NGYyMzYtMmJkMy00Yjc2LWE1NDMtYmJmYWNmYjE5MWRjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTg3NGYyMzYtMmJkMy00Yjc2LWE1NDMtYmJmYWNmYjE5MWRjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "180",
+    title: "The Pale Blue Eye",
+    year: 2022,
+    genres: [
+      "Mystery",
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "The Pale Blue Eye is a 2022 American mystery thriller film written and directed by Scott Cooper, adapted from the 2003 novel of the same name by Louis Bayard. The film features an ensemble cast that includes Christian Bale, Harry Melling, Gillian Anderson, Lucy Boynton, Charlotte Gainsbourg, Toby Jones, Harry Lawtey, Simon McBurney, Timothy Spall, and Robert Duvall. Its plot follows veteran detective Augustus Landor in 1830 West Point, New York, as he investigates a series of murders at the United States Military Academy with the aid of Edgar Allan Poe, a young military cadet.",
+    cast: [
+      "Christian Bale",
+      "Harry Melling",
+      "Gillian Anderson"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2EyM2QyZWUtMzUzOC00YTU4LTg4OGEtZWIwNWZiZjRjY2I3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2EyM2QyZWUtMzUzOC00YTU4LTg4OGEtZWIwNWZiZjRjY2I3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "181",
+    title: "The Whale",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4,
+    synopsis: "The Whale is a 2022 American psychological drama film directed by Darren Aronofsky and written by Samuel D. Hunter, based on his 2012 play of the same name. The film stars Brendan Fraser, Sadie Sink, Hong Chau, Ty Simpkins, and Samantha Morton. The plot follows a reclusive, morbidly obese English teacher who tries to restore his relationship with his teenage daughter.",
+    cast: [
+      "Brendan Fraser",
+      "Sadie Sink",
+      "Hong Chau"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmNhOWMyNTYtNTljNC00NTU3LWFiYmQtMDBhOGU5NWFhNGU5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmNhOWMyNTYtNTljNC00NTU3LWFiYmQtMDBhOGU5NWFhNGU5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "182",
+    title: "Empire of Light",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Empire of Light is a 2022 British romantic drama film directed, written, and co-produced by Sam Mendes. Set in an English coastal town in the early 1980s, the film is about the power of human connection during turbulent times. It stars Olivia Colman, Micheal Ward, Monica Dolan, Tom Brooke, Tanya Moodie, Hannah Onslow, Crystal Clarke, Toby Jones, and Colin Firth.",
+    cast: [
+      "Olivia Colman",
+      "Micheal Ward",
+      "Tom Brooke"
+    ],
+    runtime: "139 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjNmYjhkMDgtNGM3Yi00ODNiLTk5NGUtZjFjZTUxYTI0ZjkyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjNmYjhkMDgtNGM3Yi00ODNiLTk5NGUtZjFjZTUxYTI0ZjkyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "183",
+    title: "Detective Knight: Redemption",
+    year: 2022,
+    genres: [
+      "Action",
+      "War"
+    ],
+    rating: 3.9,
+    synopsis: "Detective Knight: Redemption is a 2022 American Christmas action film directed by Edward John Drake, from a screenplay by Drake and Corey Large, and produced by Large, Randall Emmett, and George Furla. Serving as the second installment of the Detective Knight trilogy, and as a sequel to Detective Knight: Rogue (2022), it stars Paul Johansson and Bruce Willis.",
+    cast: [
+      "Paul Johansson",
+      "Bruce Willis"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmQzZGUzY2EtY2JiNS00NGQwLThkZDYtZDM1OGY0YjgxYWE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmQzZGUzY2EtY2JiNS00NGQwLThkZDYtZDM1OGY0YjgxYWE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "184",
+    title: "Something from Tiffany's",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Something from Tiffany's is a 2022 American Christmas romantic comedy film directed by Daryl Wein, from a screenplay by Tamara Chestna. It is based on the novel of the same name by Melissa Hill. The film stars Zoey Deutch, Kendrick Sampson, Ray Nicholson, and Shay Mitchell.",
+    cast: [
+      "Zoey Deutch",
+      "Kendrick Sampson",
+      "Ray Nicholson"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDAzOWE2ZDUtM2Y1Ni00OGZjLTkxOTgtYzBmODgwMmY4YWNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDAzOWE2ZDUtM2Y1Ni00OGZjLTkxOTgtYzBmODgwMmY4YWNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "185",
+    title: "Lady Chatterley's Lover",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Lady Chatterley's Lover is a 2022 romantic drama film directed by Laure de Clermont-Tonnerre from a screenplay by David Magee based on the novel of the same name by D. H. Lawrence. The film stars Emma Corrin and Jack O'Connell.",
+    cast: [
+      "Emma Corrin",
+      "Jack O'Connell",
+      "Joely Richardson"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDM4MjI3ZjEtMzhkYS00OWUyLTk0NTItODM0NTEwNjk2ZDkzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDM4MjI3ZjEtMzhkYS00OWUyLTk0NTItODM0NTEwNjk2ZDkzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "186",
+    title: "The Mean One",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Slasher"
+    ],
+    rating: 4.7,
+    synopsis: "The Mean One is a 2022 American Christmas black comedy slasher film directed by Steven LaMorte and written by Flip and Finn Kobler. The film serves as an unauthorized horror retelling of Dr. Seuss' 1957 children's book How the Grinch Stole Christmas! and stars David Howard Thornton as the eponymous character, with Krystle Martin, Chase Mullins, John Bigham, Erik Baker, Flip Kobler, and Amy Schumacher in supporting roles. It follows a young woman as she attempts to defend her childhood town from a green-skinned creature who goes on a murderous rampage during the holiday season.",
+    cast: [
+      "David Howard Thornton",
+      "Krystle Martin",
+      "Chase Mullins"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDkyYWFiNTQtODZlNi00NDVjLTkwMzMtM2MzNmQ1NjgwNjUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDkyYWFiNTQtODZlNi00NDVjLTkwMzMtM2MzNmQ1NjgwNjUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "187",
+    title: "Darby and the Dead",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Supernatural",
+      "Teen",
+      "War"
+    ],
+    rating: 4.4,
+    synopsis: "Darby and the Dead is a 2022 American supernatural teen comedy film directed by Silas Howard, written by Wenonah Wilms and Becca Greene, and starring Riele Downs as Darby Harper, along with Auliʻi Cravalho, Chosen Jacobs, Asher Angel, Wayne Knight, Derek Luke, and Tony Danza.",
+    cast: [
+      "Riele Downs",
+      "Auliʻi Cravalho",
+      "Chosen Jacobs"
+    ],
+    runtime: "138 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTBiZWNmZDAtZTRhYi00YmM0LTliMjYtOWRlMDFiNDY3OWNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTBiZWNmZDAtZTRhYi00YmM0LTliMjYtOWRlMDFiNDY3OWNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "188",
+    title: "Spoiler Alert",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Spoiler Alert is a 2022 American biographical romantic drama film starring Jim Parsons and Ben Aldridge as two lovers, one who watches the other's final months before his death from terminal cancer. The film, based on the 2017 memoir Spoiler Alert: The Hero Dies by Michael Ausiello, is directed by Michael Showalter and written by David Marshall Grant and Dan Savage. Parsons plays Ausiello, and Aldridge plays his lover Kit Cowan who dies of cancer.",
+    cast: [
+      "Jim Parsons",
+      "Ben Aldridge",
+      "Sally Field"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGI2Yjk3ZjAtNDhmMC00NDRlLWEyZjItNzFhMjRkZTY0Yzk1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGI2Yjk3ZjAtNDhmMC00NDRlLWEyZjItNzFhMjRkZTY0Yzk1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "189",
+    title: "The Eternal Daughter",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Mystery"
+    ],
+    rating: 4.2,
+    synopsis: "The Eternal Daughter is a 2022 Gothic mystery drama film produced, written and directed by Joanna Hogg. It stars Tilda Swinton in a double role, playing both a middle-aged filmmaker and her elderly mother who are guests at a mysterious hotel. Joseph Mydell and Carly-Sophia Davies feature in supporting roles.",
+    cast: [
+      "Tilda Swinton",
+      "Joseph Mydell",
+      "Carly-Sophia Davies"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2MzNDhhYzctOTExMS00NzQxLWIxMjEtM2NkODI0MjE0OTVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2MzNDhhYzctOTExMS00NzQxLWIxMjEtM2NkODI0MjE0OTVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "190",
+    title: "Matilda the Musical",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Musical",
+      "War"
+    ],
+    rating: 4.2,
+    synopsis: "Roald Dahl's Matilda the Musical, or simply Matilda the Musical, is a 2022 musical fantasy comedy drama film directed by Matthew Warchus from a screenplay by Dennis Kelly, based on the stage musical of the same name by Kelly and Tim Minchin, which in turn is based on the 1988 novel Matilda by Roald Dahl. The film, co-produced by TriStar Pictures, Working Title Films, and The Roald Dahl Story Company, is the second film adaptation of the novel, following the 1996 film. The film stars Alisha Weir as the title character, alongside Lashana Lynch, Stephen Graham, Andrea Riseborough, Sindhu Vee, and Emma Thompson. In the film, Matilda Wormwood (Weir), who is neglected and mistreated by her parents, develops psychokinetic abilities to deal with Miss Trunchbull (Thompson), the ruthless and cruel headmistress of Crunchem Hall School.",
+    cast: [
+      "Alisha Weir",
+      "Lashana Lynch",
+      "Stephen Graham"
+    ],
+    runtime: "122 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGMwZDcyZGYtNjU3Yy00YTk2LWFhMDUtMTI5MTEzY2E0OTRmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGMwZDcyZGYtNjU3Yy00YTk2LWFhMDUtMTI5MTEzY2E0OTRmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "191",
+    title: "Emancipation",
+    year: 2022,
+    genres: [
+      "Action",
+      "Historical",
+      "Thriller"
+    ],
+    rating: 3.5,
+    synopsis: "Emancipation is a 2022 American historical action thriller film set in Louisiana in the 1860s after President Abraham Lincoln issued the Emancipation Proclamation to end most slavery in the US. The film was directed by Antoine Fuqua and co-produced by Will Smith, who stars as a runaway slave headed for Baton Rouge. He must survive the swamps while being chased by slave catchers and their dogs. Written by William N. Collage, the biographical film is loosely based on a possibly conglomerated story of the lives of either or both of two formerly enslaved Black men named Gordon and \"Whipped Peter\". That story was made famous by the photograph of a man's bare back heavily scourged from an overseer's whippings, published worldwide as magazine illustrations in 1863, and gave the abolitionist movement proof of the cruelty of slavery. Ben Foster stars as a ruthless slave hunter and Charmaine Bingwa as an enslaved wife and mother. The film employs an artistic desaturated color palette reminiscent of black-and-white film.",
+    cast: [
+      "Will Smith",
+      "Ben Foster",
+      "Charmaine Bingwa"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjk1OTIzZDQtOWE0ZC00NjQ1LWE2N2QtYzVkMjM0MjkxYWUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjk1OTIzZDQtOWE0ZC00NjQ1LWE2N2QtYzVkMjM0MjkxYWUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "192",
+    title: "Holiday Harmony",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Holiday Harmony.",
+    cast: [
+      "Annelise Cepero",
+      "Jeremy Sumpter",
+      "Brooke Shields"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQzY2E1YzUtOWI2OS00NTY4LTliZTYtYjlkMDZiNmY4MTViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQzY2E1YzUtOWI2OS00NTY4LTliZTYtYjlkMDZiNmY4MTViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "193",
+    title: "A Christmas Mystery",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of A Christmas Mystery.",
+    cast: [
+      "Violet McGraw",
+      "Eddie Cibrian",
+      "Christoph Sanders"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGU3N2E2NmItZTJlNC00ZGM5LTg2ZjAtODA3OWZmZjI3NTg3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGU3N2E2NmItZTJlNC00ZGM5LTg2ZjAtODA3OWZmZjI3NTg3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "194",
+    title: "Strange World",
+    year: 2022,
+    genres: [
+      "Adventure",
+      "Animated",
+      "Science Fiction"
+    ],
+    rating: 4.8,
+    synopsis: "Strange World is a 2022 American computer-animated science-fiction adventure film produced by Walt Disney Animation Studios and distributed by Walt Disney Studios Motion Pictures. The 61st film produced by the studio, it was directed by Don Hall, co-directed by Qui Nguyen, and produced by Roy Conli, from a screenplay written by Nguyen, who also conceived the story with Hall. The film stars the voices of Jake Gyllenhaal, Dennis Quaid, Jaboukie Young-White, Gabrielle Union, and Lucy Liu. It is Disney's seventh animated film to tackle the sci-fi genre, after Big Hero 6 (2014). The film follows a legendary family of explorers, the Clades, who must set aside their differences as they embark on a journey to a mysterious subterranean land inhabited by surreal lifeforms, in order to save a miracle plant Pando that is their society's source of energy.",
+    cast: [
+      "Jake Gyllenhaal",
+      "Dennis Quaid",
+      "Jaboukie Young-White"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDI1ZjY1OTUtMzE1Yi00OWVmLTliNjAtNWVlOTk0ZjNkMDI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDI1ZjY1OTUtMzE1Yi00OWVmLTliNjAtNWVlOTk0ZjNkMDI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "195",
+    title: "Nanny",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.3,
+    synopsis: "Nanny is a 2022 American psychological horror film written and directed by Nikyatu Jusu, in her feature directorial debut. The film stars Anna Diop, Michelle Monaghan, Sinqua Walls, Morgan Spector, Rose Decker, and Leslie Uggams. Jason Blum serves as an executive producer through his Blumhouse Television banner.",
+    cast: [
+      "Anna Diop",
+      "Michelle Monaghan",
+      "Sinqua Walls"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmZmZTgxMjYtMzlkZS00OTRjLTg1ZDUtNGZkYWI5OGQyYzFlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmZmZTgxMjYtMzlkZS00OTRjLTg1ZDUtNGZkYWI5OGQyYzFlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "196",
+    title: "White Noise",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "White Noise is a 2022 absurdist comedy-drama film, written and directed by Noah Baumbach, adapted from the 1985 novel with the same title by Don DeLillo. It is Baumbach's first directed feature not to be based on an original story of his own. The film stars Adam Driver, Greta Gerwig, Don Cheadle, Raffey Cassidy, Sam Nivola, and May Nivola. Set in the 1980s, the story follows the life of an academic and his family whose lives change after an air contamination accident near their home.",
+    cast: [
+      "Adam Driver",
+      "Greta Gerwig",
+      "Don Cheadle"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDVmYTZmODMtNDU4YS00MzExLThmZTItOTM1ZDRiNmFmYWVhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDVmYTZmODMtNDU4YS00MzExLThmZTItOTM1ZDRiNmFmYWVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "197",
+    title: "The Noel Diary",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "The Noel Diary is a 2022 American Christmas romantic comedy-drama film directed by Charles Shyer and written by Rebecca Connor, David Golden, Charles Shyer, and Richard Paul Evans. The film stars Justin Hartley, Barrett Doss, Bonnie Bedelia, Essence Atkins, and James Remar.",
+    cast: [
+      "Justin Hartley",
+      "Barrett Doss"
+    ],
+    runtime: "109 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjg0M2M2MWUtZTMzZC00MDI0LTliMmYtM2VmMjllMDM0NWQ0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjg0M2M2MWUtZTMzZC00MDI0LTliMmYtM2VmMjllMDM0NWQ0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "198",
+    title: "Devotion",
+    year: 2022,
+    genres: [
+      "War",
+      "Biography"
+    ],
+    rating: 4.3,
+    synopsis: "Devotion is a 2022 American biographical war film based on the 2015 book Devotion: An Epic Story of Heroism, Friendship, and Sacrifice by Adam Makos, which retells the comradeship between naval officers Jesse Brown and Tom Hudner during the Korean War. It is directed by J. D. Dillard and written by Jake Crane and Jonathan Stewart. The film stars Jonathan Majors as Brown and Glen Powell as Hudner, along with Christina Jackson, Daren Kagasoff, Joe Jonas, Nick Hargrove, Spencer Neville, and Thomas Sadoski in supporting roles.",
+    cast: [
+      "Jonathan Majors",
+      "Glen Powell",
+      "Christina Jackson"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzQwNDQ1Y2UtODJkOS00NTQ0LWFjNTMtZjc2ZTZiOTcwOGI0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzQwNDQ1Y2UtODJkOS00NTQ0LWFjNTMtZjc2ZTZiOTcwOGI0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "199",
+    title: "Violent Night",
+    year: 2022,
+    genres: [
+      "Action",
+      "Comedy"
+    ],
+    rating: 4.5,
+    synopsis: "Violent Night is a 2022 American Christmas action comedy film directed by Tommy Wirkola and written by Pat Casey and Josh Miller. It follows Santa Claus as he fights mercenaries who have taken a wealthy family hostage in their home. The film also stars John Leguizamo, Alex Hassell, Alexis Louder, Edi Patterson, Cam Gigandet, Leah Brady, and Beverly D'Angelo.",
+    cast: [
+      "David Harbour",
+      "John Leguizamo",
+      "Alex Hassell"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTQ0ZjI1Y2MtMDZmNC00Y2JlLTg3ZjAtYWQ0MTVmMGQ5MjRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTQ0ZjI1Y2MtMDZmNC00Y2JlLTg3ZjAtYWQ0MTVmMGQ5MjRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "200",
+    title: "A Hollywood Christmas",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of A Hollywood Christmas.",
+    cast: [
+      "Jessika Van",
+      "Josh Swickard",
+      "Tom Williamson"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWM5ZmRhYjctMjZmNC00YzI0LTk5ZWUtYWExNDRkZGNiY2RjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWM5ZmRhYjctMjZmNC00YzI0LTk5ZWUtYWExNDRkZGNiY2RjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "201",
+    title: "Disenchanted",
+    year: 2022,
+    genres: [
+      "Live Action",
+      "Animated",
+      "Comedy",
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 3.9,
+    synopsis: "Disenchanted is a 2022 American live-action/animated musical fantasy comedy film directed by Adam Shankman and written by Brigitte Hales, based on a story by Richard LaGravenese and the writing team of J. David Stem and David N. Weiss. Co-produced by Walt Disney Pictures, Josephson Entertainment, and Right Coast Productions, it is the sequel to the 2007 film Enchanted.",
+    cast: [
+      "Amy Adams",
+      "Patrick Dempsey",
+      "Maya Rudolph"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDBmNGU3YmQtYThjNi00MDNhLWIyNWItNGI0MmMwYjMxODM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDBmNGU3YmQtYThjNi00MDNhLWIyNWItNGI0MmMwYjMxODM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "202",
+    title: "A Christmas Story Christmas",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.2,
+    synopsis: "A Christmas Story Christmas is a 2022 American Christmas comedy film directed by Clay Kaytis with a script he co-wrote with Nick Schenk, from an original story co-written by Schenk and Peter Billingsley. It is a legacy sequel to A Christmas Story (1983) and is the eighth installment in the Parker Family Saga franchise, while ignoring the events of My Summer Story (1994) and A Christmas Story 2 (2012). The film was produced by Billingsley and Vince Vaughn along with Cale Boyter, Jay Ashenfelter, Marc Toberoff and Irwin Zwilling. Billingsley reprises his role as Ralphie Parker alongside Ian Petrella, Scott Schwartz, R. D. Robb, Zack Ward, and Yano Anaya returning as Randy Parker, Flick, Schwartz, Scut Farkus, and Grover Dill, respectively. Erinn Hayes, River Drosche, and Julianna Layne play Ralphie's wife and kids, with Julie Hagerty as Mrs. Parker. In the film, after the Old Man dies, Ralphie takes his family to his childhood home, reuniting with his mom and old friends, while being tasked to deliver a memorable Christmas.",
+    cast: [
+      "Peter Billingsley",
+      "Erinn Hayes",
+      "Ian Petrella"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWZhYzI1YjktYzJjYy00NjIwLWE0MGItNWM4YWM2ZjFkNGM0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWZhYzI1YjktYzJjYy00NjIwLWE0MGItNWM4YWM2ZjFkNGM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "203",
+    title: "The Menu",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.3,
+    synopsis: "The Menu is a 2022 American comedy horror film directed by Mark Mylod, written by Seth Reiss and Will Tracy, based on an original story created by Tracy, produced by Adam McKay, Betsy Koch and Will Ferrell, and starring Ralph Fiennes as a celebrity chef with Hong Chau playing his assistant and Anya Taylor-Joy, Nicholas Hoult, Janet McTeer, Reed Birney, Judith Light, and John Leguizamo playing diners who attend his exclusive restaurant.",
+    cast: [
+      "Ralph Fiennes",
+      "Anya Taylor-Joy",
+      "Nicholas Hoult"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2Q0YWE1MjktODJlMi00NTRiLWI2ZTctZTAxNjkyODVjM2EyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2Q0YWE1MjktODJlMi00NTRiLWI2ZTctZTAxNjkyODVjM2EyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "204",
+    title: "Slumberland",
+    year: 2022,
+    genres: [
+      "Adventure",
+      "Fantasy"
+    ],
+    rating: 4.2,
+    synopsis: "Slumberland is a 2022 American fantasy adventure film directed by Francis Lawrence and written by David Guion and Michael Handelman. Based on the comic strip Little Nemo in Slumberland by Winsor McCay, the film stars Jason Momoa, Marlow Barkley, Chris O'Dowd, Kyle Chandler, and Weruche Opia. It tells the story of a young girl who goes to live with her uncle after her father is lost at sea and enters Slumberland where she befriends a renegade character who is involved in a plot to get to the Sea of Nightmares and obtain a special pearl that may have the power to reunite her with her father.",
+    cast: [
+      "Jason Momoa",
+      "Marlow Barkley",
+      "Chris O'Dowd"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGFiMmNhZGItNjZjOS00ZTk1LTg1MDMtYzBhZjBmYjdlNGQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGFiMmNhZGItNjZjOS00ZTk1LTg1MDMtYzBhZjBmYjdlNGQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "205",
+    title: "She Said",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.7,
+    synopsis: "She Said is a 2022 American biographical drama film directed by Maria Schrader and written by Rebecca Lenkiewicz, based on the 2019 book of the same title by reporters Jodi Kantor and Megan Twohey. The film stars Carey Mulligan and Zoe Kazan as Twohey and Kantor, respectively, and follows their New York Times investigation that exposed Harvey Weinstein's history of abuse and sexual misconduct against women. Patricia Clarkson, Andre Braugher, Jennifer Ehle, and Samantha Morton co-star, with Ashley Judd appearing as herself.",
+    cast: [
+      "Carey Mulligan",
+      "Zoe Kazan",
+      "Patricia Clarkson"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjVmNTk1NzktMjk3OC00NDYwLWIzMzMtY2EzZWU0YjZlMmRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjVmNTk1NzktMjk3OC00NDYwLWIzMzMtY2EzZWU0YjZlMmRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "206",
+    title: "Bones and All",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Bones and All is a 2022 romantic horror film directed by Luca Guadagnino from a screenplay by David Kajganich, based on the 2015 novel Bones & All by Camille DeAngelis. The film stars Taylor Russell and Timothée Chalamet as a pair of young cannibals who flee together on a road trip across the country and develop feelings for each other. Michael Stuhlbarg, André Holland, Chloë Sevigny, David Gordon Green, Jessica Harper, Jake Horowitz, and Mark Rylance appear in supporting roles.",
+    cast: [
+      "Taylor Russell",
+      "Timothée Chalamet",
+      "Michael Stuhlbarg"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjUzMWU0ZTEtMjlhYy00YWEwLTlhOTktNzNkMTlhNGNiYmRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjUzMWU0ZTEtMjlhYy00YWEwLTlhOTktNzNkMTlhNGNiYmRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "207",
+    title: "Scrooge: A Christmas Carol",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Drama",
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 4.3,
+    synopsis: "Scrooge: A Christmas Carol is a 2022 computer-animated musical fantasy comedy drama film directed by Stephen Donnelly from a screenplay by both Donnelly and the late Leslie Bricusse, adapted from the 1970 film Scrooge, in turn based on the novel A Christmas Carol by Charles Dickens. Produced by Timeless Films, the film features the voices of Luke Evans, Olivia Colman, Jessie Buckley, Jonathan Pryce, Johnny Flynn, James Cosmo and Trevor Dion Nicholas. It was released in select theaters on November 18, 2022, and made its streaming release in Netflix on December 2 of the same year. The film is dedicated to Leslie Bricusse, who died a year before the film's release. The film received mixed reviews from critics.",
+    cast: [
+      "Luke Evans",
+      "Olivia Colman",
+      "Jessie Buckley"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTAwOTEwMGMtNGM0OS00MGM0LThjY2ItNzE5OTU3ZGQ2NDkyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTAwOTEwMGMtNGM0OS00MGM0LThjY2ItNzE5OTU3ZGQ2NDkyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "208",
+    title: "Prancer: A Christmas Tale",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.6,
+    synopsis: "Prancer: A Christmas Tale is a 2022 film and a remake of the 1989 film Prancer. It was produced by Raffaella De Laurentiis and written by Greg Taylor, who, respectively, also produced and wrote the original.",
+    cast: [
+      "James Cromwell",
+      "Sarah-Jane Potts",
+      "Aaron McCusker"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDdlOTQ3NDQtMTA5ZS00ZWRlLWIzNGYtNGVkNjgxNzMwZjkyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDdlOTQ3NDQtMTA5ZS00ZWRlLWIzNGYtNGVkNjgxNzMwZjkyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "209",
+    title: "The Inspection",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.2,
+    synopsis: "The Inspection is a 2022 American drama film written and directed by Elegance Bratton. Inspired by Bratton's real-life experiences, the film follows a young gay black man who defiantly endures brutal training at a Marine Corps boot camp, seeking approval from his homophobic mother. It stars Jeremy Pope, Raúl Castillo, McCaul Lombardi, Aaron Dominguez, Nicholas Logan, Eman Esfandi, Andrew Kai, Aubrey Joseph, Bokeem Woodbine, and Gabrielle Union.",
+    cast: [
+      "Jeremy Pope",
+      "Raúl Castillo",
+      "McCaul Lombardi"
+    ],
+    runtime: "144 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmFhMTM5OTUtMmQ0ZC00NTMyLWE2OTYtMTM1N2QyMTA3MzA2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmFhMTM5OTUtMmQ0ZC00NTMyLWE2OTYtMTM1N2QyMTA3MzA2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "210",
+    title: "Christmas with You",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Christmas with You.",
+    cast: [
+      "Aimee Garcia",
+      "Freddie Prinze Jr."
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTg1N2VkNzctZTM2Ny00OWIyLTk2ZTYtYWVjMGQ2OTI5YzUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTg1N2VkNzctZTM2Ny00OWIyLTk2ZTYtYWVjMGQ2OTI5YzUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "211",
+    title: "Paradise City",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 4.9,
+    synopsis: "Paradise City is a 2022 American action film directed by Chuck Russell and written by Russell, Corey Large, and Edward John Drake. It stars Bruce Willis and John Travolta.",
+    cast: [
+      "John Travolta",
+      "Bruce Willis"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTY4YWU0MTgtNDAzOS00Nzg2LWI4MzktNWEzZDJlN2M4NDY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTY4YWU0MTgtNDAzOS00Nzg2LWI4MzktNWEzZDJlN2M4NDY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "212",
+    title: "The Fabelmans",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 5,
+    synopsis: "The Fabelmans is a 2022 American coming-of-age drama film directed by Steven Spielberg, who co-wrote and produced it with Tony Kushner. The film is a semi-autobiographical story loosely based on Spielberg's adolescence and first years as a filmmaker. It's told through an original story of the fictional Sammy Fabelman, a young aspiring filmmaker who explores how the power of films can help him see the truth about his dysfunctional family and those around him. It stars Gabriel LaBelle as Sammy, alongside Michelle Williams, Paul Dano, Seth Rogen, and Judd Hirsch in supporting roles. The film is dedicated to the memories of Spielberg's real-life parents, Leah Adler and Arnold Spielberg, who died in 2017 and 2020, respectively.",
+    cast: [
+      "Michelle Williams",
+      "Paul Dano",
+      "Seth Rogen"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDY5OWY4ZWYtYTM3OC00Zjg5LWFlYzYtYWI5ZGM1MDcxYzY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDY5OWY4ZWYtYTM3OC00Zjg5LWFlYzYtYWI5ZGM1MDcxYzY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "213",
+    title: "Poker Face",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Poker Face is a 2022 Australian-American thriller film written by, directed by and starring Russell Crowe. It co-stars Liam Hemsworth and RZA. The film had a limited theatrical release on November 16, 2022 and was released on demand on November 22, 2022.",
+    cast: [
+      "Russell Crowe",
+      "Liam Hemsworth",
+      "Elsa Pataky"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmEwZWEyMTktMmVmMy00YjE4LWEzNWEtMjc2Zjk5NWM3MjkxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmEwZWEyMTktMmVmMy00YjE4LWEzNWEtMjc2Zjk5NWM3MjkxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "214",
+    title: "The Minute You Wake Up Dead",
+    year: 2022,
+    genres: [
+      "Noir",
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "The Minute You Wake Up Dead is a 2022 American noir thriller film directed by Michael Mailer and starring Cole Hauser, Morgan Freeman and Jaimie Alexander.",
+    cast: [
+      "Cole Hauser",
+      "Jaimie Alexander",
+      "Morgan Freeman"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTRkY2I4NGItOGVjOS00ODNmLWFhMjgtMWY1Y2EwYmZmZjY3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTRkY2I4NGItOGVjOS00ODNmLWFhMjgtMWY1Y2EwYmZmZjY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "215",
+    title: "Spirited",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Musical"
+    ],
+    rating: 4.5,
+    synopsis: "Spirited is a 2022 American Christmas musical comedy film directed by Sean Anders, and written and produced by Anders and John Morris. It is a modern retelling of Charles Dickens's 1843 novella A Christmas Carol and a satire of the various adaptations since. The film stars Will Ferrell, Ryan Reynolds, Octavia Spencer, Sunita Mani, Patrick Page, Marlow Barkley, and Tracy Morgan. In the film, The Ghost of Christmas Present is nearing retirement, which would mean a return to Earth. He sets his sights on an \"unredeemable\" man named Clint Briggs, who ends up helping the Ghost come to terms with his own past.",
+    cast: [
+      "Will Ferrell",
+      "Ryan Reynolds",
+      "Octavia Spencer"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "216",
+    title: "Dear Zoe",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.9,
+    synopsis: "Dear Zoe is a 2022 American drama film directed by Gren Wells from a screenplay by Marc Lhormer and Melissa Martin. It is an adaptation of the 2005 novel of the same name by Philip Beard. The film stars Sadie Sink, Theo Rossi, Kweku Collins, Jessica Capshaw, Justin Bartha, and Vivien Lyra Blair.",
+    cast: [
+      "Sadie Sink",
+      "Theo Rossi",
+      "Kweku Collins"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODFlYWI0ODktNDE4Mi00MzFhLTk2ZmUtZDBhOWExZTRhYjg4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODFlYWI0ODktNDE4Mi00MzFhLTk2ZmUtZDBhOWExZTRhYjg4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "217",
+    title: "Falling for Christmas",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Falling for Christmas is a 2022 American Christmas romantic comedy film starring Lindsay Lohan as a spoiled heiress who loses her memory in a skiing accident and lands in the care of a lodge owner widower at Christmastime. The film is directed by Janeen Damian, in her directorial debut, from a screenplay by Jeff Bonnett and Ron Oliver. Chord Overstreet, George Young, Jack Wagner and Olivia Perez also appear in supporting roles.",
+    cast: [
+      "Lindsay Lohan",
+      "Chord Overstreet",
+      "George Young"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjRlOTQwZmYtOWVhYy00ZTA1LWEzZWEtNjRhNzU4ODI3NzM1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjRlOTQwZmYtOWVhYy00ZTA1LWEzZWEtNjRhNzU4ODI3NzM1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "218",
+    title: "Something in the Dirt",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 4.4,
+    synopsis: "Something in the Dirt is a 2022 American science fiction comedy horror film written by Justin Benson and directed by and starring Benson and Aaron Moorhead. It is the fifth feature film by the directing duo.",
+    cast: [
+      "Justin Benson",
+      "Aaron Moorhead"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjE0ZWQxYjMtOWU4OS00ZDAwLWFjNjMtYzljNDA4NGJiYmRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjE0ZWQxYjMtOWU4OS00ZDAwLWFjNjMtYzljNDA4NGJiYmRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "219",
+    title: "The Estate",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.6,
+    synopsis: "The Estate is a 2022 black comedy written and directed by Dean Craig. It stars Toni Collette and Anna Faris as sisters who try to get back in the good graces of their estranged aunt before she passes to inherit some of her fortune. The film was released on November 4, 2022, by Signature Entertainment.",
+    cast: [
+      "Toni Collette",
+      "Anna Faris",
+      "David Duchovny"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmE3YzY1NDgtN2ZhMS00YTExLWJkNmItOGU4OGE4Y2E5ODQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmE3YzY1NDgtN2ZhMS00YTExLWJkNmItOGU4OGE4Y2E5ODQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "220",
+    title: "On the Line",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.3,
+    synopsis: "On the Line is a 2022 thriller film written, produced, and directed by Romuald Boulanger and starring Mel Gibson.",
+    cast: [
+      "Mel Gibson",
+      "Kevin Dillon"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjBiNjU2MmItYTYxZC00N2NmLTgwNjItZDc4MjZhZmFhMDNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjBiNjU2MmItYTYxZC00N2NmLTgwNjItZDc4MjZhZmFhMDNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "221",
+    title: "Enola Holmes 2",
+    year: 2022,
+    genres: [
+      "Mystery"
+    ],
+    rating: 4.6,
+    synopsis: "Enola Holmes 2 is a 2022 mystery film and the sequel to the 2020 film Enola Holmes, both of which star Millie Bobby Brown as the title character, the teenage sister of the already-famous Victorian-era detective Sherlock Holmes. The film is directed by Harry Bradbeer from a screenplay by Jack Thorne that adapts the book series The Enola Holmes Mysteries by Nancy Springer. Unlike its predecessor, the film does not adapt one of Springer's novels and instead takes real-life inspiration from the 1888 matchgirls' strike. In addition to Brown, Henry Cavill, Louis Partridge, Susie Wokoma, Adeel Akhtar, and Helena Bonham Carter reprise their supporting roles, while David Thewlis and Sharon Duncan-Brewster join the cast.",
+    cast: [
+      "Millie Bobby Brown",
+      "Henry Cavill",
+      "David Thewlis"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjRjZjZhNzUtMDQyMC00OWZmLWIzMjQtZDM2OWRhNzgwOGU2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjRjZjZhNzUtMDQyMC00OWZmLWIzMjQtZDM2OWRhNzgwOGU2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "222",
+    title: "Weird: The Al Yankovic Story",
+    year: 2022,
+    genres: [
+      "Biography",
+      "Satire"
+    ],
+    rating: 4.9,
+    synopsis: "Weird: The Al Yankovic Story is a 2022 American biographical parody film directed by Eric Appel, who co-wrote the screenplay with Al Yankovic. The film is a satire of biopics and is loosely based on Yankovic's life and career as an accordionist and parody songwriter. It stars Daniel Radcliffe as Yankovic, along with Evan Rachel Wood, Rainn Wilson, Toby Huss, Arturo Castro, and Julianne Nicholson in supporting roles.",
+    cast: [
+      "Daniel Radcliffe",
+      "Evan Rachel Wood",
+      "Rainn Wilson"
+    ],
+    runtime: "94 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTZiYjM0ZTItNzE4Mi00ZjdkLWFjMDctYzNiMmE5YWY5MjUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTZiYjM0ZTItNzE4Mi00ZjdkLWFjMDctYzNiMmE5YWY5MjUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "223",
+    title: "The Independent",
+    year: 2022,
+    genres: [
+      "Political"
+    ],
+    rating: 4.3,
+    synopsis: "The Independent is a 2022 American political film directed by Amy Rice and written by Evan Parter. It stars Jodie Turner-Smith, Brian Cox, Luke Kirby, Stephen Lang, Ann Dowd, and John Cena. The plot centers around a reporter who uncovers a conspiracy that could impact the results of an upcoming presidential election. The film was released on streaming by Peacock on November 2, 2022.",
+    cast: [
+      "Brian Cox",
+      "Jodie Turner-Smith",
+      "Luke Kirby"
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWM3ZWU2YTktZDhjZi00NjliLWFjMTYtN2Q2N2E5OGRjNWYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWM3ZWU2YTktZDhjZi00NjliLWFjMTYtN2Q2N2E5OGRjNWYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "224",
+    title: "Armageddon Time",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.8,
+    synopsis: "Armageddon Time is a 2022 American coming-of-age drama film written, directed, and produced by James Gray. The film stars Anne Hathaway, Jeremy Strong, Banks Repeta, Jaylin Webb, and Anthony Hopkins. Inspired by Gray's childhood experiences, the story follows a young Jewish-American boy who befriends an African-American classmate and begins to struggle with expectations from his family and growing up in a world of privilege, inequality and prejudice. It was shot in New Jersey and in Fresh Meadows, Queens, New York where the director James Gray grew up with cinematographer Darius Khondji.",
+    cast: [
+      "Anne Hathaway",
+      "Jeremy Strong",
+      "Banks Repeta"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDcyNGZmZTAtOWM2NS00NzlkLTk2ZTMtMDkzNGM1ODQ3OTVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDcyNGZmZTAtOWM2NS00NzlkLTk2ZTMtMDkzNGM1ODQ3OTVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "225",
+    title: "The Wonder",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Historical"
+    ],
+    rating: 4,
+    synopsis: "The Wonder is a 2022 period psychological drama film directed by Sebastián Lelio. Emma Donoghue, Lelio, and Alice Birch wrote the screenplay based on the 2016 novel of the same name by Donoghue. Set shortly after the Great Famine, it follows an English nurse sent to a rural Irish village to observe a young 'fasting girl', who is seemingly able to miraculously survive without eating. Florence Pugh leads an ensemble cast that includes Tom Burke, Niamh Algar, Elaine Cassidy, Dermot Crowley, Brían F. O'Byrne, David Wilmot, Ruth Bradley, Caolán Byrne, Josie Walker, Ciarán Hinds, Toby Jones, and Kíla Lord Cassidy.",
+    cast: [
+      "Florence Pugh",
+      "Tom Burke",
+      "Niamh Algar"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDU5NzljODgtNjg1OS00NWZlLTg3MzEtMDU0YWI2ZjEwNzk2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "226",
+    title: "Call Jane",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.1,
+    synopsis: "Call Jane is a 2022 American drama film starring Elizabeth Banks as a suburban housewife in the 1960s who deals with a life-threatening pregnancy. The film also stars Sigourney Weaver, Chris Messina, Kate Mara, Wunmi Mosaku, Cory Michael Smith, Grace Edwards, and John Magaro. It is directed by Phyllis Nagy. The screenplay was written by Hayley Schore and Roshan Sethi.",
+    cast: [
+      "Elizabeth Banks",
+      "Sigourney Weaver",
+      "Chris Messina"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzU4NzNmY2UtZDgxZi00YTJmLTk4OTAtYjgzOTAyMmRiOWFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzU4NzNmY2UtZDgxZi00YTJmLTk4OTAtYjgzOTAyMmRiOWFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "227",
+    title: "Causeway",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Causeway is a 2022 American drama film directed by Lila Neugebauer in her feature directorial debut and written by Ottessa Moshfegh, Luke Goebel, and Elizabeth Sanders. The film stars Jennifer Lawrence, Brian Tyree Henry, Linda Emond, Jayne Houdyshell, Stephen McKinley Henderson, and Russell Harvard. It follows a soldier struggling to adjust to her life after returning home to New Orleans.",
+    cast: [
+      "Jennifer Lawrence",
+      "Brian Tyree Henry",
+      "Linda Emond"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjVmZDgwZDItOWVjMy00MDE2LTljMWQtNTRiOTFmMjU4ZWQzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjVmZDgwZDItOWVjMy00MDE2LTljMWQtNTRiOTFmMjU4ZWQzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "228",
+    title: "Prey for the Devil",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.7,
+    synopsis: "Prey for the Devil is a 2022 American supernatural horror film directed by Daniel Stamm and stars Jacqueline Byers, Colin Salmon, Christian Navarro, Lisa Palfrey, Nicholas Ralph, Virginia Madsen, and Ben Cross.",
+    cast: [
+      "Jacqueline Byers",
+      "Colin Salmon",
+      "Christian Navarro"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDA0MzJkZjgtZmQ2ZS00MGI3LTk5MWQtY2VlNzk3NDc1MGE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDA0MzJkZjgtZmQ2ZS00MGI3LTk5MWQtY2VlNzk3NDc1MGE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "229",
+    title: "Run Sweetheart Run",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4.6,
+    synopsis: "Run Sweetheart Run is a 2020 American supernatural horror film directed by Shana Feste from a screenplay by Feste, Keith Josef Adkins and Kellee Terrell. The film stars Ella Balinska, Pilou Asbæk, Dayo Okeniyi, Betsy Brandt, Ava Grey, Lamar Johnson, Jess Gabor, Clark Gregg, and Shohreh Aghdashloo.",
+    cast: [
+      "Ella Balinska",
+      "Pilou Asbæk",
+      "Clark Gregg"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmViMjUzMjAtNzkzNS00OWI2LWFjNDMtOTM0NDUxN2MyNDVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmViMjUzMjAtNzkzNS00OWI2LWFjNDMtOTM0NDUxN2MyNDVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "230",
+    title: "My Father's Dragon",
+    year: 2022,
+    genres: [
+      "Adventure",
+      "Animated",
+      "Comedy",
+      "Fantasy"
+    ],
+    rating: 4.8,
+    synopsis: "My Father's Dragon is a 2022 2D-animated fantasy adventure comedy film directed by Nora Twomey with a screenplay by Meg LeFauve who co-wrote the story with John Morgan. It is based on the 1948 children's novel of the same name by Ruth Stiles Gannett. The film is also dedicated to Morgan who had since died. It stars the voices of Jacob Tremblay, Gaten Matarazzo, Golshifteh Farahani, Dianne Wiest, Rita Moreno, Chris O'Dowd, Judy Greer, Alan Cumming, Yara Shahidi, Jackie Earle Haley, Whoopi Goldberg, and Ian McShane.",
+    cast: [
+      "Jacob Tremblay",
+      "Gaten Matarazzo",
+      "Golshifteh Farahani"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzAxMGZiNzgtOTZmNS00M2Y4LWJjNGUtZDNmYTJhM2YyYTk2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzAxMGZiNzgtOTZmNS00M2Y4LWJjNGUtZDNmYTJhM2YyYTk2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "231",
+    title: "The Good Nurse",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.1,
+    synopsis: "The Good Nurse is a 2022 American biographical crime drama film, starring Jessica Chastain and Eddie Redmayne, about Amy Loughren, a night nurse, who suspects that her co-worker Charles Cullen is a serial killer. The film is based on the 2013 true-crime book of the same name by Charles Graeber. It is directed by Tobias Lindholm and written by Krysty Wilson-Cairns. The film also stars Nnamdi Asomugha, Kim Dickens, and Noah Emmerich.",
+    cast: [
+      "Jessica Chastain",
+      "Eddie Redmayne",
+      "Nnamdi Asomugha"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTAzYzQ2MmMtZWQ0ZS00YmRiLWEzNjQtZmQ3NDIyZmI1ZmIwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTAzYzQ2MmMtZWQ0ZS00YmRiLWEzNjQtZmQ3NDIyZmI1ZmIwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "232",
+    title: "Aftersun",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "Aftersun is a 2022 coming-of-age drama film written and directed by Charlotte Wells, starring Paul Mescal, Frankie Corio and Celia Rowlson-Hall. Set in the late 1990s, the film follows Sophie, an 11-year-old girl, on holiday with her father at a Turkish resort on the eve of his 31st birthday.",
+    cast: [
+      "Paul Mescal",
+      "Francesca Corio",
+      "Celia Rowlson-Hall"
+    ],
+    runtime: "138 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWU5Y2MyZjQtNGVjYi00ZDRkLTk1MGYtYmNlMzI0MTFmNDU2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWU5Y2MyZjQtNGVjYi00ZDRkLTk1MGYtYmNlMzI0MTFmNDU2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "233",
+    title: "The Banshees of Inisherin",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.6,
+    synopsis: "The Banshees of Inisherin is a 2022 black tragicomedy film directed, written, and produced by Martin McDonagh. Set on a remote, fictional island off the west coast of Ireland, the film stars Colin Farrell and Brendan Gleeson as two lifelong friends who find themselves at an impasse when one abruptly ends their relationship, with alarming consequences for both of them. Kerry Condon and Barry Keoghan also star. It reunites Farrell and Gleeson, who previously worked together on McDonagh's directorial debut, In Bruges (2008).",
+    cast: [
+      "Colin Farrell",
+      "Brendan Gleeson",
+      "Kerry Condon"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTkzMWI4OTEtMTk0MS00MTUxLWI4NTYtYmRiNWM4Zjc1MGRhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "234",
+    title: "Ticket to Paradise",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Ticket to Paradise is a 2022 romantic comedy film starring George Clooney and Julia Roberts as a divorced couple who team up to sabotage the impending wedding of their daughter in Bali. The film is directed by Ol Parker and written by Parker and Daniel Pipski, while Kaitlyn Dever, Billie Lourd, Maxime Bouttier, and Lucas Bravo also star.",
+    cast: [
+      "George Clooney",
+      "Julia Roberts",
+      "Kaitlyn Dever"
+    ],
+    runtime: "139 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmQwNDg4Y2EtZjc4OS00NDY0LTk1NGMtZTEyOTAxMWQ3NWQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmQwNDg4Y2EtZjc4OS00NDY0LTk1NGMtZTEyOTAxMWQ3NWQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "235",
+    title: "V/H/S/99",
+    year: 2022,
+    genres: [
+      "Found Footage",
+      "Horror"
+    ],
+    rating: 3.8,
+    synopsis: "V/H/S/99 is a 2022 American found footage horror anthology film, and the fifth installment in the V/H/S franchise. The film features segments from Johannes Roberts, Vanessa & Joseph Winter, Maggie Levin, Tyler MacIntyre and Flying Lotus. It premiered September 16, 2022 in the Midnight Madness category of the 2022 Toronto International Film Festival. It was released as a Shudder Original Film on October 20, 2022. Upon its release, the film broke streaming records on Shudder and became the platform's most-viewed premiere, a title which was held by the earlier entry, V/H/S/94.",
+    cast: [
+      "Luke Mullen",
+      "Tyler Lofton",
+      "Isabelle Hahn"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDUxYTg3MzgtNGRhMy00NGQ1LWJiM2UtOTQ5MWU3ZGMxMTYxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDUxYTg3MzgtNGRhMy00NGQ1LWJiM2UtOTQ5MWU3ZGMxMTYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "236",
+    title: "Black Adam",
+    year: 2022,
+    genres: [
+      "Superhero"
+    ],
+    rating: 3.9,
+    synopsis: "Black Adam is a 2022 American superhero film based on the DC character of the same name. Produced by New Line Cinema, DC Films, Seven Bucks Productions, and FlynnPictureCo. and distributed by Warner Bros. Pictures, it is a spin-off to Shazam! (2019) and the 11th film in the DC Extended Universe (DCEU). The film was directed by Jaume Collet-Serra from a screenplay by Adam Sztykiel, Rory Haines, and Sohrab Noshirvani. It stars Dwayne Johnson as Teth-Adam / Black Adam, an ancient superhuman who is released from his magic imprisonment by a group of archeologists to free the nation of Kahndaq from the crime syndicate Intergang, whose local leader plans to obtain an ancient relic called the Crown of Sabbac to take control of the nation. Aldis Hodge, Noah Centineo, Sarah Shahi, Marwan Kenzari, Quintessa Swindell, and Pierce Brosnan appear in supporting roles.",
+    cast: [
+      "Dwayne Johnson",
+      "Aldis Hodge",
+      "Noah Centineo"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmM3OTM4NDktMmI2NS00OWU0LTg4OTQtNjZhMmFkYjhmOGY1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmM3OTM4NDktMmI2NS00OWU0LTg4OTQtNjZhMmFkYjhmOGY1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "237",
+    title: "The School for Good and Evil",
+    year: 2022,
+    genres: [
+      "Fantasy"
+    ],
+    rating: 4.5,
+    synopsis: "The School for Good and Evil is a 2022 American fantasy film directed by Paul Feig, who co-wrote the screenplay with David Magee, based on the 2013 novel of the same name by Soman Chainani. The film stars an ensemble cast led by Sophia Anne Caruso as Sophie and Sofia Wylie as Agatha, two best friends who are sent to the Schools for Good and Evil. After their fortunes are seemingly reversed, their friendship is put to the test.",
+    cast: [
+      "Sophia Anne Caruso",
+      "Sofia Wylie",
+      "Laurence Fishburne"
+    ],
+    runtime: "113 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWE0MmUzYjEtNzQ4MS00MjkzLWE3YTYtYjQwNmZlZTJkODRmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWE0MmUzYjEtNzQ4MS00MjkzLWE3YTYtYjQwNmZlZTJkODRmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "238",
+    title: "My Policeman",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "My Policeman is a 2022 American romantic drama film based on the 2012 novel of the same name by Bethan Roberts and directed by Michael Grandage. The film stars Harry Styles, Emma Corrin, Gina McKee, Linus Roache, David Dawson, and Rupert Everett.",
+    cast: [
+      "Harry Styles",
+      "Emma Corrin",
+      "David Dawson"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjkxNjg0YTctYTU5OC00MTYwLTg3NTMtZTcwNDRkNmQ2ZTcyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjkxNjg0YTctYTU5OC00MTYwLTg3NTMtZTcwNDRkNmQ2ZTcyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "239",
+    title: "Wendell & Wild",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Horror",
+      "Erotic"
+    ],
+    rating: 4.6,
+    synopsis: "Wendell & Wild is a 2022 American stop motion adult animated horror comedy film directed by Henry Selick from a screenplay written by Selick and Jordan Peele, based on Selick's and Clay McLeod Chapman's unpublished book of the same name. It stars Keegan-Michael Key and Jordan Peele as the titular characters with Angela Bassett, Lyric Ross, James Hong, and Ving Rhames in supporting roles. This was Selick's first feature film since Coraline (2009).",
+    cast: [
+      "Keegan-Michael Key",
+      "Jordan Peele",
+      "Lyric Ross"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWQ2NmZjMWYtYmY5Ni00ZmM4LWFkMzEtMWM0MjI0OTE3N2Y1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWQ2NmZjMWYtYmY5Ni00ZmM4LWFkMzEtMWM0MjI0OTE3N2Y1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "240",
+    title: "Detective Knight: Rogue",
+    year: 2022,
+    genres: [
+      "Action",
+      "War"
+    ],
+    rating: 4.7,
+    synopsis: "Detective Knight: Rogue is a 2022 American action film directed by Edward John Drake, from a screenplay by Drake and Corey Large, and produced by Large, Randall Emmett, and George Furla. Serving as the first installment of the Detective Knight trilogy, it stars Bruce Willis, Lochlyn Munro, and Jimmy Jean-Louis.",
+    cast: [
+      "Bruce Willis",
+      "Lochlyn Munro",
+      "Jimmy Jean-Louis"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTJjYzNiY2QtOWE4Zi00YjJmLWE0ZjEtY2UyNTEyNDMxMGViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTJjYzNiY2QtOWE4Zi00YjJmLWE0ZjEtY2UyNTEyNDMxMGViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "241",
+    title: "Significant Other",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 5,
+    synopsis: "Significant Other is a 2022 American sci-fi horror film written and directed by Dan Berk and Robert Olsen. The film stars Maika Monroe and Jake Lacy as a couple dealing with relationship issues while backpacking in the woods in the Pacific Northwest, whose activities are interrupted by a meteor strike bringing an alien lifeform into the picture.",
+    cast: [
+      "Maika Monroe",
+      "Jake Lacy"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjM3MTk2ZTYtZTIzZC00OWVjLTk2ZjEtMjQzZDk4NDBlYTZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjM3MTk2ZTYtZTIzZC00OWVjLTk2ZjEtMjQzZDk4NDBlYTZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "242",
+    title: "Hellraiser",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.6,
+    synopsis: "Hellraiser is a 2022 supernatural horror film directed by David Bruckner, with a screenplay by Ben Collins and Luke Piotrowski, from a screen story they co-wrote with David S. Goyer. It is a reboot of the Hellraiser franchise, the eleventh installment overall, and a second adaptation of the 1986 novella The Hellbound Heart by Clive Barker, which was adapted into the 1987 film Hellraiser. The film stars Odessa A'zion, Jamie Clayton, Adam Faison, Drew Starkey, Brandon Flynn, Aoife Hinds, Jason Liles, Yinka Olorunnife, Selina Lo, Zachary Hing, Kit Clarke, Goran Višnjić, and Hiam Abbass. It follows a young woman recovering from addiction who ends up with a mechanical puzzle box that can summon the Cenobites, humanoid beings who thrive on pain and pleasure.",
+    cast: [
+      "Odessa A'zion",
+      "Jamie Clayton",
+      "Brandon Flynn"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGI4MzkzNzQtYjA3MC00ZjE1LWI0NWUtMDdjNWQ3OTgxZTkwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGI4MzkzNzQtYjA3MC00ZjE1LWI0NWUtMDdjNWQ3OTgxZTkwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "243",
+    title: "Till",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 3.5,
+    synopsis: "Till is a 2022 biographical drama film directed by Chinonye Chukwu and written by Michael Reilly, Keith Beauchamp, and Chukwu, and produced by Beauchamp, Reilly, and Whoopi Goldberg. It is based on the true story of Mamie Till-Bradley, an educator and activist who pursued justice after the murder of her 14-year-old son Emmett in August 1955. The film stars Danielle Deadwyler as Mamie and Jalyn Hall as Emmett. Kevin Carroll, Frankie Faison, Haley Bennett, Jayme Lawson, Tosin Cole, Sean Patrick Thomas, John Douglas Thompson, Roger Guenveur Smith, and Goldberg also appear in supporting roles.",
+    cast: [
+      "Danielle Deadwyler",
+      "Jalyn Hall",
+      "Kevin Carroll"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYThmY2I1ZDktZGUyNi00MmU2LTkzMDktNGIwM2Y5YzVmZGMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYThmY2I1ZDktZGUyNi00MmU2LTkzMDktNGIwM2Y5YzVmZGMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "244",
+    title: "Stars at Noon",
+    year: 2022,
+    genres: [
+      "Thriller",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Stars at Noon is a 2022 English-language French romantic thriller film directed by Claire Denis, based on the 1986 novel The Stars at Noon by Denis Johnson, starring Margaret Qualley, Joe Alwyn, Benny Safdie, Danny Ramirez, and John C. Reilly. The film was selected to compete for the Palme d'Or at the 2022 Cannes Film Festival, where it won the Grand Prix.",
+    cast: [
+      "Margaret Qualley",
+      "Joe Alwyn",
+      "Benny Safdie"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTZmNmY5ZjgtNzU3OC00ZjkwLWFlZWMtN2Q1MjQ4MTg1ZTAyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTZmNmY5ZjgtNzU3OC00ZjkwLWFlZWMtN2Q1MjQ4MTg1ZTAyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "245",
+    title: "The Curse of Bridge Hollow",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.7,
+    synopsis: "The Curse of Bridge Hollow is a 2022 American comedy horror film directed by Jeff Wadlow from a screenplay by Todd Berger and Robert Rugan. Starring Marlon Wayans, Priah Ferguson, Kelly Rowland, John Michael Higgins, Lauren Lapkus, Rob Riggle, and Nia Vardalos, the film was released by Netflix on October 14, 2022.",
+    cast: [
+      "Marlon Wayans",
+      "Priah Ferguson",
+      "Kelly Rowland"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGM3ODMwYmUtYzQ2ZC00ZjFlLWJiN2ItNDBmMmFiNmMzMDExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGM3ODMwYmUtYzQ2ZC00ZjFlLWJiN2ItNDBmMmFiNmMzMDExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "246",
+    title: "Bitch Ass",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Horror"
+    ],
+    rating: 4.1,
+    synopsis: "Bitch Ass is a 2022 American crime horror film directed by Bill Posley and starring Tony Todd. It is Posley’s feature directorial debut.",
+    cast: [
+      "Tony Todd"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWVjMGRkZDAtNjFlNy00ZWNjLTliZTAtYWUwMWI2YWM2OWZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWVjMGRkZDAtNjFlNy00ZWNjLTliZTAtYWUwMWI2YWM2OWZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "247",
+    title: "Rosaline",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Rosaline is a 2022 American romantic comedy film directed by Karen Maine, written by Scott Neustadter and Michael H. Weber, and starring Kaitlyn Dever, Isabela Merced, Kyle Allen, Sean Teale, Christopher McDonald, Minnie Driver, and Bradley Whitford. It is based on the 2012 young adult novel When You Were Mine by Rebecca Serle, which in turn was inspired by William Shakespeare's Romeo and Juliet.",
+    cast: [
+      "Kaitlyn Dever",
+      "Isabela Merced",
+      "Kyle Allen"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWFiODU3OGItMzc3Ni00ZDg1LTgwZTktNzJkOGViYjVhY2UxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWFiODU3OGItMzc3Ni00ZDg1LTgwZTktNzJkOGViYjVhY2UxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "248",
+    title: "Raymond & Ray",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.6,
+    synopsis: "Raymond & Ray is a 2022 comedy-drama film written and directed by Rodrigo García. The film stars Ewan McGregor, Ethan Hawke, Maribel Verdú, and Sophie Okonedo.",
+    cast: [
+      "Ewan McGregor",
+      "Ethan Hawke",
+      "Maribel Verdú"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWIzNTA4MzAtYzY3Yy00NmE0LWI4NjgtMzU1ZDIyZjI1ZDliXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWIzNTA4MzAtYzY3Yy00NmE0LWI4NjgtMzU1ZDIyZjI1ZDliXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "249",
+    title: "The Redeem Team",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of The Redeem Team.",
+    cast: [
+      "LeBron James",
+      "Dwyane Wade",
+      "Mike Krzyzewski"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTc0YWUwNWItYzA4OC00Mzk5LTk3ZDQtOGYxM2M5NmE4YWViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTc0YWUwNWItYzA4OC00Mzk5LTk3ZDQtOGYxM2M5NmE4YWViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "250",
+    title: "Halloween Ends",
+    year: 2022,
+    genres: [
+      "Slasher"
+    ],
+    rating: 3.6,
+    synopsis: "Halloween Ends is a 2022 American slasher film directed by David Gordon Green and co-written by Green, Danny McBride, Paul Brad Logan and Chris Bernier. It is the sequel to Halloween Kills (2021), the thirteenth installment in the Halloween franchise, and the final film in the trilogy of sequels that started with the 2018 film, which directly follows the 1978 film. The film stars Jamie Lee Curtis, Andi Matichak, Rohan Campbell, Will Patton, Kyle Richards, and James Jude Courtney. The plot follows Corey Cunningham, a young man who falls in love with Laurie Strode's granddaughter while a series of events, including crossing paths with Michael Myers, render him a murderous outcast.",
+    cast: [
+      "Jamie Lee Curtis",
+      "Andi Matichak",
+      "James Jude Courtney"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzllZDYwNWMtYTU5Mi00NDVmLWE2YWQtMDZiZWFmOTcxZmJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzllZDYwNWMtYTU5Mi00NDVmLWE2YWQtMDZiZWFmOTcxZmJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "251",
+    title: "Amsterdam",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Mystery",
+      "Thriller",
+      "Historical"
+    ],
+    rating: 4.1,
+    synopsis: "Amsterdam is a 2022 period mystery comedy thriller film directed, written, and co-produced by David O. Russell and starring Christian Bale, Margot Robbie, and John David Washington alongside an ensemble supporting cast including Chris Rock, Anya Taylor-Joy, Zoe Saldaña, Mike Myers, Michael Shannon, Timothy Olyphant, Andrea Riseborough, Taylor Swift, Matthias Schoenaerts, Alessandro Nivola, Rami Malek, and Robert De Niro. The story is based on the Business Plot, a 1933 political conspiracy in the United States, and follows three friends—a doctor, a nurse, and a lawyer—who reunite and seek to uncover the act following the mysterious murder of a retired U.S. general.",
+    cast: [
+      "Christian Bale",
+      "Margot Robbie",
+      "John David Washington"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzgxNTQzYTEtMDI3Yi00OGQ1LWFkNGMtZDEyM2JlYmE0YzUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "252",
+    title: "Terrifier 2",
+    year: 2022,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4.9,
+    synopsis: "Terrifier 2 is a 2022 American slasher film written, directed, edited, and produced by Damien Leone. It is a sequel to Terrifier (2016), and is the third feature-length film to feature Art the Clown. It features the return of David Howard Thornton and Samantha Scaffidi, who respectively portrayed Art the Clown and Victoria Heyes in the first film, and stars Lauren LaVera, Elliott Fullam, Sarah Voigt, Kailey Hyman, and Casey Hartnett. The story follows Art's resurrection and pursuit of Sienna Shaw (LaVera) and her younger brother Jonathan (Fullam) on Halloween night — a year after the events of the first film.",
+    cast: [
+      "Lauren LaVera",
+      "Elliot Fullam",
+      "Sarah Voigt"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTUyZWM1MDgtMGZiZi00OWZlLTgwNzItZGU3NTkwN2I4OWNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTUyZWM1MDgtMGZiZi00OWZlLTgwNzItZGU3NTkwN2I4OWNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "253",
+    title: "My Best Friend's Exorcism",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 4,
+    synopsis: "My Best Friend's Exorcism is a 2022 American supernatural comedy horror film directed by Damon Thomas from a screenplay by Jenna Lamia, based on the 2016 novel of the same name by Grady Hendrix. The film stars Elsie Fisher, Amiah Miller, Rachel Ogechi Kanu, and Cathy Ang. The film was released on Prime Video on September 30, 2022.",
+    cast: [
+      "Elsie Fisher",
+      "Amiah Miller",
+      "Cathy Ang"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzVhMTI3NTMtNjQyZC00NDE3LTk4NjMtYjJmNjQ1OWNhYTRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzVhMTI3NTMtNjQyZC00NDE3LTk4NjMtYjJmNjQ1OWNhYTRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "254",
+    title: "The Good House",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 3.7,
+    synopsis: "The Good House is a 2022 American comedy-drama film directed by Maya Forbes and Wally Wolodarsky, who wrote the screenplay with Thomas Bezucha. It is based on the novel of the same name by Ann Leary.",
+    cast: [
+      "Sigourney Weaver",
+      "Kevin Kline",
+      "Morena Baccarin"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDc3MTg4MTQtMGRmOC00Yzk5LTk0MWQtZjcxYjUwYmMzZDcwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDc3MTg4MTQtMGRmOC00Yzk5LTk0MWQtZjcxYjUwYmMzZDcwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "255",
+    title: "Luckiest Girl Alive",
+    year: 2022,
+    genres: [
+      "Mystery",
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "Luckiest Girl Alive is a 2022 mystery thriller film directed by Mike Barker from a screenplay by Jessica Knoll, based on her 2015 novel of the same name. The film stars Mila Kunis, Finn Wittrock, Scoot McNairy, Chiara Aurelia, Justine Lupe, Thomas Barbusca, Jennifer Beals, and Connie Britton.",
+    cast: [
+      "Mila Kunis",
+      "Finn Wittrock",
+      "Scoot McNairy"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTk0ZDg0YzMtNzYxYS00NTkzLWEyZGItNGMzNTRlZmZiYTEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTk0ZDg0YzMtNzYxYS00NTkzLWEyZGItNGMzNTRlZmZiYTEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "256",
+    title: "Lyle, Lyle, Crocodile",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Musical"
+    ],
+    rating: 4.7,
+    synopsis: "Lyle, Lyle, Crocodile is a 2022 American musical comedy film directed by Will Speck and Josh Gordon from a screenplay by William Davies. Produced by Columbia Pictures in association with Eagle Pictures and TSG Entertainment II, and distributed by Sony Pictures Releasing, it is an adaptation of the children's story of the same name and its predecessor The House on East 88th Street by Bernard Waber. The plot focuses on a family who moves to New York City, where their struggling son befriends a singing crocodile and tries to protect him from the rest of the world. The film stars Shawn Mendes as the voice of the titular character, alongside Javier Bardem, Constance Wu, Winslow Fegley, Scoot McNairy, Brett Gelman, and Ego Nwodim.",
+    cast: [
+      "Javier Bardem",
+      "Constance Wu",
+      "Winslow Fegley"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDkyOTM5MmYtZWU0ZC00MmU0LWIyN2UtZDAzNGRiZDZmN2MwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDkyOTM5MmYtZWU0ZC00MmU0LWIyN2UtZDAzNGRiZDZmN2MwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "257",
+    title: "Mr. Harrigan's Phone",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Horror",
+      "Teen"
+    ],
+    rating: 4.1,
+    synopsis: "Mr. Harrigan's Phone is a 2022 American teen horror drama film written and directed by John Lee Hancock. It is based on the novella of the same name by Stephen King from the collection If It Bleeds. The film stars Donald Sutherland, Jaeden Martell, Joe Tippett, and Kirby Howell-Baptiste.",
+    cast: [
+      "Jaeden Martell",
+      "Donald Sutherland",
+      "Joe Tippett"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWQ3YmI3N2MtMTg5Mi00ZWNlLTgzYmEtZjdmYjUzZWNkMWQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWQ3YmI3N2MtMTg5Mi00ZWNlLTgzYmEtZjdmYjUzZWNkMWQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "258",
+    title: "Dead for a Dollar",
+    year: 2022,
+    genres: [
+      "Western"
+    ],
+    rating: 4.8,
+    synopsis: "Dead for a Dollar is a 2022 American Western film written and directed by Walter Hill. It stars Christoph Waltz, Willem Dafoe, and Rachel Brosnahan. The plot follows a bounty hunter (Waltz) on a search to find the missing wife (Brosnahan) of a businessman. Brandon Scott, Warren Burke, Benjamin Bratt, and Hamish Linklater also star. The film premiered at the 79th Venice International Film Festival on September 6, 2022. It was released in the United States on September 30, 2022, by Quiver Distribution.",
+    cast: [
+      "Christoph Waltz",
+      "Willem Dafoe",
+      "Rachel Brosnahan"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZThjODk2ZGEtNDA0NS00YzViLThiODQtZGE1NTM1OGIxMzFjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZThjODk2ZGEtNDA0NS00YzViLThiODQtZGE1NTM1OGIxMzFjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "259",
+    title: "God's Creatures",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "God's Creatures is a 2022 psychological drama film directed by Saela Davis and Anna Rose Holmer with the screenplay written by Shane Crowley, based on a story he wrote with producer Fodhla Cronin O'Reilly. It stars Emily Watson, Paul Mescal, Aisling Franciosi, Declan Conlon, Toni O'Rourke, Marion O'Dwyer, Brendan McCormack, and Lalor Roddy. The film premiered at Directors' Fortnight of the Cannes Film Festival on 19 May 2022.",
+    cast: [
+      "Emily Watson",
+      "Paul Mescal",
+      "Aisling Franciosi"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWMzNjU3MzQtNjRjZC00OGViLTlhNzQtYzU4ZDg4ZWQ1OTYxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWMzNjU3MzQtNjRjZC00OGViLTlhNzQtYzU4ZDg4ZWQ1OTYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "260",
+    title: "Tár",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "Tár is a 2022 psychological drama film written and directed by Todd Field. It stars Cate Blanchett as Lydia Tár, a renowned conductor who is accused of sexual misconduct. The supporting cast includes Nina Hoss, Noémie Merlant, Sophie Kauer, Julian Glover, Allan Corduner, and Mark Strong. Tár premiered at the 79th Venice International Film Festival in September 2022, where Blanchett won the Volpi Cup for Best Actress. The film had a limited theatrical release in the United States on October 7, 2022, before a wide release on October 28, by Focus Features.",
+    cast: [
+      "Cate Blanchett",
+      "Noémie Merlant",
+      "Nina Hoss"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWY5YThhOGUtNDU4OS00NTk3LWI0ODQtNmRiYTk0ZjVkZWU2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWY5YThhOGUtNDU4OS00NTk3LWI0ODQtNmRiYTk0ZjVkZWU2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "261",
+    title: "On the Come Up",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Musical"
+    ],
+    rating: 4,
+    synopsis: "On the Come Up is a 2022 American musical drama film directed by Sanaa Lathan in her feature directorial debut. Based on the 2019 novel of the same name by Angie Thomas, it stars Jamila C. Gray, Da'Vine Joy Randolph, Mike Epps, Lil Yachty, Lathan, and Method Man.",
+    cast: [
+      "Jamila C. Gray",
+      "Da'Vine Joy Randolph",
+      "Lil Yachty"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmZiMDFiODItNDIwMC00YjNjLWI3MjEtY2FjOTM3MjEyODJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmZiMDFiODItNDIwMC00YjNjLWI3MjEtY2FjOTM3MjEyODJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "262",
+    title: "Lou",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.5,
+    synopsis: "Lou is a 2022 American action thriller film directed by Anna Foerster. The film stars Allison Janney, Jurnee Smollett, Logan Marshall-Green, Ridley Asha Bateman, and Matt Craven.",
+    cast: [
+      "Allison Janney",
+      "Jurnee Smollett",
+      "Logan Marshall-Green"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDdlYzg5ZDgtZjFiYy00NDIxLTgwNGYtYTRjOTM5YWYxMjdiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDdlYzg5ZDgtZjFiYy00NDIxLTgwNGYtYTRjOTM5YWYxMjdiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "263",
+    title: "A Jazzman's Blues",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "A Jazzman's Blues is a 2022 American drama film written, produced and directed by Tyler Perry. The film stars Joshua Boone, Amirah Vann, Solea Pfeiffer, Austin Scott, Brent Antonello, and Ryan Eggold.",
+    cast: [
+      "Joshua Boone",
+      "Amirah Vann",
+      "Solea Pfeiffer"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODQ3ZGM2YjctY2MyZC00NTIzLTg4NDgtZDVhNDZhZWQ5M2Q1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODQ3ZGM2YjctY2MyZC00NTIzLTg4NDgtZDVhNDZhZWQ5M2Q1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "264",
+    title: "The Greatest Beer Run Ever",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "War",
+      "Biography"
+    ],
+    rating: 5,
+    synopsis: "The Greatest Beer Run Ever is a 2022 American biographical war comedy-drama film directed and co-written by Peter Farrelly, based on the book of the same name by John \"Chickie\" Donohue and Joanna Molloy. The film stars Zac Efron and Russell Crowe, and follows the true story of Donohue, who as a young veteran sneaks into the Vietnam War to deliver some beer to his friends, who are serving their duty.",
+    cast: [
+      "Zac Efron",
+      "Russell Crowe",
+      "Bill Murray"
+    ],
+    runtime: "122 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTAyNWY1ZjktZWRiMC00ZTg0LWIzYTYtNjkzMTk0NTIwZjQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTAyNWY1ZjktZWRiMC00ZTg0LWIzYTYtNjkzMTk0NTIwZjQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "265",
+    title: "Don't Worry Darling",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 5,
+    synopsis: "Don't Worry Darling is a 2022 American psychological thriller film directed by Olivia Wilde from a screenplay by Katie Silberman, based on a spec script by Carey Van Dyke, Shane Van Dyke, and Silberman. The film stars Florence Pugh, Harry Styles, Wilde, Gemma Chan, KiKi Layne, Nick Kroll, and Chris Pine. The film follows a housewife living in an idyllic company town who begins to suspect a sinister secret being kept from its residents by the man who runs it.",
+    cast: [
+      "Florence Pugh",
+      "Harry Styles",
+      "Olivia Wilde"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2I0ZDExM2EtZTQ4OC00NGQ0LWIzYjktYWE4MDMxZDZlY2MwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2I0ZDExM2EtZTQ4OC00NGQ0LWIzYjktYWE4MDMxZDZlY2MwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "266",
+    title: "Section Eight",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 3.7,
+    synopsis: "Section Eight is a 2022 American action film directed by Christian Sesma and starring Ryan Kwanten, Dolph Lundgren, Dermot Mulroney with Scott Adkins, Mickey Rourke, and Justin Furstenfeld.",
+    cast: [
+      "Ryan Kwanten",
+      "Dolph Lundgren",
+      "Dermot Mulroney"
+    ],
+    runtime: "94 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmFlNDkxY2YtMzZkYy00YzY0LWE4ZTgtNzQyZjdhMWI5MzgxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmFlNDkxY2YtMzZkYy00YzY0LWE4ZTgtNzQyZjdhMWI5MzgxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "267",
+    title: "Hocus Pocus 2",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Fantasy"
+    ],
+    rating: 4.3,
+    synopsis: "Hocus Pocus 2 is a 2022 American fantasy comedy film directed by Anne Fletcher, written by Jen D'Angelo and produced by Walt Disney Pictures. A sequel to the 1993 film Hocus Pocus, it stars Bette Midler, Sarah Jessica Parker, Kathy Najimy, and Doug Jones reprising their roles, with Sam Richardson, Whitney Peak, Belissa Escobedo, Tony Hale, and Hannah Waddingham joining the cast in new roles.",
+    cast: [
+      "Bette Midler",
+      "Sarah Jessica Parker",
+      "Kathy Najimy"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjIwODI0NjktNDE5My00NjEzLThhOTQtYzVlNTNmN2QzOTNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjIwODI0NjktNDE5My00NjEzLThhOTQtYzVlNTNmN2QzOTNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "268",
+    title: "The Munsters",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 3.8,
+    synopsis: "The Munsters is a 2022 American horror comedy film produced, written, and directed by Rob Zombie and starring Sheri Moon Zombie, Jeff Daniel Phillips, Daniel Roebuck, Richard Brake, Jorge Garcia, Sylvester McCoy, Catherine Schell, and Cassandra Peterson. Based on the 1960s family sitcom of the same title, the story takes place prior to the events of the series, serving as an origin story for the characters.",
+    cast: [
+      "Jeff Daniel Phillips",
+      "Sheri Moon Zombie",
+      "Daniel Roebuck"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTU2NjY3MDIzMV5BMl5BanBnXkFtZTcwNzMzMjYyMQ@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTU2NjY3MDIzMV5BMl5BanBnXkFtZTcwNzMzMjYyMQ@@._V1_.jpg"
+  },
+  {
+    id: "269",
+    title: "Bros",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Bros is a 2022 American romantic comedy film starring Billy Eichner and Luke Macfarlane as two gay men in Manhattan who avoid commitment but are drawn to each other. The film is directed by Nicholas Stoller based on a screenplay he co-wrote with Eichner and is produced by Stoller, Judd Apatow, and Josh Church. Produced under Universal Pictures on a budget of $22 million, it is one of the first gay romantic comedies by a major studio and has an openly LGBT principal cast.",
+    cast: [
+      "Billy Eichner",
+      "Luke Macfarlane",
+      "Ts Madison"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGZlN2EzOTYtMzUzOS00NTM3LTg0MTQtZDVjZGM4YmJlNWNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGZlN2EzOTYtMzUzOS00NTM3LTg0MTQtZDVjZGM4YmJlNWNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "270",
+    title: "Catherine Called Birdy",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.5,
+    synopsis: "Catherine Called Birdy is a 2022 medieval comedy film written and directed by Lena Dunham, based on the 1994 novel of the same name by Karen Cushman. It stars Bella Ramsey as the title character, alongside Billie Piper, Andrew Scott, Lesley Sharp, Joe Alwyn, and Sophie Okonedo.",
+    cast: [
+      "Bella Ramsey",
+      "Billie Piper",
+      "Andrew Scott"
+    ],
+    runtime: "139 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDAwZDBlY2UtOGIxYi00MjdmLWE1ZjktMWEzMzFjYjFiY2U4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDAwZDBlY2UtOGIxYi00MjdmLWE1ZjktMWEzMzFjYjFiY2U4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "271",
+    title: "Do Revenge",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Teen"
+    ],
+    rating: 3.9,
+    synopsis: "Do Revenge is a 2022 American teen black comedy film directed by Jennifer Kaytin Robinson, who co-wrote the screenplay alongside Celeste Ballard. It stars Camila Mendes, Maya Hawke, Austin Abrams, Rish Shah, and Sarah Michelle Gellar, and is loosely inspired by Alfred Hitchcock's Strangers on a Train (1951). It was released on Netflix on September 16, 2022, and received generally positive reviews from critics.",
+    cast: [
+      "Camila Mendes",
+      "Maya Hawke",
+      "Austin Abrams"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzQwMzdiMDQtNTNmNS00ZjlkLWFmYTYtODliZGZmNWM1YjUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzQwMzdiMDQtNTNmNS00ZjlkLWFmYTYtODliZGZmNWM1YjUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "272",
+    title: "Blonde",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.7,
+    synopsis: "Blonde is a 2022 American biographical psychological drama film written and directed by Andrew Dominik, and the second adaptation, with the same name, based on the 2000 novel of the same name by Joyce Carol Oates. The film is a fictionalized take on the life and career of American actress Marilyn Monroe, played by Ana de Armas. The cast also includes Adrien Brody, Bobby Cannavale, Xavier Samuel, and Julianne Nicholson.",
+    cast: [
+      "Ana de Armas",
+      "Adrien Brody",
+      "Bobby Cannavale"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDllNjNhMWYtZTg0ZC00ZTE3LWI3MDgtMThiOTY0NTBmOGI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDllNjNhMWYtZTg0ZC00ZTE3LWI3MDgtMThiOTY0NTBmOGI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "273",
+    title: "The Silent Twins",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 3.5,
+    synopsis: "The Silent Twins is a 2022 internationally co-produced biographical drama film about the twin sisters, June and Jennifer Gibbons, who were institutionalized at Broadmoor Hospital following years of silence and teenage rebellion. It was directed by Agnieszka Smoczyńska from a screenplay by Andrea Seigel, who adapted the book of the same name by Marjorie Wallace. The film stars Letitia Wright, Tamara Lawrance, Nadine Marshall, Treva Etienne, Michael Smiley, and Jodhi May.",
+    cast: [
+      "Letitia Wright",
+      "Tamara Lawrance",
+      "Nadine Marshall"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzgzZjQ2ODctNTJjMS00MTc2LTg4MWUtNDIwZmE0ZTM3ZjRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzgzZjQ2ODctNTJjMS00MTc2LTg4MWUtNDIwZmE0ZTM3ZjRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "274",
+    title: "Pearl",
+    year: 2022,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4.5,
+    synopsis: "Pearl is a 2022 American slasher film directed by Ti West, co-written by West and Mia Goth, who reprises her role as the title character, and featuring David Corenswet, Tandi Wright, Matthew Sunderland, and Emma Jenkins-Purro in supporting roles. A prequel to X (2022) and the second installment in the X film series, it serves as an origin story for the title villain, whose fervent aspiration to become a movie star led her to committing violent acts on her family's Texas homestead in 1918.",
+    cast: [
+      "Mia Goth",
+      "David Corenswet",
+      "Tandi Wright"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzk0Y2RlZjItZDUzYi00Y2JhLTk5MzMtNjgzYWFmZmUxN2FmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzk0Y2RlZjItZDUzYi00Y2JhLTk5MzMtNjgzYWFmZmUxN2FmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "275",
+    title: "See How They Run",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Mystery"
+    ],
+    rating: 4.8,
+    synopsis: "See How They Run is a 2022 comedy mystery film directed by Tom George, written by Mark Chappell and produced by Damian Jones and Gina Carter. The film stars Sam Rockwell, Saoirse Ronan, Adrien Brody, Ruth Wilson, Reece Shearsmith, Harris Dickinson and David Oyelowo.",
+    cast: [
+      "Saoirse Ronan",
+      "Sam Rockwell",
+      "Adrien Brody"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGNiNDNlNjQtMGEzMC00NmNjLWJhYWYtODBhNjQ3Mjc2YjZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGNiNDNlNjQtMGEzMC00NmNjLWJhYWYtODBhNjQ3Mjc2YjZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "276",
+    title: "Goodnight Mommy",
+    year: 2022,
+    genres: [
+      "Horror",
+      "War"
+    ],
+    rating: 4.7,
+    synopsis: "Goodnight Mommy is a 2022 American psychological horror film directed by Matt Sobel and written by Kyle Warren, serving as a remake of the 2014 Austrian film of the same name. The film stars Naomi Watts, Cameron and Nicholas Crovetti, Crystal Lucas-Perry, Jeremy Bobb, and Peter Hermann. The film follows twin brothers who suspect their mother was switched with an impostor, following her recent surgery leaving her with bandages over her face.",
+    cast: [
+      "Naomi Watts",
+      "Cameron Crovetti",
+      "Nicholas Crovetti"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWJkZGM4NDYtNThhYy00N2ZjLWFjMzQtZTYxM2YwNGVlZTZiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWJkZGM4NDYtNThhYy00N2ZjLWFjMzQtZTYxM2YwNGVlZTZiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "277",
+    title: "Running the Bases",
+    year: 2022,
+    genres: [
+      "Sports"
+    ],
+    rating: 4,
+    synopsis: "Running the Bases is a 2022 American Christian sports film written and directed by Marty Roberts and Jimmy Womble. It stars Brett Varvel, Gigi Orsillo, Todd Terry, and Cameron Arnett, and follows a small-town baseball coach who becomes the head coach of a large high school program, but soon faces opposition to his coaching methods. It was released on September 16, 2022.",
+    cast: [
+      "Brett Varvel",
+      "Gigi Orsillo",
+      "Todd Terry"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGJlNDYxNmUtNDZhMy00NjIyLWI5NDUtNmI3MDY2ODgwMjJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGJlNDYxNmUtNDZhMy00NjIyLWI5NDUtNmI3MDY2ODgwMjJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "278",
+    title: "Confess, Fletch",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Crime"
+    ],
+    rating: 3.6,
+    synopsis: "Confess, Fletch is a 2022 American crime comedy film directed by Greg Mottola, who also co-wrote the screenplay with Zev Borow. Based on Gregory Mcdonald's 1976 novel of the same name, the film stars Jon Hamm, Lorenza Izzo, Marcia Gay Harden, Kyle MacLachlan, Roy Wood Jr., and John Slattery. It is the third installment in the Fletch series, following Fletch (1985) and Fletch Lives (1989), and the first not to star Chevy Chase.",
+    cast: [
+      "Jon Hamm",
+      "Marcia Gay Harden",
+      "Kyle MacLachlan"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTUzNDU5YTgtZjNjNS00MjZjLTllZjYtY2RjMDNlZDc4NmM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTUzNDU5YTgtZjNjNS00MjZjLTllZjYtY2RjMDNlZDc4NmM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "279",
+    title: "God's Country",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 3.5,
+    synopsis: "God's Country is a 2022 thriller film starring Thandiwe Newton. The film was directed by Julian Higgins.",
+    cast: [
+      "Thandiwe Newton",
+      "Jeremy Bobb",
+      "Joris Jarsky"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTRiZjBiZWEtZDgzMy00M2M2LTgxOTMtYzgwMTVjNGZiNzkyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTRiZjBiZWEtZDgzMy00M2M2LTgxOTMtYzgwMTVjNGZiNzkyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "280",
+    title: "Jeepers Creepers: Reborn",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 5,
+    synopsis: "Jeepers Creepers: Reborn is a 2022 supernatural horror film directed by Timo Vuorensola and written by Jake Seal and Sean-Michael Argo. The film is a reboot of Victor Salva's Jeepers Creepers trilogy intended to set up a new trilogy. Starring Sydney Craven and Imran Adams, with \"special appearances\" from Dee Wallace and Gary Graham, it was released worldwide by Screen Media Films on September 19, 2022.",
+    cast: [
+      "Sydney Craven",
+      "Imran Adams",
+      "Jarreau Benjamin"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODk5ZmVmODMtMWNjNS00ODc3LWE0Y2UtYWI3MGI2ZTA0NjU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODk5ZmVmODMtMWNjNS00ODc3LWE0Y2UtYWI3MGI2ZTA0NjU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "281",
+    title: "Clerks III",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.1,
+    synopsis: "Clerks III is a 2022 American dark comedy-drama film written, produced, directed, and edited by Kevin Smith and stars Brian O'Halloran, Jeff Anderson, Trevor Fehrman, Austin Zajur, Jason Mewes, Rosario Dawson and Smith. It serves as a standalone sequel to the 1994 and 2006 Clerks films, and is the ninth overall feature film set in the View Askewniverse. In the film, Randal Graves, after surviving a massive heart attack, enlists his friends and fellow clerks Dante Hicks, Elias Grover, and Jay and Silent Bob to make a movie about their lives at the Quick Stop Convenience store that started it all.",
+    cast: [
+      "Brian O'Halloran",
+      "Jeff Anderson",
+      "Trevor Fehrman"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmYzNzg5NzUtNzIzMy00MjEwLTk5OGItNmUxNGE4NGVhMmEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmYzNzg5NzUtNzIzMy00MjEwLTk5OGItNmUxNGE4NGVhMmEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "282",
+    title: "Pinocchio",
+    year: 2022,
+    genres: [
+      "Live Action",
+      "Animated",
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 4.3,
+    synopsis: "Pinocchio is a 2022 American live action/computer animated musical fantasy film directed by Robert Zemeckis from a screenplay by Zemeckis and Chris Weitz. Produced by Walt Disney Pictures, Depth of Field and ImageMovers, the film is a live-action remake of Walt Disney's 1940 animated film of the same name, which is itself based on the 1883 Italian book The Adventures of Pinocchio by Carlo Collodi. It stars Tom Hanks, Cynthia Erivo, Giuseppe Battiston and Luke Evans with Benjamin Evan Ainsworth, Joseph Gordon-Levitt, Keegan-Michael Key, and Lorraine Bracco in voice roles. The story follows a wooden puppet named Pinocchio, who is brought to life by a blue fairy (Erivo) after being crafted by an old Italian woodcarver named Geppetto (Hanks). While the role of Pinocchio's conscience Jiminy Cricket (Gordon-Levitt) attempts to guide Pinocchio in matters of right and wrong, Pinocchio encounters a host of unsavory characters in his efforts to become a real boy.",
+    cast: [
+      "Tom Hanks",
+      "Benjamin Evan Ainsworth",
+      "Joseph Gordon-Levitt"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2I3NDQzZmQtODJmOS00M2QyLWIxZTItYTA1ZTYzOWJlM2ZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2I3NDQzZmQtODJmOS00M2QyLWIxZTItYTA1ZTYzOWJlM2ZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "283",
+    title: "After Ever Happy",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "After Ever Happy is a 2022 American romantic drama film directed by Castille Landon, from a screenplay by Sharon Soboil. Based on the 2015 novel of the same name by Anna Todd, it is a sequel to After We Fell, and the fourth overall installment in the After film series. The film stars Josephine Langford and Hero Fiennes Tiffin, reprising their roles as Tessa Young and Hardin Scott, respectively. The plot continues the premise of the three previous films.",
+    cast: [
+      "Hero Fiennes-Tiffin",
+      "Josephine Langford",
+      "Louise Lombard"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTEyZTdlZWItYzk4ZC00MWE2LTliMzUtYzU0ZWYxODEyYmQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTEyZTdlZWItYzk4ZC00MWE2LTliMzUtYzU0ZWYxODEyYmQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "284",
+    title: "Funny Pages",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.3,
+    synopsis: "Funny Pages is a 2022 American coming-of-age black comedy film written, directed, and edited by Owen Kline and produced by the Safdie brothers. It premiered at the 2022 Cannes Film Festival and was released in the United States on August 26, 2022, where it received positive reviews from critics.",
+    cast: [
+      "Daniel Zolghadri",
+      "Matthew Maher",
+      "Miles Emanuel"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWE1ZDc1NjMtOTRkMi00ODFiLThkM2QtMmZiYTllODFkYjYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWE1ZDc1NjMtOTRkMi00ODFiLThkM2QtMmZiYTllODFkYjYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "285",
+    title: "Gigi & Nate",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.8,
+    synopsis: "Gigi & Nate is a 2022 American coming-of-age drama film directed by Nick Hamm from a screenplay by David Hudgins. The film is based on a true story of a quadriplegic and a capuchin monkey. The film was released in the United States on September 2, 2022, by Roadside Attractions.",
+    cast: [
+      "Marcia Gay Harden",
+      "Charlie Rowe",
+      "Josephine Langford"
+    ],
+    runtime: "147 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmRhYTRjMmItYjk5MS00N2E5LTg0NmItOWZlNDY1OWMwOGZiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmRhYTRjMmItYjk5MS00N2E5LTg0NmItOWZlNDY1OWMwOGZiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "286",
+    title: "Wire Room",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 4.1,
+    synopsis: "Wire Room is a 2022 American action film directed by Matt Eskandari, from a screenplay by Brandon Stiefer, and produced by Randall Emmett, George Furla, Oliver Trevena, Norton Herrick, Ceasar Richbow, Mark Stewart, and Noel Ashman. It stars Kevin Dillon and Bruce Willis.",
+    cast: [
+      "Kevin Dillon",
+      "Bruce Willis"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjdlYThkYzUtNmExOS00YThlLWIwZDgtMjAxNDc3ZDMxMDdiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjdlYThkYzUtNmExOS00YThlLWIwZDgtMjAxNDc3ZDMxMDdiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "287",
+    title: "One Way",
+    year: 2022,
+    genres: [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "One Way is an American action crime thriller film written by Ben Conway and directed by Andrew Baird. Principal photography began in 2021. The film stars Colson Baker, Kevin Bacon and Travis Fimmel.",
+    cast: [
+      "Colson Baker",
+      "Kevin Bacon",
+      "Travis Fimmel"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDgzYzZjYWYtZWNhNy00MjNjLTgxMjQtZDJkMGVlMzVkYWZkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDgzYzZjYWYtZWNhNy00MjNjLTgxMjQtZDJkMGVlMzVkYWZkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "288",
+    title: "The Woman King",
+    year: 2022,
+    genres: [
+      "Action",
+      "Drama",
+      "Historical",
+      "War"
+    ],
+    rating: 4.2,
+    synopsis: "The Woman King is a 2022 American historical action drama film about the Agojie, the all-female warrior unit that protected the West African kingdom of Dahomey during the 17th to 19th centuries. Set in the 1820s, the film stars Viola Davis as a general who trains the next generation of warriors to fight their enemies. It is directed by Gina Prince-Bythewood and written by Dana Stevens, based on a story she wrote with Maria Bello. The film also stars Thuso Mbedu, Lashana Lynch, Sheila Atim, Hero Fiennes Tiffin, and John Boyega.",
+    cast: [
+      "Viola Davis",
+      "Thuso Mbedu",
+      "Lashana Lynch"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzM4ODY0NzctZDIyNC00MzE4LWI3NDYtYjIyYTUyZWFmYzJkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzM4ODY0NzctZDIyNC00MzE4LWI3NDYtYjIyYTUyZWFmYzJkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "289",
+    title: "Barbarian",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 4.5,
+    synopsis: "Barbarian is a 2022 American horror thriller film written and directed by Zach Cregger in his solo screen writing and directorial debut. It is produced by Arnon Milchan, Roy Lee, Raphael Margules, and J.D. Lifshitz. The film stars Georgina Campbell, Bill Skarsgård, and Justin Long. The plot sees a woman find out that the rental home she reserved has been accidentally double-booked by a man, not knowing of a dark secret within the dwelling.",
+    cast: [
+      "Georgina Campbell",
+      "Bill Skarsgård",
+      "Justin Long"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWQ5MDgwMzMtNWZhMy00Y2Q4LWI5NTAtODA4MDIzYTExOGQzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWQ5MDgwMzMtNWZhMy00Y2Q4LWI5NTAtODA4MDIzYTExOGQzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "290",
+    title: "End of the Road",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "End of the Road is an 2022 American crime thriller film directed by Millicent Shelton, written by Christopher J. Moore and David Loughery, and produced by Tracey Edmonds, Mark Burg, and Brad Kaplan. The film stars Queen Latifah, Ludacris, Mychala Lee, Shaun Dixon, and Beau Bridges.",
+    cast: [
+      "Queen Latifah",
+      "Ludacris",
+      "Beau Bridges"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2M1N2YzYTItYWVjZS00ZjA4LTgwMDItZDQxMTZmZjI3MDAxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2M1N2YzYTItYWVjZS00ZjA4LTgwMDItZDQxMTZmZjI3MDAxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "291",
+    title: "Me Time",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.6,
+    synopsis: "Me Time is a 2022 American buddy comedy film written and directed by John Hamburg. The film stars Kevin Hart, Mark Wahlberg, Regina Hall, Luis Gerardo Méndez, and Jimmy O. Yang. It is about a stay-at-home dad as he finds himself with some \"me time\" for the first time in years while his wife and kids are away. He reconnects with his former best friend Huck for a wild weekend that nearly upends his life.",
+    cast: [
+      "Kevin Hart",
+      "Mark Wahlberg",
+      "Regina Hall"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjYzMTkyYjUtYTVmYi00Y2ZjLTg2N2ItZGFhODAzYTVmYzkzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjYzMTkyYjUtYTVmYi00Y2ZjLTg2N2ItZGFhODAzYTVmYzkzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "292",
+    title: "Beast",
+    year: 2022,
+    genres: [
+      "Action",
+      "Horror"
+    ],
+    rating: 4.5,
+    synopsis: "Beast is a 2022 survival action horror film directed by Baltasar Kormákur from a screenplay by Ryan Engle, based on a story by Jaime Primak Sullivan. The film stars Idris Elba, Iyana Halley, Leah Sava Jeffries, and Sharlto Copley. It follows a widowed father and his two teenage daughters who visit a South African game reserve but must fight to survive when they are stalked and attacked by a ferocious, rogue, man-killing lion.",
+    cast: [
+      "Idris Elba",
+      "Iyana Halley",
+      "Leah Sava Jeffries"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQ0OTgwZGUtNDhlYi00ZTM5LWI2NmYtNGYwYWJhNzVlYTc5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQ0OTgwZGUtNDhlYi00ZTM5LWI2NmYtNGYwYWJhNzVlYTc5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "293",
+    title: "Breaking",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "Breaking is a 2022 American thriller drama film starring John Boyega as a Marine Corps veteran, Brian Brown-Easley, who is in financial trouble and robs a bank. It is written and directed by Abi Damaris Corbin and co-written by Kwame Kwei-Armah, based on the true story of Brown-Easley, detailed in the 2018 Task & Purpose article \"They Didn't Have to Kill Him\" by Aaron Gell. The film also stars Nicole Beharie, Selenis Leyva, Connie Britton, Jeffrey Donovan, and Michael Kenneth Williams.",
+    cast: [
+      "John Boyega",
+      "Nicole Beharie",
+      "Selenis Leyva"
+    ],
+    runtime: "107 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "294",
+    title: "Emily the Criminal",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Thriller"
+    ],
+    rating: 4.7,
+    synopsis: "Emily the Criminal is a 2022 American crime thriller film written and directed by John Patton Ford in his feature directorial debut. It stars Aubrey Plaza as the title character, with Theo Rossi, Megalyn Echikunwoke, and Gina Gershon in supporting roles. The film follows Emily Benetto, a young woman saddled with student debt and locked out of the job market due to a minor criminal record, who gets involved in a credit card scam that pulls her into the criminal underworld of Los Angeles.",
+    cast: [
+      "Aubrey Plaza",
+      "Theo Rossi",
+      "Megalyn Echikunwoke"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGQ1ZmNmYjctZTQzOC00MzMxLThjNmItODc4OTIxYWEwNmJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGQ1ZmNmYjctZTQzOC00MzMxLThjNmItODc4OTIxYWEwNmJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "295",
+    title: "The Invitation",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 4.5,
+    synopsis: "The Invitation is a 2022 American horror thriller film directed by Jessica M. Thompson and written by Blair Butler. The film stars Nathalie Emmanuel and Thomas Doherty. Inspired by the novel Dracula by Bram Stoker, the film follows a young woman who, following her mother's death, meets long-lost family members for the first time, only to discover the dark secrets they carry with them.",
+    cast: [
+      "Nathalie Emmanuel",
+      "Thomas Doherty",
+      "Stephanie Corneliussen"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTkzODMwNDkzOF5BMl5BanBnXkFtZTgwNDA4NzA1ODE@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTkzODMwNDkzOF5BMl5BanBnXkFtZTgwNDA4NzA1ODE@._V1_.jpg"
+  },
+  {
+    id: "296",
+    title: "Delia's Gone",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Delia's Gone is a 2022 drama film, written, directed, and produced by Robert Budreau, based upon a short story Caged Bird Sing by Michael Hamblin. It stars Stephan James, Marisa Tomei, Paul Walter Hauser, and Travis Fimmel.",
+    cast: [
+      "Stephan James",
+      "Marisa Tomei",
+      "Paul Walter Hauser"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDY1YzVkZjgtYzJmNy00NDM0LThhYjAtOWMzMzczNGY0MjExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDY1YzVkZjgtYzJmNy00NDM0LThhYjAtOWMzMzczNGY0MjExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "297",
+    title: "Orphan: First Kill",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.2,
+    synopsis: "Orphan: First Kill is a 2022 psychological horror film directed by William Brent Bell, written by David Coggeshall, based on a story by David Leslie Johnson-McGoldrick and Alex Mace. It is a prequel to the 2009 film Orphan. It stars Isabelle Fuhrman, Julia Stiles, Rossif Sutherland, Hiro Kanagawa, and Matthew Finlan.",
+    cast: [
+      "Isabelle Fuhrman",
+      "Rossif Sutherland",
+      "Hiro Kanagawa"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzU1MGZmODctODU0ZC00YjllLWE3ZmYtNmFmZjE1ZjE3YzVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzU1MGZmODctODU0ZC00YjllLWE3ZmYtNmFmZjE1ZjE3YzVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "298",
+    title: "Samaritan",
+    year: 2022,
+    genres: [
+      "Superhero"
+    ],
+    rating: 3.7,
+    synopsis: "Samaritan is a 2022 American superhero film directed by Julius Avery and written by Bragi F. Schut. Described as a dark, new take on superhero movies, the story was previously adapted into the Mythos Comics graphic novels by Schut, Marc Olivent, and Renzo Podesta. It is a co-production of Metro-Goldwyn-Mayer and Balboa Productions. The film stars Sylvester Stallone in the main role, Javon \"Wanna\" Walton, Pilou Asbæk, Dascha Polanco, and Moisés Arias. The story follows a kid who suspects that his neighbor is secretly a superhero who was believed to have died many years prior.",
+    cast: [
+      "Sylvester Stallone",
+      "Javon Walton",
+      "Pilou Asbæk"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzYwODI2MTYtZDJjZi00ZDdjLWJiYTktZmQyNGJiMmJmMWIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzYwODI2MTYtZDJjZi00ZDdjLWJiYTktZmQyNGJiMmJmMWIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "299",
+    title: "Summering",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Summering is a 2022 American coming-of-age drama film co-written, directed, and produced by James Ponsoldt. It stars Lia Barnett, Lake Bell, Sarah Cooper, Ashley Madekwe, Madalen Mills, Megan Mullally, Eden Grace Redfield, and Sanai Victoria. It was released on August 12, 2022, by Bleecker Street.",
+    cast: [
+      "Lia Barnett",
+      "Lake Bell",
+      "Sarah Cooper"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzQzM2ZiOGUtNmRiMy00N2FkLWI5ZGMtOTQ2NWFhMTJmNDk1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzQzM2ZiOGUtNmRiMy00N2FkLWI5ZGMtOTQ2NWFhMTJmNDk1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "300",
+    title: "Spin Me Round",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.7,
+    synopsis: "Spin Me Round is a 2022 American dark comedy film co-written by Jeff Baena and Alison Brie and directed by Baena. It premiered at the 2022 South by Southwest festival on March 12, 2022. It was released on August 19, 2022, by IFC Films in theaters and by AMC+ on video on demand.",
+    cast: [
+      "Alison Brie",
+      "Alessandro Nivola",
+      "Molly Shannon"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGJiYWVkMTUtOTUyYS00OWIwLWI3ZmItZjJlYzZlYWM3YzE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGJiYWVkMTUtOTUyYS00OWIwLWI3ZmItZjJlYzZlYWM3YzE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "301",
+    title: "Prey",
+    year: 2022,
+    genres: [
+      "Action",
+      "Science Fiction"
+    ],
+    rating: 3.8,
+    synopsis: "Prey is a 2022 American science fiction action film in the Predator franchise. It is the fifth installment and is a prequel to the first four films, being set in the Northern Great Plains in 1719. The film is directed by Dan Trachtenberg and written by Patrick Aison. It stars Amber Midthunder, Dakota Beavers, Dane DiLiegro, Michelle Thrush, Stormee Kipp, Julian Black Antelope, and Bennett Taylor. The story revolves around a young Comanche woman, Naru, who is striving to prove herself as a hunter. She finds herself having to protect her people from a vicious, humanoid alien that hunts humans for sport, as well as from French fur traders who are destroying the buffalo they rely on for survival.",
+    cast: [
+      "Amber Midthunder",
+      "Dakota Beavers",
+      "Michelle Thrush"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWVjYTBlYjktODhjZS00OTUyLTg4MzctODI4MTkyNDE5YzY0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWVjYTBlYjktODhjZS00OTUyLTg4MzctODI4MTkyNDE5YzY0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "302",
+    title: "Luck",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Fantasy"
+    ],
+    rating: 3.9,
+    synopsis: "Luck is a 2022 computer-animated fantasy comedy film directed by Peggy Holmes and co-directed by Javier Abad, from a screenplay written by Kiel Murray, and a story by Murray and the writing team of Jonathan Aibel and Glenn Berger, based on an original concept created by Rebeca Carrasco, Juan De Dios, and Julián Romero. Produced by Skydance Animation, the film features the voices of Eva Noblezada, Simon Pegg, Jane Fonda, Whoopi Goldberg, Flula Borg, Lil Rel Howery, Colin O'Donoghue, and John Ratzenberger. Set in the Land of Luck, the story follows the unluckiest person, Sam Greenfield (Noblezada), as she must unite with an anthropomorphic cat named Bob (Pegg) to turn her luck around.",
+    cast: [
+      "Eva Noblezada",
+      "Simon Pegg",
+      "Jane Fonda"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTQ0NzYzM2QtOWYzMC00MGU5LWJmMTQtYTU1ODU0ZjUwYjk0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTQ0NzYzM2QtOWYzMC00MGU5LWJmMTQtYTU1ODU0ZjUwYjk0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "303",
+    title: "Fall",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.1,
+    synopsis: "Fall is a 2022 survival thriller film directed and co-written by Scott Mann and Jonathan Frank. Starring Grace Caroline Currey, Virginia Gardner, Mason Gooding and Jeffrey Dean Morgan, it is about two women who climb a 2,000 foot (610 m) tall television broadcasting tower and become stranded at the top.",
+    cast: [
+      "Grace Caroline Currey",
+      "Virginia Gardner",
+      "Mason Gooding"
+    ],
+    runtime: "122 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmZjYjAxMDEtOTE2My00MmM5LTkyYjctOWRjMjgyM2JhMDI0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmZjYjAxMDEtOTE2My00MmM5LTkyYjctOWRjMjgyM2JhMDI0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "304",
+    title: "Mack & Rita",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.9,
+    synopsis: "Mack & Rita is a 2022 American comedy film directed by Katie Aselton, from a screenplay by Madeline Walter and Paul Welsh. The plot follows a 30-year-old woman who wakes up as her 70-year-old self after a bachelorette party. Taylour Paige, Loretta Devine, Amy Hill, Lois Smith, Wendie Malick, Simon Rex, Martin Short, and Dustin Milligan also star. The film was released on August 12, 2022, by Gravitas Premiere, to negative reviews from critics, including a worst actress nomination for Keaton, but the performances of Paige and Milligan were praised.",
+    cast: [
+      "Diane Keaton",
+      "Taylour Paige",
+      "Elizabeth Lail"
+    ],
+    runtime: "139 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjdjODZiMDEtZTA5Yi00NDIxLWJiMmEtMzhhMjFhMmQwM2YzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjdjODZiMDEtZTA5Yi00NDIxLWJiMmEtMzhhMjFhMmQwM2YzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "305",
+    title: "Bodies Bodies Bodies",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.9,
+    synopsis: "Bodies Bodies Bodies is a 2022 American black comedy horror film directed by Halina Reijn, in her English-language debut, with a screenplay by Sarah DeLappe from a story by Kristen Roupenian. It stars Amandla Stenberg, Maria Bakalova, Myha'la Herrold, Chase Sui Wonders, Rachel Sennott, Lee Pace, and Pete Davidson.",
+    cast: [
+      "Amandla Stenberg",
+      "Maria Bakalova",
+      "Myha'la Herrold"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjA1NzVlZTctMTA4ZS00OWJhLTg0MGYtNGFhYzVmN2U1ZmJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjA1NzVlZTctMTA4ZS00OWJhLTg0MGYtNGFhYzVmN2U1ZmJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "306",
+    title: "Bullet Train",
+    year: 2022,
+    genres: [
+      "Action",
+      "Comedy"
+    ],
+    rating: 4.3,
+    synopsis: "Bullet Train is a 2022 American action comedy film starring Brad Pitt as an assassin who must battle fellow killers while riding a bullet train. The film was directed by David Leitch from a screenplay by Zak Olkewicz, and produced by Antoine Fuqua, who initially conceived the film. It is based on the 2010 novel Maria Beetle, written by Kōtarō Isaka and translated by Sam Malissa, the second novel in Isaka's Hitman trilogy, of which the first novel was previously adapted as the 2015 Japanese film Grasshopper. The film also features an ensemble supporting cast including Joey King, Aaron Taylor-Johnson, Brian Tyree Henry, Andrew Koji, Hiroyuki Sanada, Michael Shannon, Benito A. Martínez Ocasio, and Sandra Bullock.",
+    cast: [
+      "Brad Pitt",
+      "Joey King",
+      "Aaron Taylor-Johnson"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODUyZjkxZDMtZGI3ZC00ZmEwLTgwMTUtYTU4OTQ5YjU4ZjRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODUyZjkxZDMtZGI3ZC00ZmEwLTgwMTUtYTU4OTQ5YjU4ZjRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "307",
+    title: "Secret Headquarters",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Superhero"
+    ],
+    rating: 4.5,
+    synopsis: "Secret Headquarters is a 2022 American superhero comedy film directed by Henry Joost and Ariel Schulman, who co-wrote the movie with Christopher L. Yost and Josh Koenigsberg, based on a story by Yost. Starring Owen Wilson, Walker Scobell, Jesse Williams, Keith L. Williams, Momona Tamada, Charles Melton, and Michael Peña, the plot follows a child (Scobell) and his friends who begins to suspect his father (Wilson) might be a superhero after discovering a secret headquarters in his basement.",
+    cast: [
+      "Owen Wilson",
+      "Walker Scobell",
+      "Jesse Williams"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWU1YzlmNmQtZDViMy00OGQ4LTk3NDEtMjlmYWEwODdlNThiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWU1YzlmNmQtZDViMy00OGQ4LTk3NDEtMjlmYWEwODdlNThiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "308",
+    title: "Day Shift",
+    year: 2022,
+    genres: [
+      "Action",
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.8,
+    synopsis: "Day Shift is a 2022 American action horror comedy film directed by J. J. Perry in his directorial debut, written by Tyler Tice and Shay Hatten from a story by Tice, and starring Jamie Foxx as a blue-collar father whose pool-cleaning job is a front for his work as a vampire hunter. The film also stars Dave Franco, Snoop Dogg, Natasha Liu Bordizzo, Meagan Good, Karla Souza, Steve Howey, and Scott Adkins.",
+    cast: [
+      "Jamie Foxx",
+      "Dave Franco",
+      "Natasha Liu Bordizzo"
+    ],
+    runtime: "120 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWQ4NzM3NTEtNjQ1NC00NjM3LWIwOTAtMDQ2ZGRlZGRlNTFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWQ4NzM3NTEtNjQ1NC00NjM3LWIwOTAtMDQ2ZGRlZGRlNTFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "309",
+    title: "They/Them",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of They/Them.",
+    cast: [
+      "Kevin Bacon",
+      "Carrie Preston",
+      "Anna Chlumsky"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmZjYzFlMmUtNTZkMC00NjkxLTk0OTYtNWVkZWUyZGNjMjE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmZjYzFlMmUtNTZkMC00NjkxLTk0OTYtNWVkZWUyZGNjMjE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "310",
+    title: "Easter Sunday",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4,
+    synopsis: "Easter Sunday is a 2022 American comedy film starring Jo Koy as a struggling actor, comedian, and single father who attends a gathering of his loud and dysfunctional Filipino American family on Easter Sunday. The film is directed by Jay Chandrasekhar and written by Ken Cheng and Kate Angelo, from a story by Cheng. In addition to Koy, the film stars Eugene Cordero, Tia Carrere, Asif Ali, Lydia Gaston, Jimmy O. Yang, and Lou Diamond Phillips. Universal Pictures theatrically released the film on August 5, 2022. It received mixed reviews from critics.",
+    cast: [
+      "Jo Koy",
+      "Jimmy O. Yang",
+      "Tia Carrere"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTk4N2YyODEtMjhjOS00M2Q5LWE0YWMtYWY3YzY4ODJlOTlkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTk4N2YyODEtMjhjOS00M2Q5LWE0YWMtYWY3YzY4ODJlOTlkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "311",
+    title: "A Love Song",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 5,
+    synopsis: "A Love Song is a 2022 American drama film written, directed, produced, and co-edited by Max Walker-Silverman in his feature directorial debut. It stars Dale Dickey and Wes Studi as two childhood friends who spend a night together by a lake in the mountains. The film premiered at the Sundance Film Festival on January 20, 2022, and was released in the United States on July 29, 2022, by Bleecker Street and Stage 6 Films. It received generally positive reviews from critics.",
+    cast: [
+      "Dale Dickey",
+      "Wes Studi"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjY5NzZhZjUtYjNjOS00OWJlLWEwZjEtMDM5NzZlZGFkMjJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjY5NzZhZjUtYjNjOS00OWJlLWEwZjEtMDM5NzZlZGFkMjJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "312",
+    title: "Honor Society",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.5,
+    synopsis: "Honor Society is a 2022 American coming-of-age comedy film starring Angourie Rice and Gaten Matarazzo. It is directed by Oran Zegman based on a screenplay written by David A. Goodman.",
+    cast: [
+      "Angourie Rice",
+      "Gaten Matarazzo",
+      "Christopher Mintz-Plasse"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTkwMTVlMjEtODFkNi00MDZiLWE4MzktZmQ1YzkwZmZlNTQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTkwMTVlMjEtODFkNi00MDZiLWE4MzktZmQ1YzkwZmZlNTQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "313",
+    title: "Resurrection",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.2,
+    synopsis: "Resurrection is a 2022 American psychological thriller film written and directed by Andrew Semans. It stars Rebecca Hall, Grace Kaufman, Michael Esper, and Tim Roth. The plot follows Margaret (Hall) as she tries to maintain control of her life when an abusive ex-boyfriend (Roth) re-appears in her vicinity. The film was shot in Albany, NY and Williamsburg, Brooklyn.",
+    cast: [
+      "Rebecca Hall",
+      "Grace Kaufman",
+      "Michael Esper"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzgxNzUwZTctMzliNi00MDUwLWE4YzctNjgwMDE2OWQwNzMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzgxNzUwZTctMzliNi00MDUwLWE4YzctNjgwMDE2OWQwNzMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "314",
+    title: "Thirteen Lives",
+    year: 2022,
+    genres: [
+      "War",
+      "Biography"
+    ],
+    rating: 4.8,
+    synopsis: "Thirteen Lives is a 2022 biographical survival film based on the Tham Luang cave rescue directed and produced by Ron Howard, from a screenplay written by William Nicholson. The film stars Viggo Mortensen, Colin Farrell, Joel Edgerton, and Tom Bateman.",
+    cast: [
+      "Viggo Mortensen",
+      "Colin Farrell",
+      "Joel Edgerton"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGRmYzg2NTUtMjc3Yy00Njc4LTliNTktM2I1NjVkNGIzYTU2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGRmYzg2NTUtMjc3Yy00Njc4LTliNTktM2I1NjVkNGIzYTU2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "315",
+    title: "Sharp Stick",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.8,
+    synopsis: "Sharp Stick is a 2022 American comedy film written, directed, and produced by Lena Dunham. It stars Kristine Froseth, Jon Bernthal, Luka Sabbat, Scott Speedman, Dunham, Ebon Moss-Bachrach, Taylour Paige, and Jennifer Jason Leigh. The film premiered at the Sundance Film Festival on January 22, 2022, and was released theatrically in the United States on July 29, 2022, by Utopia. It received mixed reviews from critics. It was released on VOD on August 16, 2022.",
+    cast: [
+      "Kristine Froseth",
+      "Jon Bernthal",
+      "Luka Sabbat"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjliMjAyMDMtMWI2NC00MjJlLTk3NDYtOWFiNzJhMzI4MTU0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjliMjAyMDMtMWI2NC00MjJlLTk3NDYtOWFiNzJhMzI4MTU0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "316",
+    title: "Not Okay",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 3.7,
+    synopsis: "Not Okay is a 2022 American satirical black comedy-drama film written and directed by Quinn Shephard. It stars Zoey Deutch as a young woman who desperately wants to be famous and beloved on the Internet, succeeding when she pretends to be a survivor of a bombing. It also stars Mia Isaac, Nadia Alexander, Embeth Davidtz, Karan Soni, and Dylan O'Brien.",
+    cast: [
+      "Zoey Deutch",
+      "Mia Isaac",
+      "Nadia Alexander"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDNiMmM4NGMtZmYwNC00MWZjLWE5ZDMtNTkzYzI4M2Y4ZjViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDNiMmM4NGMtZmYwNC00MWZjLWE5ZDMtNTkzYzI4M2Y4ZjViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "317",
+    title: "Allegoria",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.4,
+    synopsis: "Allegoria is a 2022 American horror anthology film directed by Spider One, starring John Ennis, Bryce Johnson, Edward Hong, Adam Busch and Adam Marcinowski. It is the directorial debut of Spider One.",
+    cast: [
+      "John Ennis",
+      "Bryce Johnson",
+      "Edward Hong"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQwZDZjMzgtNDI0OS00Y2U4LWE1YmQtZGRhNDExZWFhMGYxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQwZDZjMzgtNDI0OS00Y2U4LWE1YmQtZGRhNDExZWFhMGYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "318",
+    title: "Paradise Highway",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "Paradise Highway is a 2022 thriller film written and directed by Anna Gutto and starring Juliette Binoche, Frank Grillo, and Morgan Freeman. An international co-production between the United States, Germany, and Switzerland, the film was released in the United States on July 29, 2022, by Lionsgate.",
+    cast: [
+      "Juliette Binoche",
+      "Frank Grillo",
+      "Hala Finley"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjJiMjIyOWQtNDQ0YS00OTE2LWI5NmMtYjVjYjAzNzRiNDE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjJiMjIyOWQtNDQ0YS00OTE2LWI5NmMtYjVjYjAzNzRiNDE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "319",
+    title: "DC League of Super-Pets",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Superhero"
+    ],
+    rating: 4.5,
+    synopsis: "DC League of Super-Pets is a 2022 American 3D computer-animated superhero comedy film based on the DC Comics superhero team Legion of Super-Pets. Produced by Warner Animation Group, DC Entertainment, and Seven Bucks Productions and distributed by Warner Bros. Pictures, it was directed by Jared Stern and co-directed by Sam J. Levine from a screenplay by Stern and John Whittington. The film stars Dwayne Johnson as the voice of Krypto, alongside a supporting ensemble voice cast that includes Kevin Hart, Kate McKinnon, John Krasinski, Vanessa Bayer, Natasha Lyonne, Diego Luna, Marc Maron, Thomas Middleditch, Ben Schwartz, and Keanu Reeves. The film tells the story of Superman's pet dog Krypto and shelter dog Ace who work with other animals to save the captured superheroes from Lex Luthor and Lulu.",
+    cast: [
+      "Dwayne Johnson",
+      "Kevin Hart",
+      "Kate McKinnon"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2RkOTM1ZTQtNWQ3NS00YzdjLWIyMmQtYzMzNzI2ZjQwZjlmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2RkOTM1ZTQtNWQ3NS00YzdjLWIyMmQtYzMzNzI2ZjQwZjlmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "320",
+    title: "Vengeance",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Mystery"
+    ],
+    rating: 3.7,
+    synopsis: "Vengeance is a 2022 American black comedy mystery film written and directed by B. J. Novak, in his directorial debut. The film stars Novak, Boyd Holbrook, Dove Cameron, Issa Rae, and Ashton Kutcher. Jason Blum is a producer under his Blumhouse Productions banner, and Greg Gilreath and Adam Hendricks are producers under their Divide/Conquer banner.",
+    cast: [
+      "B. J. Novak",
+      "Boyd Holbrook",
+      "Dove Cameron"
+    ],
+    runtime: "139 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmI2MmZlNTctYjIyMy00N2MxLTllZWQtNmEyOGZhMGQ3NThiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmI2MmZlNTctYjIyMy00N2MxLTllZWQtNmEyOGZhMGQ3NThiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "321",
+    title: "Persuasion",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Persuasion is a 2022 American romantic drama film directed by Carrie Cracknell from a screenplay by Ron Bass and Alice Victoria Winslow, based on the novel of the same name by Jane Austen. The film stars Dakota Johnson, Cosmo Jarvis, Nikki Amuka-Bird, Mia McKenna-Bruce, Richard E. Grant, and Henry Golding.",
+    cast: [
+      "Dakota Johnson",
+      "Cosmo Jarvis",
+      "Nikki Amuka-Bird"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjNiOTQ0ZTktZTcxYy00MGYwLWJjN2UtNWRlOGE4ZWUzNjQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjNiOTQ0ZTktZTcxYy00MGYwLWJjN2UtNWRlOGE4ZWUzNjQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "322",
+    title: "Where the Crawdads Sing",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Mystery"
+    ],
+    rating: 4.8,
+    synopsis: "Where the Crawdads Sing is a 2022 American mystery drama film based on the 2018 novel of the same name by Delia Owens. It was directed by Olivia Newman from a screenplay by Lucy Alibar, and was produced by Reese Witherspoon and Lauren Neustadter. Daisy Edgar-Jones leads the cast featuring Taylor John Smith, Harris Dickinson, Michael Hyatt, Sterling Macer Jr., Jojo Regina, Garret Dillahunt, Ahna O'Reilly, and David Strathairn. The story follows an abandoned yet defiant girl, Kya, who raises herself to adulthood in a North Carolina marshland, becoming a naturalist in the process. When the town's hotshot is found dead, she is the prime suspect and is tried for murder.",
+    cast: [
+      "Daisy Edgar-Jones",
+      "Taylor John Smith",
+      "Harris Dickinson"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGM5ODU5YTktMGUxYi00YjQyLTk0MzgtZTg0MWQ2NDg0YTA0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGM5ODU5YTktMGUxYi00YjQyLTk0MzgtZTg0MWQ2NDg0YTA0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "323",
+    title: "Wrong Place",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 4.7,
+    synopsis: "Wrong Place is a 2022 American action film directed by Mike Burns, from a script from Bill Lawrence, and produced by Randall Emmett and George Furla. It stars Ashley Greene and Bruce Willis.",
+    cast: [
+      "Ashley Greene",
+      "Bruce Willis"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjg5MThiMzMtZGFhYS00ZjhjLTljODItNDIwODE3NjBmZTk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjg5MThiMzMtZGFhYS00ZjhjLTljODItNDIwODE3NjBmZTk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "324",
+    title: "Don't Make Me Go",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.8,
+    synopsis: "Don't Make Me Go is a 2022 American road trip film directed by Hannah Marks, written by Vera Herbert, and starring John Cho and Mia Isaac. It premiered at the Tribeca Film Festival on June 13, 2022, and was released on Amazon Prime Video on July 15, 2022.",
+    cast: [
+      "John Cho",
+      "Mia Isaac"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzk0N2E1OWYtM2NlZC00Yjk1LTk0MjgtZGRjNTgwYzY5YTM4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzk0N2E1OWYtM2NlZC00Yjk1LTk0MjgtZGRjNTgwYzY5YTM4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "325",
+    title: "1Up",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.9,
+    synopsis: "1Up is a 2022 American comedy film directed by Kyle Newman and written by Julia Yorks. It stars Paris Berelc, Taylor Zakhar Perez, Hari Nef, and Ruby Rose. It was released on July 15, 2022, by Amazon Studios.",
+    cast: [
+      "Paris Berelc",
+      "Taylor Zakhar Perez",
+      "Hari Nef"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzNlMWEyZDktMWE4MC00MmQ1LTllZTUtNGM4M2UxZWQ1OTA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzNlMWEyZDktMWE4MC00MmQ1LTllZTUtNGM4M2UxZWQ1OTA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "326",
+    title: "Alone Together",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Alone Together is a 2022 American romantic drama film written and directed by Katie Holmes. The film stars Holmes, Jim Sturgess, Derek Luke, Melissa Leo, Zosia Mamet, and Becky Ann Baker. It premiered at the Tribeca Film Festival on July 14, 2022 and was released in the United States on July 22, 2022, by Vertical Entertainment.",
+    cast: [
+      "Katie Holmes",
+      "Jim Sturgess",
+      "Derek Luke"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTdlNDk4MjctMjhlYy00NWRhLTk0N2EtMGE3MjBlZTU0NjI0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTdlNDk4MjctMjhlYy00NWRhLTk0N2EtMGE3MjBlZTU0NjI0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "327",
+    title: "Gone in the Night",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Gone in the Night is an 2022 American thriller film, directed by Eli Horowitz, in his directorial debut from a screenplay by Horowitz and Matthew Derby. It stars Winona Ryder, Dermot Mulroney, John Gallagher Jr., Owen Teague and Brianne Tju.",
+    cast: [
+      "Winona Ryder",
+      "Dermot Mulroney",
+      "John Gallagher Jr."
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjI0MjE5M2ItZmMwZS00YTBiLWJkMGItYTdlMzFlMjQ3MTgwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjI0MjE5M2ItZmMwZS00YTBiLWJkMGItYTdlMzFlMjQ3MTgwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "328",
+    title: "Anything's Possible",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Anything's Possible is a 2022 American coming-of-age romantic comedy film directed by Billy Porter and written by Ximena García Lecuona.",
+    cast: [
+      "Eva Reign",
+      "Abubakr Ali",
+      "Renée Elise Goldsberry"
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTVlNjc4NGUtMTJhMi00NjQ5LWI2NzEtNzU1ZDM5NmM4MzUxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTVlNjc4NGUtMTJhMi00NjQ5LWI2NzEtNzU1ZDM5NmM4MzUxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "329",
+    title: "He's Watching",
+    year: 2022,
+    genres: [
+      "Found Footage",
+      "Horror"
+    ],
+    rating: 3.8,
+    synopsis: "He's Watching, is a 2022 American found footage horror film written and directed by Jacob Aaron Estes, starring Iris Serena Estes and Lucas Steel Estes.",
+    cast: [
+      "Iris Serena Estes",
+      "Lucas Steel Estes"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzM3OWJjMzYtOTZmZC00MDExLWFiZjktMmQxNmZhYWRjZDliXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzM3OWJjMzYtOTZmZC00MDExLWFiZjktMmQxNmZhYWRjZDliXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "330",
+    title: "Nope",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Science Fiction",
+      "Western"
+    ],
+    rating: 4.4,
+    synopsis: "Nope is a 2022 American neo-Western science fiction horror film written, directed, and produced by Jordan Peele, under his and Ian Cooper's Monkeypaw Productions banner. It stars Daniel Kaluuya and Keke Palmer as horse-wrangling siblings attempting to capture evidence of an unidentified flying object. Appearing in supporting roles are Steven Yeun, Michael Wincott, Brandon Perea, and Keith David.",
+    cast: [
+      "Daniel Kaluuya",
+      "Keke Palmer",
+      "Steven Yeun"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODRlNWRhZWUtMzdlZC00ZDIyLWFhZjMtYTcxNjI1ZDIwODhjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "331",
+    title: "The Gray Man",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.8,
+    synopsis: "The Gray Man is a 2022 American action thriller film directed by Anthony and Joe Russo, from a screenplay the latter co-wrote with Christopher Markus and Stephen McFeely, based on the 2009 novel of the same name by Mark Greaney. The film stars Ryan Gosling, Chris Evans, Ana de Armas, Jessica Henwick, Regé-Jean Page, Wagner Moura, Julia Butters, Dhanush, Alfre Woodard, and Billy Bob Thornton. Produced by the Russo brothers' company, AGBO, it is the first film in a franchise based upon Greaney's Gray Man novels. The plot centers on CIA agent \"Sierra Six\", who is on the run from sociopathic ex-CIA agent and mercenary Lloyd Hansen upon discovering corrupt secrets about his superior.",
+    cast: [
+      "Ryan Gosling",
+      "Chris Evans",
+      "Ana de Armas"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "332",
+    title: "Beauty",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "Beauty is a 2022 American drama film directed by Andrew Dosunmu from a screenplay by Lena Waithe. It premiered at the 2022 Tribeca Film Festival and was released on Netflix on June 29, 2022. It stars Gracie Marie Bradley, Niecy Nash, Giancarlo Esposito, Sharon Stone, Andre Ozim, Michael Ward, and Kyle Bary.",
+    cast: [
+      "Gracie Marie Bradley",
+      "Niecy Nash",
+      "Aleyse Shannon"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWU5MmRjZjAtYjA3ZC00YjBkLWFiNGMtYTNhNmZlYzhlM2NkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWU5MmRjZjAtYjA3ZC00YjBkLWFiNGMtYTNhNmZlYzhlM2NkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "333",
+    title: "The Princess",
+    year: 2022,
+    genres: [
+      "Action",
+      "Comedy",
+      "Thriller",
+      "Historical"
+    ],
+    rating: 4.6,
+    synopsis: "The Princess is a 2022 American period action comedy thriller film directed by Le-Van Kiet and starring Joey King in the title role with Dominic Cooper, Olga Kurylenko, and Veronica Ngo. The film focuses on a strong-willed princess who fights to protect her family and save the kingdom when her suitor, a cruel sociopath she refuses to marry, intends on taking over the kingdom.",
+    cast: [
+      "Joey King",
+      "Dominic Cooper",
+      "Olga Kurylenko"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjFiOTEyNGMtN2E4MC00ZjZlLTk3ZDQtNTU1ZGNiZTA1MzJlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjFiOTEyNGMtN2E4MC00ZjZlLTk3ZDQtNTU1ZGNiZTA1MzJlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "334",
+    title: "Press Play",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Science Fiction",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Press Play is a 2022 science fiction romantic drama film written and directed by Greg Björkman in his directorial debut, from a story by Josh Boone. It stars Clara Rugaard, Lewis Pullman, Lyrica Okano, Christina Chang, Matt Walsh, and Danny Glover. It was shot on Oahu. The film was released in the United States on June 24, 2022, by The Avenue. It received mixed reviews from critics.",
+    cast: [
+      "Clara Rugaard",
+      "Lewis Pullman",
+      "Lyrica Okano"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmI2OWFmNDgtMzczZC00ZDlmLTlkNmItY2RhZGIwMjIxNGUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmI2OWFmNDgtMzczZC00ZDlmLTlkNmItY2RhZGIwMjIxNGUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "335",
+    title: "Hot Seat",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 4.8,
+    synopsis: "Hot Seat is a 2022 American action-thriller film directed and produced by James Cullen Bressack. It stars Kevin Dillon and Mel Gibson.",
+    cast: [
+      "Kevin Dillon",
+      "Mel Gibson",
+      "Shannen Doherty"
+    ],
+    runtime: "109 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmFhOGE3ZmYtOTA4Yy00OGFmLThlNWItMjJjOTU1NTc1ZDJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmFhOGE3ZmYtOTA4Yy00OGFmLThlNWItMjJjOTU1NTc1ZDJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "336",
+    title: "Thor: Love and Thunder",
+    year: 2022,
+    genres: [
+      "Superhero"
+    ],
+    rating: 3.6,
+    synopsis: "Thor: Love and Thunder is a 2022 American superhero film based on Marvel Comics featuring the character Thor. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to Thor: Ragnarok (2017) and the 29th film in the Marvel Cinematic Universe (MCU). The film was directed by Taika Waititi, who co-wrote the screenplay with Jennifer Kaytin Robinson, and stars Chris Hemsworth as Thor alongside Christian Bale, Tessa Thompson, Jaimie Alexander, Waititi, Russell Crowe, and Natalie Portman. In the film, Thor attempts to find inner peace, but must return to action and recruit Valkyrie (Thompson), Korg (Waititi), and Jane Foster (Portman)—who is now the Mighty Thor—to stop Gorr the God Butcher (Bale) from eliminating all gods.",
+    cast: [
+      "Chris Hemsworth",
+      "Christian Bale",
+      "Tessa Thompson"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjRiMDhiZjQtNjk5Yi00ZDcwLTkyYTEtMDc1NjdmNjFhNGIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjRiMDhiZjQtNjk5Yi00ZDcwLTkyYTEtMDc1NjdmNjFhNGIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "337",
+    title: "The Forgiven",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "The Forgiven is a 2021 drama film written and directed by John Michael McDonagh and based on the 2012 novel of the same name by Lawrence Osborne. The film stars Ralph Fiennes, Jessica Chastain, Matt Smith, Ismael Kanater, Caleb Landry Jones, Abbey Lee, Mourad Zaoui, Marie-Josée Croze, Alex Jennings, Saïd Taghmaoui, and Christopher Abbott. Elizabeth Eves and McDonagh produced the film under their House of Un-American Activities label.",
+    cast: [
+      "Ralph Fiennes",
+      "Jessica Chastain",
+      "Matt Smith"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzViZjE2NzQtYjhkYy00N2YyLTk1YmMtODVkYTY1NDFhMWM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzViZjE2NzQtYjhkYy00N2YyLTk1YmMtODVkYTY1NDFhMWM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "338",
+    title: "Minions: The Rise of Gru",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy"
+    ],
+    rating: 3.9,
+    synopsis: "Minions: The Rise of Gru is a 2022 American computer-animated comedy film produced by Illumination and distributed by Universal Pictures. It is the sequel to the spin-off prequel Minions (2015) and the fifth entry overall in the Despicable Me franchise. The film was directed by Kyle Balda, co-directed by Brad Ableson and Jonathan del Val, and produced by Chris Meledandri, Janet Healy and Chris Renaud, from a screenplay written by Matthew Fogel, and a story by Fogel and Brian Lynch. The film features Steve Carell reprising his role as Gru and Pierre Coffin as the Minions, with Taraji P. Henson, Michelle Yeoh, Russell Brand, Julie Andrews, and Alan Arkin in supporting roles. In the film, an eleven-year-old Gru plans to become a supervillain with the help of his Minions, which leads to a showdown with a malevolent team, the Vicious 6.",
+    cast: [
+      "Steve Carell",
+      "Taraji P. Henson",
+      "Michelle Yeoh"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTAzMTkyNmQtNTMzZS00MTM1LWI4YzEtMjVlYjU0ZWI5Y2IzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTAzMTkyNmQtNTMzZS00MTM1LWI4YzEtMjVlYjU0ZWI5Y2IzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "339",
+    title: "Mr. Malcolm's List",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Historical"
+    ],
+    rating: 3.8,
+    synopsis: "Mr. Malcolm's List is a 2022 period drama directed by Emma Holly Jones and written by Suzanne Allain, based on her novel of the same name. It stars Freida Pinto, Sope Dirisu, Oliver Jackson-Cohen, Ashley Park, Zawe Ashton, and Theo James.",
+    cast: [
+      "Freida Pinto",
+      "Sope Dirisu",
+      "Oliver Jackson-Cohen"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWFkNThiYWItYzI0Mi00ZDAxLThlYzAtNjAyMDQzY2IzZTE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWFkNThiYWItYzI0Mi00ZDAxLThlYzAtNjAyMDQzY2IzZTE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "340",
+    title: "Rise",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Sports",
+      "Biography"
+    ],
+    rating: 4,
+    synopsis: "Rise is a 2022 biographical sports drama film directed by Akin Omotoso, from a script written by Arash Amel. Based on the true story of three young Nigerian-Greek brothers, Giannis, Thanasis and Kostas Antetokounmpo, who emigrate to the United States and rise to fame and success within the National Basketball Association. The film stars newcomers Uche Agada, Ral Agada, and Jaden Osimuwa in the three primary roles; with Elijah Shomanke, Yetide Badaki, and Dayo Okeniyi in supporting family roles.",
+    cast: [
+      "Uche Agada",
+      "Ral Agada",
+      "Jaden Osimuwa"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjM1ZmViMmYtOGYzZC00YzhmLWE0MTMtMzNjYzcyNjEwYWRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "341",
+    title: "Elvis",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4,
+    synopsis: "Elvis is a 2022 biographical drama film directed by Baz Luhrmann from a screenplay he co-wrote with Sam Bromell, Craig Pearce, and Jeremy Doner. It chronicles the life of the American rock and roll singer and actor Elvis Presley under the management of Colonel Tom Parker. The film stars Austin Butler and Tom Hanks as Presley and Parker, respectively, with Olivia DeJonge, Helen Thomson, Richard Roxburgh, David Wenham, Kodi Smit-McPhee, and Luke Bracey in supporting roles.",
+    cast: [
+      "Austin Butler",
+      "Tom Hanks",
+      "Olivia DeJonge"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTVhZmUyMDQtY2I5Ny00OWNiLTgzNjUtMTg4YTQwMTc0OTQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "342",
+    title: "Cha Cha Real Smooth",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.2,
+    synopsis: "Cha Cha Real Smooth is a 2022 American comedy-drama film written, produced, and directed by Cooper Raiff. The plot centers on a 22-year-old college graduate (Raiff) who starts making money as a party starter while he also strikes up a relationship with a 32-year-old mother. The cast also includes Raúl Castillo, Odeya Rush, Evan Assante, Vanessa Burghardt, Brad Garrett, and Leslie Mann.",
+    cast: [
+      "Cooper Raiff",
+      "Dakota Johnson",
+      "Raúl Castillo"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWVjOWQ1YzEtMDVhNS00MTk1LTg1MGQtMzgyYzE5Mzc5ZWVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWVjOWQ1YzEtMDVhNS00MTk1LTg1MGQtMzgyYzE5Mzc5ZWVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "343",
+    title: "The Sea Beast",
+    year: 2022,
+    genres: [
+      "Adventure",
+      "Animated"
+    ],
+    rating: 5,
+    synopsis: "The Sea Beast is a 2022 computer-animated adventure film directed by Chris Williams, who co-wrote the screenplay with Nell Benjamin and produced with Jed Schlanger. The film stars the voices of Karl Urban, Zaris-Angel Hator, Jared Harris, and Marianne Jean-Baptiste. It tells the story of a sea monster hunter and a young orphan girl who joins his group of sea monster hunters on their search for the elusive Red Bluster in the 17th century.",
+    cast: [
+      "Karl Urban",
+      "Zaris-Angel Hator",
+      "Jared Harris"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDhjZmY1ZDEtNGQ1ZC00ZDgwLWI2YjEtMWFiOGY3M2Q2YWViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDhjZmY1ZDEtNGQ1ZC00ZDgwLWI2YjEtMWFiOGY3M2Q2YWViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "344",
+    title: "Abandoned",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.9,
+    synopsis: "Abandoned is a 2022 horror film directed by Spencer Squire and written by Erik Patterson and Jessica Scott. The film stars Emma Roberts, John Gallagher Jr. and Michael Shannon. The film was Squire's feature film directorial debut, with Roberts serving as one of the producers.",
+    cast: [
+      "Emma Roberts",
+      "John Gallagher Jr.",
+      "Michael Shannon"
+    ],
+    runtime: "109 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2IzMzMwNzYtZGM5Mi00MDY5LWIwNjMtZGViNmQ5ZGMzMDc0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2IzMzMwNzYtZGM5Mi00MDY5LWIwNjMtZGViNmQ5ZGMzMDc0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "345",
+    title: "The Black Phone",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.6,
+    synopsis: "The Black Phone is a 2021 American supernatural horror film directed by Scott Derrickson and written by Derrickson and C. Robert Cargill, who both produced with Jason Blum. It is an adaptation of the 2004 short story of the same name by Joe Hill. The film stars Mason Thames, Madeleine McGraw, Jeremy Davies, James Ransone, and Ethan Hawke. In the film, an abducted teenager (Thames) uses a mysterious telephone to communicate with the previous victims of his deranged captor (Hawke).",
+    cast: [
+      "Ethan Hawke",
+      "Mason Thames",
+      "Madeleine McGraw"
+    ],
+    runtime: "105 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjFhZTcxOTktMzllMS00MzIzLWJhODEtZDU5YTFkNzRjZWQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjFhZTcxOTktMzllMS00MzIzLWJhODEtZDU5YTFkNzRjZWQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "346",
+    title: "Spiderhead",
+    year: 2022,
+    genres: [
+      "Science Fiction",
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Spiderhead is a 2022 American science fiction psychological thriller film directed by Joseph Kosinski, with a screenplay by Rhett Reese and Paul Wernick, based on the dystopian short story \"Escape from Spiderhead\" by George Saunders and first published in The New Yorker. The film stars Chris Hemsworth, Miles Teller, and Jurnee Smollett. The story follows inmates in a luxurious prison who participate in experiments involving mind-altering drugs. Principal photography took place in Australia in 2020.",
+    cast: [
+      "Chris Hemsworth",
+      "Miles Teller",
+      "Jurnee Smollett"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2VkZjczZjItYWI1ZS00NDU0LWE4NDItMzczNzc5ZDJkNTQ2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2VkZjczZjItYWI1ZS00NDU0LWE4NDItMzczNzc5ZDJkNTQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "347",
+    title: "Lightyear",
+    year: 2022,
+    genres: [
+      "Action",
+      "Adventure",
+      "Animated",
+      "Science Fiction"
+    ],
+    rating: 4.1,
+    synopsis: "Lightyear is a 2022 American computer-animated science-fiction action-adventure film produced by Walt Disney Pictures and Pixar Animation Studios, and distributed by Walt Disney Studios Motion Pictures. The film is a spin-off of the Toy Story film series, but does not take place in the same fictional universe as them; rather, it is presented as a film that some of the characters in the main Toy Story films have seen. Lightyear centers on the character Buzz Lightyear, who in this film is human and not a toy. The film was directed by Angus MacLane and produced by Galyn Susman, from a screenplay and story written by MacLane and Jason Headley, both of whom co-wrote the latter with Matthew Aldrich. It stars Chris Evans as the voice of the titular character, with Keke Palmer, Peter Sohn, Taika Waititi, Dale Soules, James Brolin, and Uzo Aduba in supporting roles. The film follows Buzz Lightyear (Evans) operating as a space ranger who, after being marooned on a hostile planet with his commander and crew, tries to find a way back home while encountering a threat to the universe's safety.",
+    cast: [
+      "Chris Evans",
+      "Keke Palmer",
+      "Peter Sohn"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGI3ZjUyM2ItNmFjYy00NGE3LTg2OTYtMTI2MDk0MjIxNDA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGI3ZjUyM2ItNmFjYy00NGE3LTg2OTYtMTI2MDk0MjIxNDA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "348",
+    title: "Mid-Century",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 3.5,
+    synopsis: "Mid-Century is a 2022 American horror thriller film directed by Sonja O'Hara and written and produced by Mike Stern. The film stars Bruce Dern, Stephen Lang and Shane West, with the latter two also serving as executive producers.",
+    cast: [
+      "Shane West",
+      "Sarah Hay",
+      "Bruce Dern"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmQ2MDE4M2YtNTBiYi00YWYzLTk3YWMtOTk1NWZkYWQwZWExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmQ2MDE4M2YtNTBiYi00YWYzLTk3YWMtOTk1NWZkYWQwZWExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "349",
+    title: "Jerry & Marge Go Large",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Jerry & Marge Go Large is a 2022 American comedy-drama film directed by David Frankel and written by Brad Copeland. Based on Jason Fagone's 2018 HuffPost article of the same name, the film stars Bryan Cranston and Annette Bening.",
+    cast: [
+      "Bryan Cranston",
+      "Annette Bening",
+      "Rainn Wilson"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjUyMTM1ZjAtMmI5MS00MDhmLWI3MGEtMTU3ODM1MjgyZDMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjUyMTM1ZjAtMmI5MS00MDhmLWI3MGEtMTU3ODM1MjgyZDMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "350",
+    title: "The Man from Toronto",
+    year: 2022,
+    genres: [
+      "Action",
+      "Comedy"
+    ],
+    rating: 4.8,
+    synopsis: "The Man from Toronto is a 2022 American action comedy film directed by Patrick Hughes. The film stars Kevin Hart and Woody Harrelson, Kaley Cuoco, Jasmine Mathews, Lela Loren, Pierson Fodé, Jencarlos Canela, and Ellen Barkin.",
+    cast: [
+      "Kevin Hart",
+      "Woody Harrelson",
+      "Kaley Cuoco"
+    ],
+    runtime: "143 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzhlZTZjZDItNzFhYi00MmM3LWFlNTEtNjVlOWM2NmMyMGU5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzhlZTZjZDItNzFhYi00MmM3LWFlNTEtNjVlOWM2NmMyMGU5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "351",
+    title: "Benediction",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Benediction is a 2021 biographical romantic drama film written and directed by Terence Davies. It stars Jack Lowden and Peter Capaldi as the war poet Siegfried Sassoon, along with Simon Russell Beale, Jeremy Irvine, Calam Lynch, Kate Phillips, Gemma Jones, and Ben Daniels. It was released in United Kingdom on 20 May 2022 by Vertigo Releasing and United States on 3 June 2022 by Roadside Attractions.",
+    cast: [
+      "Jack Lowden",
+      "Peter Capaldi",
+      "Simon Russell Beale"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTI2NWMxOGMtOGZmZS00YzM4LWE1ZjktYjQwY2NhOTg0MjhjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTI2NWMxOGMtOGZmZS00YzM4LWE1ZjktYjQwY2NhOTg0MjhjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "352",
+    title: "Father of the Bride",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Father of the Bride is a 2022 American romantic comedy film directed by Gaz Alazraki and written by Matt Lopez, based on the 1949 novel of the same name by Edward Streeter. The film stars Andy García, Gloria Estefan, Adria Arjona, Isabela Merced, Diego Boneta, and Chloe Fineman. It is the third filmed version of the story, after the original 1950 film and the 1991 remake. Produced by Plan B Entertainment, it was released on June 16, 2022, by Warner Bros. Pictures and HBO Max.",
+    cast: [
+      "Andy García",
+      "Gloria Estefan",
+      "Adria Arjona"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGRiZjliMTktMzhjMi00MjUyLWE0OTQtYjUzYzZmNzg2NjQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGRiZjliMTktMzhjMi00MjUyLWE0OTQtYjUzYzZmNzg2NjQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "353",
+    title: "Jurassic World Dominion",
+    year: 2022,
+    genres: [
+      "Action",
+      "Science Fiction"
+    ],
+    rating: 3.9,
+    synopsis: "Jurassic World Dominion is a 2022 American science fiction action film directed by Colin Trevorrow, who co-wrote the screenplay with Emily Carmichael from a story by Derek Connolly and Trevorrow. The sequel to Jurassic World: Fallen Kingdom (2018), it is the third and final installment in the Jurassic World trilogy and the sixth installment overall in the Jurassic Park film series, concluding the storyline that started with Jurassic Park (1993). The film has an ensemble cast including Chris Pratt, Bryce Dallas Howard, Laura Dern, Jeff Goldblum, Sam Neill, DeWanda Wise, Mamoudou Athie, BD Wong, and Omar Sy. Dern, Goldblum, and Neill reprise their roles from the Jurassic Park trilogy, appearing together for the first time since the original film.",
+    cast: [
+      "Chris Pratt",
+      "Bryce Dallas Howard",
+      "Laura Dern"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGExMWU2NWMtNzczYi00NjQ4LTk2YzctZGZkYmRmMDdhMjllXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGExMWU2NWMtNzczYi00NjQ4LTk2YzctZGZkYmRmMDdhMjllXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "354",
+    title: "Watcher",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Watcher is a 2022 psychological thriller film written and directed by Chloe Okuno in her feature film directorial and screenwriting debut, based on an original screenplay by Zack Ford. The film stars Maika Monroe, Karl Glusman, and Burn Gorman.",
+    cast: [
+      "Maika Monroe",
+      "Karl Glusman",
+      "Burn Gorman"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGU3ZjhhNjYtNTk3MS00ZDM3LWE1MjQtZDNmNTIzNjhmZDFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGU3ZjhhNjYtNTk3MS00ZDM3LWE1MjQtZDNmNTIzNjhmZDFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "355",
+    title: "Dashcam",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 3.8,
+    synopsis: "Dashcam is a 2021 computer screen horror film directed by Rob Savage and written by Gemma Hurley, Savage, and Jed Shepherd. The film stars Annie Hardy, Amer Chadha-Patel, and Angela Enahoro. The entire film is shot from the perspective of either Hardy's hand-held iPhone or the dashcam in her car, as she livestreams her actions for viewers whose comments on the events are also displayed. The film follows Hardy, playing a semi-fictionalized version of herself, as she visits a friend in London amidst the COVID-19 pandemic, and finds herself in a series of nightmarish events after giving a strange woman a ride in her car. The film is produced by Jason Blum through his Blumhouse Productions banner, alongside Douglas Cox, and Savage.",
+    cast: [
+      "Annie Hardy"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2EyNmRjYzAtNGYzNi00ZmRiLThhY2UtNjMwYmY1NjJhYjQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2EyNmRjYzAtNGYzNi00ZmRiLThhY2UtNjMwYmY1NjJhYjQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "356",
+    title: "Interceptor",
+    year: 2022,
+    genres: [
+      "Action",
+      "Drama"
+    ],
+    rating: 4.4,
+    synopsis: "Interceptor is a 2022 action drama film directed by Matthew Reilly from a screenplay that he co-wrote with Stuart Beattie. The film stars Elsa Pataky and Luke Bracey. It is about terrorists who want to launch a nuclear attack on the United States with stolen missiles. When the terrorists attack a remote offshore missile interceptor platform that could stop their missiles, \nan officer (Pataky) defends the facility with courage and resourcefulness.",
+    cast: [
+      "Elsa Pataky",
+      "Luke Bracey"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmIwM2E0NWQtMTZmYy00ZmEyLWJiNjAtOTQ3MzNiMTYyOGU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmIwM2E0NWQtMTZmYy00ZmEyLWJiNjAtOTQ3MzNiMTYyOGU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "357",
+    title: "Hustle",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Sports"
+    ],
+    rating: 4.2,
+    synopsis: "Hustle is a 2022 American sports comedy-drama film directed by Jeremiah Zagar from a screenplay by Taylor Materne and Will Fetters and co-produced by and starring Adam Sandler as a down-on-his-luck NBA scout who discovers a raw but talented basketball player in Spain and tries to prepare him for the NBA draft. The film also stars Queen Latifah, Ben Foster, Robert Duvall, Heidi Gardner, and current National Basketball Association player Anthony Edwards. LeBron James produced through his SpringHill Company banner.",
+    cast: [
+      "Adam Sandler",
+      "Queen Latifah",
+      "Ben Foster"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzA4ODRlMjktMDEyNS00NTg5LWEwYTAtNTExODI1ZDE2ZmYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzA4ODRlMjktMDEyNS00NTg5LWEwYTAtNTExODI1ZDE2ZmYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "358",
+    title: "Fire Island",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Fire Island is a 2022 American romantic comedy film directed by Andrew Ahn, and written by and starring Joel Kim Booster. The film co-stars Bowen Yang, Conrad Ricamora, James Scully, and Margaret Cho. Inspired by Jane Austen's Pride and Prejudice, the story follows a group of gay friends who go on vacation to Fire Island, only for things to become complicated by classism and romance.",
+    cast: [
+      "Joel Kim Booster",
+      "Bowen Yang",
+      "Conrad Ricamora"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGNjOGE5ZjgtZjA1ZC00ZTgyLTg0M2MtNGEzM2VkMTQ2NzQzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGNjOGE5ZjgtZjA1ZC00ZTgyLTg0M2MtNGEzM2VkMTQ2NzQzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "359",
+    title: "White Elephant",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 4.8,
+    synopsis: "White Elephant is an American action film directed by Jesse V. Johnson and written by Johnson and Erik Martinez, based on a story by Johnson. It stars Michael Rooker, Bruce Willis, Olga Kurylenko, and John Malkovich.",
+    cast: [
+      "Michael Rooker",
+      "Bruce Willis",
+      "Olga Kurylenko"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjU0NDgzNDYtOTY4NC00NzYzLWE2NjAtNDkzYjEzMGQ2ZDVjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjU0NDgzNDYtOTY4NC00NzYzLWE2NjAtNDkzYjEzMGQ2ZDVjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "360",
+    title: "Crimes of the Future",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 4.3,
+    synopsis: "Crimes of the Future is a 2022 science fiction body horror drama film written and directed by David Cronenberg. The film stars Viggo Mortensen, Léa Seydoux and Kristen Stewart. It follows a performance artist duo who perform surgery for audiences in a future where human evolution has accelerated for much of the population. Although the film shares its title with Cronenberg's 1970 film of the same name, it is not a remake as the story and concept are unrelated, and there is no connection between the two films whatsoever. The film marked Cronenberg's return to the science fiction and horror genres for the first time since Existenz (1999).",
+    cast: [
+      "Viggo Mortensen",
+      "Léa Seydoux",
+      "Kristen Stewart"
+    ],
+    runtime: "134 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjBjMTEzZGItOGMzYy00Mzk4LWE0YjgtN2ExMjY1MTBlNTlkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjBjMTEzZGItOGMzYy00Mzk4LWE0YjgtN2ExMjY1MTBlNTlkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "361",
+    title: "South Park The Streaming Wars",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Erotic"
+    ],
+    rating: 5,
+    synopsis: "\"South Park The Streaming Wars\" is a 2022 American adult animated comedy television special episode written and directed by Trey Parker. It is the third South Park television special produced for Paramount+ and was released on June 1, 2022. It also serves as the 318th overall episode of the television series.",
+    cast: [
+      "Trey Parker",
+      "Matt Stone",
+      "April Stewart"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTUzYmVmNDEtMTdkYy00MDdjLWE2OWUtZGZjY2FjM2I4MzFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTUzYmVmNDEtMTdkYy00MDdjLWE2OWUtZGZjY2FjM2I4MzFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "362",
+    title: "Emergency",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Thriller"
+    ],
+    rating: 4.2,
+    synopsis: "Emergency is a 2022 American thriller comedy-drama film directed by Carey Williams and written by K.D. Dávila, based on their 2018 short film of the same name. It stars RJ Cyler, Donald Elise Watkins, and Sebastian Chacon as three college students who must weigh the pros and cons of calling the police when faced with an unexpected situation.",
+    cast: [
+      "RJ Cyler",
+      "Sabrina Carpenter"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTEzYWJhMTUtYTAzNi00YWFiLWI2NmYtOThlMTA2MjYwZTQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTEzYWJhMTUtYTAzNi00YWFiLWI2NmYtOThlMTA2MjYwZTQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "363",
+    title: "Chip 'n Dale: Rescue Rangers",
+    year: 2022,
+    genres: [
+      "Live Action",
+      "Adventure",
+      "Animated",
+      "Comedy"
+    ],
+    rating: 4.2,
+    synopsis: "Chip 'n Dale: Rescue Rangers is a 2022 American live-action/animated adventure comedy film based on the characters Chip and Dale and continuation of the animated TV series of the same name, excluding the duo's previous filmography. Directed by Akiva Schaffer and written by Dan Gregor and Doug Mand, the film stars John Mulaney and Andy Samberg as the voices of the titular pair, respectively, with KiKi Layne, Will Arnett, Eric Bana, Flula Borg, Dennis Haysbert, Keegan-Michael Key, Tress MacNeille, Tim Robinson, Seth Rogen and J.K. Simmons. Walt Disney Pictures co-produced the film in association with The Lonely Island and alongside producers David Hoberman and Todd Lieberman's Mandeville Films.",
+    cast: [
+      "John Mulaney",
+      "Andy Samberg",
+      "Will Arnett"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjIzY2Q1ZWYtOGQ0Yi00NTllLTkzYzgtMWZlZmY2NGViYzNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjIzY2Q1ZWYtOGQ0Yi00NTllLTkzYzgtMWZlZmY2NGViYzNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "364",
+    title: "The Valet",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "The Valet is a 2022 American romantic comedy film directed by Richard Wong and written by Bob Fisher and Rob Greenberg. It is a remake of the French film The Valet (2006) by Francis Veber. It stars Eugenio Derbez and Samara Weaving, with Max Greenfield, Betsy Brandt, Marisol Nichols, Amaury Nolasco, Carmen Salinas, Noemi Gonzalez, Armando Hernández, Carlos Santos, Ravi Patel, and John Pirruccello in supporting roles. The film is dedicated to Salinas, who died in 2021. The plot follows a parking valet (Derbez) who is hired to date an actress (Weaving) trying to cover up an affair. It was released on Hulu on May 20, 2022. It received generally positive reviews from critics.",
+    cast: [
+      "Eugenio Derbez",
+      "Samara Weaving"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWJmNmUxMWMtNjYzOS00YjY1LTk4ZTYtMGM4OTA3NDIzODY0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWJmNmUxMWMtNjYzOS00YjY1LTk4ZTYtMGM4OTA3NDIzODY0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "365",
+    title: "Good Mourning",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.7,
+    synopsis: "Good Mourning is a 2022 American stoner comedy film written, produced and directed by and starring Machine Gun Kelly and Mod Sun, in their directorial debuts. It also stars Zach Villa, GaTa, Becky G, Dove Cameron and Megan Fox.",
+    cast: [
+      "Colson Baker",
+      "Mod Sun",
+      "Becky G"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWU0YTllM2EtOWVhMy00ZDM2LThlOGUtOWU5MTkyMGFiOWJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWU0YTllM2EtOWVhMy00ZDM2LThlOGUtOWU5MTkyMGFiOWJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "366",
+    title: "A Chiara",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.7,
+    synopsis: "A Chiara is a 2021 Italian-language drama film directed and written by Jonas Carpignano, the third film in his film trilogy set in a Calabrian town, following Mediterranea (2015) and A Ciambra (2017). The film stars Swamy Rotolo, Claudio Rotolo, Grecia Rotolo, and Carmela Fumo and had its world premiere at the Cannes Film Festival on July 9, 2021, in the Directors' Fortnight section, to very positive reviews. Following its festival screening, the film was distributed by MK2 Films and Lucky Red in Italy and Neon in the United States.",
+    cast: [
+      "Swamy Rotolo",
+      "Claudio Rotolo",
+      "Carmela Fumo"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzdjYmUzNTYtYmUyOC00YTI0LWIxZGYtMzZjNjJkMDlmMjMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzdjYmUzNTYtYmUyOC00YTI0LWIxZGYtMzZjNjJkMDlmMjMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "367",
+    title: "Top Gun: Maverick",
+    year: 2022,
+    genres: [
+      "Action",
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Top Gun: Maverick is a 2022 American action drama film directed by Joseph Kosinski and written by Ehren Kruger, Eric Warren Singer and Christopher McQuarrie from stories by Peter Craig and Justin Marks. The film is a sequel to the 1986 film Top Gun. Tom Cruise reprises his starring role as the naval aviator Maverick. It was based on the characters of the original film created by Jim Cash and Jack Epps Jr. The film also stars Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Lewis Pullman, Ed Harris and Val Kilmer, who reprises his role as Iceman. In the film, Maverick confronts his past while training a group of younger Top Gun graduates, including the son of his deceased best friend, for a dangerous mission.",
+    cast: [
+      "Tom Cruise",
+      "Miles Teller",
+      "Jennifer Connelly"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "368",
+    title: "Zero Contact",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 3.8,
+    synopsis: "Zero Contact is a 2021 American thriller film directed by Rick Dugdale and starring Anthony Hopkins. It was the first feature film to be released via Vuele, a non-fungible token platform.",
+    cast: [
+      "Anthony Hopkins",
+      "Chris Brochu",
+      "Aleks Paunovic"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDQwMzJmMjEtZWI4NS00NTNiLTk2NzUtOTY2YTc4YmU1ZGQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDQwMzJmMjEtZWI4NS00NTNiLTk2NzUtOTY2YTc4YmU1ZGQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "369",
+    title: "The Bob's Burgers Movie",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Musical"
+    ],
+    rating: 4.1,
+    synopsis: "The Bob's Burgers Movie is a 2022 American animated musical comedy film based on the Fox animated television series Bob's Burgers. It is directed by the series creator Loren Bouchard and series director Bernard Derriman, written by Bouchard and Nora Smith, and produced by Janelle Momary-Neely, Bouchard, and Smith. The original voice cast from the series reprises their roles including H. Jon Benjamin, Dan Mintz, Eugene Mirman, Larry Murphy, John Roberts, Kristen Schaal, David Wain, Zach Galifianakis, and Kevin Kline. As the events of the film take place between the 12th and 13th seasons of Bob's Burgers, the plot follows Bob and his family as they struggle to pay their loan after a sinkhole opens in front of their restaurant and affects business, while the kids try to solve the murder of a carnie.",
+    cast: [
+      "H. Jon Benjamin",
+      "Dan Mintz",
+      "Eugene Mirman"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjY3MzAzZTctNTMyYi00OWIzLTk1NjYtNTRhMDJiMzkyMTc1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjY3MzAzZTctNTMyYi00OWIzLTk1NjYtNTRhMDJiMzkyMTc1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "370",
+    title: "Hollywood Stargirl",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Teen",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Hollywood Stargirl is a 2022 American teen romantic drama film directed by Julia Hart from a screenplay that she co-wrote with Jordan Horowitz. The film is a sequel to the 2020 film Stargirl, which was in turn based on Jerry Spinelli's 2000 novel of the same name; it is not an adaptation of the novel's sequel Love, Stargirl.",
+    cast: [
+      "Elijah Richardson",
+      "Grace VanderWaal",
+      "Tyrel Jackson Williams"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDBjYThmZjctNjhlZS00NjhlLWFhZjMtNjE4YTZjMDA2M2E5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDBjYThmZjctNjhlZS00NjhlLWFhZjMtNjE4YTZjMDA2M2E5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "371",
+    title: "Montana Story",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "Montana Story is a 2021 American drama film written and directed by Scott McGehee and David Siegel. The film stars Haley Lu Richardson and Owen Teague. Two siblings return to their family's ranch in Montana after their father falls into a coma.",
+    cast: [
+      "Haley Lu Richardson",
+      "Owen Teague"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzBlNGQ2ODctOTIzMi00YTRjLWIxOTgtZjM0MjY2Mjc2N2M2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzBlNGQ2ODctOTIzMi00YTRjLWIxOTgtZjM0MjY2Mjc2N2M2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "372",
+    title: "Operation Mincemeat",
+    year: 2022,
+    genres: [
+      "Drama",
+      "War"
+    ],
+    rating: 3.8,
+    synopsis: "Operation Mincemeat is a 2021 British war drama film directed by John Madden. It is based upon Ben Macintyre's book on the British Operation Mincemeat during the Second World War. The film stars Colin Firth, Kelly Macdonald, Matthew Macfadyen, Penelope Wilton, Johnny Flynn and Jason Isaacs. This was Paul Ritter's final film appearance, and was dedicated to his memory.",
+    cast: [
+      "Colin Firth",
+      "Matthew Macfadyen",
+      "Kelly Macdonald"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzgzMGFiZGQtYjA0OS00NGYxLWIxMDYtOGUxMDc4YjU3ZWQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzgzMGFiZGQtYjA0OS00NGYxLWIxMDYtOGUxMDc4YjU3ZWQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "373",
+    title: "Firestarter",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Science Fiction"
+    ],
+    rating: 4.3,
+    synopsis: "Firestarter is a 2022 American science fiction horror film directed by Keith Thomas, from a screenplay by Scott Teems, based on Stephen King's novel of the same name, and a remake of the 1984 film of the same name. The film stars Zac Efron, Ryan Kiera Armstrong, Sydney Lemmon, Kurtwood Smith, John Beasley, Michael Greyeyes, and Gloria Reuben. It is produced by Jason Blum and Akiva Goldsman under their Blumhouse Productions and Weed Road Pictures banners, respectively, alongside BoulderLight Pictures and Night Platform.",
+    cast: [
+      "Zac Efron",
+      "Ryan Kiera Armstrong",
+      "Sydney Lemmon"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZThjYzkzYjktNDNjZS00NGIwLWIzZTUtN2MyZDI4NWI1Mzc4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZThjYzkzYjktNDNjZS00NGIwLWIzZTUtN2MyZDI4NWI1Mzc4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "374",
+    title: "Senior Year",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 3.5,
+    synopsis: "Senior Year is a 2022 American comedy film directed by Alex Hardcastle from a screenplay by Andrew Knauer, Arthur Pielli, and Brandon Scott Jones. The film stars Rebel Wilson as a 37-year-old woman who awakens from a 20-year coma and decides to go back to high school to earn her diploma. Sam Richardson, Zoë Chao, Mary Holland, Justin Hartley, Chris Parnell, Angourie Rice, Michael Cimino, Jeremy Ray Taylor, Jones, and Alicia Silverstone also star. The film was released on May 13, 2022, by Netflix, and received mixed reviews from critics.",
+    cast: [
+      "Rebel Wilson",
+      "Sam Richardson",
+      "Zoë Chao"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjBmMjNkNGYtYWQ3YS00OWU5LWJiYjAtNDhjOGY4OWYwOWE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjBmMjNkNGYtYWQ3YS00OWU5LWJiYjAtNDhjOGY4OWYwOWE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "375",
+    title: "Family Camp",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.3,
+    synopsis: "Family Camp is a 2022 American religious comedy film directed by Brian Cates and written by Cates and Rene Gutteridge. The film stars Tommy Woodard, Eddie James, Leigh-Allyn Baker, and Gigi Orsillo, and follows two polar-opposite families who are forced to camp together, the fathers' struggles to hold onto their families and marriages as they compete for the coveted camp trophy. The film was released on May 13, 2022 in the United States, by Roadside Attractions. The film received mixed reviews and grossed $4 million at the box office.",
+    cast: [
+      "Tommy Woodward",
+      "Eddie James",
+      "Leigh-Allyn Baker"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTE4NmQ5MjktOGFmNi00YTQyLWI4ODctZDFmNzE5YmExMTQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTE4NmQ5MjktOGFmNi00YTQyLWI4ODctZDFmNzE5YmExMTQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "376",
+    title: "Sneakerella",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Musical"
+    ],
+    rating: 3.6,
+    synopsis: "Sneakerella is a 2022 American musical comedy film directed by Elizabeth Allen Rosenbaum and written by David Light & Joseph Raso, Tamara Chestna, Mindy Stern, and George Gore II. A re-imagining of the classic fairy tale Cinderella, the film stars Chosen Jacobs, Lexi Underwood, Devyn Nekoda, Bryan Terrell Clark, Kolton Stewart, Hayward Leach, Robyn Alomar, Yvonne Senat Jones, Juan Chioran, and John Salley.",
+    cast: [
+      "Chosen Jacobs",
+      "Lexi Underwood",
+      "John Salley"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTAwMTlmNmEtYTRmMy00MjFjLTg5M2YtODAyZjM3ZDA4N2ZhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTAwMTlmNmEtYTRmMy00MjFjLTg5M2YtODAyZjM3ZDA4N2ZhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "377",
+    title: "Vendetta",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.5,
+    synopsis: "Vendetta is a 2022 American action-thriller revenge film written and directed by Jared Cohn and starring Clive Standen, Theo Rossi, Mike Tyson, Thomas Jane, and Bruce Willis.",
+    cast: [
+      "Clive Standen",
+      "Theo Rossi",
+      "Mike Tyson"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTI5ODc3NzExNV5BMl5BanBnXkFtZTcwNzYxNzQzMw@@._V1_.jpg"
+  },
+  {
+    id: "378",
+    title: "Downton Abbey: A New Era",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Historical"
+    ],
+    rating: 4,
+    synopsis: "Downton Abbey: A New Era is a 2022 historical drama film and the sequel to the 2019 film Downton Abbey. The film was written by Julian Fellowes, the creator and writer of the television series of the same name and was directed by Simon Curtis.\nDownton Abbey: A New Era was released in the United Kingdom on 29 April 2022 by Universal Pictures and was released in the United States on 20 May by Focus Features. Like the first film, it received generally positive reviews from critics.",
+    cast: [
+      "Hugh Bonneville",
+      "Elizabeth McGovern",
+      "Maggie Smith"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDg5ZGI2OGYtYzYyZS00NzdkLThjYmQtNTI2N2RlMTg3ZjFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDg5ZGI2OGYtYzYyZS00NzdkLThjYmQtNTI2N2RlMTg3ZjFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "379",
+    title: "On the Count of Three",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.6,
+    synopsis: "On the Count of Three is an 2021 American black comedy-drama film directed by Jerrod Carmichael and written by Ari Katcher and Ryan Welch. It stars Carmichael and Christopher Abbott as two best friends who make a suicide pact and have one final day to take care of unfinished business. Tiffany Haddish, J. B. Smoove, Lavell Crawford, and Henry Winkler also star.",
+    cast: [
+      "Jerrod Carmichael",
+      "Christopher Abbott",
+      "Tiffany Haddish"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjY1ZDEzNDQtMDRlYS00YTMxLWFjMjEtMTk4NmNlYmM5YzYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjY1ZDEzNDQtMDRlYS00YTMxLWFjMjEtMTk4NmNlYmM5YzYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "380",
+    title: "Private Property",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 3.9,
+    synopsis: "Private Property is a 2022 American thriller film directed by Chadd Harbold and starring Ashley Benson and Shiloh Fernandez. It is a remake of the 1960 film of the same title.",
+    cast: [
+      "Ashley Benson",
+      "Shiloh Fernandez",
+      "Logan Miller"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTQ4MDgzNzUtN2Y4Ny00MDE5LWFmOTEtMGU1YThmYWQzMWRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTQ4MDgzNzUtN2Y4Ny00MDE5LWFmOTEtMGU1YThmYWQzMWRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "381",
+    title: "Memory",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Memory is a 2022 American action thriller film directed by Martin Campbell from a screenplay by Dario Scardapane. It is based on the novel De Zaak Alzheimer by Jef Geeraerts and is a remake of the novel's previous adaptation, the Belgian film The Alzheimer Case. The film stars Liam Neeson as a brooding hitman with early dementia who must go on the run after declining a contract on a young girl; Guy Pearce, Monica Bellucci, Harold Torres, Taj Atwal and Ray Fearon also star.",
+    cast: [
+      "Liam Neeson",
+      "Guy Pearce",
+      "Monica Bellucci"
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDY5NGU0NTMtMWJkZS00MzU5LWE2MmYtOTg5ZjIyMzdkODk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDY5NGU0NTMtMWJkZS00MzU5LWE2MmYtOTg5ZjIyMzdkODk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "382",
+    title: "Marmaduke",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy"
+    ],
+    rating: 4.6,
+    synopsis: "Marmaduke is a 2022 computer-animated comedy film directed by Mark Dippé, and co-directed by Phil Nibbelink, Youngki Lee, and Matt Whelan, based on the comic strip of the same name by Paul and Brad Anderson. It is the second feature-length film based on the strip following the 2010 live-action film. The film stars Pete Davidson as the voice of Marmaduke, along with J. K. Simmons and David Koechner. It was released by SC Films in international countries and on Netflix in the United States on May 6, 2022. Marmaduke was universally panned by critics and audiences, with criticisms going towards its animation, screenplay, story, characters, and humor.",
+    cast: [
+      "Pete Davidson",
+      "J. K. Simmons",
+      "David Koechner"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjQxMWZlZDctZDUwYi00ODFkLWIwMTItNmE1NDFmNDk3NjdkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjQxMWZlZDctZDUwYi00ODFkLWIwMTItNmE1NDFmNDk3NjdkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "383",
+    title: "Crush",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Crush is a 2022 American coming-of-age romantic comedy film directed by Sammi Cohen and written by Kirsten King and Casey Rackham. The film stars Rowan Blanchard and Auliʻi Cravalho in a story about a teenage girl joining her high-school track team to get closer to her crush, only to discover she is getting closer to another teammate. Crush was released digitally on April 29, 2022, on Hulu.",
+    cast: [
+      "Rowan Blanchard",
+      "Auliʻi Cravalho",
+      "Isabella Ferreira"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTQ5ZGE5ZjMtYWFiMC00NWZlLTk3ZTgtY2VkYjMwYTEzNGQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTQ5ZGE5ZjMtYWFiMC00NWZlLTk3ZTgtY2VkYjMwYTEzNGQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "384",
+    title: "Escape the Field",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.7,
+    synopsis: "Escape the Field is a 2022 American thriller film directed by Emerson Moore and starring Jordan Claire Robbins, Theo Rossi, and Shane West.",
+    cast: [
+      "Jordan Claire Robbins",
+      "Theo Rossi",
+      "Tahirah Sharif"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGM1NzQ1YjktNDM2OS00NWU3LTljM2MtM2U4MmFhZTc0ZDg1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGM1NzQ1YjktNDM2OS00NWU3LTljM2MtM2U4MmFhZTc0ZDg1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "385",
+    title: "The Bad Guys",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Family",
+      "Action"
+    ],
+    rating: 4.9,
+    synopsis: "The Bad Guys is a 2022 American computer-animated heist comedy film loosely based on the children's book series of the same name by Aaron Blabey, produced by DreamWorks Animation Studios and distributed by Universal Pictures. The film was directed by Pierre Perifel from a screenplay by Etan Cohen, and stars the voices of Sam Rockwell, Marc Maron, Awkwafina, Craig Robinson, Anthony Ramos, Richard Ayoade, Zazie Beetz, Alex Borstein, and Lilly Singh. It tells the story of a criminal group of anthropomorphic animals who, upon being caught, pretend to attempt to reform themselves as model citizens, only for their leader to find himself genuinely drawn to changing his ways for good as a new villain has his own plans.",
+    cast: [
+      "Sam Rockwell",
+      "Marc Maron",
+      "Craig Robinson"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2YwODhmODctMjE2OS00Y2EyLWEyZTEtOGU3ODk5MGIzYmU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2YwODhmODctMjE2OS00Y2EyLWEyZTEtOGU3ODk5MGIzYmU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "386",
+    title: "The Survivor",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 3.9,
+    synopsis: "The Survivor is a 2021 biographical drama film, directed by Barry Levinson, from a screenplay by Justine Juel Gillmer. Ben Foster stars as Harry Haft, a real-life survivor of the Auschwitz concentration camp, where he boxed fellow inmates to survive. Vicky Krieps, Billy Magnussen, Peter Sarsgaard, John Leguizamo, and Danny DeVito co-star. The film had its world premiere at the Toronto International Film Festival in September 2021, and was released on HBO on April 27, 2022.",
+    cast: [
+      "Ben Foster",
+      "Vicky Krieps",
+      "Billy Magnussen"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzlhZWNjOWQtYzU0OS00M2FlLTkzNzItMjUwZTJiYjJjZDljXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzlhZWNjOWQtYzU0OS00M2FlLTkzNzItMjUwZTJiYjJjZDljXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "387",
+    title: "Along for the Ride",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Along for the Ride is a 2022 American romantic drama film written and directed by Sofia Alvarez, based on the novel of the same name by Sarah Dessen. The film stars Emma Pasarow, Belmont Cameli, Kate Bosworth, Laura Kariuki, Andie MacDowell and Dermot Mulroney. The film was released on May 6, 2022 by Netflix.\nThe film's official logline reads: \"The summer before college Auden meets the mysterious Eli, a fellow insomniac. While the seaside town of Colby sleeps, the two embark on a nightly quest to help Auden experience the fun, carefree teen life she never knew she wanted.\"",
+    cast: [
+      "Emma Pasarow",
+      "Belmont Cameli",
+      "Kate Bosworth"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzA5YWFlOTYtMTgzNS00M2Q5LTg5ZGUtYTUzOGNhOTNlODg0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzA5YWFlOTYtMTgzNS00M2Q5LTg5ZGUtYTUzOGNhOTNlODg0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "388",
+    title: "The Northman",
+    year: 2022,
+    genres: [
+      "Action",
+      "Historical",
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "The Northman is a 2022 American epic historical action thriller film directed by Robert Eggers, who co-wrote the screenplay with Sjón. Based on the legend of Amleth, the film stars Alexander Skarsgård, Nicole Kidman, Claes Bang, Anya Taylor-Joy, Ethan Hawke, Björk and Willem Dafoe. The plot centers on Amleth, a Viking prince who sets out on a quest to avenge the murder of his father. The film is heavily influenced by Norse mythology.",
+    cast: [
+      "Alexander Skarsgård",
+      "Nicole Kidman",
+      "Claes Bang"
+    ],
+    runtime: "94 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzgwM2JiY2MtNWQ5OC00NDc1LWExMjYtYmY2YjViZmViYWM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzgwM2JiY2MtNWQ5OC00NDc1LWExMjYtYmY2YjViZmViYWM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "389",
+    title: "Corrective Measures",
+    year: 2022,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.7,
+    synopsis: "Corrective Measures is a 2022 American superhero film written, produced and directed by Sean O'Reilly and starring Bruce Willis and Michael Rooker. It is based on the graphic novel of the same name by Grant Chastain. It is also O'Reilly's debut in a live-action feature film.",
+    cast: [
+      "Bruce Willis",
+      "Michael Rooker"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDY1ZDFmZGYtYWE5My00ZGE2LThlOTMtODM4MDEwYzVmYmEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDY1ZDFmZGYtYWE5My00ZGE2LThlOTMtODM4MDEwYzVmYmEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "390",
+    title: "Fortress: Sniper's Eye",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 4,
+    synopsis: "Fortress: Sniper's Eye is a 2022 American action film directed by Josh Sternfeld as a sequel to Fortress (2021). It stars Jesse Metcalfe, Bruce Willis, and Chad Michael Murray. The film was released on April 29, 2022, by Lionsgate Films.",
+    cast: [
+      "Jesse Metcalfe",
+      "Bruce Willis",
+      "Chad Michael Murray"
+    ],
+    runtime: "99 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWI5MmEwZmYtOWRiNi00YzBkLWEwYTgtMWM1MjIzYTE1NDE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWI5MmEwZmYtOWRiNi00YzBkLWEwYTgtMWM1MjIzYTE1NDE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "391",
+    title: "Ambulance",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Ambulance is a 2022 American action thriller film directed and co-produced by Michael Bay and written by Chris Fedak. A co-production between New Republic Pictures, Project X Entertainment and Bay Films, it is based on the 2005 Danish film of the same name by Laurits Munch-Petersen and Lars Andreas Pedersen. It stars Jake Gyllenhaal, Yahya Abdul-Mateen II, and Eiza González and follows two adoptive siblings turned bank robbers who hijack an ambulance and take two first responders hostage.",
+    cast: [
+      "Jake Gyllenhaal",
+      "Yahya Abdul-Mateen II",
+      "Eiza González"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDZiY2RmNjgtYzYyZi00ZGEyLTlkOTUtZDc5OTUzY2NlMmEyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDZiY2RmNjgtYzYyZi00ZGEyLTlkOTUtZDc5OTUzY2NlMmEyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "392",
+    title: "Sonic the Hedgehog 2",
+    year: 2022,
+    genres: [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    rating: 4.2,
+    synopsis: "Sonic the Hedgehog 2 is a 2022 action-adventure comedy film based on the video game series published by Sega, and the sequel to Sonic the Hedgehog (2020). Directed by Jeff Fowler and written by Pat Casey, Josh Miller, and John Whittington, the film stars Ben Schwartz, Jim Carrey, James Marsden, Tika Sumpter, Natasha Rothwell, Adam Pally, Lee Majdoub, and Colleen O'Shaughnessey reprising their roles, with Idris Elba and Shemar Moore joining the cast. In the film, after settling in Green Hills, Sonic tries to prove himself as a hero, but his big test comes when the evil Doctor Robotnik returns, alongside his new rival, Knuckles the Echidna, in search of the Master Emerald.",
+    cast: [
+      "James Marsden",
+      "Ben Schwartz",
+      "Tika Sumpter"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDBiYzk0YTMtNWRiYi00YWY0LWE3NjgtYmJiYTAwZmYzOTM0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDBiYzk0YTMtNWRiYi00YWY0LWE3NjgtYmJiYTAwZmYzOTM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "393",
+    title: "Dual",
+    year: 2022,
+    genres: [
+      "Science Fiction",
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Dual is a 2022 American satirical science fiction thriller film written, directed, and produced by Riley Stearns. It stars Karen Gillan, Beulah Koale, Theo James, and Aaron Paul. The plot follows a woman who has to fight a clone of herself to the death after she unexpectedly recovers from a terminal illness. The film premiered at the 2022 Sundance Film Festival on January 22, 2022. It was released in the United States on April 15, 2022, by RLJE Films.",
+    cast: [
+      "Karen Gillan",
+      "Beulah Koale",
+      "Theo James"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjcyMDIwMjItZDQyZi00Mzg3LTk1YjgtMjZjZGNmNWY4ZmRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjcyMDIwMjItZDQyZi00Mzg3LTk1YjgtMjZjZGNmNWY4ZmRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "394",
+    title: "All the Old Knives",
+    year: 2022,
+    genres: [
+      "Spy",
+      "Thriller"
+    ],
+    rating: 4.5,
+    synopsis: "All the Old Knives is a 2022 American spy thriller film directed by Janus Metz Pedersen and written by Olen Steinhauer. It is based on Steinhauer's 2015 novel of the same name. The film stars Chris Pine, Thandiwe Newton, Laurence Fishburne, Jonathan Pryce and David Dawson.",
+    cast: [
+      "Chris Pine",
+      "Thandiwe Newton",
+      "Laurence Fishburne"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjVjM2VjNGYtMzU3Zi00Yjg1LWEzNTktMTg3NjcxNmY4MTMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjVjM2VjNGYtMzU3Zi00Yjg1LWEzNTktMTg3NjcxNmY4MTMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "395",
+    title: "Titanic 666",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 5,
+    synopsis: "Titanic 666 is a 2022 American supernatural horror film directed by Nick Lyon and produced by The Asylum. It is a sequel to Titanic II (2010) and stars Jamie Bamber and Keesha Sharp. It was released on Tubi on the United States on April 15, 2022, on the 110th anniversary of the sinking of the Titanic. The film received generally unfavorable reviews, and users on social media noted the film's similarity to Titanic (1997) and Studio 666 (2022).",
+    cast: [
+      "Keesha Sharp",
+      "Jamie Bamber",
+      "Lydia Hearst"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzcxY2RjOWUtZmE2Yy00YTBlLWE4N2UtOTg5NjdiNTFjNzk1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzcxY2RjOWUtZmE2Yy00YTBlLWE4N2UtOTg5NjdiNTFjNzk1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "396",
+    title: "Metal Lords",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Teen"
+    ],
+    rating: 3.9,
+    synopsis: "Metal Lords is a 2022 American teen comedy-drama film written by D. B. Weiss and directed by Peter Sollett. Its story follows two high school best friends and metal music lovers, Hunter and Kevin, who set out to start a metal band, against societal norms. The film was released on Netflix on April 8, 2022.",
+    cast: [
+      "Jaeden Martell",
+      "Isis Hainsworth",
+      "Adrian Greensmith"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDUwYWUxNWEtZjJlOC00OWE1LTljNDQtMjYwZjFiYzVmZjZhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDUwYWUxNWEtZjJlOC00OWE1LTljNDQtMjYwZjFiYzVmZjZhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "397",
+    title: "Choose or Die",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "Choose or Die is a 2022 British horror thriller film directed by Toby Meakins in his feature directorial debut. The film stars Iola Evans, Asa Butterfield, Robert Englund and Eddie Marsan.",
+    cast: [
+      "Asa Butterfield",
+      "Iola Evans",
+      "Eddie Marsan"
+    ],
+    runtime: "95 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjNkMGE2MjEtMDI5NS00Yjc0LTk2YjAtOGNmOTIyZTgxZWQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjNkMGE2MjEtMDI5NS00Yjc0LTk2YjAtOGNmOTIyZTgxZWQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "398",
+    title: "Father Stu",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 3.7,
+    synopsis: "Father Stu is a 2022 biographical drama film starring Mark Wahlberg as Stuart Long, a boxer-turned-Catholic priest who lives with a progressive muscle disorder. The film is written and directed by Rosalind Ross in her directorial debut. The film was produced on a budget of $4 million.",
+    cast: [
+      "Mark Wahlberg",
+      "Mel Gibson",
+      "Jacki Weaver"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmJjNzE1MTEtNmY1Ni00Nzk1LTgyNTAtZmFmNzhkM2Y5MGFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmJjNzE1MTEtNmY1Ni00Nzk1LTgyNTAtZmFmNzhkM2Y5MGFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "399",
+    title: "The Contractor",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "The Contractor is a 2022 American action thriller film directed by Tarik Saleh in his English-language film debut. The film stars Chris Pine, Ben Foster, Gillian Jacobs, Eddie Marsan, J. D. Pardo, Florian Munteanu, and Kiefer Sutherland. Filming began in Europe including Fort Bragg in October 2019 and wrapped in the filming at the end of 2019.",
+    cast: [
+      "Chris Pine",
+      "Ben Foster",
+      "Gillian Jacobs"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQzZTc0NGEtZTgzNC00NmZkLWE5OTEtM2U1ODVhNWY1ZDAzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQzZTc0NGEtZTgzNC00NmZkLWE5OTEtM2U1ODVhNWY1ZDAzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "400",
+    title: "Better Nate Than Ever",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Musical"
+    ],
+    rating: 4.6,
+    synopsis: "Better Nate Than Ever is a 2022 American musical comedy film written and directed by Tim Federle, based on his 2013 novel of the same name. Described as a coming-of-age story involving musical theater and Broadway, the story centers on the titular Nate Foster, played by Rueby Wood in his first film role. Lisa Kudrow, Aria Brooks and Joshua Bassett serve in supporting cast roles.",
+    cast: [
+      "Rueby Wood",
+      "Joshua Bassett",
+      "Aria Brooks"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzk4MGJkMDItMWVjNC00ZTY0LTg1MGYtZDc4NzM0MWE1NmYxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzk4MGJkMDItMWVjNC00ZTY0LTg1MGYtZDc4NzM0MWE1NmYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "401",
+    title: "Alice",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Alice is a 2022 American crime thriller film set in the 1970s, written and directed by Krystin Ver Linden, in her directorial debut. The film stars Keke Palmer, Jonny Lee Miller, Common, Gaius Charles, and Alicia Witt.",
+    cast: [
+      "Keke Palmer",
+      "Common",
+      "Gaius Charles"
+    ],
+    runtime: "122 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDBiNjIyNjUtNWZlYy00MGU4LWFjNDUtMGExYTZlNmNhZTY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDBiNjIyNjUtNWZlYy00MGU4LWFjNDUtMGExYTZlNmNhZTY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "402",
+    title: "Master",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 3.9,
+    synopsis: "Master is a 2022 American psychological horror thriller film written and directed by Mariama Diallo in her directorial debut. The film stars Regina Hall, Zoe Renee, and Amber Gray.",
+    cast: [
+      "Regina Hall",
+      "Zoe Renee",
+      "Amber Gray"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQ2NjQ5MzMwMF5BMl5BanBnXkFtZTcwMjczNTAzOA@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQ2NjQ5MzMwMF5BMl5BanBnXkFtZTcwMjczNTAzOA@@._V1_.jpg"
+  },
+  {
+    id: "403",
+    title: "7 Days",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "7 Days is an 2021 American romantic comedy film directed by Roshan Sethi, in his directorial debut, from a screenplay by Sethi and Karan Soni. It stars Soni, Geraldine Viswanathan, Mark Duplass, Zenobia Shroff, Aparna Nancherla, Gita Reddy and Jeffrey Self.",
+    cast: [
+      "Karan Soni",
+      "Geraldine Viswanathan",
+      "Mark Duplass"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjJjYjljZTQtY2JiMi00MjZiLWE0NzUtN2Y3MjVmZjA3MGQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjJjYjljZTQtY2JiMi00MjZiLWE0NzUtN2Y3MjVmZjA3MGQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "404",
+    title: "The Lost City",
+    year: 2022,
+    genres: [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    rating: 4.7,
+    synopsis: "The Lost City is a 2022 American action-adventure comedy film directed by the Nee brothers, who co-wrote the screenplay with Oren Uziel and Dana Fox, from a story conceived by Seth Gordon. It stars Sandra Bullock and Channing Tatum as a romance novelist and her cover model respectively who must escape a billionaire who wants her to find a lost ancient burial chamber described in one of her books. The film co-stars Da'Vine Joy Randolph and Brad Pitt.",
+    cast: [
+      "Sandra Bullock",
+      "Channing Tatum",
+      "Daniel Radcliffe"
+    ],
+    runtime: "133 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjA4YmZjMWItZGNkNS00ODFkLWEwNjUtNGNhMzViZDRmMzgxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjA4YmZjMWItZGNkNS00ODFkLWEwNjUtNGNhMzViZDRmMzgxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "405",
+    title: "Morbius",
+    year: 2022,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.6,
+    synopsis: "Morbius is a 2022 American superhero film based on the Marvel Comics character of the same name, produced by Columbia Pictures in association with Marvel. Distributed by Sony Pictures Releasing, it is the third film in Sony's Spider-Man Universe (SSU). Directed by Daniel Espinosa and written by Matt Sazama and Burk Sharpless, it stars Jared Leto as Dr. Michael Morbius, alongside Matt Smith, Adria Arjona, Jared Harris, Al Madrigal, and Tyrese Gibson. In the film, Morbius and his surrogate brother Milo (Smith) become living vampires after curing themselves of a rare blood disease.",
+    cast: [
+      "Jared Leto",
+      "Matt Smith",
+      "Adria Arjona"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2UzYzFiZWUtOGU5ZC00YTIxLWFlNGUtMGU1YmI4OWUzN2FmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2UzYzFiZWUtOGU5ZC00YTIxLWFlNGUtMGU1YmI4OWUzN2FmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "406",
+    title: "Umma",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Supernatural"
+    ],
+    rating: 3.8,
+    synopsis: "Umma (Korean: 엄마) is a 2022 American supernatural horror film, written and directed by Iris K. Shim. The film stars Sandra Oh, Fivel Stewart, MeeWha Alana Lee, Tom Yi, Odeya Rush, and Dermot Mulroney. Sam Raimi serves as a producer on the film. The film follows Amanda (Oh), a single mother who lives with her daughter in an isolated farm being haunted by her mother's ghost.",
+    cast: [
+      "Sandra Oh",
+      "Fivel Stewart",
+      "MeeWha Alana Lee"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzllNGFmMzEtOWIyMy00NTA5LWE2OWQtZTg0NDVhYzdiYWMzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzllNGFmMzEtOWIyMy00NTA5LWE2OWQtZTg0NDVhYzdiYWMzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "407",
+    title: "Moonshot",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance",
+      "Science Fiction"
+    ],
+    rating: 4,
+    synopsis: "Moonshot is a 2022 American science-fiction romantic comedy film directed by Chris Winterbauer and written by Max Taxe. It stars Cole Sprouse, Lana Condor, Mason Gooding, Emily Rudd, and Zach Braff. The plot follows a college student (Condor) who helps a barista (Sprouse) sneak on board a space shuttle to Mars. The film was released on HBO Max on March 31, 2022, and was removed from the service in August.",
+    cast: [
+      "Cole Sprouse",
+      "Lana Condor",
+      "Mason Gooding"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTIyMjc0MzQtMTdiZi00YzE4LWJhNGMtMWIwYjM5Yzc1ZGM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTIyMjc0MzQtMTdiZi00YzE4LWJhNGMtMWIwYjM5Yzc1ZGM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "408",
+    title: "The Bubble",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.9,
+    synopsis: "The Bubble is a 2022 American comedy film directed by Judd Apatow from a screenplay co-written with Pam Brady. The film features an ensemble cast that includes Karen Gillan, Vir Das, Pedro Pascal, Iris Apatow, Fred Armisen, Maria Bakalova, David Duchovny, Keegan-Michael Key, Leslie Mann, Kate McKinnon, Guz Khan, Peter Serafinowicz and Harry Trevaldwyn. It follows the cast and crew of a blockbuster action franchise who attempt to shoot a sequel while quarantining at a posh hotel during the COVID-19 pandemic.",
+    cast: [
+      "Karen Gillan",
+      "Iris Apatow",
+      "Fred Armisen"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDJhNjdiY2YtZjExMS00MzljLWEyNWEtMWVjMGYzMGNiNzFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDJhNjdiY2YtZjExMS00MzljLWEyNWEtMWVjMGYzMGNiNzFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "409",
+    title: "Infinite Storm",
+    year: 2022,
+    genres: [
+      "Adventure",
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "Infinite Storm is a 2022 American drama adventure film directed by Małgorzata Szumowska, co-directed by Michał Englert, and with a screenplay by Josh Rollins, based on the article High Places: Footprints in the Snow Lead to an Emotional Rescue by Ty Gagne. The film stars Naomi Watts, Billy Howle, Denis O'Hare, Parker Sawyers and Eliot Sumner.",
+    cast: [
+      "Naomi Watts",
+      "Billy Howle",
+      "Sophie Okonedo"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjg3YjIxNjgtYzg1MS00MzU1LWJhYzktYzgwNzZhNmUyNmYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjg3YjIxNjgtYzg1MS00MzU1LWJhYzktYzgwNzZhNmUyNmYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "410",
+    title: "Measure of Revenge",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Measure of Revenge is a 2022 American thriller film directed by Peyfa. It stars Bella Thorne, Melissa Leo, Roma Maffia, Jake Weary and Adrian Martinez. Timur Bekbosunov, Jordan Galland wrote the screenplay.\nJen Gatien and Peter Wong produced the film.",
+    cast: [
+      "Bella Thorne",
+      "Melissa Leo",
+      "Roma Maffia"
+    ],
+    runtime: "118 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGVmMDViMGMtNzQ1My00NTlhLTkxYTctOGZjNzJjNGY0ZWYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGVmMDViMGMtNzQ1My00NTlhLTkxYTctOGZjNzJjNGY0ZWYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "411",
+    title: "Turning Red",
+    year: 2022,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Fantasy"
+    ],
+    rating: 4.1,
+    synopsis: "Turning Red is a 2022 American computer-animated fantasy comedy film produced by Pixar Animation Studios and distributed by Walt Disney Studios Motion Pictures. It was directed by Domee Shi and produced by Lindsey Collins, from a screenplay written by Shi and Julia Cho, and a story by Shi, Cho, and Sarah Streicher. The film marks the first Pixar feature film solely directed by a woman. It stars the voices of Rosalie Chiang, Sandra Oh, Ava Morse, Hyein Park, Maitreyi Ramakrishnan, Orion Lee, Wai Ching Ho, Tristan Allerick Chen, and James Hong. Set in Toronto, Ontario, in 2002, the film follows Meilin \"Mei\" Lee (Chiang), a 13-year-old Chinese-Canadian student who transforms into a giant red panda when she experiences any strong emotion, due to a hereditary curse.",
+    cast: [
+      "Rosalie Chiang",
+      "Sandra Oh",
+      "Ava Morse"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODY2NjExYmUtZTQ4NS00NzM2LWE2NWYtZWY2NGIyOTBmNzI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODY2NjExYmUtZTQ4NS00NzM2LWE2NWYtZWY2NGIyOTBmNzI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "412",
+    title: "Deep Water",
+    year: 2022,
+    genres: [
+      "Erotic",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Deep Water is a 2022 erotic psychological thriller film directed by Adrian Lyne, from a screenplay by Zach Helm and Sam Levinson, based on the 1957 novel of the same name by Patricia Highsmith. The film stars Ben Affleck and Ana de Armas, with Tracy Letts, Lil Rel Howery, Dash Mihok, Finn Wittrock, Kristen Connolly, and Jacob Elordi appearing in supporting roles. It marks Lyne's return to filmmaking after a 20-year absence since his last film, Unfaithful (2002).",
+    cast: [
+      "Ben Affleck",
+      "Ana de Armas",
+      "Tracy Letts"
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2RjZWRiMDgtOTZiMy00M2MxLWI2M2MtMDU4ODc3MGNhM2E0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2RjZWRiMDgtOTZiMy00M2MxLWI2M2MtMDU4ODc3MGNhM2E0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "413",
+    title: "The Outfit",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "The Outfit is a 2022 American psychological crime drama thriller film directed by Graham Moore in his directorial debut from a screenplay by Moore and Johnathan McClain. The film stars Mark Rylance who leads an ensemble cast including Zoey Deutch, Johnny Flynn, Dylan O'Brien, Nikki Amuka-Bird, and Simon Russell Beale. Rylance plays an English cutter who works at a tailor shop in Chicago, whose primary customers are a family of vicious gangsters. The film premiered at the 72nd Berlin International Film Festival on February 14, 2022, and released in the United States on March 18, 2022, by Focus Features, to positive reviews.",
+    cast: [
+      "Mark Rylance",
+      "Zoey Deutch",
+      "Johnny Flynn"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTY2M2U5OTEtNDljYS00MGQwLWI4YzQtOGJiMzUxM2IyYjRhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTY2M2U5OTEtNDljYS00MGQwLWI4YzQtOGJiMzUxM2IyYjRhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "414",
+    title: "X",
+    year: 2022,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4.3,
+    synopsis: "X is a 2022 American slasher film written, directed, produced and edited by Ti West. It stars Mia Goth in dual roles: a young woman named Maxine and Pearl, an elderly woman. The film also stars Jenna Ortega, Martin Henderson, Brittany Snow, Owen Campbell, Stephen Ure, and Scott Mescudi appearing in supporting roles. The film follows a cast and crew who gather to make a pornographic film on an elderly couple's rural Texas property, but find themselves threatened by the killer couple.",
+    cast: [
+      "Mia Goth",
+      "Jenna Ortega",
+      "Martin Henderson"
+    ],
+    runtime: "104 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODUwYTNhMTMtYWQ5Ny00YTdmLWIxOTAtNDczNzVlYzg2NDFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODUwYTNhMTMtYWQ5Ny00YTdmLWIxOTAtNDczNzVlYzg2NDFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "415",
+    title: "Tyson's Run",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.6,
+    synopsis: "Tyson's Run is a 2022 American drama film written and directed by Kim Bass and starring Rory Cochrane, Amy Smart, Major Dodson and Barkhad Abdi.",
+    cast: [
+      "Rory Cochrane",
+      "Amy Smart",
+      "Major Dodson"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTg1Njg3ZTctNTc3ZS00YjgxLWFhODYtYjcyZGZhZTE1Y2FlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTg1Njg3ZTctNTc3ZS00YjgxLWFhODYtYjcyZGZhZTE1Y2FlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "416",
+    title: "The Adam Project",
+    year: 2022,
+    genres: [
+      "Action",
+      "Comedy",
+      "Science Fiction"
+    ],
+    rating: 5,
+    synopsis: "The Adam Project is a 2022 American science fiction action comedy film co-produced by Skydance Media, Maximum Effort, and 21 Laps Entertainment. It was directed by Shawn Levy from a screenplay written by Jonathan Tropper, T.S. Nowlin, Jennifer Flackett and Mark Levin. The movie stars Ryan Reynolds, Walker Scobell, Mark Ruffalo, Jennifer Garner, Catherine Keener and Zoe Saldaña. The plot follows a fighter pilot (Reynolds) from the future, who goes back in time and encounters his younger self (Scobell).",
+    cast: [
+      "Ryan Reynolds",
+      "Mark Ruffalo",
+      "Jennifer Garner"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWU1NDJlYWUtYWE1OC00MGVlLTliNzYtMjg4OTk0MWE4MDQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWU1NDJlYWUtYWE1OC00MGVlLTliNzYtMjg4OTk0MWE4MDQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "417",
+    title: "Windfall",
+    year: 2022,
+    genres: [
+      "Crime",
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Windfall is a 2022 American crime thriller film directed by Charlie McDowell from a screenplay by Andrew Kevin Walker and Justin Lader. The film stars Jason Segel, Lily Collins, and Jesse Plemons.",
+    cast: [
+      "Lily Collins",
+      "Jesse Plemons",
+      "Jason Segel"
+    ],
+    runtime: "144 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTIyMjIxN2YtNmRmZC00NjYzLTg4NmMtNGJiODM2NGViMTdhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTIyMjIxN2YtNmRmZC00NjYzLTg4NmMtNGJiODM2NGViMTdhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "418",
+    title: "Cheaper by the Dozen",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Family"
+    ],
+    rating: 3.5,
+    synopsis: "Cheaper by the Dozen is a 2022 American family-comedy film directed by Gail Lerner from a screenplay written by Kenya Barris and Jenifer Rice-Genzuk Henry, with Shawn Levy serving as an executive producer. It is the third film adaptation of the 1948 semi-autobiographical novel of the same name by Frank Bunker Gilbreth Jr. and his sister Ernestine Gilbreth Carey following the 1950 and 2003 films. The film stars Gabrielle Union, Zach Braff, Erika Christensen, and Timon Kyle Durratt with supporting roles by Christian Cote, Sebastian Cote, Christina Anthony, Caylee Blosenski, Journey Brown, Brittany Daniel, Mykal-Michelle Harris, Cynthia Daniel Hauser, Abby Elliott, Ron Funches, Leo Abelo Perry, Luke Prael, June Diane Raphael, Andre Robinson, Kylie Rogers, and Aryan Simhadri. It tells the story of a restaurant proprietor and his second wife as they raise the kids from the restaurateur's previous marriage, the second wife's family, and the children they later conceived as their respective exes are still involved in their children's life.",
+    cast: [
+      "Gabrielle Union",
+      "Zach Braff",
+      "Erika Christensen"
+    ],
+    runtime: "115 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTg0NzYxMjY0Ml5BMl5BanBnXkFtZTcwOTU0NDczMw@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTg0NzYxMjY0Ml5BMl5BanBnXkFtZTcwOTU0NDczMw@@._V1_.jpg"
+  },
+  {
+    id: "419",
+    title: "Rescued by Ruby",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.5,
+    synopsis: "Rescued by Ruby is a 2022 American biographical drama film directed by Katt Shea. Its story follows a state trooper named Dan, who dreams of joining the K-9 search and rescue team of the state police, however has been unsuccessful in doing so until he befriends a shelter dog named Ruby. The film is based on a true story. The film was released on March 17, 2022, by Netflix.",
+    cast: [
+      "Grant Gustin",
+      "Scott Wolf",
+      "Kaylah Zander"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmY1MDcxN2UtYTI1YS00YjQzLWFiNWQtYmY4ZTE3NWFlOWNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmY1MDcxN2UtYTI1YS00YjQzLWFiNWQtYmY4ZTE3NWFlOWNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "420",
+    title: "A Day to Die",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 3.9,
+    synopsis: "A Day to Die is an 2022 American heist action film written, directed, and produced by Wes Miller. It stars Kevin Dillon, Bruce Willis, Gianni Capaldi, Brooke Butler, Leon, and Frank Grillo. The film was released on March 4, 2022, by Vertical Entertainment.",
+    cast: [
+      "Kevin Dillon",
+      "Bruce Willis",
+      "Frank Grillo"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTcwNzgyNzUzOV5BMl5BanBnXkFtZTcwMzAwOTA5OA@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTcwNzgyNzUzOV5BMl5BanBnXkFtZTcwMzAwOTA5OA@@._V1_.jpg"
+  },
+  {
+    id: "421",
+    title: "Fresh",
+    year: 2022,
+    genres: [
+      "Horror",
+      "Thriller"
+    ],
+    rating: 4.1,
+    synopsis: "Fresh is a 2022 American horror thriller film directed by Mimi Cave, in her directorial debut, from a screenplay by Lauryn Kahn. The film stars Daisy Edgar-Jones and Sebastian Stan. It is a co-production between Legendary Pictures and Hyperobject Industries; Adam McKay produced the film alongside Kevin J. Messick.",
+    cast: [
+      "Daisy Edgar-Jones",
+      "Sebastian Stan",
+      "Jonica T. Gibbs"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjZjOTBhNzgtMGUyMy00ZTJlLWFlMjQtYmMxNGE3YmViYWE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjZjOTBhNzgtMGUyMy00ZTJlLWFlMjQtYmMxNGE3YmViYWE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "422",
+    title: "After Yang",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Science Fiction"
+    ],
+    rating: 4.8,
+    synopsis: "After Yang is a 2021 American science fiction drama film adaptation written, directed, and edited by Kogonada. It stars Colin Farrell, Jodie Turner-Smith, Justin H. Min, Malea Emma Tjandrawidjaja, and Haley Lu Richardson. The plot follows a family's attempts to repair their unresponsive robotic child. The film had its world premiere at the Cannes Film Festival on July 8, 2021, and was released on March 4, 2022, by A24 and Showtime. It received generally positive reviews from critics.",
+    cast: [
+      "Colin Farrell",
+      "Jodie Turner-Smith",
+      "Justin H. Min"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWM2MDBkMTQtYWUxNS00NmI3LTg2ZGUtNjI4MzdiM2U1NTYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWM2MDBkMTQtYWUxNS00NmI3LTg2ZGUtNjI4MzdiM2U1NTYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "423",
+    title: "The Batman",
+    year: 2022,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4,
+    synopsis: "The Batman is a 2022 American superhero film based on the DC Comics character Batman. Produced by Warner Bros. Pictures, DC Films, 6th & Idaho, and Dylan Clark Productions, and distributed by Warner Bros. Pictures, it is a reboot of the Batman film franchise. The film was directed by Matt Reeves, who wrote the screenplay with Peter Craig. It stars Robert Pattinson as Bruce Wayne / Batman alongside Zoë Kravitz, Paul Dano, Jeffrey Wright, John Turturro, Peter Sarsgaard, Andy Serkis, and Colin Farrell. The film sees Batman, who has been fighting crime in Gotham City for two years, uncover corruption while pursuing the Riddler (Dano), a serial killer who targets Gotham's corrupt elite.",
+    cast: [
+      "Robert Pattinson",
+      "Zoë Kravitz",
+      "Paul Dano"
+    ],
+    runtime: "120 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "424",
+    title: "No Exit",
+    year: 2022,
+    genres: [
+      "Thriller",
+      "War"
+    ],
+    rating: 4.6,
+    synopsis: "No Exit is a 2022 American thriller film directed by Damien Power from a screenplay by Andrew Barrer and Gabriel Ferrari, based on the 2017 novel of the same name by Taylor Adams. It stars Havana Rose Liu as a recovering drug addict who discovers a kidnapping in progress while stranded at a rest stop during a blizzard. Danny Ramirez, David Rysdahl, Dale Dickey, and Dennis Haysbert co-star as the four suspects while Mila Harris plays the victim. No Exit was released on February 25, 2022, on Hulu by 20th Century Studios. It received mixed reviews from critics, who categorized it as a \"reasonably diverting\" popcorn movie.",
+    cast: [
+      "Havana Rose Liu",
+      "Danny Ramirez",
+      "Dennis Haysbert"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGZiMzU4MmMtMzJhMS00ZWU0LWE1MzktZTVkY2MyYWYwNTBkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGZiMzU4MmMtMzJhMS00ZWU0LWE1MzktZTVkY2MyYWYwNTBkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "425",
+    title: "Studio 666",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.1,
+    synopsis: "Studio 666 is a 2022 American horror comedy film directed by BJ McDonnell from a screenplay by Jeff Buhler and Rebecca Hughes, based on a story by Dave Grohl. Grohl stars, alongside his Foo Fighters bandmates Nate Mendel, Pat Smear, Taylor Hawkins, Chris Shiflett, and Rami Jaffee. Whitney Cummings, Leslie Grossman, Will Forte, Jenna Ortega, and Jeff Garlin co-star in the ensemble cast. In the film, the Foo Fighters move into a cursed mansion to record a new album.",
+    cast: [
+      "Dave Grohl",
+      "Taylor Hawkins",
+      "Nate Mendel"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmFkMjJjYzctYmUzOS00MTJhLWI5ZTMtMmJiNmI4NTkyOGYxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmFkMjJjYzctYmUzOS00MTJhLWI5ZTMtMmJiNmI4NTkyOGYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "426",
+    title: "Gasoline Alley",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller",
+      "War"
+    ],
+    rating: 4.2,
+    synopsis: "Gasoline Alley is a 2022 American action thriller film directed by Edward John Drake, starring Devon Sawa, Bruce Willis and Luke Wilson. It was released in the United States on February 25, 2022 by Saban Films.",
+    cast: [
+      "Bruce Willis",
+      "Luke Wilson",
+      "Devon Sawa"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzNmMmQwZDUtNDYxMC00NmFlLWJjZWQtMzhiYzlmYzY3YWI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzNmMmQwZDUtNDYxMC00NmFlLWJjZWQtMzhiYzlmYzY3YWI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "427",
+    title: "A Madea Homecoming",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.9,
+    synopsis: "A Madea Homecoming is a 2022 American comedy film produced, written, and directed by Tyler Perry and his second film to be released by Netflix. Besides Perry, the film stars Cassi Davis-Patton, David Mann, Tamela Mann, Gabrielle Dennis, and Brendan O'Carroll. It is the twelfth film in the Madea cinematic universe which tells the story of Madea partaking in her great-grandson's college graduation party as hidden secrets emerge and surprise visitors show up. It was released on February 25, 2022. It is adapted from Perry's stage play Madea's Farewell Play, the first Madea film to be adapted from a stage play since A Madea Christmas. The film is also a crossover between the Madea franchise and the Irish sitcom Mrs. Brown's Boys.",
+    cast: [
+      "Tyler Perry",
+      "Cassi Davis",
+      "David Mann"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzg5NGM0ZTUtYWNmZS00NDc5LWJiNjQtNDI2NDUxMGU5ZmQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzg5NGM0ZTUtYWNmZS00NDc5LWJiNjQtNDI2NDUxMGU5ZmQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "428",
+    title: "A Fairy Tale After All",
+    year: 2022,
+    genres: [
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 4.6,
+    synopsis: "A Fairy Tale After All is a 2022 American musical fantasy film produced, written and directed by Erik Peter Carlson. The film stars Emily Shenaut, Brian Hull, Gabriel Burrafato, Bridget Winder, Timothy N. Kopacz, and Anna Brisbin. The film was released theatrical and VOD by Vertical Entertainment on February 18, 2022.",
+    cast: [
+      "Emily Shenaut",
+      "Brian Hull",
+      "Gabriel Burrafato"
+    ],
+    runtime: "128 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmZjMDUwOTktNzNlZi00YzNjLThjY2EtYTVmOTBkMWEwN2Q4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmZjMDUwOTktNzNlZi00YzNjLThjY2EtYTVmOTBkMWEwN2Q4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "429",
+    title: "The Cursed",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.4,
+    synopsis: "The Cursed is a 2021 gothic horror film directed and written by Sean Ellis. The film stars Boyd Holbrook, Kelly Reilly, Alistair Petrie, and Roxane Duran. The film premiered at the 2021 Sundance Film Festival under the title Eight for Silver. The film was released in the United States on February 18, 2022, by LD Entertainment. It received generally positive reviews from critics.",
+    cast: [
+      "Boyd Holbrook",
+      "Kelly Reilly",
+      "Alistair Petrie"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjY3YTkwMjUtNjVhZi00ZTlmLTkxYTktNmMwYzI4M2Q2ZjhiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjY3YTkwMjUtNjVhZi00ZTlmLTkxYTktNmMwYzI4M2Q2ZjhiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "430",
+    title: "Cyrano",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Cyrano is a 2021 musical romantic drama film directed by Joe Wright and with a screenplay by Erica Schmidt, based on Schmidt's 2018 stage musical of the same name, itself based on the 1897 Edmond Rostand play Cyrano de Bergerac. The film stars Peter Dinklage, Haley Bennett, Kelvin Harrison Jr., and Ben Mendelsohn.",
+    cast: [
+      "Peter Dinklage",
+      "Haley Bennett",
+      "Kelvin Harrison Jr."
+    ],
+    runtime: "140 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzdjZDU0NDMtNTFhYy00NGNiLTlkMzQtNjNiNWY3Y2IyYjM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzdjZDU0NDMtNTFhYy00NGNiLTlkMzQtNjNiNWY3Y2IyYjM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "431",
+    title: "Dog",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.9,
+    synopsis: "Dog is a 2022 American comedy drama road film directed by Channing Tatum and Reid Carolin, both making their respective film directorial debuts, based on a story by Carolin and Brett Rodriguez. The film stars Tatum as an Army Ranger who is tasked with escorting the military dog of his fallen friend to his funeral. The film also stars Jane Adams, Kevin Nash, Q'orianka Kilcher, Ethan Suplee, Emmy Raver-Lampman, and Nicole LaLiberte in supporting roles. The film was produced by Free Association on a budget of $15 million.",
+    cast: [
+      "Channing Tatum",
+      "Jane Adams",
+      "Kevin Nash"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDBkZTNhMmQtMjliNS00OTIyLWI1OTItYzEzZTU0NGU0NTI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDBkZTNhMmQtMjliNS00OTIyLWI1OTItYzEzZTU0NGU0NTI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "432",
+    title: "Texas Chainsaw Massacre",
+    year: 2022,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4.4,
+    synopsis: "Texas Chainsaw Massacre is a 2022 American slasher film directed by David Blue Garcia, with a screenplay by Chris Thomas Devlin, from a story by Fede Álvarez and Rodo Sayagues. It is the ninth installment of the Texas Chainsaw Massacre franchise. Set several decades after the original film, the story focuses on the serial killer Leatherface targeting a group of young adults and coming into conflict with a vengeful survivor of his previous murders. The project is a joint-venture production between Legendary Pictures, Exurbia Films, and Bad Hombre. The film stars Sarah Yarkin, Elsie Fisher, Mark Burnham, Moe Dunford, Nell Hudson, Jessica Allain, Olwen Fouéré, Jacob Latimore, and Alice Krige.",
+    cast: [
+      "Sarah Yarkin",
+      "Elsie Fisher",
+      "Mark Burham"
+    ],
+    runtime: "137 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzY0MDQwMTctYzQ1Mi00ODIwLThlMWQtODQ0NzA2ZTg3ZDFhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzY0MDQwMTctYzQ1Mi00ODIwLThlMWQtODQ0NzA2ZTg3ZDFhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "433",
+    title: "Uncharted",
+    year: 2022,
+    genres: [
+      "Action",
+      "Adventure"
+    ],
+    rating: 4.2,
+    synopsis: "Uncharted is a 2022 American action-adventure film directed by Ruben Fleischer from a screenplay by Rafe Lee Judkins, Art Marcum, and Matt Holloway, based on the video game franchise of the same name developed by Naughty Dog and published by Sony Interactive Entertainment. It stars Tom Holland as Nathan Drake and Mark Wahlberg as Victor Sullivan, with Sophia Ali, Tati Gabrielle, and Antonio Banderas in supporting roles. In the film, Drake is recruited by Sullivan in a race against corrupt billionaire Santiago Moncada (Banderas) and mercenary leader Jo Braddock (Gabrielle) to locate the fabled treasure of the Magellan expedition.",
+    cast: [
+      "Tom Holland",
+      "Mark Wahlberg",
+      "Sophia Ali"
+    ],
+    runtime: "109 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQxYWNiNzgtOTc2Yi00OGEwLTk5MjAtODdiZTk0ZDJlZGY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQxYWNiNzgtOTc2Yi00OGEwLTk5MjAtODdiZTk0ZDJlZGY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "434",
+    title: "Marry Me",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Marry Me is a 2022 American romantic comedy-drama film directed by Kat Coiro, with a screenplay by John Rogers, Tami Sagher, and Harper Dill. Based on the 2012 graphic novel of the same title by Bobby Crosby, it stars Jennifer Lopez as Kat Valdez, a pop star, who decides to marry Charlie Gilbert, a math teacher holding a \"Marry Me\" sign, after learning that her on-stage bridegroom Bastian (Maluma) has been having an affair. John Bradley, Sarah Silverman, Ricky Guillart, and Chloe Coleman also star in supporting roles.",
+    cast: [
+      "Jennifer Lopez",
+      "Owen Wilson",
+      "Maluma"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjM4NjJlZjAtNGI4OS00MDNhLWJkYjItZTY0NjcwZjg0NDRmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjM4NjJlZjAtNGI4OS00MDNhLWJkYjItZTY0NjcwZjg0NDRmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "435",
+    title: "Blacklight",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.8,
+    synopsis: "Blacklight is a 2022 action thriller film directed and co-written by Mark Williams. The film stars Liam Neeson as a brooding FBI fixer who gets involved in a government conspiracy; Emmy Raver-Lampman, Taylor John Smith, and Aidan Quinn also star.",
+    cast: [
+      "Liam Neeson",
+      "Emmy Raver-Lampman",
+      "Taylor John Smith"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGQzY2U4M2ItMWFhYi00YmJmLWFhNDUtYzVjOTk2MGZmNGNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGQzY2U4M2ItMWFhYi00YmJmLWFhNDUtYzVjOTk2MGZmNGNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "436",
+    title: "Tall Girl 2",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Teen",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Tall Girl 2 is a 2022 American teen romantic comedy film directed by Emily Ting from a screenplay by Sam Wolfson. The film stars Ava Michelle, Sabrina Carpenter, Griffin Gluck, and Steve Zahn. It is the sequel to the 2019 film Tall Girl. The film was released on February 11, 2022 and received mixed reviews.",
+    cast: [
+      "Ava Michelle",
+      "Griffin Gluck",
+      "Sabrina Carpenter"
+    ],
+    runtime: "103 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjBiOTE5NDQtMmJkNC00NzIxLWE2ZTYtYTY4ZTRlMjZiOGViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjBiOTE5NDQtMmJkNC00NzIxLWE2ZTYtYTY4ZTRlMjZiOGViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "437",
+    title: "The Sky Is Everywhere",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "The Sky Is Everywhere is a 2022 American coming-of-age romantic drama film directed by Josephine Decker and written by Jandy Nelson, based on the 2010 novel of the same name. The film stars Grace Kaufman, Pico Alexander, Jacques Colimon, Cherry Jones, and Jason Segel.",
+    cast: [
+      "Grace Kaufman",
+      "Pico Alexander",
+      "Jacques Colimon"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjQ4NzhjZmQtNGNmYi00Mjc5LTljODEtMjJiNjM2YTI4OTZiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjQ4NzhjZmQtNGNmYi00Mjc5LTljODEtMjJiNjM2YTI4OTZiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "438",
+    title: "I Want You Back",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "I Want You Back is a 2022 American romantic comedy film directed by Jason Orley from a screenplay by Isaac Aptaker and Elizabeth Berger. It stars Charlie Day and Jenny Slate as two recently dumped strangers who team up to sabotage the new relationships of their exes. Manny Jacinto, Clark Backo, and Mason Gooding also star.",
+    cast: [
+      "Charlie Day",
+      "Jenny Slate",
+      "Scott Eastwood"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2NhNWRkNDYtM2QzOS00YzZjLTlmNTEtNDgyNDlhN2Y4MGVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2NhNWRkNDYtM2QzOS00YzZjLTlmNTEtNDgyNDlhN2Y4MGVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "439",
+    title: "The In Between",
+    year: 2022,
+    genres: [
+      "Romance",
+      "Science Fiction"
+    ],
+    rating: 5,
+    synopsis: "The In Between is a 2022 American science fiction romance film directed by Arie Posin, written by Marc Klein, and starring Joey King and Kyle Allen. The film was released on February 11, 2022 on Paramount+ and on April 8, 2022 on Netflix.",
+    cast: [
+      "Joey King",
+      "Kyle Allen",
+      "Kim Dickens"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjljYzU4ZTctMWM0NC00OTQzLWJmYzItMmNjNzVhOWVmODQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjljYzU4ZTctMWM0NC00OTQzLWJmYzItMmNjNzVhOWVmODQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "440",
+    title: "Fistful of Vengeance",
+    year: 2022,
+    genres: [
+      "Action",
+      "Supernatural",
+      "Thriller"
+    ],
+    rating: 3.7,
+    synopsis: "Fistful of Vengeance is a 2022 American supernatural action thriller film directed by Roel Reiné, and written by Cameron Litvack, Jessica Chou and Yalun Tu. The film serves as a follow-up to the first season of the television series Wu Assassins, and stars Iko Uwais, Lewis Tan, Lawrence Kao, JuJu Chan, Pearl Thusi, Francesca Corney, Jason Tobin, Rhatha Phongam and Simon Kuke. The film was released worldwide on February 17, 2022, on Netflix.",
+    cast: [
+      "Iko Uwais",
+      "Lewis Tan",
+      "Lawrence Kao"
+    ],
+    runtime: "137 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWM5ODliZjctY2QxZi00ZGI0LWE1MjYtYmMwMDQ3Yjg5NDFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWM5ODliZjctY2QxZi00ZGI0LWE1MjYtYmMwMDQ3Yjg5NDFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "441",
+    title: "Jackass Forever",
+    year: 2022,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.3,
+    synopsis: "Jackass Forever is a 2022 American stunt comedy film directed and produced by Jeff Tremaine, along with producers Spike Jonze and Johnny Knoxville, and was released by Paramount Pictures. It is the fourth main installment in the Jackass film series, following Jackass 3D (2010). The film stars original Jackass members Knoxville, Steve-O, Dave England, Wee Man, Danger Ehren, Chris Pontius, Preston Lacy, newcomers to the Jackass crew, and celebrity guests. This is the first Jackass film not to feature Ryan Dunn since his death in 2011 and the first without Bam Margera being a primary cast member as he was fired during production, appearing briefly in one skit.",
+    cast: [
+      "Johnny Knoxville",
+      "Steve-O",
+      "Chris Pontius"
+    ],
+    runtime: "127 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDg5NDRjMDItN2M2YS00MzI2LTgwMTQtMTkzN2ZmZmUwYjQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDg5NDRjMDItN2M2YS00MzI2LTgwMTQtMTkzN2ZmZmUwYjQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "442",
+    title: "Moonfall",
+    year: 2022,
+    genres: [
+      "Disaster",
+      "Science Fiction"
+    ],
+    rating: 4.9,
+    synopsis: "Moonfall is a 2022 science fiction disaster film co-written, directed, and produced by Roland Emmerich. It stars Halle Berry, Patrick Wilson, John Bradley, Michael Peña, Charlie Plummer, Kelly Yu, Carolina Bartczak and Donald Sutherland. It follows two former astronauts alongside a conspiracy theorist who discover the hidden truth about Earth's moon when it suddenly leaves its orbit. Shot in Montreal on a $138–146 million budget, it is one of the most expensive independently produced films ever made.",
+    cast: [
+      "Halle Berry",
+      "Patrick Wilson",
+      "John Bradley"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWY0YzViYzgtMzM5YS00YzI1LTk5MTQtZjdiZjUyZjQ5ZGMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWY0YzViYzgtMzM5YS00YzI1LTk5MTQtZjdiZjUyZjQ5ZGMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "443",
+    title: "Death on the Nile",
+    year: 2022,
+    genres: [
+      "Mystery"
+    ],
+    rating: 4.1,
+    synopsis: "Death on the Nile is a 2022 mystery film directed by Kenneth Branagh from a screenplay by Michael Green, based on the 1937 novel of the same name by Agatha Christie, and the second big screen adaptation of Christie's novel, following the 1978 film. It was produced by Branagh, Ridley Scott, Judy Hofflund and Kevin J. Walsh, as a sequel to 2017’s Murder on the Orient Express. It stars an ensemble cast with Branagh and Tom Bateman reprising their roles as Hercule Poirot and Bouc, respectively, alongside Annette Bening, Russell Brand, Ali Fazal, Dawn French, Gal Gadot, Armie Hammer, Rose Leslie, Emma Mackey, Sophie Okonedo, Jennifer Saunders and Letitia Wright.",
+    cast: [
+      "Tom Bateman",
+      "Annette Bening",
+      "Kenneth Branagh"
+    ],
+    runtime: "120 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjBkMTRkMmUtNGQ5Ni00YjkwLThhMmMtZjI1M2U2NzRhNjkwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjBkMTRkMmUtNGQ5Ni00YjkwLThhMmMtZjI1M2U2NzRhNjkwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "444",
+    title: "Clean",
+    year: 2022,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 3.8,
+    synopsis: "Clean is a 2021 American action thriller film directed by Paul Solet and starring Adrien Brody, who also produced and wrote the film.",
+    cast: [
+      "Adrien Brody",
+      "Glenn Fleshler",
+      "Mykelti Williamson"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDQ2ZWIwY2EtNzNmZC00NWUxLWJjMjAtYjNlMDk0Y2MxZTJlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDQ2ZWIwY2EtNzNmZC00NWUxLWJjMjAtYjNlMDk0Y2MxZTJlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "445",
+    title: "Last Looks",
+    year: 2022,
+    genres: [
+      "Mystery",
+      "War"
+    ],
+    rating: 4.6,
+    synopsis: "Last Looks is a 2022 American-British mystery film, directed by Tim Kirkby, from a screenplay by Howard Michael Gould based on his novel of the same name. It stars Charlie Hunnam, Mel Gibson, Morena Baccarin, Lucy Fry, Rupert Friend, Dominic Monaghan, Jacob Scipio and Clancy Brown.",
+    cast: [
+      "Charlie Hunnam",
+      "Mel Gibson",
+      "Morena Baccarin"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzg1YTEzOTgtYzEwMS00OThiLWI2NDEtN2YwYzRlNTFjM2E1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzg1YTEzOTgtYzEwMS00OThiLWI2NDEtN2YwYzRlNTFjM2E1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "446",
+    title: "Kimi",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Kimi is a 2022 American thriller film directed by Steven Soderbergh and written and produced by David Koepp. The film stars Zoë Kravitz. It was released on HBO Max on February 10, 2022, to generally positive reviews.",
+    cast: [
+      "Zoë Kravitz",
+      "Rita Wilson",
+      "Byron Bowers"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "447",
+    title: "The Long Night",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 4.8,
+    synopsis: "The Long Night is a 2022 American horror film written by Robert Sheppe and Mark Young and directed Rich Ragsdale. It stars Scout Taylor-Compton, Nolan Gerard Funk, Jeff Fahey, Deborah Kara Unger. The film is about a couple whose quiet weekend takes a bizarre turn when a nightmarish cult and their maniacal leader come to fulfill an apocalyptic prophesy.",
+    cast: [
+      "Scout Taylor-Compton",
+      "Nolan Gerard Funk",
+      "Jeff Fahey"
+    ],
+    runtime: "90 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODFmMmE1MDMtOWY2My00YzFjLThlNTgtYmQ4MDE5ZTI3YTY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODFmMmE1MDMtOWY2My00YzFjLThlNTgtYmQ4MDE5ZTI3YTY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "448",
+    title: "Home Team",
+    year: 2022,
+    genres: [
+      "Comedy",
+      "Sports",
+      "Biography"
+    ],
+    rating: 4.1,
+    synopsis: "Home Team is a 2022 American biographical sports comedy film directed by Charles and Daniel Kinnane, written by Chris Titone and Keith Blum, and starring Kevin James in the lead role, Taylor Lautner, Rob Schneider, Jackie Sandler, and Tait Blum. Inspired by actual events, the film tells the story of New Orleans Saints head coach Sean Payton who coached his 12-year-old son's football team during his one-year suspension from the NFL.",
+    cast: [
+      "Kevin James",
+      "Taylor Lautner",
+      "Rob Schneider"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWEyZTQ0N2YtZGE1My00Mzg5LWI3ZDUtYWFhN2FiMDU3ODE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWEyZTQ0N2YtZGE1My00Mzg5LWI3ZDUtYWFhN2FiMDU3ODE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "449",
+    title: "Shut In",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "Shut In is a 2022 American thriller film directed by D.J. Caruso, written by Melanie Toast, and starring Rainey Qualley, Jake Horowitz, Luciana VanDette and Vincent Gallo. Shut In is The Daily Wire's first original film and their third to be released on their streaming platform.",
+    cast: [
+      "Rainey Qualley",
+      "Jake Horowitz",
+      "Luciana VanDette"
+    ],
+    runtime: "111 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTY5MzE0MjUwNV5BMl5BanBnXkFtZTgwNjQxNzM2NzE@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTY5MzE0MjUwNV5BMl5BanBnXkFtZTgwNjQxNzM2NzE@._V1_.jpg"
+  },
+  {
+    id: "450",
+    title: "Sundown",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.2,
+    synopsis: "Sundown is a 2021 drama film written and directed by Michel Franco. It stars Tim Roth, Charlotte Gainsbourg and Iazua Larios. The plot follows a wealthy man (Roth) who attempts to abandon his family on vacation after the death of his mother. The film had its world premiere at the Venice Film Festival on 5 September 2021, and was released in the United States by Bleecker Street on 28 January 2022. The film was met with generally positive reviews.",
+    cast: [
+      "Tim Roth",
+      "Charlotte Gainsbourg"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODY5YTA0YjEtMTFhZC00YmZlLWJhMDctOTAwMTdjYzg3MGEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODY5YTA0YjEtMTFhZC00YmZlLWJhMDctOTAwMTdjYzg3MGEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "451",
+    title: "Scream",
+    year: 2022,
+    genres: [
+      "Slasher"
+    ],
+    rating: 4.3,
+    synopsis: "Scream is a 2022 American slasher film directed by Matt Bettinelli-Olpin and Tyler Gillett, and written by James Vanderbilt and Guy Busick. It is the fifth installment in the Scream film series; though billed as a relaunch of the film series, the film is a direct sequel to Scream 4 (2011). The first film in the series to not be directed by Wes Craven, following his death in 2015, the film is dedicated to Craven at the beginning of the closing credits. The film stars Melissa Barrera, Kyle Gallner, Mason Gooding, Mikey Madison, Dylan Minnette, Jenna Ortega, Jack Quaid, Jasmin Savoy Brown, and Sonia Ammar, with Marley Shelton, Skeet Ulrich, Roger L. Jackson, Heather Matarazzo, Courteney Cox, David Arquette, and Neve Campbell reprising their roles from previous installments. The plot takes place twenty-five years after the original Woodsboro murders from Scream (1996), when yet another Ghostface appears and begins targeting a group of teenagers who are each somehow linked to the original killings. Similar to previous entries, Scream combines the violence of the slasher genre with elements of black comedy and \"whodunit\" mystery to satirize the trend of reboots and legacy sequels (\"requels\"). The film also provides commentary on the horror fandom culture, particularly the divide between \"elevated horror\" and classic slasher films.",
+    cast: [
+      "Melissa Barrera",
+      "Mason Gooding",
+      "Jenna Ortega"
+    ],
+    runtime: "145 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzk2YzRjYmItNTA5Mi00ODczLTljYzUtOWE1ZDFkODhlZWJlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzk2YzRjYmItNTA5Mi00ODczLTljYzUtOWE1ZDFkODhlZWJlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "452",
+    title: "Shattered",
+    year: 2022,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.8,
+    synopsis: "Shattered is a 2022 American thriller film directed by Luis Prieto, written by David Loughery, and starring Cameron Monaghan, Frank Grillo, Lilly Krug, and John Malkovich.",
+    cast: [
+      "Cameron Monaghan",
+      "Frank Grillo",
+      "Lilly Krug"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjgwMjY1MzAtMDYwZS00NjFjLTg4OTUtOTg2N2QyYjBkZjU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjgwMjY1MzAtMDYwZS00NjFjLTg4OTUtOTg2N2QyYjBkZjU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "453",
+    title: "Redeeming Love",
+    year: 2022,
+    genres: [
+      "Romance",
+      "Western"
+    ],
+    rating: 4.8,
+    synopsis: "Redeeming Love is a 2022 American Christian Western romance film directed by D.J. Caruso, who co-wrote the screenplay with Francine Rivers. The film is based on Rivers' 1991 novel of the same name, which was based on the Biblical story of Hosea, and is set in the American Old West during the California Gold Rush. It stars Abigail Cowen, Tom Lewis and Logan Marshall-Green.",
+    cast: [
+      "Abigail Cowen",
+      "Tom Lewis",
+      "Logan Marshall-Green"
+    ],
+    runtime: "143 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzY5ZjRhNDgtZjNmYS00NGNhLWJhYWMtNDg3YjZlNTlkNjMzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzY5ZjRhNDgtZjNmYS00NGNhLWJhYWMtNDg3YjZlNTlkNjMzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "454",
+    title: "Hellblazers",
+    year: 2022,
+    genres: [
+      "Action",
+      "Horror"
+    ],
+    rating: 3.7,
+    synopsis: "Hellblazers is a 2022 American action horror film directed by Justin Lee and starring Bruce Dern, Billy Zane, Tony Todd and Adrienne Barbeau.",
+    cast: [
+      "Bruce Dern",
+      "Billy Zane",
+      "Tony Todd"
+    ],
+    runtime: "114 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTg5MGM5YWYtMjFiMS00MDU3LWJmYjAtMTNjNTE1YTBkNTkwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTg5MGM5YWYtMjFiMS00MDU3LWJmYjAtMTNjNTE1YTBkNTkwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "455",
+    title: "American Siege",
+    year: 2022,
+    genres: [
+      "Action"
+    ],
+    rating: 4.5,
+    synopsis: "American Siege is a 2022 American action film written and directed by Edward Drake. It stars Timothy V. Murphy, Bruce Willis, Rob Gough, Johann Urb, Anna Hindman, Johnny Messner, Cullen G. Chambers, and Janet Jones. The film was released by Shout! Studios on January 7, 2022. American Siege was panned by critics.",
+    cast: [
+      "Timothy V. Murphy",
+      "Bruce Willis"
+    ],
+    runtime: "130 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2NiZDA3ZWEtZDhjNS00NDhmLWIxMzUtNzkzYTc3YTFlNjcyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2NiZDA3ZWEtZDhjNS00NDhmLWIxMzUtNzkzYTc3YTFlNjcyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "456",
+    title: "The King's Daughter",
+    year: 2022,
+    genres: [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    rating: 3.5,
+    synopsis: "The King's Daughter is a 2022 action-adventure fantasy film directed by Sean McNamara from a screenplay by Barry Berman and James Schamus. It is based on the 1997 novel The Moon and the Sun by Vonda N. McIntyre. The film stars Pierce Brosnan as King Louis XIV, Kaya Scodelario as Marie-Josèphe, and Benjamin Walker as Yves De La Croix. It was William Hurt's final screen performance to be released before his death in March 2022, though not his final film work, as it had been filmed eight years earlier.",
+    cast: [
+      "Pierce Brosnan",
+      "Kaya Scodelario",
+      "Benjamin Walker"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmJiNzg5OTktMGNlNS00NzYzLWI5OTItYzMyYjgxZWQzM2ZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmJiNzg5OTktMGNlNS00NzYzLWI5OTItYzMyYjgxZWQzM2ZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "457",
+    title: "The Commando",
+    year: 2022,
+    genres: [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "The Commando is a 2022 American action crime thriller film directed by Asif Akbar and starring Mickey Rourke and Michael Jai White.",
+    cast: [
+      "Mickey Rourke",
+      "Michael Jai White"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjAyNTRiMTEtNzNlZS00YTZhLThmNzQtZjBkOWQ4N2Y4YjQzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjAyNTRiMTEtNzNlZS00YTZhLThmNzQtZjBkOWQ4N2Y4YjQzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "458",
+    title: "The Tiger Rising",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.4,
+    synopsis: "The Tiger Rising is a 2022 American drama film written and directed by Ray Giarratana and starring Christian Convery, Madalen Mills, Katharine McPhee, Sam Trammell, Dennis Quaid and Queen Latifah. It is based on the 2001 book of the same name by Kate DiCamillo.",
+    cast: [
+      "Christian Convery",
+      "Dennis Quaid",
+      "Queen Latifah"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmViN2E1NWMtZGI0ZC00Y2NhLThkYmUtYTUwYzdlOWU4ZDE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmViN2E1NWMtZGI0ZC00Y2NhLThkYmUtYTUwYzdlOWU4ZDE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "459",
+    title: "The Royal Treatment",
+    year: 2022,
+    genres: [
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "The Royal Treatment is a 2022 American romance film directed by Rick Jacobson and written by Holly Hester. It stars Laura Marano as Manhattan hairdresser Izzy, who is given an opportunity to work at the wedding of Prince Thomas, played by Mena Massoud.",
+    cast: [
+      "Laura Marano",
+      "Mena Massoud"
+    ],
+    runtime: "112 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2FhOTliZGUtODA5NS00ZTA3LThmZWYtODFiOGU2N2M1NjAzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2FhOTliZGUtODA5NS00ZTA3LThmZWYtODFiOGU2N2M1NjAzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "460",
+    title: "The Fallout",
+    year: 2022,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.5,
+    synopsis: "The Fallout is a 2021 American drama film written and directed by Megan Park in her feature film directorial debut. The film stars Jenna Ortega as Vada Cavell, a high school student who navigates significant emotional trauma following a school shooting. The film also stars Maddie Ziegler, Julie Bowen, John Ortiz, Niles Fitch, Will Ropp, and Shailene Woodley in supporting roles. The score is composed by American musician and actor Finneas O'Connell.",
+    cast: [
+      "Jenna Ortega",
+      "Maddie Ziegler",
+      "Niles Fitch"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzRmN2Q2NmYtODAxMi00OGZmLWIyODAtMjU0ZDVmNGNiY2EyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzRmN2Q2NmYtODAxMi00OGZmLWIyODAtMjU0ZDVmNGNiY2EyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "461",
+    title: "The Tragedy of Macbeth",
+    year: 2021,
+    genres: [
+      "Historical",
+      "Thriller"
+    ],
+    rating: 4.3,
+    synopsis: "The Tragedy of Macbeth is a 2021 American historical thriller film written, directed and produced by Joel Coen, based on the play Macbeth by William Shakespeare. It is the first film directed by one of the Coen brothers without the other's involvement. The film stars Denzel Washington, Frances McDormand, Bertie Carvel, Alex Hassell, Corey Hawkins, Harry Melling, Kathryn Hunter, and Brendan Gleeson.",
+    cast: [
+      "Denzel Washington",
+      "Frances McDormand",
+      "Bertie Carvel"
+    ],
+    runtime: "136 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWE0M2U3NzktZmVkOC00ZTkzLWI2NjEtODA3MmM5NjAyYWUwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWE0M2U3NzktZmVkOC00ZTkzLWI2NjEtODA3MmM5NjAyYWUwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "462",
+    title: "The 355",
+    year: 2022,
+    genres: [
+      "Action",
+      "Spy",
+      "Thriller"
+    ],
+    rating: 4,
+    synopsis: "The 355 is a 2022 American action spy thriller film directed by Simon Kinberg from a screenplay by Theresa Rebeck and Kinberg, and a story by Rebeck. The film features an ensemble cast, starring Jessica Chastain, Penélope Cruz, Fan Bingbing, Diane Kruger, and Lupita Nyong'o as a group of international spies who must work together to stop a terrorist organization from starting World War III. Édgar Ramírez and Sebastian Stan also star. The title is derived from Agent 355, the codename of a female spy for the Patriots during the American Revolution.",
+    cast: [
+      "Jessica Chastain",
+      "Lupita Nyong'o",
+      "Penélope Cruz"
+    ],
+    runtime: "135 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzhkNmZlODUtYWM4YS00NzRlLWEwOTgtM2U5ZDA0ZDJjNDI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzhkNmZlODUtYWM4YS00NzRlLWEwOTgtM2U5ZDA0ZDJjNDI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "463",
+    title: "The Matrix Resurrections",
+    year: 2021,
+    genres: [
+      "Action",
+      "Science Fiction"
+    ],
+    rating: 3.9,
+    synopsis: "The Matrix Resurrections is a 2021 American science fiction action film produced, co-written, and directed by Lana Wachowski, and being the first in Matrix franchise to be directed solely by Lana, without her sister, Lilly. It is the sequel to The Matrix Revolutions (2003) and the fourth installment in The Matrix film franchise. The film stars Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II, Jessica Henwick, Jonathan Groff, Neil Patrick Harris, Priyanka Chopra Jonas, Christina Ricci, and Jada Pinkett Smith. The film is set sixty years after Revolutions and follows Neo, who lives a seemingly ordinary life as a video game developer having trouble with distinguishing fantasy from reality. A group of rebels, with the help of a programmed version of Morpheus, free Neo from a new version of the Matrix and fight a new enemy that holds Trinity captive.",
+    cast: [
+      "Keanu Reeves",
+      "Carrie-Anne Moss",
+      "Yahya Abdul-Mateen II"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDMyNDIzYzMtZTMyMy00NjUyLWI3Y2MtYzYzOGE1NzQ1MTBiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDMyNDIzYzMtZTMyMy00NjUyLWI3Y2MtYzYzOGE1NzQ1MTBiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "464",
+    title: "Sing 2",
+    year: 2021,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Musical"
+    ],
+    rating: 3.9,
+    synopsis: "Sing 2 is a 2021 American computer-animated jukebox musical comedy film produced by Illumination and distributed by Universal Pictures. The sequel to Sing (2016) and the second film in the franchise, it was again written and directed by Garth Jennings, co-directed by Christophe Lourdelet, and produced by Chris Meledandri and Janet Healy.",
+    cast: [
+      "Matthew McConaughey",
+      "Reese Witherspoon",
+      "Scarlett Johansson"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzZkZmMzNzItYzBhOS00ZGEwLWFiNWYtMWRjNzM4MjRjZTRjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzZkZmMzNzItYzBhOS00ZGEwLWFiNWYtMWRjNzM4MjRjZTRjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "465",
+    title: "Fortress",
+    year: 2021,
+    genres: [
+      "Action"
+    ],
+    rating: 4.2,
+    synopsis: "Fortress is a 2021 American action film directed by James Cullen Bressack and written by Alan Horsnail, based on a story by Emile Hirsch and Randall Emmett. It stars Jesse Metcalfe, Bruce Willis, Chad Michael Murray, Kelly Greyson, Ser'Darius Blain, and Shannen Doherty. The film was released in select theaters and on video on demand by Lionsgate Films on December 17, 2021.",
+    cast: [
+      "Jesse Metcalfe",
+      "Bruce Willis",
+      "Chad Michael Murray"
+    ],
+    runtime: "148 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTc4MTRkMTktMTFhYi00MGQ1LTlkNDUtNDgxNjk0OTM5NzdhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTc4MTRkMTktMTFhYi00MGQ1LTlkNDUtNDgxNjk0OTM5NzdhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "466",
+    title: "The King's Man",
+    year: 2021,
+    genres: [
+      "Action",
+      "Spy"
+    ],
+    rating: 4.1,
+    synopsis: "The King's Man is a 2021 spy action film directed by Matthew Vaughn from a screenplay by Vaughn and Karl Gajdusek and a story by Vaughn. The third installment in the British Kingsman film series, which is based on the comic book The Secret Service by Mark Millar and Dave Gibbons, it is a prequel to Kingsman: The Secret Service (2014) and Kingsman: The Golden Circle (2017). Its ensemble cast includes Ralph Fiennes, Gemma Arterton, Rhys Ifans, Matthew Goode, Tom Hollander, Harris Dickinson, Daniel Brühl, Djimon Hounsou, and Charles Dance. It focuses on several events during World War I and the birth of the Kingsman organisation.",
+    cast: [
+      "Ralph Fiennes",
+      "Gemma Arterton",
+      "Rhys Ifans"
+    ],
+    runtime: "149 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjY3YTY3MGMtMjVmYS00ZmM3LWIxMDAtYWVhZTAyZDMwNmMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjY3YTY3MGMtMjVmYS00ZmM3LWIxMDAtYWVhZTAyZDMwNmMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "467",
+    title: "A Journal for Jordan",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "A Journal for Jordan is a 2021 American romantic drama film directed and co-produced by Denzel Washington from a screenplay written by Virgil Williams, based on the memoir A Journal for Jordan: A Story of Love and Honor by Dana Canedy. The film stars Michael B. Jordan and Chanté Adams in the lead roles, along with Jalon Christian, Robert Wisdom, and Tamara Tunie in supporting roles.",
+    cast: [
+      "Michael B. Jordan",
+      "Chanté Adams",
+      "Jalon Christian"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjFjNGViNWQtMGQ1NS00Nzc3LWE5YjAtOTg5MDdmODk5MDQzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjFjNGViNWQtMGQ1NS00Nzc3LWE5YjAtOTg5MDdmODk5MDQzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "468",
+    title: "Memoria",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Fantasy",
+      "Mystery"
+    ],
+    rating: 4,
+    synopsis: "Memoria is a 2021 fantasy drama mystery film written, directed and co-produced by Apichatpong Weerasethakul, starring Tilda Swinton, Elkin Díaz, Jeanne Balibar, Juan Pablo Urrego and Daniel Giménez Cacho.",
+    cast: [
+      "acreenplay)",
+      "Tilda Swinton",
+      "Elkin Díaz"
+    ],
+    runtime: "117 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTFkZjU3MGUtM2MxNS00MzM5LTg3NGQtMTFkYWViNWFiNmVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTFkZjU3MGUtM2MxNS00MzM5LTg3NGQtMTFkYWViNWFiNmVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "469",
+    title: "American Underdog",
+    year: 2021,
+    genres: [
+      "Sports",
+      "Biography"
+    ],
+    rating: 4.9,
+    synopsis: "American Underdog is a 2021 American biographical sports film about National Football League (NFL) quarterback Kurt Warner. Directed by Andrew and Jon Erwin, the film follows Warner's journey as an undrafted player who ascended to winning Super Bowl XXXIV. It stars Zachary Levi as Warner, alongside Anna Paquin as his wife Brenda and Dennis Quaid as his head coach Dick Vermeil.",
+    cast: [
+      "Zachary Levi",
+      "Anna Paquin",
+      "Dennis Quaid"
+    ],
+    runtime: "116 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTI5MjIxZWEtNDA5ZC00MGRjLThhMzQtNWM5OTc0MTlmZDAxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTI5MjIxZWEtNDA5ZC00MGRjLThhMzQtNWM5OTc0MTlmZDAxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "470",
+    title: "The Legend of La Llorona",
+    year: 2022,
+    genres: [
+      "Horror"
+    ],
+    rating: 3.9,
+    synopsis: "The Legend of La Llorona is a 2022 American Horror film directed by Patricia Harris Seeley and written by José Prendes, Cameron Larson and Patricia Harris Seeley. The film stars Autumn Reeser, Danny Trejo, Antonio Cupo and Zamia Fardiño. The film was released on January 7, 2022.",
+    cast: [
+      "Autumn Reeser",
+      "Antonio Cupo",
+      "Danny Trejo"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTYxMjcxNjU2NF5BMl5BanBnXkFtZTcwNDI1OTE5Ng@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTYxMjcxNjU2NF5BMl5BanBnXkFtZTcwNDI1OTE5Ng@@._V1_.jpg"
+  },
+  {
+    id: "471",
+    title: "Rumble",
+    year: 2021,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Sports"
+    ],
+    rating: 5,
+    synopsis: "Rumble is a 2021 American computer-animated sports comedy film directed by Hamish Grieve with a screenplay by Grieve and Matt Lieberman. Loosely based on Monster on the Hill, a graphic novel by Rob Harrell, the film stars the voices of Will Arnett, Geraldine Viswanathan, Terry Crews, Stephen A. Smith, Jimmy Tatro, Tony Danza, Susan Kelechi Watson, Tony Shalhoub, Bridget Everett, Greta Lee, Ben Schwartz, Roman Reigns and Becky Lynch.",
+    cast: [
+      "Will Arnett",
+      "Terry Crews",
+      "Geraldine Viswanathan"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDUyMDdmYmMtYjE2Ni00MGE0LWJkNjQtYjQwMTMyMjhkMmE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDUyMDdmYmMtYjE2Ni00MGE0LWJkNjQtYjQwMTMyMjhkMmE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "472",
+    title: "Swan Song",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Science Fiction",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Swan Song is a 2021 American science fiction romantic drama film written and directed by Benjamin Cleary. The film stars Mahershala Ali, Naomie Harris, Awkwafina, Glenn Close, and Adam Beach.",
+    cast: [
+      "Mahershala Ali",
+      "Naomie Harris",
+      "Glenn Close"
+    ],
+    runtime: "121 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWM0ZThjOWItZmU0OS00NWM2LThhYjItYjJiZjQxZDZjOWZkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWM0ZThjOWItZmU0OS00NWM2LThhYjItYjJiZjQxZDZjOWZkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "473",
+    title: "The Hating Game",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "The Hating Game is a 2021 American romantic comedy film directed by Peter Hutchings. It is based on the novel of the same name by Sally Thorne, and stars Lucy Hale and Austin Stowell in the lead roles. It was released in theaters and video on demand on December 10, 2021, by Vertical Entertainment. The film received generally positive reviews from critics.",
+    cast: [
+      "Lucy Hale",
+      "Austin Stowell",
+      "Damon Daunno"
+    ],
+    runtime: "131 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjllZDgxYjUtODgwYi00MzE2LWI3NTItZjg4NzZiYzUyZjdjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjllZDgxYjUtODgwYi00MzE2LWI3NTItZjg4NzZiYzUyZjdjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "474",
+    title: "Nightmare Alley",
+    year: 2021,
+    genres: [
+      "Noir",
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Nightmare Alley is a 2021 neo-noir psychological thriller film co-written and directed by Guillermo del Toro, and based on the 1946 novel of the same name by William Lindsay Gresham. It is the second feature film adaptation of Gresham's novel, following the 1947 version. A co-production between Searchlight Pictures, TSG Entertainment, and Double Dare You Productions, the film stars Bradley Cooper as a charming and ambitious carnival worker with a mysterious past who takes big risks to boost his career. Cate Blanchett, Toni Collette, Willem Dafoe, Richard Jenkins, Rooney Mara, Ron Perlman, Mary Steenburgen, and David Strathairn also star.",
+    cast: [
+      "Bradley Cooper",
+      "Cate Blanchett",
+      "Toni Collette"
+    ],
+    runtime: "113 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNThlMDUzMDEtOTY1ZC00MzI3LThlOGItYjI0MTdkZDliNDEzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNThlMDUzMDEtOTY1ZC00MzI3LThlOGItYjI0MTdkZDliNDEzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "475",
+    title: "Being the Ricardos",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Biography"
+    ],
+    rating: 3.9,
+    synopsis: "Being the Ricardos is a 2021 American biographical drama film written and directed by Aaron Sorkin, about the relationship between I Love Lucy stars Lucille Ball and Desi Arnaz. Nicole Kidman and Javier Bardem star as Ball and Arnaz, while J. K. Simmons, Nina Arianda, Tony Hale, Alia Shawkat, Jake Lacy, and Clark Gregg are featured in supporting roles.",
+    cast: [
+      "Nicole Kidman",
+      "Javier Bardem",
+      "J. K. Simmons"
+    ],
+    runtime: "102 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTdkY2Y0MzgtMmE2ZS00NTc3LWE5MjMtMDk0ZDk3ZTgxZTM0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTdkY2Y0MzgtMmE2ZS00NTc3LWE5MjMtMDk0ZDk3ZTgxZTM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "476",
+    title: "Red Rocket",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 3.5,
+    synopsis: "Red Rocket is a 2021 American black comedy drama film directed by Sean Baker from a screenplay co-written with Chris Bergoch. It stars Simon Rex, Bree Elrod, and Suzanna Son. The plot follows a porn star (Rex) who returns to his hometown and begins a relationship with an adolescent girl (Son).",
+    cast: [
+      "Simon Rex",
+      "Bree Elrod",
+      "Suzanna Son"
+    ],
+    runtime: "141 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjQ0NmI0NjgtZjUxYS00ZjIyLTkxMjEtNzkyMWM1NjQ1ZDEyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjQ0NmI0NjgtZjUxYS00ZjIyLTkxMjEtNzkyMWM1NjQ1ZDEyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "477",
+    title: "Mother/Android",
+    year: 2021,
+    genres: [
+      "Science Fiction",
+      "Thriller"
+    ],
+    rating: 4.9,
+    synopsis: "Mother/Android is a 2021 American post-apocalyptic science fiction thriller film, written and directed by Mattson Tomlin for his feature directorial debut, and starring Chloë Grace Moretz, Algee Smith, and Raúl Castillo. The film tells the story of a pregnant woman and her boyfriend who try to reach a fortified Boston amidst an AI takeover. It was released on December 17, 2021, on Hulu.",
+    cast: [
+      "Chloë Grace Moretz",
+      "Algee Smith",
+      "Raúl Castillo"
+    ],
+    runtime: "146 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2JjOWVlMjMtNzQ3MC00MjUwLTkyMDYtNDZiNmE4YzBjOGVhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2JjOWVlMjMtNzQ3MC00MjUwLTkyMDYtNDZiNmE4YzBjOGVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "478",
+    title: "Spider-Man: No Way Home",
+    year: 2021,
+    genres: [
+      "Superhero"
+    ],
+    rating: 4.1,
+    synopsis: "Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and Spider-Man: Far From Home (2019), and the 27th film in the Marvel Cinematic Universe (MCU). The film was directed by Jon Watts and written by Chris McKenna and Erik Sommers. It stars Tom Holland as Peter Parker / Spider-Man alongside Zendaya, Benedict Cumberbatch, Jacob Batalon, Jon Favreau, Jamie Foxx, Willem Dafoe, Alfred Molina, Benedict Wong, Tony Revolori, Marisa Tomei, Andrew Garfield, and Tobey Maguire. In the film, Parker asks Dr. Stephen Strange (Cumberbatch) to use magic to make his identity as Spider-Man a secret again following its public revelation at the end of Far From Home. When the spell goes wrong because of Parker's actions, the multiverse is broken open, which allows visitors from alternate realities to enter Parker's universe.",
+    cast: [
+      "Tom Holland",
+      "Benedict Cumberbatch",
+      "Zendaya"
+    ],
+    runtime: "143 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "479",
+    title: "The Tender Bar",
+    year: 2021,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.7,
+    synopsis: "The Tender Bar is a 2021 American coming-of-age film directed by George Clooney from a screenplay by William Monahan. Adapted from the 2005 memoir of the same name by J. R. Moehringer, it recounts Moehringer's life growing up on Long Island. It stars Ben Affleck, Tye Sheridan, Daniel Ranieri, Lily Rabe, and Christopher Lloyd. It was the final film appearance of Sondra James before her death in September 2021.",
+    cast: [
+      "Ben Affleck",
+      "Tye Sheridan",
+      "Lily Rabe"
+    ],
+    runtime: "137 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTg3NzI1ODItOTBkMC00MjViLWFlOTItYzBkNDMyMTZiMWIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTg3NzI1ODItOTBkMC00MjViLWFlOTItYzBkNDMyMTZiMWIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "480",
+    title: "The Lost Daughter",
+    year: 2021,
+    genres: [
+      "Drama"
+    ],
+    rating: 4.3,
+    synopsis: "The Lost Daughter is a 2021 psychological drama film adapted for the screen and directed by Maggie Gyllenhaal based on the 2006 novel of the same name by Elena Ferrante. The film stars Olivia Colman, Dakota Johnson, Jessie Buckley, Paul Mescal, Dagmara Domińczyk, Jack Farthing, Oliver Jackson-Cohen, Peter Sarsgaard, and Ed Harris. Colman also serves as an executive producer.",
+    cast: [
+      "Olivia Colman",
+      "Dakota Johnson",
+      "Jessie Buckley"
+    ],
+    runtime: "119 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGQ2OTNiNzMtMjA5Ny00Zjg4LWE1NTMtZDJlMWEyMDhhYmU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGQ2OTNiNzMtMjA5Ny00Zjg4LWE1NTMtZDJlMWEyMDhhYmU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "481",
+    title: "Don't Look Up",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Political",
+      "Satire"
+    ],
+    rating: 4.5,
+    synopsis: "Don't Look Up is a 2021 American apocalyptic political satire black comedy film written, co-produced, and directed by Adam McKay from a story he co-wrote with David Sirota. It stars an ensemble cast featuring Leonardo DiCaprio, Jennifer Lawrence, Rob Morgan, Jonah Hill, Mark Rylance, Tyler Perry, Timothée Chalamet, Ron Perlman, Ariana Grande, Kid Cudi, Cate Blanchett, and Meryl Streep. The film tells the story of two astronomers attempting to warn humanity about an approaching comet that will destroy human civilization. The impact event is an allegory for climate change, and the film is a satire of government, political, celebrity, and media indifference to the climate crisis.",
+    cast: [
+      "Leonardo DiCaprio",
+      "Jennifer Lawrence",
+      "Rob Morgan"
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjhhNWFjNzctYTJjOS00MDc0LThiNjItZmM0ZDVmMWViY2UzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjhhNWFjNzctYTJjOS00MDc0LThiNjItZmM0ZDVmMWViY2UzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "482",
+    title: "Licorice Pizza",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Drama"
+    ],
+    rating: 4.1,
+    synopsis: "Licorice Pizza is a 2021 American comedy-drama film written and directed by Paul Thomas Anderson. It stars Alana Haim and Cooper Hoffman in their film debuts, alongside an ensemble supporting cast including Sean Penn, Tom Waits, Bradley Cooper, and Benny Safdie. Set in 1973, the film follows the development of a young couple's relationship.",
+    cast: [
+      "Alana Haim",
+      "Cooper Hoffman",
+      "Sean Penn"
+    ],
+    runtime: "108 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjU5MjRiOWMtNmI0OC00ZTU1LThlNGItYTViNzU2YzAzMWMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjU5MjRiOWMtNmI0OC00ZTU1LThlNGItYTViNzU2YzAzMWMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "483",
+    title: "West Side Story",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Musical",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "West Side Story is a 2021 American musical romantic drama film directed and co-produced by Steven Spielberg from a screenplay by Tony Kushner. It is the second feature-length adaptation of the 1957 stage musical of the same name. It stars Ansel Elgort and Rachel Zegler in her film debut with Ariana DeBose, David Alvarez, Mike Faist, and Rita Moreno in supporting roles. Moreno, who starred in the 1961 film adaptation, also served as an executive producer alongside Kushner. The film features music composed by Leonard Bernstein with lyrics by Stephen Sondheim.",
+    cast: [
+      "Ansel Elgort",
+      "Rachel Zegler",
+      "Ariana DeBose"
+    ],
+    runtime: "123 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWZkYzY2OGUtOGU4Ni00NmI0LTg2ZjAtZDA5OWE0YTNiZWRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "484",
+    title: "Mixtape",
+    year: 2021,
+    genres: [
+      "Comedy"
+    ],
+    rating: 5,
+    synopsis: "Mixtape is a 2021 American comedy film directed by Valerie Weiss from a screenplay by Stacey Menear. It stars Gemma Brooke Allen, Nick Thune, and Julie Bowen.",
+    cast: [
+      "Gemma Brooke Allen",
+      "Jackson Rathbone",
+      "Nick Thune"
+    ],
+    runtime: "132 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDhkYzViNzktMzY4Yi00YTU0LTgwMzYtYjZjNjM3MmE2NWVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDhkYzViNzktMzY4Yi00YTU0LTgwMzYtYjZjNjM3MmE2NWVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "485",
+    title: "Encounter",
+    year: 2021,
+    genres: [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Encounter is a 2021 crime drama thriller film, directed by Michael Pearce from a screenplay by Pearce and Joe Barton. The film stars Riz Ahmed, Octavia Spencer, Janina Gavankar, Rory Cochrane, Lucian-River Chauhan, and Aditya Geddada.",
+    cast: [
+      "Riz Ahmed",
+      "Octavia Spencer",
+      "Janina Gavankar"
+    ],
+    runtime: "100 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWViMGRhMTEtN2FlOC00MDVkLTllYmMtNDQyNDgzZmE0YzIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWViMGRhMTEtN2FlOC00MDVkLTllYmMtNDQyNDgzZmE0YzIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "486",
+    title: "Diary of a Wimpy Kid",
+    year: 2021,
+    genres: [
+      "Animated",
+      "Comedy"
+    ],
+    rating: 4,
+    synopsis: "Diary of a Wimpy Kid is a 2021 computer-animated comedy film directed by Swinton Scott from a screenplay by Jeff Kinney, based on his 2007 book of the same name. It is the second film adaptation of the book, following the 2010 live-action film, while serving as the first fully-animated reboot in the Diary of a Wimpy Kid film series, and the fifth installment overall. The film stars the voices of Brady Noon, Ethan William Childress, Chris Diamantopoulos, Erica Cerra, and Hunter Dillon.",
+    cast: [
+      "Brady Noon",
+      "Ethan William Childress",
+      "Chris Diamantopoulos"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTg3NzQ2NDgyNF5BMl5BanBnXkFtZTcwMDc1NzIyMw@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTg3NzQ2NDgyNF5BMl5BanBnXkFtZTcwMDc1NzIyMw@@._V1_.jpg"
+  },
+  {
+    id: "487",
+    title: "Deadlock",
+    year: 2021,
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    rating: 4.6,
+    synopsis: "Deadlock is a 2021 American action thriller film directed by Jared Cohn, starring Patrick Muldoon and Bruce Willis. It was released in the United States on December 3, 2021, by Saban Films.",
+    cast: [
+      "Patrick Muldoon",
+      "Bruce Willis",
+      "Matthew Marsden"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTAxNzJiMjAtOGQyYS00NTgyLWJlNzMtMzc3ZDA0NDZiMThhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTAxNzJiMjAtOGQyYS00NTgyLWJlNzMtMzc3ZDA0NDZiMThhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "488",
+    title: "Back to the Outback",
+    year: 2021,
+    genres: [
+      "Adventure",
+      "Animated",
+      "Comedy"
+    ],
+    rating: 4.2,
+    synopsis: "Back to the Outback is a 2021 computer-animated adventure comedy film directed by Clare Knight and Harry Cripps, in both their directorial debuts, from a screenplay written by Cripps, and a story by Gregory Lessans and Cripps. The voice cast includes Isla Fisher, Tim Minchin, Eric Bana, Guy Pearce, Miranda Tapsell, Angus Imrie, Keith Urban, and Jacki Weaver. Produced by Weed Road Pictures, Reel FX Creative Studios, Netflix Animation, and distributed by Netflix.",
+    cast: [
+      "Isla Fisher",
+      "Tim Minchin",
+      "Eric Bana"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWIyNTM1NjQtOWUyZS00OWJlLWE1MDctOGE1MTVjMjJiYWJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWIyNTM1NjQtOWUyZS00OWJlLWE1MDctOGE1MTVjMjJiYWJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "489",
+    title: "National Champions",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Sports"
+    ],
+    rating: 4.1,
+    synopsis: "National Champions is a 2021 American sports drama film directed by Ric Roman Waugh, based on the play of the same name by Adam Mervis. The film stars Stephan James, J. K. Simmons, Alexander Ludwig, Lil Rel Howery, Tim Blake Nelson, Andrew Bachelor, Jeffrey Donovan, David Koechner, Kristin Chenoweth, Timothy Olyphant, and Uzo Aduba.",
+    cast: [
+      "Stephan James",
+      "J. K. Simmons",
+      "Alexander Ludwig"
+    ],
+    runtime: "126 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGI0OWM3N2QtOTBhYi00NDkxLTliMmQtZjc2YTc3MzAyMmNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGI0OWM3N2QtOTBhYi00NDkxLTliMmQtZjc2YTc3MzAyMmNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "490",
+    title: "Single All the Way",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Single All the Way is a 2021 Canadian Christmas romantic comedy film directed by Michael Mayer and written by Chad Hodge. The plot follows a man who convinces his best friend to pretend to be his boyfriend when he goes home for Christmas, only to be set up on a blind date by his mother. Luke Macfarlane, Barry Bostwick, Jennifer Robertson, and Jennifer Coolidge also star.",
+    cast: [
+      "Michael Urie",
+      "Philemon Chambers",
+      "Luke Macfarlane"
+    ],
+    runtime: "91 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmVmNzBjMGEtZWQzNS00M2FkLWIzZDEtMThkZjBiMzkyMTE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmVmNzBjMGEtZWQzNS00M2FkLWIzZDEtMThkZjBiMzkyMTE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "491",
+    title: "The Unforgivable",
+    year: 2021,
+    genres: [
+      "Drama"
+    ],
+    rating: 4,
+    synopsis: "The Unforgivable is a 2021 drama film directed by Nora Fingscheidt and written by Peter Craig, Hillary Seitz, and Courtenay Miles, based on the 2009 British miniseries Unforgiven written by Sally Wainwright. The film stars Sandra Bullock as a woman who, following her release from prison after serving twenty years for committing murder, is determined to reunite with her estranged younger sister. Vincent D'Onofrio, Jon Bernthal, Richard Thomas, Linda Emond, Aisling Franciosi, Rob Morgan, and Viola Davis also star.",
+    cast: [
+      "Sandra Bullock",
+      "Vincent D'Onofrio",
+      "Jon Bernthal"
+    ],
+    runtime: "124 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjVlY2EzYTUtNjY5Ni00ZTUyLTkxNTEtZDk1ZTliZjgwODIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjVlY2EzYTUtNjY5Ni00ZTUyLTkxNTEtZDk1ZTliZjgwODIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "492",
+    title: "Zeros and Ones",
+    year: 2021,
+    genres: [
+      "Thriller"
+    ],
+    rating: 4.4,
+    synopsis: "Zeros and Ones is a 2021 American-Italian thriller film written and directed by Abel Ferrara and starring Ethan Hawke.",
+    cast: [
+      "Ethan Hawke",
+      "Valerio Mastandrea"
+    ],
+    runtime: "93 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDYwYTE2ZmUtYmViMy00ODcxLThlZTYtMDkzYTgxYzE2YjI2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDYwYTE2ZmUtYmViMy00ODcxLThlZTYtMDkzYTgxYzE2YjI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "493",
+    title: "House of Gucci",
+    year: 2021,
+    genres: [
+      "Crime",
+      "Drama",
+      "Biography"
+    ],
+    rating: 4.5,
+    synopsis: "House of Gucci is a 2021 American biographical crime drama film directed by Ridley Scott, based on the 2001 book The House of Gucci: A Sensational Story of Murder, Madness, Glamour, and Greed by Sara Gay Forden. The film follows Patrizia Reggiani and Maurizio Gucci, as their romance transforms into a fight for control of the Italian fashion brand Gucci. Jared Leto, Jeremy Irons, Jack Huston, Salma Hayek, and Al Pacino also star.",
+    cast: [
+      "Lady Gaga",
+      "Adam Driver",
+      "Jared Leto"
+    ],
+    runtime: "98 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmQ3OTRiYWItMGRiOC00ZTVmLWJjMjEtNjZhNDQ5NjIxODNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmQ3OTRiYWItMGRiOC00ZTVmLWJjMjEtNjZhNDQ5NjIxODNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "494",
+    title: "C'mon C'mon",
+    year: 2021,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "C'mon C'mon is a 2021 American black-and-white drama film written and directed by Mike Mills, and starring Joaquin Phoenix, Gaby Hoffmann, Scoot McNairy, Molly Webster, Jaboukie Young-White, and Woody Norman. It had its world premiere at the 48th Telluride Film Festival on September 2, 2021, and was given a limited theatrical release by A24 starting on November 19, 2021. The film received critical acclaim, with praise for its performances, direction, and cinematography.",
+    cast: [
+      "Joaquin Phoenix",
+      "Gaby Hoffmann",
+      "Woody Norman"
+    ],
+    runtime: "101 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzM3Zjg3ZjEtYTgxNC00MmUwLWFkNjctMDkyNmY3ZTVkM2Q5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzM3Zjg3ZjEtYTgxNC00MmUwLWFkNjctMDkyNmY3ZTVkM2Q5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "495",
+    title: "South Park: Post Covid",
+    year: 2021,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Erotic"
+    ],
+    rating: 4.1,
+    synopsis: "\"South Park: Post Covid\" is a 2021 American adult animated comedy television special episode written and directed by Trey Parker. It is the first in a series of South Park television specials for the streaming service Paramount+ and premiered on November 25, 2021. It is also considered to be the 310th episode overall of the television series.",
+    cast: [
+      "Matt Stone",
+      "Mona Marshall",
+      "Kimberly Brooks"
+    ],
+    runtime: "147 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODRjYmI4ZjYtNzE5NC00N2EwLWFmNWYtM2E3MWVjNDZkZjE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODRjYmI4ZjYtNzE5NC00N2EwLWFmNWYtM2E3MWVjNDZkZjE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "496",
+    title: "Black Friday",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Horror"
+    ],
+    rating: 4.5,
+    synopsis: "Black Friday is a 2021 American horror comedy film written by Andy Greskoviak and directed by Casey Tebo. It stars Devon Sawa, Ivana Baquero, Ryan Lee, Stephen Peck, Michael Jai White, and Bruce Campbell.",
+    cast: [
+      "Devon Sawa",
+      "Ivana Baquero",
+      "Ryan Lee"
+    ],
+    runtime: "96 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmUzYmJiMWItYWEyMC00N2VjLWEzNGQtODc4NDdmZDNmYTk0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmUzYmJiMWItYWEyMC00N2VjLWEzNGQtODc4NDdmZDNmYTk0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "497",
+    title: "8-Bit Christmas",
+    year: 2021,
+    genres: [
+      "Comedy"
+    ],
+    rating: 4.5,
+    synopsis: "8-Bit Christmas is a 2021 American Christmas comedy film directed by Michael Dowse, from a screenplay by Kevin Jakubowski based upon his novel of the same name. It stars Neil Patrick Harris, Winslow Fegley, June Diane Raphael, David Cross, and Steve Zahn. The film was released on November 24, 2021, on HBO Max, receiving generally favorable reviews from critics.",
+    cast: [
+      "Neil Patrick Harris",
+      "Winslow Fegley",
+      "June Diane Raphael"
+    ],
+    runtime: "92 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTA0ZWI3NWItYmEwYi00YTI0LTlmNGMtMTQ4ZDExZWNiOGJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTA0ZWI3NWItYmEwYi00YTI0LTlmNGMtMTQ4ZDExZWNiOGJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "498",
+    title: "The Humans",
+    year: 2021,
+    genres: [
+      "Drama"
+    ],
+    rating: 3.6,
+    synopsis: "The Humans is a 2021 American psychological drama film written and directed by Stephen Karam in his feature directorial debut, and based on his one-act play of the same name. It stars Richard Jenkins, Jayne Houdyshell, Amy Schumer, Beanie Feldstein, Steven Yeun, and June Squibb. It had its world premiere at the 2021 Toronto International Film Festival on September 12, 2021. The film was released by A24 on November 24, 2021, both in theaters and on Showtime.",
+    cast: [
+      "Richard Jenkins",
+      "Jayne Houdyshell",
+      "Amy Schumer"
+    ],
+    runtime: "97 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTIxYTVmNzctNGQ1ZS00NDk2LTllMDYtMzQ4ZTNjODBiYmU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTIxYTVmNzctNGQ1ZS00NDk2LTllMDYtMzQ4ZTNjODBiYmU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "499",
+    title: "Encanto",
+    year: 2021,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Fantasy",
+      "Musical"
+    ],
+    rating: 4,
+    synopsis: "Encanto is a 2021 American computer-animated musical fantasy comedy film produced by Walt Disney Animation Studios and distributed by Walt Disney Studios Motion Pictures. The 60th film produced by the studio, it was directed by Jared Bush and Byron Howard, co-directed by Charise Castro Smith, and produced by Yvett Merino and Clark Spencer, with original songs by Lin-Manuel Miranda. The screenplay was written by Castro Smith and Bush, both of whom also conceived the film's story with Howard, Miranda, Jason Hand, and Nancy Kruse. The film stars the voices of Stephanie Beatriz, María Cecilia Botero, John Leguizamo, Mauro Castillo, Jessica Darrow, Angie Cepeda, Carolina Gaitán, Diane Guerrero, and Wilmer Valderrama. Encanto follows a multigenerational Colombian family, the Madrigals, led by a matriarch (Botero) whose children and grandchildren—except for Mirabel Madrigal (Beatriz)—receive magical gifts from a miracle that helps them serve the people in their rural community called the Encanto. When Mirabel learns that the family is losing their magic, she sets out to find out what is happening, and save her family and their magical house.",
+    cast: [
+      "Stephanie Beatriz",
+      "María Cecilia Botero",
+      "John Leguizamo"
+    ],
+    runtime: "110 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGEyNzk2M2MtNjBhZS00MzYwLWI0Y2YtYjc5ZWE2MjM0YWE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGEyNzk2M2MtNjBhZS00MzYwLWI0Y2YtYjc5ZWE2MjM0YWE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "500",
+    title: "Friend of the World",
+    year: 2021,
+    genres: [
+      "Independent"
+    ],
+    rating: 4.9,
+    synopsis: "Friend of the World is a 2020 American independent black-and-white film written and directed by Brian Patrick Butler in his feature film debut, starring Nick Young and Alexandra Slade. The surreal experimental film takes place post-apocalypse and tells the story of a young filmmaker and a military general trapped in a bunker with a mysterious threat. The film has been categorized as a psychedelic film, a surrealist film, and an end of the world film.",
+    cast: [
+      "Nick Young",
+      "Alexandra Slade",
+      "Michael C. Burgess"
+    ],
+    runtime: "125 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDgxYzQ5ZGYtZDAyMS00MWNiLWIwMWMtZmIwODUwODFhYjdlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDgxYzQ5ZGYtZDAyMS00MWNiLWIwMWMtZmIwODUwODFhYjdlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "501",
+    title: "King Richard",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Sports",
+      "Biography"
+    ],
+    rating: 4.2,
+    synopsis: "King Richard is a 2021 American biographical sports drama film directed by Reinaldo Marcus Green and written by Zach Baylin. The film stars Will Smith as Richard Williams, the father and coach of famed tennis players Venus and Serena Williams, with Aunjanue Ellis, Saniyya Sidney, Demi Singleton, Tony Goldwyn, and Jon Bernthal in supporting roles.",
+    cast: [
+      "Will Smith",
+      "Aunjanue Ellis",
+      "Saniyya Sidney"
+    ],
+    runtime: "129 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjVlZGFjMDctNDIxOS00NjY5LWE1ZTEtMTAxZGE4Y2QxZjMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjVlZGFjMDctNDIxOS00NjY5LWE1ZTEtMTAxZGE4Y2QxZjMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "502",
+    title: "The Power of the Dog",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Western"
+    ],
+    rating: 3.9,
+    synopsis: "The Power of the Dog is a 2021 revisionist Western psychological drama film written and directed by Jane Campion. It is based on Thomas Savage's 1967 novel of the same title. The film stars Benedict Cumberbatch, Kirsten Dunst, Jesse Plemons, and Kodi Smit-McPhee. Set in Montana and shot mostly within rural Otago, the film is an international co-production among New Zealand, the United Kingdom, Canada, and Australia.",
+    cast: [
+      "Benedict Cumberbatch",
+      "Kirsten Dunst",
+      "Jesse Plemons"
+    ],
+    runtime: "95 min",
+    language: "English",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzgyMzA2NDEtZWUxNy00MDNmLTllMDYtNzZmNTU5ZWVmMzhlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "503",
+    title: "Bruised",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Sports"
+    ],
+    rating: 4.7,
+    synopsis: "Bruised is a 2020 sports drama film starring and directed by Halle Berry in her directorial debut, who also served as the producer. It co-stars Shamier Anderson, Adan Canto, Sheila Atim, Stephen McKinley Henderson and Adriane Lenox. The screenplay was written by Michelle Rosenfarb.",
+    cast: [
+      "Halle Berry",
+      "Shamier Anderson",
+      "Adan Canto"
+    ],
+    runtime: "106 min",
+    language: "English",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzM1MjE0ZDYtNmI0Ni00MDgxLTgwN2UtYTVlYzEzMDNiMDc5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzM1MjE0ZDYtNmI0Ni00MDgxLTgwN2UtYTVlYzEzMDNiMDc5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "504",
+    title: "Extinct",
+    year: 2021,
+    genres: [
+      "Animated",
+      "Comedy",
+      "Science Fiction"
+    ],
+    rating: 3.6,
+    synopsis: "Extinct is a 2021 computer-animated science fiction comedy film directed by David Silverman, and co-directed by Raymond S. Persi, from a screenplay by Joel Cohen, John Frink, and Rob LaZebnik. It features the voices of Rachel Bloom, Adam Devine, Zazie Beetz, Ken Jeong, Catherine O'Hara, Benedict Wong, Reggie Watts, and Jim Jefferies in a story following two flummels, an extinct bunny-like species with giant holes in the center, that find themselves transported from their island home in the year 1835 to modern day Shanghai.",
+    cast: [
+      "Adam DeVine",
+      "Rachel Bloom",
+      "Zazie Beetz"
+    ],
+    runtime: "109 min",
+    language: "English",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzU0YjNkYzktNDY5MC00NTNlLWJlNDctYjdkYTk3ODkwZGQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzU0YjNkYzktNDY5MC00NTNlLWJlNDctYjdkYTk3ODkwZGQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "505",
+    title: "Ghostbusters: Afterlife",
+    year: 2021,
+    genres: [
+      "Comedy",
+      "Supernatural"
+    ],
+    rating: 3.6,
+    synopsis: "Ghostbusters: Afterlife is a 2021 American supernatural comedy film directed by Jason Reitman from a screenplay he co-wrote with Gil Kenan. It is the sequel to Ghostbusters (1984) and Ghostbusters II (1989), and the fourth film in the Ghostbusters franchise. The film stars Carrie Coon, Finn Wolfhard, Mckenna Grace, and Paul Rudd, alongside Bill Murray, Dan Aykroyd, Ernie Hudson, Annie Potts, and Sigourney Weaver reprising their characters from the earlier films. Set 32 years after the events of Ghostbusters II, it follows a single mother and her children who move to an Oklahoma farm they inherited from her estranged father Egon Spengler, a member of the original Ghostbusters.",
+    cast: [
+      "Carrie Coon",
+      "Finn Wolfhard",
+      "Mckenna Grace"
+    ],
+    runtime: "142 min",
+    language: "English",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDJmZmM2NmQtMzhlYi00MGNkLTlhMWUtYjM1MmFlMTA1YTliXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDJmZmM2NmQtMzhlYi00MGNkLTlhMWUtYjM1MmFlMTA1YTliXkEyXkFqcGc@._V1_.jpg"
+  }
+,
+    {
+    id: "506",
+    title: "Adbhut",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Adbhut, a stellar Bollywood production.",
+    cast: [
+      "Shreya Dhanwanthary",
+      "Rohan Mehra"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzdhNTdkYTItNmU1Ni00ZjM1LTg1N2MtZjRkY2I3NWFjOWJlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzdhNTdkYTItNmU1Ni00ZjM1LTg1N2MtZjRkY2I3NWFjOWJlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "507",
+    title: "Anuja",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Anuja, a stellar Bollywood production.",
+    cast: [
+      "Nagesh Bhonsle",
+      "Harsh"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDJlY2FhZDYtMjQ0Yy00OGFkLWFkODQtNmMyMTcwNGZkZjVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDJlY2FhZDYtMjQ0Yy00OGFkLWFkODQtNmMyMTcwNGZkZjVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "508",
+    title: "Aayushmati Geeta Matric Pass",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Aayushmati Geeta Matric Pass, a stellar Bollywood production.",
+    cast: [
+      "Kashika Kapoor",
+      "Anuj Saini"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmRlNTgxZWUtYzc5NC00MjdkLWFkYTItNDM4ZTFjMzIyZGVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmRlNTgxZWUtYzc5NC00MjdkLWFkYTItNDM4ZTFjMzIyZGVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "509",
+    title: "Aliya Basu Gayab Hai",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Aliya Basu Gayab Hai, a stellar Bollywood production.",
+    cast: [
+      "Arfaz Ayub",
+      "Salim Diwan"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGRlZmVlOGEtNjhhMi00YzhkLTk5NzYtOTAwZGMwZjVmNGY3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGRlZmVlOGEtNjhhMi00YzhkLTk5NzYtOTAwZGMwZjVmNGY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "510",
+    title: "Ae Watan Mere Watan",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Ae Watan Mere Watan, a stellar Bollywood production.",
+    cast: [
+      "Sara Ali Khan",
+      "Emraan Hashmi"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDZlMTNjZmItYzljOS00MWNmLTk2ZGMtOTNjN2E0NWI5NGI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDZlMTNjZmItYzljOS00MWNmLTk2ZGMtOTNjN2E0NWI5NGI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "511",
+    title: "Ameena",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Ameena, a stellar Bollywood production.",
+    cast: [
+      "Rekha Rana",
+      "Ananth Mahadevan"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmY3MzE3NGQtNWRjMC00YmNjLWFjZDQtOWE5M2Q5NDVlYmE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmY3MzE3NGQtNWRjMC00YmNjLWFjZDQtOWE5M2Q5NDVlYmE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "512",
+    title: "Amar Singh Chamkila",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Amar Singh Chamkila, a stellar Bollywood production.",
+    cast: [
+      "Diljit Dosanjh",
+      "Parineeti Chopra"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTc1NzAwMGItZWNiNS00ZWI4LWE0ZTEtMmI4OTcyODYzZWQ2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTc1NzAwMGItZWNiNS00ZWI4LWE0ZTEtMmI4OTcyODYzZWQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "513",
+    title: "Amar Prem Ki Prem Kahani",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Amar Prem Ki Prem Kahani, a stellar Bollywood production.",
+    cast: [
+      "Sunny Singh",
+      "Aditya Seal"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjYyMDJiM2YtMTAxMC00NjE2LTgyYjgtYWZlM2I5MTliYjU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjYyMDJiM2YtMTAxMC00NjE2LTgyYjgtYWZlM2I5MTliYjU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "514",
+    title: "Aakhir Palaayan Kab Tak",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Aakhir Palaayan Kab Tak, a stellar Bollywood production.",
+    cast: [
+      "Bhushan Pattiyal",
+      "Rajesh Sharma"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzdjMTlkMDYtNzA2Mi00MDYwLTg2ZjQtNDc2YmVjMjAxOTg3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzdjMTlkMDYtNzA2Mi00MDYwLTg2ZjQtNDc2YmVjMjAxOTg3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "515",
+    title: "Agni",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Agni, a stellar Bollywood production.",
+    cast: [
+      "Pratik Gandhi",
+      "Divyendu Sharma"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTExYzk0ZjUtZDQ4Zi00N2RlLWEyYWMtNTM1MjM1MmU4OTg4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTExYzk0ZjUtZDQ4Zi00N2RlLWEyYWMtNTM1MjM1MmU4OTg4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "516",
+    title: "Barah x Barah",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Barah x Barah, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "108 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450",
+    backdropUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450"
+  },
+  {
+    id: "517",
+    title: "Bad Newz",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Bad Newz, a stellar Bollywood production.",
+    cast: [
+      "Vicky Kaushal",
+      "Triptii Dimri"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2QxNGM0OTItMjE1MS00ZjRiLTg3ZTItMTg1NGMyNmRiMjc4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2QxNGM0OTItMjE1MS00ZjRiLTg3ZTItMTg1NGMyNmRiMjc4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "518",
+    title: "Baby John",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Baby John, a stellar Bollywood production.",
+    cast: [
+      "Varun Dhawan",
+      "Keerthy Suresh"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTM2NmVmOTYtNTBmMi00ZTliLWE2MDktZDM1ZWEwN2M5YmYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTM2NmVmOTYtNTBmMi00ZTliLWE2MDktZDM1ZWEwN2M5YmYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "519",
+    title: "Bastar: The Naxal Story",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Bastar: The Naxal Story, a stellar Bollywood production.",
+    cast: [
+      "Adah Sharma",
+      "Indira Tiwari"
+    ],
+    runtime: "136 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWU5NWQ3OTgtYWFhNS00NmU0LTk2ZDUtYmI0ZDI5NmI2ZDY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWU5NWQ3OTgtYWFhNS00NmU0LTk2ZDUtYmI0ZDI5NmI2ZDY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "520",
+    title: "Article 370",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Article 370, a stellar Bollywood production.",
+    cast: [
+      "Yami Gautam",
+      "Priyamani"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTQxMDgwYmItODQxNi00OWMxLWJlMDYtODk3NmRhN2FlMWFjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTQxMDgwYmItODQxNi00OWMxLWJlMDYtODk3NmRhN2FlMWFjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "521",
+    title: "Bajrang Aur Ali",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Bajrang Aur Ali, a stellar Bollywood production.",
+    cast: [
+      "Riddhi Gupta",
+      "Jaiveer"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDQ4YjE2YTktZGQ3Yy00ZGE4LTkyMTgtMzcyNmIwM2Y4NTlhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDQ4YjE2YTktZGQ3Yy00ZGE4LTkyMTgtMzcyNmIwM2Y4NTlhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "522",
+    title: "Auron Mein Kahan Dum Tha",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Auron Mein Kahan Dum Tha, a stellar Bollywood production.",
+    cast: [
+      "Ajay Devgn",
+      "Tabu"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjYxMjE0N2UtNGFkOC00NTliLWI1ODEtNWQ1ZmUyYjdmYmU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjYxMjE0N2UtNGFkOC00NTliLWI1ODEtNWQ1ZmUyYjdmYmU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "523",
+    title: "Bengal 1947",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Bengal 1947, a stellar Bollywood production.",
+    cast: [
+      "Ankur Armam",
+      "Devoleena Bhattacharjee"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGJiNGE2OTUtMjllZC00NWY3LWJkNzQtNzUzYTk3YjI0YzFjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGJiNGE2OTUtMjllZC00NWY3LWJkNzQtNzUzYTk3YjI0YzFjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "524",
+    title: "Bandaa Singh Chaudhary",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Bandaa Singh Chaudhary, a stellar Bollywood production.",
+    cast: [
+      "Arshad Warsi",
+      "Meher Vij"
+    ],
+    runtime: "109 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWFjMDU1ZTEtMzU5Ni00NzM0LTgzMjEtOTA1ZTY3N2E3YzZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWFjMDU1ZTEtMzU5Ni00NzM0LTgzMjEtOTA1ZTY3N2E3YzZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "525",
+    title: "Bade Miyan Chote Miyan",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Bade Miyan Chote Miyan, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Tiger Shroff"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDE4Yzc3YTctODE5My00Mjg3LWI0ZDktZjM4MmVkMTQ3ZmNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDE4Yzc3YTctODE5My00Mjg3LWI0ZDktZjM4MmVkMTQ3ZmNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "526",
+    title: "Bhakshak",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Bhakshak, a stellar Bollywood production.",
+    cast: [
+      "Bhumi Pednekar",
+      "Sanjay Mishra"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjJjODljMDMtZjFiMy00NTM4LThhMjctYWFjYzZkMmMzZTcyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjJjODljMDMtZjFiMy00NTM4LThhMjctYWFjYzZkMmMzZTcyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "527",
+    title: "Bhaiyya Ji",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Bhaiyya Ji, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bajpayee",
+      "Zoya Hussain"
+    ],
+    runtime: "136 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzBhMTc0MGEtZjUwMC00ZTVjLWE4OTAtMTM5OTBkNTk1ZTk2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzBhMTc0MGEtZjUwMC00ZTVjLWE4OTAtMTM5OTBkNTk1ZTk2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "528",
+    title: "Blackout",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Blackout, a stellar Bollywood production.",
+    cast: [
+      "Josh Duhamel",
+      "Abbie Cornish"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWM3OTk2NmYtOTNiNy00NWZjLTg1M2UtOWM5Y2RmMjc4NWVjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWM3OTk2NmYtOTNiNy00NWZjLTg1M2UtOWM5Y2RmMjc4NWVjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "529",
+    title: "Binny and Family",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Binny and Family, a stellar Bollywood production.",
+    cast: [
+      "Pankaj Kapur",
+      "Anjini Dhawan"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjliOTZhY2UtZjExNS00N2E4LThhNTgtMjk2MmNkY2E5Mjc1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjliOTZhY2UtZjExNS00N2E4LThhNTgtMjk2MmNkY2E5Mjc1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "530",
+    title: "Bloody Ishq",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Bloody Ishq, a stellar Bollywood production.",
+    cast: [
+      "Avika Gor",
+      "Vardhaan Puri"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTJiNTdlYTgtOGM5OC00OTYzLWFjMmQtZjQzMTNmNTVlNzQ1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTJiNTdlYTgtOGM5OC00OTYzLWFjMmQtZjQzMTNmNTVlNzQ1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "531",
+    title: "Chalti Rahe Zindagi",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Chalti Rahe Zindagi, a stellar Bollywood production.",
+    cast: [
+      "Seema Biswas",
+      "Manjari Fadnnis"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDlhMzZhOGItZjM3ZC00NjIwLWE0M2YtYzcyMmI4YTY5ODA5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDlhMzZhOGItZjM3ZC00NjIwLWE0M2YtYzcyMmI4YTY5ODA5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "532",
+    title: "Chandu Champion",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Chandu Champion, a stellar Bollywood production.",
+    cast: [
+      "Kartik Aaryan",
+      "Vijay Raaz"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDAxMmU3NGUtMGEyZC00ZGQ5LTk1ZjEtZGU2YmI0MjUzNWVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDAxMmU3NGUtMGEyZC00ZGQ5LTk1ZjEtZGU2YmI0MjUzNWVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "533",
+    title: "Chhota Bheem and the Curse of Damyaan",
+    year: 2012,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Chhota Bheem and the Curse of Damyaan, a stellar Bollywood production.",
+    cast: [
+      "Jigna Bhardwaj",
+      "Chutki"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYThkODA4OTYtMWQxYy00Mjg0LWI4OTMtYWQwZjZmMDVhMmZiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYThkODA4OTYtMWQxYy00Mjg0LWI4OTMtYWQwZjZmMDVhMmZiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "534",
+    title: "Bhool Bhulaiyaa 3",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Bhool Bhulaiyaa 3, a stellar Bollywood production.",
+    cast: [
+      "Kartik Aaryan",
+      "Triptii Dimri"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGFhMDQ4MzMtMTUxOC00NDE0LTkzZWMtMzhhMGNiMDlhNDNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGFhMDQ4MzMtMTUxOC00NDE0LTkzZWMtMzhhMGNiMDlhNDNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "535",
+    title: "Chashma",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Chashma, a stellar Bollywood production.",
+    cast: [
+      "Padam Bhola",
+      "Ayan Khan"
+    ],
+    runtime: "132 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGQwYWY5ODEtZGNmMS00NWI3LTk0ZGYtMWE1ZDcxN2E1NDYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGQwYWY5ODEtZGNmMS00NWI3LTk0ZGYtMWE1ZDcxN2E1NDYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "536",
+    title: "Dange",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Dange, a stellar Bollywood production.",
+    cast: [
+      "Harshvardhan Rane",
+      "Ehan Bhat"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjg0ZTRmNzktMzE2Zi00ZWMxLThlZDktZTlkMzdmMjMzZTMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjg0ZTRmNzktMzE2Zi00ZWMxLThlZDktZTlkMzdmMjMzZTMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "537",
+    title: "Crakk",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Crakk, a stellar Bollywood production.",
+    cast: [
+      "Vidyut Jammwal",
+      "Arjun Rampal"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODFmOTM1OTgtMzU5MC00ZjY5LTk0NTctMjNhMmRiMjViZjNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODFmOTM1OTgtMzU5MC00ZjY5LTk0NTctMjNhMmRiMjViZjNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "538",
+    title: "Chote Nawab",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Chote Nawab, a stellar Bollywood production.",
+    cast: [
+      "Tulika Banerjee",
+      "Plabita Borthakur"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTNkNzUyZjUtZGNkZC00ZmM4LWI0ZmUtZGM1OTQ2ZDA2ZDMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTNkNzUyZjUtZGNkZC00ZmM4LWI0ZmUtZGM1OTQ2ZDA2ZDMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "539",
+    title: "CTRL",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of CTRL, a stellar Bollywood production.",
+    cast: [
+      "Ananya Panday",
+      "Vihaan Samat"
+    ],
+    runtime: "109 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDc4ODRjZTMtMGUyMS00ODcwLWFhNzgtZDdkMTNiN2EwZDc3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDc4ODRjZTMtMGUyMS00ODcwLWFhNzgtZDdkMTNiN2EwZDc3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "540",
+    title: "Dhai Aakhar",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Dhai Aakhar, a stellar Bollywood production.",
+    cast: [
+      "Chandan Anand",
+      "Prasanna Bisht"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTgxZWVjYTYtNTVkYi00MmQwLTllMDQtMDJjMmRkNzI0M2U5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTgxZWVjYTYtNTVkYi00MmQwLTllMDQtMDJjMmRkNzI0M2U5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "541",
+    title: "Despatch",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Despatch, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bajpayee",
+      "Shahana Goswami"
+    ],
+    runtime: "132 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2M0MzAzOGUtZGZkOS00ZmI2LTkzYTEtNjMzMDc0ZDRlZTFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2M0MzAzOGUtZGZkOS00ZmI2LTkzYTEtNjMzMDc0ZDRlZTFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "542",
+    title: "Crew",
+    year: 2026,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Crew, a stellar Bollywood production.",
+    cast: [
+      "Dave Bautista",
+      "Jason Momoa"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDcyMmYxZmMtMjg5MC00NWMzLTgyNDEtOGI2MWEzMmFmNmVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDcyMmYxZmMtMjg5MC00NWMzLTgyNDEtOGI2MWEzMmFmNmVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "543",
+    title: "Dhaaak",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Dhaaak, a stellar Bollywood production.",
+    cast: [
+      "Mohd Saleem Mullanavar",
+      "Sheena Shahabadi"
+    ],
+    runtime: "139 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWZjZDcyNWEtMWJjOC00MTVlLWExMGQtMGVmM2I0OTQyMzkzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWZjZDcyNWEtMWJjOC00MTVlLWExMGQtMGVmM2I0OTQyMzkzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "544",
+    title: "Dashmi",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Dashmi, a stellar Bollywood production.",
+    cast: [
+      "Vardhaan Puri",
+      "Gaurav Sareen"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDdhZmZhMDEtNjFjZC00OTI4LTgxZDQtMmRhZTUzOTM4ODM4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDdhZmZhMDEtNjFjZC00OTI4LTgxZDQtMmRhZTUzOTM4ODM4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "545",
+    title: "Dedh Bigha Zameen",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Dedh Bigha Zameen, a stellar Bollywood production.",
+    cast: [
+      "Prasanna Bisht",
+      "Avinash Chandra"
+    ],
+    runtime: "136 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDUzNjIwOGEtOTgzZS00YjY0LWI2NGMtNzg3Njc4MGI5YzI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDUzNjIwOGEtOTgzZS00YjY0LWI2NGMtNzg3Njc4MGI5YzI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "546",
+    title: "Ella",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Ella, a stellar Bollywood production.",
+    cast: [
+      "Emma Mackey",
+      "Jamie Lee Curtis"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2Q2NGYyYTMtYWQyNC00NzJhLWFjODUtMzlkMmIxNDU4ODI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2Q2NGYyYTMtYWQyNC00NzJhLWFjODUtMzlkMmIxNDU4ODI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "547",
+    title: "Do Patti",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Do Patti, a stellar Bollywood production.",
+    cast: [
+      "Kajol",
+      "Kriti Sanon"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjRmMzA2MWYtZGEyMS00YjY4LWJiOTEtNjU1NWMyYTRjM2M3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjRmMzA2MWYtZGEyMS00YjY4LWJiOTEtNjU1NWMyYTRjM2M3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "548",
+    title: "Ghuspaithiya",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Ghuspaithiya, a stellar Bollywood production.",
+    cast: [
+      "Shiv Aryan",
+      "Govind Namdeo"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjYzNTE3ZDktYWM3NS00NWYyLWJmMTUtZmJkNmI5MGQ1ZmU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjYzNTE3ZDktYWM3NS00NWYyLWJmMTUtZmJkNmI5MGQ1ZmU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "549",
+    title: "Gabru Gang",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Gabru Gang, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Duhan",
+      "Srishty Rode"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjZjYWQ2ZGItYTQ0Ny00ZTU3LTg2NTUtZDJhNTZjNmUxOTAwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjZjYWQ2ZGItYTQ0Ny00ZTU3LTg2NTUtZDJhNTZjNmUxOTAwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "550",
+    title: "Ghudchadi",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Ghudchadi, a stellar Bollywood production.",
+    cast: [
+      "Sanjay Dutt",
+      "Raveena Tandon"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTJlZmQ5Y2YtNjZjOC00N2UyLTliY2YtNjEzZmUzZTBmNjdlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTJlZmQ5Y2YtNjZjOC00N2UyLTliY2YtNjEzZmUzZTBmNjdlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "551",
+    title: "Do Aur Do Pyaar",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Do Aur Do Pyaar, a stellar Bollywood production.",
+    cast: [
+      "Vidya Balan",
+      "Pratik Gandhi"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmQzYTdmY2YtNjcxYi00ZWZiLTk0NDUtMzFkYmQ4YTc5NzVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmQzYTdmY2YtNjcxYi00ZWZiLTk0NDUtMzFkYmQ4YTc5NzVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "552",
+    title: "Dukaan",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Dukaan, a stellar Bollywood production.",
+    cast: [
+      "Monika Panwar",
+      "Insane Ashraf"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmY2ZDE3NTktY2U3MS00YTcyLWIxYjctYzdhZWI4ZGY5MWY4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmY2ZDE3NTktY2U3MS00YTcyLWIxYjctYzdhZWI4ZGY5MWY4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "553",
+    title: "Ek Kori Prem Katha",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Ek Kori Prem Katha, a stellar Bollywood production.",
+    cast: [
+      "Akshay Oberoi",
+      "Raj Babbar"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmVkNWEyM2MtZjFmYy00ODdkLTk1NTItMTFmMTljMTdmYjFhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmVkNWEyM2MtZjFmYy00ODdkLTk1NTItMTFmMTljMTdmYjFhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "554",
+    title: "The Diary of West Bengal",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of The Diary of West Bengal, a stellar Bollywood production.",
+    cast: [
+      "Yajur Marwah",
+      "Ramendra Chakarwarti"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjg5MmQzOTctZjY4ZS00MmY4LWI1ZGItMDk1MGU1ZTE3OGJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjg5MmQzOTctZjY4ZS00MmY4LWI1ZGItMDk1MGU1ZTE3OGJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "555",
+    title: "Fighter",
+    year: 2026,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Fighter, a stellar Bollywood production.",
+    cast: [
+      "Mel Jarnson",
+      "Noah Centineo"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjhlN2EyNGUtY2U4YS00ZTQ3LTg0NTgtNGIxZmVhMDlmMjIyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjhlN2EyNGUtY2U4YS00ZTQ3LTg0NTgtNGIxZmVhMDlmMjIyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "556",
+    title: "House of Lies",
+    year: 2012,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of House of Lies, a stellar Bollywood production.",
+    cast: [
+      "Don Cheadle",
+      "Kristen Bell"
+    ],
+    runtime: "133 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTIzZmFlZjQtMDQ5My00MmVjLTlkYWMtZTE2OTBjOTIwM2Q1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTIzZmFlZjQtMDQ5My00MmVjLTlkYWMtZTE2OTBjOTIwM2Q1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "557",
+    title: "IRaH",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of IRaH, a stellar Bollywood production.",
+    cast: [
+      "Rohit Roy",
+      "Ameet Chana"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTMxNjAyZmItMjYwNS00YzYyLWIwY2ItZTk0Yjk1NGMxMmQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTMxNjAyZmItMjYwNS00YzYyLWIwY2ItZTk0Yjk1NGMxMmQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "558",
+    title: "Jahangir National University",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Jahangir National University, a stellar Bollywood production.",
+    cast: [
+      "Urvashi Rautela",
+      "Siddharth Bodke"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmIwMGQwYTctM2IyYi00ZTVlLTg4ZmMtNGVkMTcyZjAzYzk0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmIwMGQwYTctM2IyYi00ZTVlLTg4ZmMtNGVkMTcyZjAzYzk0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "559",
+    title: "Hari Ka Om",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Hari Ka Om, a stellar Bollywood production.",
+    cast: [
+      "Dubai Sharma",
+      "Suman Jha"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODkyZGVhZDMtZDJjZi00OTc1LWI0ZjYtMjUwYjYwZmEyMzg4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODkyZGVhZDMtZDJjZi00OTc1LWI0ZjYtMjUwYjYwZmEyMzg4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "560",
+    title: "Hocus Focus",
+    year: 1979,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Hocus Focus, a stellar Bollywood production.",
+    cast: [
+      "Willard C. Ambis",
+      "Jim Jinkins"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTE3ZTMxZmYtZThmYS00NGYzLWJjNDItMDJiNTYzZmYyMGJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTE3ZTMxZmYtZThmYS00NGYzLWJjNDItMDJiNTYzZmYyMGJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "561",
+    title: "Gin Ke Dus",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Gin Ke Dus, a stellar Bollywood production.",
+    cast: [
+      "Anika Arya",
+      "Sanjana Deshmukh"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzkwYTdmNDUtZWI0Ni00ODNlLWJhNmMtZWI3ZjA1MGVkNDU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzkwYTdmNDUtZWI0Ni00ODNlLWJhNmMtZWI3ZjA1MGVkNDU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "562",
+    title: "The Heist",
+    year: 2009,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of The Heist, a stellar Bollywood production.",
+    cast: [
+      "Christopher Walken",
+      "Joseph McKenna"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTgzZjg4NGUtOTZmZi00OGE0LWJiZjctZjNhZjYxYWUxOWM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTgzZjg4NGUtOTZmZi00OGE0LWJiZjctZjNhZjYxYWUxOWM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "563",
+    title: "Ishq Vishk Rebound",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Ishq Vishk Rebound, a stellar Bollywood production.",
+    cast: [
+      "Rohit Saraf",
+      "Pashmina Roshan"
+    ],
+    runtime: "132 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzg1YTA3MjMtNzIwYS00MWE2LWIwOTItNWVmZTgzODZlNzlmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzg1YTA3MjMtNzIwYS00MWE2LWIwOTItNWVmZTgzODZlNzlmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "564",
+    title: "Hamare Baarah",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Hamare Baarah, a stellar Bollywood production.",
+    cast: [
+      "Rahul Bagga",
+      "Aditi Bhatpahri"
+    ],
+    runtime: "92 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzYxNGE5ZWUtNjg2Yy00YWRlLTllMDMtNGVhNWJjMmFhMmQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzYxNGE5ZWUtNjg2Yy00YWRlLTllMDMtNGVhNWJjMmFhMmQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "565",
+    title: "I Want to Talk",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of I Want to Talk, a stellar Bollywood production.",
+    cast: [
+      "Pearle Dey",
+      "Ahilya Bamroo"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjYwOGExYjAtNjEwZC00MTRiLTkzY2UtZWNmMDc5ZWVjMmY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjYwOGExYjAtNjEwZC00MTRiLTkzY2UtZWNmMDc5ZWVjMmY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "566",
+    title: "Jigra",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Jigra, a stellar Bollywood production.",
+    cast: [
+      "Alia Bhatt",
+      "Vedang Raina"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmJhMTc5NDEtN2NkOC00Njc3LWJiMzgtZjhjZWNhZDhmZTE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmJhMTc5NDEtN2NkOC00Njc3LWJiMzgtZjhjZWNhZDhmZTE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "567",
+    title: "Kooki",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Kooki, a stellar Bollywood production.",
+    cast: [
+      "Ritisha Khaund",
+      "Rajesh Tailang"
+    ],
+    runtime: "140 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjAzODEwZDQtYTdlNy00NWI2LWJhYWQtMDAwNzE3MDk1ZGU0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjAzODEwZDQtYTdlNy00NWI2LWJhYWQtMDAwNzE3MDk1ZGU0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "568",
+    title: "Khel Khel Mein",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Khel Khel Mein, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Ammy Virk"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjIxYzA3ZjItYWM5YS00NjI5LWEzNTQtZWQ3M2Y0NDFkMzc5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjIxYzA3ZjItYWM5YS00NjI5LWEzNTQtZWQ3M2Y0NDFkMzc5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "569",
+    title: "Jugnuma: The Fable",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Jugnuma: The Fable, a stellar Bollywood production.",
+    cast: [
+      "Jeewan Adhikary",
+      "Rampal Kishore Agarwal"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzdkY2NiZGItYzBiZS00NGZmLWEzY2QtYmFmZTdlMmUwY2QwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzdkY2NiZGItYzBiZS00NGZmLWEzY2QtYmFmZTdlMmUwY2QwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "570",
+    title: "Khaao Piyo Aish Karo",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Khaao Piyo Aish Karo, a stellar Bollywood production.",
+    cast: [
+      "Aditi Aarya",
+      "Jasmin Bajwa"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2U1YTJkOGMtNDgwMS00OTA3LTk1ZGEtZmViMTgzY2QyMTk3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2U1YTJkOGMtNDgwMS00OTA3LTk1ZGEtZmViMTgzY2QyMTk3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "571",
+    title: "Jo Tera Hai Woh Mera Hai",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Jo Tera Hai Woh Mera Hai, a stellar Bollywood production.",
+    cast: [
+      "Paresh Rawal",
+      "Amit Sial"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGUwZGQxNmEtYzAwOS00ZTczLWExOWQtOTRiMTdiY2NhMGQ2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGUwZGQxNmEtYzAwOS00ZTczLWExOWQtOTRiMTdiY2NhMGQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "572",
+    title: "Kahan Shuru Kahan Khatam",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Kahan Shuru Kahan Khatam, a stellar Bollywood production.",
+    cast: [
+      "Dhvani Bhanushali",
+      "Ravi Chauhan"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmRlZTI2N2ItZjYyOS00NWRkLWE2ZGMtZDRhYTcwZWQwMGU0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmRlZTI2N2ItZjYyOS00NWRkLWE2ZGMtZDRhYTcwZWQwMGU0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "573",
+    title: "Kaagaz 2",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Kaagaz 2, a stellar Bollywood production.",
+    cast: [
+      "Anupam Kher",
+      "Darshan Kumaar"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzgyMDliMWItN2JiOS00NmJhLTkyNDMtOWRhYjU0NjIzMjAzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzgyMDliMWItN2JiOS00NmJhLTkyNDMtOWRhYjU0NjIzMjAzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "574",
+    title: "Khwaabon Ka Jhamela",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Khwaabon Ka Jhamela, a stellar Bollywood production.",
+    cast: [
+      "Prateik Patil Babbar",
+      "Sayani Gupta"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2U3Yzc1N2ItOTdlMi00NjFhLWExYTMtM2IxMzNmNDVjMDM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2U3Yzc1N2ItOTdlMi00NjFhLWExYTMtM2IxMzNmNDVjMDM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "575",
+    title: "Kartam Bhugtam",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Kartam Bhugtam, a stellar Bollywood production.",
+    cast: [
+      "Shreyas Talpade",
+      "Vijay Raaz"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjVhMzhhMDYtZTI3OC00OGM4LWJmYTMtZTI1YTU4NDlmZWE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjVhMzhhMDYtZTI3OC00OGM4LWJmYTMtZTI1YTU4NDlmZWE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "576",
+    title: "Maharaj",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Maharaj, a stellar Bollywood production.",
+    cast: [
+      "Junaid Khan",
+      "Jaideep Ahlawat"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWViZWQ5ODctMzdjYi00MmUyLTlmZmMtMzUxOTMwMDZjMmM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWViZWQ5ODctMzdjYi00MmUyLTlmZmMtMzUxOTMwMDZjMmM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "577",
+    title: "Main Atal Hoon",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Main Atal Hoon, a stellar Bollywood production.",
+    cast: [
+      "Pankaj Tripathi",
+      "Piyush Mishra"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTUwN2VkODUtN2EzNS00NTdhLTg5N2YtNDNkOGU3MjcwMmM4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTUwN2VkODUtN2EzNS00NTdhLTg5N2YtNDNkOGU3MjcwMmM4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "578",
+    title: "Kuch Khattaa Ho Jaay",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Kuch Khattaa Ho Jaay, a stellar Bollywood production.",
+    cast: [
+      "Guru Randhawa",
+      "Saiee Manjrekar"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2MzM2MyYmEtNTcwNy00OGI4LWJhOTEtNDlmN2IzNjcyYWVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2MzM2MyYmEtNTcwNy00OGI4LWJhOTEtNDlmN2IzNjcyYWVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "579",
+    title: "Maidaan",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Maidaan, a stellar Bollywood production.",
+    cast: [
+      "Ajay Devgn",
+      "Priyamani"
+    ],
+    runtime: "100 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmJhYjcxZDUtZTIyNS00MGUxLTllNzQtYWQyZTJjMzg2NzY2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmJhYjcxZDUtZTIyNS00MGUxLTllNzQtYWQyZTJjMzg2NzY2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "580",
+    title: "Love, Sitara",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Love, Sitara, a stellar Bollywood production.",
+    cast: [
+      "Sobhita Dhulipala",
+      "Sonali Kulkarni"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmQ5YjM4N2YtOGVmNC00NWY2LWI2MjAtNmYxMjkwZjFmYTk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmQ5YjM4N2YtOGVmNC00NWY2LWI2MjAtNmYxMjkwZjFmYTk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "581",
+    title: "Lantrani",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Lantrani, a stellar Bollywood production.",
+    cast: [
+      "Rajesh Awasthi",
+      "Boloram Das"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzMwN2I2NDEtZjMxNS00NTk3LWFjN2MtMTgwY2IyYzc2NTI5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzMwN2I2NDEtZjMxNS00NTk3LWFjN2MtMTgwY2IyYzc2NTI5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "582",
+    title: "Love Sex Aur Dhokha 2",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Love Sex Aur Dhokha 2, a stellar Bollywood production.",
+    cast: [
+      "Paritosh Tiwari",
+      "Swaroopa Ghosh"
+    ],
+    runtime: "101 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTg2MzIxMmMtOTdiMy00NTdhLTk5ZDEtOGZhM2I4MDExODBjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTg2MzIxMmMtOTdiMy00NTdhLTk5ZDEtOGZhM2I4MDExODBjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "583",
+    title: "Mahavatar Narsimha",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Mahavatar Narsimha, a stellar Bollywood production.",
+    cast: [
+      "Aditya Raj Sharma",
+      "Haripriya Matta"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzhkMjFhOTItMTczNi00YWM1LTlhZjItOTc4OTA0OWVhZTIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzhkMjFhOTItMTczNi00YWM1LTlhZjItOTc4OTA0OWVhZTIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "584",
+    title: "Madgaon Express",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Madgaon Express, a stellar Bollywood production.",
+    cast: [
+      "Divyendu Sharma",
+      "Pratik Gandhi"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzdmMmZkMDctNTEzNS00MmI2LWIxZjMtYWU0YzMxZTFlZjNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzdmMmZkMDctNTEzNS00MmI2LWIxZjMtYWU0YzMxZTFlZjNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "585",
+    title: "Luv Ki Arrange Marriage",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Luv Ki Arrange Marriage, a stellar Bollywood production.",
+    cast: [
+      "Sunny Singh",
+      "Avneet Kaur"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGYyOTNiYjEtMGE1OC00Y2IzLWFhNDctNjIzMzI2MmU4N2U2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGYyOTNiYjEtMGE1OC00Y2IzLWFhNDctNjIzMzI2MmU4N2U2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "586",
+    title: "Merry Christmas",
+    year: 1983,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Merry Christmas, a stellar Bollywood production.",
+    cast: [
+      "David Bowie",
+      "Tom Conti"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWU3NzRlZTktZWFjMC00OWYzLTkzZTItMjI5Mjg5YmJjNGEzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWU3NzRlZTktZWFjMC00OWYzLTkzZTItMjI5Mjg5YmJjNGEzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "587",
+    title: "Mirg",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Mirg, a stellar Bollywood production.",
+    cast: [
+      "Raj Babbar",
+      "Satish Kaushik"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzE2MjVkZDYtNmMzMi00OWIyLWIyMmMtN2U1NTE4MjkxODVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzE2MjVkZDYtNmMzMi00OWIyLWIyMmMtN2U1NTE4MjkxODVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "588",
+    title: "Munjya",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Munjya, a stellar Bollywood production.",
+    cast: [
+      "Sharvari",
+      "Abhay Verma"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTNjZDY2ODEtZTk2Yy00MjAyLWJlNWQtODM2NzdmYmE0ODJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTNjZDY2ODEtZTk2Yy00MjAyLWJlNWQtODM2NzdmYmE0ODJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "589",
+    title: "Main Ladega",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Main Ladega, a stellar Bollywood production.",
+    cast: [
+      "Akash Pratap Singh",
+      "Ashwath Bhatt"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGU3NDM5NDctM2YzNy00YjhjLWEwZDQtYTllOTU0ZTBiYzk4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGU3NDM5NDctM2YzNy00YjhjLWEwZDQtYTllOTU0ZTBiYzk4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "590",
+    title: "Malhar",
+    year: 1951,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Malhar, a stellar Bollywood production.",
+    cast: [
+      "Arjun Bakshi",
+      "Shammi"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWFlZWQwYjMtMmI3Yy00M2NkLTgxZjItNTg0OTVlNzg3NDZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWFlZWQwYjMtMmI3Yy00M2NkLTgxZjItNTg0OTVlNzg3NDZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "591",
+    title: "Mr. & Mrs. Mahi",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Mr. & Mrs. Mahi, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Janhvi Kapoor"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDk5OTcwZTEtMjllNC00OWI5LWI2ZGYtZGVmYzkwNWE2MWY1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDk5OTcwZTEtMjllNC00OWI5LWI2ZGYtZGVmYzkwNWE2MWY1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "592",
+    title: "Monkey Man",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Monkey Man, a stellar Bollywood production.",
+    cast: [
+      "Dev Patel",
+      "Sharlto Copley"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODM2ZmZjYmQtNTA3NC00MmYzLWEwOTItMDNjYzc3MzI1NWNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODM2ZmZjYmQtNTA3NC00MmYzLWEwOTItMDNjYzc3MzI1NWNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "593",
+    title: "Manihar",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Manihar, a stellar Bollywood production.",
+    cast: [
+      "Badrul Islam",
+      "Ramesh Goyal"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWQ1NmI0OTUtMzg4OC00Yzk5LTlmMmEtMjI0MDk5ODFhMjFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWQ1NmI0OTUtMzg4OC00Yzk5LTlmMmEtMjI0MDk5ODFhMjFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "594",
+    title: "Murder Mubarak",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Murder Mubarak, a stellar Bollywood production.",
+    cast: [
+      "Pankaj Tripathi",
+      "Sara Ali Khan"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmVmZGVmYmYtNTIwOC00NjY0LWE3MWItYTRmNTQxZjU2OTA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmVmZGVmYmYtNTIwOC00NjY0LWE3MWItYTRmNTQxZjU2OTA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "595",
+    title: "The Miranda Brothers",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of The Miranda Brothers, a stellar Bollywood production.",
+    cast: [
+      "Sahher Bambba",
+      "Nikhil Chinappa"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWU5MWQ5MzQtYjRkMS00ZTg5LWJjYzYtODJhYTgxZmRiNDk4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWU5MWQ5MzQtYjRkMS00ZTg5LWJjYzYtODJhYTgxZmRiNDk4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "596",
+    title: "Phir Aayi Hasseen Dillruba",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Phir Aayi Hasseen Dillruba, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Vikrant Massey"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmM5Zjc2ZmMtOWIwMy00OWY4LTkzZmQtODA5NTVlNDFlNGZlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmM5Zjc2ZmMtOWIwMy00OWY4LTkzZmQtODA5NTVlNDFlNGZlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "597",
+    title: "Naam",
+    year: 1958,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Naam, a stellar Bollywood production.",
+    cast: [
+      "Ashok Kumar",
+      "Madhubala"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjcxNGMwMTctMjhkNi00MWU5LWIwMjAtZjg1MDk0MmY2MDhlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjcxNGMwMTctMjhkNi00MWU5LWIwMjAtZjg1MDk0MmY2MDhlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "598",
+    title: "Pad Gaye Pange",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Pad Gaye Pange, a stellar Bollywood production.",
+    cast: [
+      "Samarpan Singh",
+      "Rajesh Sharma"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDFhZTY5OTItNTQ2Yi00YzMxLWE4MzgtNDhkYWU2ODMxMmRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDFhZTY5OTItNTQ2Yi00YzMxLWE4MzgtNDhkYWU2ODMxMmRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "599",
+    title: "Phooli",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Phooli, a stellar Bollywood production.",
+    cast: [
+      "Sanjay Agarwal",
+      "Ankita"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTIwZWE3NDQtZGJlZS00Y2Q0LThkOGItZTc1NWZiNDkyNjg5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTIwZWE3NDQtZGJlZS00Y2Q0LThkOGItZTc1NWZiNDkyNjg5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "600",
+    title: "Nasha Jurm Aur Gangsters",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Nasha Jurm Aur Gangsters, a stellar Bollywood production.",
+    cast: [
+      "Rocky Rupkumar Patra",
+      "Rajkumar Patra"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2I4MTA1ZTktMzM3Zi00NTkxLWJlZmMtZDg3ZDhmMzk5N2ViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2I4MTA1ZTktMzM3Zi00NTkxLWJlZmMtZDg3ZDhmMzk5N2ViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "601",
+    title: "Operation Valentine",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Operation Valentine, a stellar Bollywood production.",
+    cast: [
+      "Varun Tej",
+      "Manushi Chhillar"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWY3YTQxOGEtNTI2Ny00YmQ1LTk3NmQtNTU1ZGFkNDM4ZmJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWY3YTQxOGEtNTI2Ny00YmQ1LTk3NmQtNTU1ZGFkNDM4ZmJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "602",
+    title: "Patna Shuklla",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Patna Shuklla, a stellar Bollywood production.",
+    cast: [
+      "Raveena Tandon",
+      "Manav Vij"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmIxMGVmMzktODAwNC00MWUyLTgyZjctMGI5NGMyODczM2IxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmIxMGVmMzktODAwNC00MWUyLTgyZjctMGI5NGMyODczM2IxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "603",
+    title: "My Melbourne",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of My Melbourne, a stellar Bollywood production.",
+    cast: [
+      "Arka Das",
+      "Arushi Sharma"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGUwZGI1YTItNDE0Ni00NWE5LTlmNjItODc0ZmRkYjc2ODI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGUwZGI1YTItNDE0Ni00NWE5LTlmNjItODc0ZmRkYjc2ODI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "604",
+    title: "A Nice Indian Boy",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of A Nice Indian Boy, a stellar Bollywood production.",
+    cast: [
+      "Karan Soni",
+      "Jonathan Groff"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2UwMDlhZDktMTc4ZS00MWRhLWE5OTEtNGVkNDdiM2U3NzU4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2UwMDlhZDktMTc4ZS00MWRhLWE5OTEtNGVkNDdiM2U3NzU4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "605",
+    title: "Navras Katha Collage",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Navras Katha Collage, a stellar Bollywood production.",
+    cast: [
+      "Alka Amin",
+      "Ram Awana"
+    ],
+    runtime: "140 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmZlYmY0MmEtOWRkYy00ODY2LWFmNTgtYmNkZmVhYjY2OWE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmZlYmY0MmEtOWRkYy00ODY2LWFmNTgtYmNkZmVhYjY2OWE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "606",
+    title: "Ruslaan",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Ruslaan, a stellar Bollywood production.",
+    cast: [
+      "Aayush Sharma",
+      "Sushrii Mishraa"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjllMzZjOGYtOTNmNy00YzU4LThmNjItNThjN2RmNWIyODI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjllMzZjOGYtOTNmNy00YzU4LThmNjItNThjN2RmNWIyODI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "607",
+    title: "Pune Highway",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Pune Highway, a stellar Bollywood production.",
+    cast: [
+      "Amit Sadh",
+      "Jim Sarbh"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWMwYjVjOTUtZTVjYi00NWRkLWFiNzYtMDZlMWNiZmY4N2E1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWMwYjVjOTUtZTVjYi00NWRkLWFiNzYtMDZlMWNiZmY4N2E1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "608",
+    title: "Political War",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Political War, a stellar Bollywood production.",
+    cast: [
+      "Gaurav Amlani",
+      "Sujeet Asthana"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWI4NWQ4NzYtMjUzNS00ZjIzLTgzZjItYTA0OWJkMzhhMmU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWI4NWQ4NzYtMjUzNS00ZjIzLTgzZjItYTA0OWJkMzhhMmU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "609",
+    title: "The Sabarmati Report",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of The Sabarmati Report, a stellar Bollywood production.",
+    cast: [
+      "Vikrant Massey",
+      "Raashi Khanna"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzI1OTljM2EtMTM3NC00ODBiLTgxMDAtOTIyOWUyOWI1NjE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzI1OTljM2EtMTM3NC00ODBiLTgxMDAtOTIyOWUyOWI1NjE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "610",
+    title: "Rautu Ka Raaz",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Rautu Ka Raaz, a stellar Bollywood production.",
+    cast: [
+      "Nawazuddin Siddiqui",
+      "Rajesh Kumar"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjk5NzRjODktZmUzNy00NzdkLTgxYzUtZDlkMTgwZmExNzQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjk5NzRjODktZmUzNy00NzdkLTgxYzUtZDlkMTgwZmExNzQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "611",
+    title: "Pushtaini",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Pushtaini, a stellar Bollywood production.",
+    cast: [
+      "Vinod Rawat",
+      "Rajkummar Rao"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNThjNmRmNTQtOGQzMC00OWU5LTkxYjItMmUyNTQ0Yjg2N2Q1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNThjNmRmNTQtOGQzMC00OWU5LTkxYjItMmUyNTQ0Yjg2N2Q1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "612",
+    title: "Saali Mohabbat",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Saali Mohabbat, a stellar Bollywood production.",
+    cast: [
+      "Radhika Apte",
+      "Divyendu Sharma"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjUzOTM3ZGYtNmJiYy00MmFmLWE3MDItOWFmM2UzODMwMDRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjUzOTM3ZGYtNmJiYy00MmFmLWE3MDItOWFmM2UzODMwMDRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "613",
+    title: "The Sadist",
+    year: 1963,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of The Sadist, a stellar Bollywood production.",
+    cast: [
+      "Arch Hall Jr.",
+      "Helen Hovey"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjliODEzNDctMTBhZi00YWM2LWFkMzAtYjlkNzhiZjdlZjU5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjliODEzNDctMTBhZi00YWM2LWFkMzAtYjlkNzhiZjdlZjU5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "614",
+    title: "Pooja, Sir",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Pooja, Sir, a stellar Bollywood production.",
+    cast: [
+      "Asha Magrati",
+      "Nikita Chandak"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjA2ODA4YTgtYTJkYS00ZWU1LWIxNmEtZmVkMjZiYzQ0MzhjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjA2ODA4YTgtYTJkYS00ZWU1LWIxNmEtZmVkMjZiYzQ0MzhjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "615",
+    title: "Pyre",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Pyre, a stellar Bollywood production.",
+    cast: [
+      "Padam Singh",
+      "Hira Devi"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjE2ZDc2YWEtZTUyZS00MzY1LThlNWUtMmYxNWI2MmI4YjMzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjE2ZDc2YWEtZTUyZS00MzY1LThlNWUtMmYxNWI2MmI4YjMzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "616",
+    title: "Savi",
+    year: 1998,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Savi, a stellar Bollywood production.",
+    cast: [
+      "Tom Hanks",
+      "Matt Damon"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "617",
+    title: "Sector 36",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Sector 36, a stellar Bollywood production.",
+    cast: [
+      "Vikrant Massey",
+      "Deepak Dobriyal"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGE0YWU1MmEtN2FhMS00NzBlLWE3MTgtMWZkYjdmNDg5ZTFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGE0YWU1MmEtN2FhMS00NzBlLWE3MTgtMWZkYjdmNDg5ZTFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "618",
+    title: "Sir Syed Ahmad Khan: The Messiah",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Sir Syed Ahmad Khan: The Messiah, a stellar Bollywood production.",
+    cast: [
+      "Javed Abedi",
+      "Syed Sahil Agha"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmVhZmIyMWItM2VkNi00YWYzLWIwZTYtODVmYjgyNmQ2ZDk1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmVhZmIyMWItM2VkNi00YWYzLWIwZTYtODVmYjgyNmQ2ZDk1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "619",
+    title: "Silence 2: The Night Owl Bar Shootout",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Silence 2: The Night Owl Bar Shootout, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bajpayee",
+      "Prachi Desai"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjUyMGRkODktZjc2OC00ZDkyLWEzYTItYmJiOTE1Njc3YjY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjUyMGRkODktZjc2OC00ZDkyLWEzYTItYmJiOTE1Njc3YjY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "620",
+    title: "Sarfira",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Sarfira, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Paresh Rawal"
+    ],
+    runtime: "101 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTI2OWU2NDAtODhjNS00NTlmLThjNDgtOWI2ODc3YTRlOTUxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTI2OWU2NDAtODhjNS00NTlmLThjNDgtOWI2ODc3YTRlOTUxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "621",
+    title: "Sharmajee Ki Beti",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Sharmajee Ki Beti, a stellar Bollywood production.",
+    cast: [
+      "Sakshi Tanwar",
+      "Divya Dutta"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWNhNTI5YmMtYWVlMS00N2NkLWE1NWYtMTU2NjA2ZGM3NjQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWNhNTI5YmMtYWVlMS00N2NkLWE1NWYtMTU2NjA2ZGM3NjQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "622",
+    title: "Sikandar Ka Muqaddar",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Sikandar Ka Muqaddar, a stellar Bollywood production.",
+    cast: [
+      "Jimmy Shergill",
+      "Avinash Tiwary"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzZhNWEzNTktMDA1YS00ZmYyLTkwNjgtYTJiMmU2YjZiYjBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzZhNWEzNTktMDA1YS00ZmYyLTkwNjgtYTJiMmU2YjZiYjBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "623",
+    title: "Shaitaan",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Shaitaan, a stellar Bollywood production.",
+    cast: [
+      "Ajay Devgn",
+      "Madhavan"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGI3YTcwNTgtMmY5Ny00M2Y0LWFjOWUtYjhkMzNjMjhmYjVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGI3YTcwNTgtMmY5Ny00M2Y0LWFjOWUtYjhkMzNjMjhmYjVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "624",
+    title: "The Shameless",
+    year: 2011,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of The Shameless, a stellar Bollywood production.",
+    cast: [
+      "Emmy Rossum",
+      "William H. Macy"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWUwZjJmYjctYTY3MC00ZTVlLWI1ZGEtNWQzMTFlMTcwMTY2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWUwZjJmYjctYTY3MC00ZTVlLWI1ZGEtNWQzMTFlMTcwMTY2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "625",
+    title: "Santosh",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Santosh, a stellar Bollywood production.",
+    cast: [
+      "Shahana Goswami",
+      "Sunita Rajwar"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGEyY2ZmODQtMmFkZC00NzIwLWEwYzYtMjBmNDI4MDA0NTViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGEyY2ZmODQtMmFkZC00NzIwLWEwYzYtMjBmNDI4MDA0NTViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "626",
+    title: "Tera Kya Hoga Lovely",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Tera Kya Hoga Lovely, a stellar Bollywood production.",
+    cast: [
+      "Randeep Hooda",
+      "Ileana D'Cruz"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjZiNWY2NTEtZTlhMi00YzAyLWJhZjEtMmIwYmIxZWMyNzQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjZiNWY2NTEtZTlhMi00YzAyLWJhZjEtMmIwYmIxZWMyNzQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "627",
+    title: "Teri Baaton Mein Aisa Uljha Jiya",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Teri Baaton Mein Aisa Uljha Jiya, a stellar Bollywood production.",
+    cast: [
+      "Shahid Kapoor",
+      "Kriti Sanon"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOThmN2E5MjctMjZjNC00M2U1LTkxZTMtMzQ3MjM0ODIzNjAxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOThmN2E5MjctMjZjNC00M2U1LTkxZTMtMzQ3MjM0ODIzNjAxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "628",
+    title: "Tipppsy",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Tipppsy, a stellar Bollywood production.",
+    cast: [
+      "Kainaat Arora",
+      "Sonia Birje"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWEyZWNhZDYtYmJhYy00NDg1LThjNTEtNzUzZGQ1ZTJmOTU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWEyZWNhZDYtYmJhYy00NDg1LThjNTEtNzUzZGQ1ZTJmOTU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "629",
+    title: "Tikdam",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Tikdam, a stellar Bollywood production.",
+    cast: [
+      "Amit Sial",
+      "Sonam Arora"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzkyYTkzYmMtZjVmOS00MzU1LTgwZjYtMDAxNTkzODgxODM1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzkyYTkzYmMtZjVmOS00MzU1LTgwZjYtMDAxNTkzODgxODM1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "630",
+    title: "Tauba Tera Jalwa",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Tauba Tera Jalwa, a stellar Bollywood production.",
+    cast: [
+      "Ehsan Khan",
+      "Jahangir Khan"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTVmYTQyMzItMzUwMC00Mjg1LTk5MjEtYjJhYWEzNTNhNDJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTVmYTQyMzItMzUwMC00Mjg1LTk5MjEtYjJhYWEzNTNhNDJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "631",
+    title: "Srikanth",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Srikanth, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Jyotika"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjUzODg4YWEtMmVmMC00MTI0LWE0Y2EtOTQ3Y2NhM2Y1MzAxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjUzODg4YWEtMmVmMC00MTI0LWE0Y2EtOTQ3Y2NhM2Y1MzAxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "632",
+    title: "Stree 2",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Stree 2, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Shraddha Kapoor"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTA1NmUxYzItZmVmNy00YmQxLTk4Y2UtZjVkMWUwMWQ5N2IxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "633",
+    title: "Soch: A Perception",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Soch: A Perception, a stellar Bollywood production.",
+    cast: [
+      "Anjali Patil",
+      "Mukti Ravi Das"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWE3Y2RlYTItZTI4Ny00NDAyLWI1MWQtNjRlMGJlYzMwZTZkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWE3Y2RlYTItZTI4Ny00NDAyLWI1MWQtNjRlMGJlYzMwZTZkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "634",
+    title: "Swatantrya Veer Savarkar",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Swatantrya Veer Savarkar, a stellar Bollywood production.",
+    cast: [
+      "Randeep Hooda",
+      "Ankita Lokhande"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjI4N2E5YTYtMDhlZC00OGU5LThhMjYtYjY1OTI4OGQ1ZTNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjI4N2E5YTYtMDhlZC00OGU5LThhMjYtYjY1OTI4OGQ1ZTNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "635",
+    title: "Superboys of Malegaon",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Superboys of Malegaon, a stellar Bollywood production.",
+    cast: [
+      "Adarsh Gourav",
+      "Shashank Arora"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTllODgyODEtMTk4Zi00YzRlLWEzNDUtMjAwYmZiMDk2MTkxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTllODgyODEtMTk4Zi00YzRlLWEzNDUtMjAwYmZiMDk2MTkxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "636",
+    title: "VC 571",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of VC 571, a stellar Bollywood production.",
+    cast: [
+      "Dharamendra Chauhan",
+      "Avinash Dhyani"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODQxZjM2ZWQtYjM4Ni00YTRkLWEyZTItODA3NWM3MmNlZWFhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODQxZjM2ZWQtYjM4Ni00YTRkLWEyZTItODA3NWM3MmNlZWFhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "637",
+    title: "Ulajh",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Ulajh, a stellar Bollywood production.",
+    cast: [
+      "Janhvi Kapoor",
+      "Gulshan Devaiah"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDEwZjRlYzMtNDc2Ny00Y2Q4LTk1NmQtYmU3NzZhMzNiZWI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDEwZjRlYzMtNDc2Ny00Y2Q4LTk1NmQtYmU3NzZhMzNiZWI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "638",
+    title: "Vedaa",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Vedaa, a stellar Bollywood production.",
+    cast: [
+      "John Abraham",
+      "Sharvari"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTI0MmJkZTUtN2I4Yi00NjZkLWJhYjgtM2UxMWRjNzdjMGE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTI0MmJkZTUtN2I4Yi00NjZkLWJhYjgtM2UxMWRjNzdjMGE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "639",
+    title: "Vicky Vidya Ka Woh Wala Video",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Vicky Vidya Ka Woh Wala Video, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Triptii Dimri"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDViYjk4ZmYtNjhhYS00OGQ0LWFlNTktZTYwMzcyZDUwODcwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDViYjk4ZmYtNjhhYS00OGQ0LWFlNTktZTYwMzcyZDUwODcwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "640",
+    title: "Vanvaas",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Vanvaas, a stellar Bollywood production.",
+    cast: [
+      "Nana Patekar",
+      "Khushbu Sundar"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWQ2MDFmODAtNjAyNC00NWM4LTlhZTQtMWY5OWQwMjg5M2E4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWQ2MDFmODAtNjAyNC00NWM4LTlhZTQtMWY5OWQwMjg5M2E4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "641",
+    title: "Visfot",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Visfot, a stellar Bollywood production.",
+    cast: [
+      "Riteish Deshmukh",
+      "Fardeen Khan"
+    ],
+    runtime: "132 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjEwZjZhYjQtOTE0MS00YzNlLThhZDUtNjdhOGFhMTlhZjE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjEwZjZhYjQtOTE0MS00YzNlLThhZDUtNjdhOGFhMTlhZjE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "642",
+    title: "A Wedding Story",
+    year: 2001,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of A Wedding Story, a stellar Bollywood production.",
+    cast: [
+      "Karyn Bryant",
+      "Elvin Charleston"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzU0NGZlOWEtMjk1MC00YTBhLTliNGYtMDk0OGFjNTg0MDM4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzU0NGZlOWEtMjk1MC00YTBhLTliNGYtMDk0OGFjNTg0MDM4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "643",
+    title: "Woh Bhi Din The",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Woh Bhi Din The, a stellar Bollywood production.",
+    cast: [
+      "John Abraham",
+      "Imtiaz Ali"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODRlNGQ3ZjMtNGFkMC00YzI0LWI1NmQtZjU4MGY0NGY4ZmExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODRlNGQ3ZjMtNGFkMC00YzI0LWI1NmQtZjU4MGY0NGY4ZmExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "644",
+    title: "Vijay 69",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Vijay 69, a stellar Bollywood production.",
+    cast: [
+      "Anupam Kher",
+      "Chunky Pandey"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2YwMmE3NGYtMzYzYS00ZGY5LTk1Y2ItNDhhYzI5MjY0NmYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2YwMmE3NGYtMzYzYS00ZGY5LTk1Y2ItNDhhYzI5MjY0NmYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "645",
+    title: "Wild Wild Punjab",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Wild Wild Punjab, a stellar Bollywood production.",
+    cast: [
+      "Varun Sharma",
+      "Sunny Singh"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjA3Y2E0ZTEtNjBjMi00ZmMwLTkxZmItZmRiODk4YmMzNWMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjA3Y2E0ZTEtNjBjMi00ZmMwLTkxZmItZmRiODk4YmMzNWMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "646",
+    title: "Aankh Micholi",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Aankh Micholi, a stellar Bollywood production.",
+    cast: [
+      "Paresh Rawal",
+      "Abhimanyu Dasani"
+    ],
+    runtime: "144 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzM1MDIwZDktNzE1Zi00OWU3LTlmMzMtNjk3M2FjM2M1YTk1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzM1MDIwZDktNzE1Zi00OWU3LTlmMzMtNjk3M2FjM2M1YTk1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "647",
+    title: "Yes Papa",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Yes Papa, a stellar Bollywood production.",
+    cast: [
+      "Tejaswini Kolhapure",
+      "Ananth Mahadevan"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODdhYTBkZjUtZmNlZi00ZDcyLWI1YmItYWFlZWRhZmQ3MTM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODdhYTBkZjUtZmNlZi00ZDcyLWI1YmItYWFlZWRhZmQ3MTM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "648",
+    title: "Yudhra",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Yudhra, a stellar Bollywood production.",
+    cast: [
+      "Siddhant Chaturvedi",
+      "Sarthak Khurana"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWM0YTZhMTAtMjc0MS00MzhmLTljZWQtZDFkYzFkMGZjZmVhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWM0YTZhMTAtMjc0MS00MzhmLTljZWQtZDFkYzFkMGZjZmVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "649",
+    title: "8 A.M. Metro",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of 8 A.M. Metro, a stellar Bollywood production.",
+    cast: [
+      "Saiyami Kher",
+      "Gulshan Devaiah"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjk1ODM1ZWQtNjcwYy00Mzc1LTg3YTktYWU0YWQwOGJlMzg4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjk1ODM1ZWQtNjcwYy00Mzc1LTg3YTktYWU0YWQwOGJlMzg4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "650",
+    title: "Afwaah",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Afwaah, a stellar Bollywood production.",
+    cast: [
+      "Nawazuddin Siddiqui",
+      "Bhumi Pednekar"
+    ],
+    runtime: "92 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGM1ZmI5NTctNWRhNi00ZjEyLTgzNjgtOGY5ZjBkMWFjZjE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGM1ZmI5NTctNWRhNi00ZjEyLTgzNjgtOGY5ZjBkMWFjZjE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "651",
+    title: "12th Fail",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of 12th Fail, a stellar Bollywood production.",
+    cast: [
+      "Vikrant Massey",
+      "Medha Shankr"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTE3OTIxZDYtNjA0NC00N2YxLTg1NGQtOTYxNmZkMDkwOWNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTE3OTIxZDYtNjA0NC00N2YxLTg1NGQtOTYxNmZkMDkwOWNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "652",
+    title: "1920: Horrors of the Heart",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of 1920: Horrors of the Heart, a stellar Bollywood production.",
+    cast: [
+      "Avika Gor",
+      "Ketaki Kulkarni"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDVmYjc4M2YtYjUwYi00NmIyLTk0NWUtNDMxMzlmMzdlYmVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDVmYjc4M2YtYjUwYi00NmIyLTk0NWUtNDMxMzlmMzdlYmVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "653",
+    title: "Ab Dilli Dur Nahin",
+    year: 1957,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Ab Dilli Dur Nahin, a stellar Bollywood production.",
+    cast: [
+      "Master Romi",
+      "Sulochana Latkar"
+    ],
+    runtime: "101 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDFmMmJiMGItMDA1Ny00NzNhLWJiMzktYjlkN2FhNWNkODUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDFmMmJiMGItMDA1Ny00NzNhLWJiMzktYjlkN2FhNWNkODUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "654",
+    title: "Aape Pein Siyaape",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Aape Pein Siyaape, a stellar Bollywood production.",
+    cast: [
+      "Sharhaan Singh",
+      "Lakhwinder Lakha"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGIyOTZhMTYtNzJlMC00ZGM3LTg4YzctMmVlYWI1ZjYzYzhmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGIyOTZhMTYtNzJlMC00ZGM3LTg4YzctMmVlYWI1ZjYzYzhmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "655",
+    title: "Zero se Restart",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Zero se Restart, a stellar Bollywood production.",
+    cast: [
+      "Sanjay Bishnoi",
+      "Vidhu Vinod Chopra"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTZmMTc3ZTktZGQyOC00OTAyLTlhOGEtNzRiZTNiYmNhZWQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTZmMTc3ZTktZGQyOC00OTAyLTlhOGEtNzRiZTNiYmNhZWQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "656",
+    title: "Ajmer 92",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Ajmer 92, a stellar Bollywood production.",
+    cast: [
+      "Karan Verma",
+      "Sumit Singh"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTAzNDdkYjktNjBlYy00NzlhLTgwZDAtYWM3ZjYwMmYxOGZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTAzNDdkYjktNjBlYy00NzlhLTgwZDAtYWM3ZjYwMmYxOGZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "657",
+    title: "Agra",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Agra, a stellar Bollywood production.",
+    cast: [
+      "Mohit Agarwal",
+      "Vibha Chhibber"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWVhYWEzOWEtZTdiOC00N2RhLWI1YTQtZThlMzJlMzQ3YjQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWVhYWEzOWEtZTdiOC00N2RhLWI1YTQtZThlMzJlMzQ3YjQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "658",
+    title: "Am I Next",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Am I Next, a stellar Bollywood production.",
+    cast: [
+      "Anushka Sen",
+      "Neelu Dogra"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzAyMzc5NTQtYzA2YS00ZDhiLThmYjgtNGIxZDNiOTdmZTA4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzAyMzc5NTQtYzA2YS00ZDhiLThmYjgtNGIxZDNiOTdmZTA4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "659",
+    title: "Animal (2023 Indian film)",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Animal (2023 Indian film), a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "144 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450",
+    backdropUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450"
+  },
+  {
+    id: "660",
+    title: "The Archies",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of The Archies, a stellar Bollywood production.",
+    cast: [
+      "Agastya Nanda",
+      "Khushi Kapoor"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmM5NDIyNDUtM2U5NC00ZTM4LTg5ZGQtMmFkYTQwZTcwNTQ2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmM5NDIyNDUtM2U5NC00ZTM4LTg5ZGQtMmFkYTQwZTcwNTQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "661",
+    title: "Apurva",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Apurva, a stellar Bollywood production.",
+    cast: [
+      "Tara Sutaria",
+      "Rajpal Naurang Yadav"
+    ],
+    runtime: "144 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDUwMGUyOGUtNmYzYi00YTQwLTk3NTktZDk1ODg5NjU2MzZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDUwMGUyOGUtNmYzYi00YTQwLTk3NTktZDk1ODg5NjU2MzZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "662",
+    title: "Akelli",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Akelli, a stellar Bollywood production.",
+    cast: [
+      "Nushrratt Bharuccha",
+      "Amir Boutrous"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTkxMWVhYjEtZDZmMy00NWU5LTljMzQtYTI3NTAyNWM0NDcyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTkxMWVhYjEtZDZmMy00NWU5LTljMzQtYTI3NTAyNWM0NDcyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "663",
+    title: "All India Rank",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of All India Rank, a stellar Bollywood production.",
+    cast: [
+      "Bodhisattva Sharma",
+      "Samta Sudiksha"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2Q1NWY4NjItYmI4Ny00OWM4LWJlOTktY2NkNTk0YTQ2YTczXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2Q1NWY4NjItYmI4Ny00OWM4LWJlOTktY2NkNTk0YTQ2YTczXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "664",
+    title: "Almost Pyaar with DJ Mohabbat",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Almost Pyaar with DJ Mohabbat, a stellar Bollywood production.",
+    cast: [
+      "Alaya F",
+      "Karan Mehta"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGFmYWQ2NTItNGFhNy00ZDJlLTlkY2ItNDA5NjMwZDU0NzBlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGFmYWQ2NTItNGFhNy00ZDJlLTlkY2ItNDA5NjMwZDU0NzBlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "665",
+    title: "Aseq",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Aseq, a stellar Bollywood production.",
+    cast: [
+      "Vardhaan Puri",
+      "Sonnalli Seygall"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjcxYWVmZDctNTNkNy00ODE0LTk1N2YtODE3ZDBlZDQyZjQ0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjcxYWVmZDctNTNkNy00ODE0LTk1N2YtODE3ZDBlZDQyZjQ0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "666",
+    title: "Bheed",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Bheed, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Pankaj Kapur"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmE1Y2VhZGUtMTk0OS00YzdiLThjZDQtYTlkZmJlYTljZDE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmE1Y2VhZGUtMTk0OS00YzdiLThjZDQtYTlkZmJlYTljZDE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "667",
+    title: "Bholaa",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Bholaa, a stellar Bollywood production.",
+    cast: [
+      "Tabu",
+      "Ajay Devgn"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzMzYzZiNWYtZDNlMy00YzIwLTk3YWYtYmMyZjc3NGQ5ZTk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzMzYzZiNWYtZDNlMy00YzIwLTk3YWYtYmMyZjc3NGQ5ZTk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "668",
+    title: "Bawaal",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Bawaal, a stellar Bollywood production.",
+    cast: [
+      "Varun Dhawan",
+      "Janhvi Kapoor"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDI5NTBkYjItNjYzZS00ZjE0LWE2MTktY2QyMWEwYjk3ZTNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDI5NTBkYjItNjYzZS00ZjE0LWE2MTktY2QyMWEwYjk3ZTNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "669",
+    title: "Bharateeyans",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Bharateeyans, a stellar Bollywood production.",
+    cast: [
+      "Shankar Naidu Adusumilli",
+      "Sonam Thendup Barphungpa"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjllNzYyZGMtMGI5Yi00Njg0LWE5ZTUtMDQzNTI2MDhhOTJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjllNzYyZGMtMGI5Yi00Njg0LWE5ZTUtMDQzNTI2MDhhOTJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "670",
+    title: "Bad Boy",
+    year: 1995,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Bad Boy, a stellar Bollywood production.",
+    cast: [
+      "Will Smith",
+      "Martin Lawrence"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWNjZWEwNDMtMWE1ZC00MTgwLTk2YzAtYmE0NTkwOWVhMDI0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWNjZWEwNDMtMWE1ZC00MTgwLTk2YzAtYmE0NTkwOWVhMDI0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "671",
+    title: "Berlin",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Berlin, a stellar Bollywood production.",
+    cast: [
+      "Pedro Alonso",
+      "Michelle Jenner"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjEwNjFmNjMtMGYzNy00MzBiLWJlYjAtMGJjNTEwZGFhMjNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "672",
+    title: "Blind",
+    year: 2009,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Blind, a stellar Bollywood production.",
+    cast: [
+      "Quinton Aaron",
+      "Sandra Bullock"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjEzOTE3ODM3OF5BMl5BanBnXkFtZTcwMzYyODI4Mg@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjEzOTE3ODM3OF5BMl5BanBnXkFtZTcwMzYyODI4Mg@@._V1_.jpg"
+  },
+  {
+    id: "673",
+    title: "Bhagwan Bharose",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Bhagwan Bharose, a stellar Bollywood production.",
+    cast: [
+      "Satendra Soni",
+      "Sparsh Suman"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTFiNjI1ZmYtYTFlNC00OWJkLTk1OWUtMjM2MTU2M2M4ZjI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTFiNjI1ZmYtYTFlNC00OWJkLTk1OWUtMjM2MTU2M2M4ZjI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "674",
+    title: "The Braid",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of The Braid, a stellar Bollywood production.",
+    cast: [
+      "Mia Maelzer",
+      "Sajda Pathan"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTJkZTQ1ZWEtMzQ1Ni00MmU2LTgzZTctYmI4MDc4YWJhMWViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTJkZTQ1ZWEtMzQ1Ni00MmU2LTgzZTctYmI4MDc4YWJhMWViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "675",
+    title: "The Buckingham Murders",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of The Buckingham Murders, a stellar Bollywood production.",
+    cast: [
+      "Kareena Kapoor",
+      "Ash Tandon"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTQwMWE3ZTEtMWRiYi00NDE3LTllMGEtZWNmYzhlOGI3YmNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTQwMWE3ZTEtMWRiYi00NDE3LTllMGEtZWNmYzhlOGI3YmNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "676",
+    title: "Chhatriwali",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Chhatriwali, a stellar Bollywood production.",
+    cast: [
+      "Rakul Preet Singh",
+      "Sumeet Vyas"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzJiNjljYTktNzcyNC00ZTQxLWE5OWQtZTU0YjczNTA4MDQ0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzJiNjljYTktNzcyNC00ZTQxLWE5OWQtZTU0YjczNTA4MDQ0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "677",
+    title: "Dhak Dhak",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Dhak Dhak, a stellar Bollywood production.",
+    cast: [
+      "Ratna Pathak Shah",
+      "Fatima Sana Shaikh"
+    ],
+    runtime: "132 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGRiODk4ZDYtMmFkYy00OWM0LTk0NGQtYzhmZjE5NDVjYTcxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGRiODk4ZDYtMmFkYy00OWM0LTk0NGQtYzhmZjE5NDVjYTcxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "678",
+    title: "Chor Nikal Ke Bhaga",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Chor Nikal Ke Bhaga, a stellar Bollywood production.",
+    cast: [
+      "Yami Gautam",
+      "Sunny Kaushal"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTgwMmVlZjgtMDhjMC00ZGU2LTgyNGEtOGM1ZDQ0Y2VmZjdlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTgwMmVlZjgtMDhjMC00ZGU2LTgyNGEtOGM1ZDQ0Y2VmZjdlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "679",
+    title: "Chidiakhana",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Chidiakhana, a stellar Bollywood production.",
+    cast: [
+      "Ritvik Sahore",
+      "Avneet Kaur"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmI0Zjc2NDktYzExYi00ZjI4LWI0OTEtNjUyMTI3NjgwYzViXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmI0Zjc2NDktYzExYi00ZjI4LWI0OTEtNjUyMTI3NjgwYzViXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "680",
+    title: "Coat",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Coat, a stellar Bollywood production.",
+    cast: [
+      "Essam Omar",
+      "Arefa Abdul Rasoul"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDc5MTk0ZTUtNDBjMy00NjA2LTgwNjctN2Q3ODk4MmQ2NWExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDc5MTk0ZTUtNDBjMy00NjA2LTgwNjctN2Q3ODk4MmQ2NWExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "681",
+    title: "Do Ajnabee",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Do Ajnabee, a stellar Bollywood production.",
+    cast: [
+      "Arya Babbar",
+      "Ankit Bathla"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDgwNWY2ODEtZjA0NS00NTI0LWE4YjItMjI3MzRkMDg2MGJkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDgwNWY2ODEtZjA0NS00NTI0LWE4YjItMjI3MzRkMDg2MGJkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "682",
+    title: "Chatrapathi",
+    year: 2005,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Chatrapathi, a stellar Bollywood production.",
+    cast: [
+      "Prabhas",
+      "Bhanupriya"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGFlYTI5NGMtYWQ0OS00NDRhLWEzMzItMGI0ODJiMjE5YzgxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGFlYTI5NGMtYWQ0OS00NDRhLWEzMzItMGI0ODJiMjE5YzgxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "683",
+    title: "Dilli Dark",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Dilli Dark, a stellar Bollywood production.",
+    cast: [
+      "Samuel Abiola Robinson",
+      "Geetika Vidya Ohlyan"
+    ],
+    runtime: "109 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzM4YjdlOGEtNGY2Yi00ZWUwLWE3NGYtMzJmNGVjNjM1YTRjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzM4YjdlOGEtNGY2Yi00ZWUwLWE3NGYtMzJmNGVjNjM1YTRjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "684",
+    title: "Dono",
+    year: 2003,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Dono, a stellar Bollywood production.",
+    cast: [
+      "Angelo Frammartino",
+      "Gabriella Maiolo"
+    ],
+    runtime: "114 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTQxMjM4ODEtZDM5NS00MGJiLWJlMDktMDgwMTdiYTU5NjE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTQxMjM4ODEtZDM5NS00MGJiLWJlMDktMDgwMTdiYTU5NjE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "685",
+    title: "Country of Blind",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Country of Blind, a stellar Bollywood production.",
+    cast: [
+      "Hina Khan",
+      "Shoib Nikash Shah"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWNlYTc5MWEtN2MzMy00NDEwLTkxNDAtOTUxMTkzYTNlMDc4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWNlYTc5MWEtN2MzMy00NDEwLTkxNDAtOTUxMTkzYTNlMDc4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "686",
+    title: "Everybody Loves Sohrab Handa",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Everybody Loves Sohrab Handa, a stellar Bollywood production.",
+    cast: [
+      "Vinay Pathak",
+      "Koel Purie"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDU1ZTQ3YjctMGZjMi00MjAzLWE1NTQtOWVhNDBjZjQ3YzIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDU1ZTQ3YjctMGZjMi00MjAzLWE1NTQtOWVhNDBjZjQ3YzIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "687",
+    title: "Dunki",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Dunki, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Ryan Cretney"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMThhZjM4M2UtYmE1NC00YTMzLTk3ZTAtNmQ1ZmI4YmRmZGE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMThhZjM4M2UtYmE1NC00YTMzLTk3ZTAtNmQ1ZmI4YmRmZGE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "688",
+    title: "Dvand: The Internal Conflict",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Dvand: The Internal Conflict, a stellar Bollywood production.",
+    cast: [
+      "Vishwanath Chatterjee",
+      "Dheerendra Dwivedi"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGZhNTU1YjUtMGIzMy00YjAyLWI2MDItMDRkMWJkYjZhNGI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGZhNTU1YjUtMGIzMy00YjAyLWI2MDItMDRkMWJkYjZhNGI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "689",
+    title: "Ek Tha Hero",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Ek Tha Hero, a stellar Bollywood production.",
+    cast: [
+      "Ayush Mahesh Khedekar",
+      "Amita Pathak"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGRhODEzMzUtNzljMy00M2MxLWI2MWItOWFiOTgzMDU4MzNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGRhODEzMzUtNzljMy00M2MxLWI2MWItOWFiOTgzMDU4MzNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "690",
+    title: "Elham",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Elham, a stellar Bollywood production.",
+    cast: [
+      "Taiyo Chan",
+      "Tot Chan"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzE3NGVkNGQtN2U3MC00YzE5LWI1YzAtOTk4YmMyODVkMTNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzE3NGVkNGQtN2U3MC00YzE5LWI1YzAtOTk4YmMyODVkMTNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "691",
+    title: "Dream Girl 2",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Dream Girl 2, a stellar Bollywood production.",
+    cast: [
+      "Ayushmann Khurrana",
+      "Ananya Panday"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTMzNzYzNzctNWIyNC00NDRhLWFkNGMtMzYxOTA2ZjgwYzFhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTMzNzYzNzctNWIyNC00NDRhLWFkNGMtMzYxOTA2ZjgwYzFhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "692",
+    title: "Fouja",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Fouja, a stellar Bollywood production.",
+    cast: [
+      "Pawan Malhotra",
+      "Neeva Malik"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2JkMTc2MzctNTA3YS00ZGI5LThlODktZmI4YTIwYmU3ZmVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2JkMTc2MzctNTA3YS00ZGI5LThlODktZmI4YTIwYmU3ZmVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "693",
+    title: "Farrey",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Farrey, a stellar Bollywood production.",
+    cast: [
+      "Alizeh",
+      "Sahil Mehta"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2Q1YzY2MDYtYmIyMy00M2JiLTg4YWYtNjk5Y2M2MGU5NzU3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2Q1YzY2MDYtYmIyMy00M2JiLTg4YWYtNjk5Y2M2MGU5NzU3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "694",
+    title: "Flowering Man",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Flowering Man, a stellar Bollywood production.",
+    cast: [
+      "Rajeev Gaursingh",
+      "Tanishka Meesala"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGMxZDk5NWUtMTA3OC00ZDc3LWE5ODgtZGFlMWNmODFiZmY3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGMxZDk5NWUtMTA3OC00ZDc3LWE5ODgtZGFlMWNmODFiZmY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "695",
+    title: "Dry Day",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Dry Day, a stellar Bollywood production.",
+    cast: [
+      "Jitendra Kumar",
+      "Shriya Pilgaonkar"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGQxZDM3OTQtNjU0OC00M2NmLTkwNTktNzQxYjgwY2VkMzFlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGQxZDM3OTQtNjU0OC00M2NmLTkwNTktNzQxYjgwY2VkMzFlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "696",
+    title: "Gulmohar",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Gulmohar, a stellar Bollywood production.",
+    cast: [
+      "Sharmila Tagore",
+      "Manoj Bajpayee"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzJjNjQ0YmYtYTdmMy00OGVjLWFlOTktNGM4ZTY1OWRkMGUwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzJjNjQ0YmYtYTdmMy00OGVjLWFlOTktNGM4ZTY1OWRkMGUwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "697",
+    title: "Gaslight",
+    year: 1944,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Gaslight, a stellar Bollywood production.",
+    cast: [
+      "Charles Boyer",
+      "Ingrid Bergman"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQxOTQwY2EtZjU0My00NDNlLWExMjUtMDg0ODc0YTYxNjVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQxOTQwY2EtZjU0My00NDNlLWExMjUtMDg0ODc0YTYxNjVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "698",
+    title: "Ghoomer",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Ghoomer, a stellar Bollywood production.",
+    cast: [
+      "Amitabh Bachchan",
+      "Shabana Azmi"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDViNDc1MjEtMGY1My00NTE2LTliMTMtYzVkNWE0MmUwMWE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDViNDc1MjEtMGY1My00NTE2LTliMTMtYzVkNWE0MmUwMWE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "699",
+    title: "Fursat",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Fursat, a stellar Bollywood production.",
+    cast: [
+      "Wamiqa Gabbi",
+      "Salman Yusuff Khan"
+    ],
+    runtime: "101 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmU5OWJjMjAtYTJmYS00MWIwLTg3ZWQtODQ2YjU0NWFmMTY2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmU5OWJjMjAtYTJmYS00MWIwLTg3ZWQtODQ2YjU0NWFmMTY2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "700",
+    title: "Gahvara",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Gahvara, a stellar Bollywood production.",
+    cast: [
+      "Himansh Kohli",
+      "Neeraj Sood"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzgzZDkxNTctNzdmYS00MjIxLTkzYjAtNGZmODk3YTRhMTkzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzgzZDkxNTctNzdmYS00MjIxLTkzYjAtNGZmODk3YTRhMTkzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "701",
+    title: "Fukrey 3",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Fukrey 3, a stellar Bollywood production.",
+    cast: [
+      "Pulkit Samrat",
+      "Varun Sharma"
+    ],
+    runtime: "133 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDk1OGVjMWEtN2UwNy00MDlhLWFhMWEtMTAzYTlkZGZkYTcwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDk1OGVjMWEtN2UwNy00MDlhLWFhMWEtMTAzYTlkZGZkYTcwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "702",
+    title: "Gandhi Godse – Ek Yudh",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Gandhi Godse – Ek Yudh, a stellar Bollywood production.",
+    cast: [
+      "Deepak Antani",
+      "Shiv Katariya"
+    ],
+    runtime: "144 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTgyOTU1NTMtNjNhNi00MTYyLTkyMGEtNWI3OGE1NDBmMTlmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTgyOTU1NTMtNjNhNi00MTYyLTkyMGEtNWI3OGE1NDBmMTlmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "703",
+    title: "Gadar 2",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Gadar 2, a stellar Bollywood production.",
+    cast: [
+      "Sunny Deol",
+      "Ameesha Patel"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODViY2ExYjYtNDhhMi00NTBmLTk2N2ItNzdhNTBkOTY3ODQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODViY2ExYjYtNDhhMi00NTBmLTk2N2ItNzdhNTBkOTY3ODQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "704",
+    title: "Friday Night Plan",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Friday Night Plan, a stellar Bollywood production.",
+    cast: [
+      "Babil Khan",
+      "Amrith Jayan"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjc3MGYzOWEtNmMxNC00MDAwLWFmNjUtNzk1MmY1ODIzMmE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjc3MGYzOWEtNmMxNC00MDAwLWFmNjUtNzk1MmY1ODIzMmE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "705",
+    title: "The Great Indian Family",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of The Great Indian Family, a stellar Bollywood production.",
+    cast: [
+      "Vicky Kaushal",
+      "Manushi Chhillar"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjY5Mzg4MTMtNjFkOS00NTA3LTk3NTQtNzdmNzlkOTJjZDZkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjY5Mzg4MTMtNjFkOS00NTA3LTk3NTQtNzdmNzlkOTJjZDZkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "706",
+    title: "Jawan",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Jawan, a stellar Bollywood production.",
+    cast: [
+      "Shah Rukh Khan",
+      "Nayanthara"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGExNGI1NDktOWI2Mi00NDM3LWIxMmQtNTQxYTgzMzI0MTA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGExNGI1NDktOWI2Mi00NDM3LWIxMmQtNTQxYTgzMzI0MTA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "707",
+    title: "IB71",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of IB71, a stellar Bollywood production.",
+    cast: [
+      "Vidyut Jammwal",
+      "Anupam Kher"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWMwNzlmZjQtMzFhZi00ZjUzLThmMmQtYzNkZGMxYTc4YWRhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWMwNzlmZjQtMzFhZi00ZjUzLThmMmQtYzNkZGMxYTc4YWRhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "708",
+    title: "InCar",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of InCar, a stellar Bollywood production.",
+    cast: [
+      "Sandeep Goyat",
+      "Manish Jhanjholia"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWQ0YjU2ZjUtZmQ5Ni00YjRmLTk1YmUtYWM0OTEyY2UwNGJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWQ0YjU2ZjUtZmQ5Ni00YjRmLTk1YmUtYWM0OTEyY2UwNGJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "709",
+    title: "Jaane Jaan",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Jaane Jaan, a stellar Bollywood production.",
+    cast: [
+      "Kareena Kapoor",
+      "Jaideep Ahlawat"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTAyOTQzYjEtNDA1NS00YTIxLWE5NWYtOTIwZjA0OTdlNjMxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTAyOTQzYjEtNDA1NS00YTIxLWE5NWYtOTIwZjA0OTdlNjMxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "710",
+    title: "Gumraah",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Gumraah, a stellar Bollywood production.",
+    cast: [
+      "Aditya Roy Kapoor",
+      "Mrunal Thakur"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTUyNmJjZDktYTdkMC00MmEyLWE2MzEtYjM5NzcwZTgzOGU3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTUyNmJjZDktYTdkMC00MmEyLWE2MzEtYjM5NzcwZTgzOGU3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "711",
+    title: "Ishq-e-Nadaan",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Ishq-e-Nadaan, a stellar Bollywood production.",
+    cast: [
+      "Lara Dutta",
+      "Mohit Raina"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDI2YjI0MmMtMTMxZi00Y2M2LWEzZDMtZGY2MDNlZjhjMjUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDI2YjI0MmMtMTMxZi00Y2M2LWEzZDMtZGY2MDNlZjhjMjUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "712",
+    title: "Hey Kameeni",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Hey Kameeni, a stellar Bollywood production.",
+    cast: [
+      "Drishika Chander",
+      "Avijit Dutt"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjhkNGE0OGEtNmQyMy00MDIzLWIzMTQtZGZiNTk4ZWY5ZGYwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjhkNGE0OGEtNmQyMy00MDIzLWIzMTQtZGZiNTk4ZWY5ZGYwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "713",
+    title: "Haddi",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Haddi, a stellar Bollywood production.",
+    cast: [
+      "Nawazuddin Siddiqui",
+      "Anurag Kashyap"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWQ2YjAyMWQtNTRkZS00MzAxLWI4ZTMtNzk1ZDVlMDczNjFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWQ2YjAyMWQtNTRkZS00MzAxLWI4ZTMtNzk1ZDVlMDczNjFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "714",
+    title: "Influencer Life",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Influencer Life, a stellar Bollywood production.",
+    cast: [
+      "Amyra Dastur",
+      "Satish Ray"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2YyMjUxY2EtYzQ4NC00NDE3LTlhMWItYzY5NTAzY2RmMWM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2YyMjUxY2EtYzQ4NC00NDE3LTlhMWItYzY5NTAzY2RmMWM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "715",
+    title: "I Love You",
+    year: 2009,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of I Love You, a stellar Bollywood production.",
+    cast: [
+      "Paul Rudd",
+      "Jason Segel"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTU4MjI5NTEyNV5BMl5BanBnXkFtZTcwNjQ1NTMzMg@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTU4MjI5NTEyNV5BMl5BanBnXkFtZTcwNjQ1NTMzMg@@._V1_.jpg"
+  },
+  {
+    id: "716",
+    title: "Khichdi 2: Mission Paanthukistan",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Khichdi 2: Mission Paanthukistan, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450",
+    backdropUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450"
+  },
+  {
+    id: "717",
+    title: "Jogira Sara Ra Ra",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Jogira Sara Ra Ra, a stellar Bollywood production.",
+    cast: [
+      "Nawazuddin Siddiqui",
+      "Neha Sharma"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzU4MTNiYmMtOWJhZC00NWQ1LTk0MmUtMGJkYjBiZWY4ZTQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzU4MTNiYmMtOWJhZC00NWQ1LTk0MmUtMGJkYjBiZWY4ZTQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "718",
+    title: "Kennedy",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Kennedy, a stellar Bollywood production.",
+    cast: [
+      "Rahul Bhat",
+      "Sunny Leone"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTFiMjZkZDctNTljNC00M2VkLThmMDUtZWIxZTViZDYzNjMzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTFiMjZkZDctNTljNC00M2VkLThmMDUtZWIxZTViZDYzNjMzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "719",
+    title: "Joram",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Joram, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bajpayee",
+      "Amrendra Sharma"
+    ],
+    runtime: "100 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmViYjkxZTItMDVlYy00ZDQxLThjOTUtNDhmY2MxMDE2YWZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmViYjkxZTItMDVlYy00ZDQxLThjOTUtNDhmY2MxMDE2YWZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "720",
+    title: "Khela Hobe",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Khela Hobe, a stellar Bollywood production.",
+    cast: [
+      "Aaryan",
+      "Rati Agnihotri"
+    ],
+    runtime: "109 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDY5NzM1ODMtYTdiZi00MmU3LTg1NTktYzQ0ZGViODgwMTZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDY5NzM1ODMtYTdiZi00MmU3LTg1NTktYzQ0ZGViODgwMTZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "721",
+    title: "Kathal",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Kathal, a stellar Bollywood production.",
+    cast: [
+      "Sanya Malhotra",
+      "Anant Joshi"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2M5NTllZDctNTlmYy00YTBhLTgzYWItZjQ2OWZkOThiOGE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2M5NTllZDctNTlmYy00YTBhLTgzYWItZjQ2OWZkOThiOGE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "722",
+    title: "Kadak Singh",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Kadak Singh, a stellar Bollywood production.",
+    cast: [
+      "Pankaj Tripathi",
+      "Sanjana Sanghi"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTA3YTFjN2QtNjU0NC00MTI1LWJiNmYtNjc2ZDRiMzJhMjc5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTA3YTFjN2QtNjU0NC00MTI1LWJiNmYtNjc2ZDRiMzJhMjc5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "723",
+    title: "Junglemahal: The Awakening",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Junglemahal: The Awakening, a stellar Bollywood production.",
+    cast: [
+      "Masoomeh Ab",
+      "Aditya Baliyan"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODZkYWZhMWYtY2U3My00NjRkLTg4Y2YtYWJkMjRmYzcwMGE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODZkYWZhMWYtY2U3My00NjRkLTg4Y2YtYWJkMjRmYzcwMGE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "724",
+    title: "The Kerala Story",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of The Kerala Story, a stellar Bollywood production.",
+    cast: [
+      "Adah Sharma",
+      "Yogita Bihani"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmRlZmY4OTQtOTlkZC00NzAyLWJmNmItNDM4ODdjZWJkOTMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmRlZmY4OTQtOTlkZC00NzAyLWJmNmItNDM4ODdjZWJkOTMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "725",
+    title: "Kanjoos Makhichoos",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Kanjoos Makhichoos, a stellar Bollywood production.",
+    cast: [
+      "Kunal Kemmu",
+      "Shweta Tripathi"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGZjMjYwZWEtNTE3OC00YmI2LTg1NmQtZWEzOWViZGY1ODg5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGZjMjYwZWEtNTE3OC00YmI2LTg1NmQtZWEzOWViZGY1ODg5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "726",
+    title: "Kill",
+    year: 2026,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Kill, a stellar Bollywood production.",
+    cast: [
+      "Zazie Beetz",
+      "Patricia Arquette"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjg5ZjQ0ZGQtMmY1NS00NTgyLTlkZWYtMDhlNzE3ZGY5ZDdmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjg5ZjQ0ZGQtMmY1NS00NTgyLTlkZWYtMDhlNzE3ZGY5ZDdmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "727",
+    title: "Lakadbaggha",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Lakadbaggha, a stellar Bollywood production.",
+    cast: [
+      "Anshuman Jha",
+      "Ridhi Dogra"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTA0MmRhYTMtMmY2ZS00ZmQyLTljMWItNTNjM2I1MTg3ZTZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTA0MmRhYTMtMmY2ZS00ZmQyLTljMWItNTNjM2I1MTg3ZTZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "728",
+    title: "Kho Gaye Hum Kahan",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Kho Gaye Hum Kahan, a stellar Bollywood production.",
+    cast: [
+      "Ananya Panday",
+      "Siddhant Chaturvedi"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODNkMTE3M2YtYjdkMi00ZDc3LWI3N2ItMDFkNTU5MjIyYzNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODNkMTE3M2YtYjdkMi00ZDc3LWI3N2ItMDFkNTU5MjIyYzNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "729",
+    title: "Lost",
+    year: 2004,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Lost, a stellar Bollywood production.",
+    cast: [
+      "Jorge Garcia",
+      "Josh Holloway"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmZhY2ViYzYtMTQ0NS00NDcyLWIxZTYtMGUyODE0NDA0NmNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmZhY2ViYzYtMTQ0NS00NDcyLWIxZTYtMGUyODE0NDA0NmNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "730",
+    title: "The Lady Killer",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of The Lady Killer, a stellar Bollywood production.",
+    cast: [
+      "Carolyn Paine"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmY2Zjk1YzYtOWZiNC00OWE0LWJkMTYtM2JiNDRiMzQ5YmEzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmY2Zjk1YzYtOWZiNC00OWE0LWJkMTYtM2JiNDRiMzQ5YmEzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "731",
+    title: "Lakeerein",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Lakeerein, a stellar Bollywood production.",
+    cast: [
+      "Ashutosh Rana",
+      "Bidita Bag"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWYxODkwZGYtYTBlNi00ODQ2LTk5ZWMtMjgwYzViNTNkNDNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWYxODkwZGYtYTBlNi00ODQ2LTk5ZWMtMjgwYzViNTNkNDNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "732",
+    title: "Khufiya",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Khufiya, a stellar Bollywood production.",
+    cast: [
+      "Tabu",
+      "Ali Fazal"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjdmMWZhNjItMjExZi00OGM3LWJiNzgtNjlkZmNlYjU1OGI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjdmMWZhNjItMjExZi00OGM3LWJiNzgtNjlkZmNlYjU1OGI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "733",
+    title: "Laapataa Ladies",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Laapataa Ladies, a stellar Bollywood production.",
+    cast: [
+      "Nitanshi Goel",
+      "Pratibha Ranta"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGI5NzVmNDktZWY2Ni00ZGMwLTlhMzctNzJhYTgzZmQ2ZjNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGI5NzVmNDktZWY2Ni00ZGMwLTlhMzctNzJhYTgzZmQ2ZjNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "734",
+    title: "The Legacy of Mahaveer",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of The Legacy of Mahaveer, a stellar Bollywood production.",
+    cast: [
+      "Manish Bishla",
+      "Raanveer Chahal"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzkzYzUxNTctMDdmNi00NGMzLWFjN2YtZTgxNWRmYzc5Yjg2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzkzYzUxNTctMDdmNi00NGMzLWFjN2YtZTgxNWRmYzc5Yjg2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "735",
+    title: "Lust Stories 2",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Lust Stories 2, a stellar Bollywood production.",
+    cast: [
+      "Tamannaah Bhatia",
+      "Vijay Varma"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDM3ZGI5MWUtMTViOS00OGVkLWIwNzUtNTQ5OTgxMThiMzI2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDM3ZGI5MWUtMTViOS00OGVkLWIwNzUtNTQ5OTgxMThiMzI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "736",
+    title: "Mumbai Mafia: Police vs Underworld",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Mumbai Mafia: Police vs Underworld, a stellar Bollywood production.",
+    cast: [
+      "Ravindra Angre",
+      "Puja Changoiwala"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWQzM2U1MWItYjYwYy00NWE0LWJiODQtYzc4OGRkNTljYjQzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWQzM2U1MWItYjYwYy00NWE0LWJiODQtYzc4OGRkNTljYjQzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "737",
+    title: "Mrs. Chatterjee vs Norway",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Mrs. Chatterjee vs Norway, a stellar Bollywood production.",
+    cast: [
+      "Rani Mukerji",
+      "Jim Sarbh"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmMwMDM5ZmEtNzkyZi00MjY3LWJiMzMtMWVjMWYxMzFiMzIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmMwMDM5ZmEtNzkyZi00MjY3LWJiMzMtMWVjMWYxMzFiMzIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "738",
+    title: "Mrs.",
+    year: 1993,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Mrs., a stellar Bollywood production.",
+    cast: [
+      "Robin Williams",
+      "Sally Field"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2E2MDc5ZGEtOTNlZS00Mjg4LThlNzUtMDY2Zjc4ZTViNWY0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2E2MDc5ZGEtOTNlZS00Mjg4LThlNzUtMDY2Zjc4ZTViNWY0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "739",
+    title: "Mast Mein Rehne Ka",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Mast Mein Rehne Ka, a stellar Bollywood production.",
+    cast: [
+      "Jackie Shroff",
+      "Neena Gupta"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2I0Y2JiNjQtN2I3Zi00OGJhLWE1NDEtYWNiMjEzOTMwY2NiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2I0Y2JiNjQtN2I3Zi00OGJhLWE1NDEtYWNiMjEzOTMwY2NiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "740",
+    title: "Mission Majnu",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Mission Majnu, a stellar Bollywood production.",
+    cast: [
+      "Sidharth Malhotra",
+      "Rashmika Mandanna"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjFjODc3NDktN2VmZS00YzQ5LWIwMDYtNDU5YWYxODY2ZGIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjFjODc3NDktN2VmZS00YzQ5LWIwMDYtNDU5YWYxODY2ZGIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "741",
+    title: "Mrs Undercover",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Mrs Undercover, a stellar Bollywood production.",
+    cast: [
+      "Radhika Apte",
+      "Sumeet Vyas"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjQ1NDM2YWUtM2RiNi00YmM4LWJhM2QtZTQ2ZTkyZjdmZDUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjQ1NDM2YWUtM2RiNi00YmM4LWJhM2QtZTQ2ZTkyZjdmZDUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "742",
+    title: "Minus 31: The Nagpur Files",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Minus 31: The Nagpur Files, a stellar Bollywood production.",
+    cast: [
+      "Raghubir Yadav",
+      "Rucha Inamdar"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDlmZTczNzItODk2NS00MzFkLWFmYWEtMmQ1OGRjM2E2NTUwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDlmZTczNzItODk2NS00MzFkLWFmYWEtMmQ1OGRjM2E2NTUwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "743",
+    title: "Mandali",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Mandali, a stellar Bollywood production.",
+    cast: [
+      "Brahmanandam",
+      "Vennela Kishore"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmI0MmU4ZTktMWM3OS00OGYzLTkzOTktZjJiOTc1NzU4YjI5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmI0MmU4ZTktMWM3OS00OGYzLTkzOTktZjJiOTc1NzU4YjI5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "744",
+    title: "Mujib: The Making of a Nation",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Mujib: The Making of a Nation, a stellar Bollywood production.",
+    cast: [
+      "Arifin Shuvoo",
+      "Nusraat Faria Mazhar"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTZhMzczYjktZjRlOC00ZGEyLWFlZjMtMzNlOTE1MGE0YmQ2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTZhMzczYjktZjRlOC00ZGEyLWFlZjMtMzNlOTE1MGE0YmQ2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "745",
+    title: "Mother Teresa & Me",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Mother Teresa & Me, a stellar Bollywood production.",
+    cast: [
+      "Liza Sadovy",
+      "Shobu Kapoor"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2JmNGE2MDAtNTgxMC00ZjMwLWI3YzktMjQzOWRkZTdiYTM3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2JmNGE2MDAtNTgxMC00ZjMwLWI3YzktMjQzOWRkZTdiYTM3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "746",
+    title: "Pathaan",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Pathaan, a stellar Bollywood production.",
+    cast: [
+      "Shah Rukh Khan",
+      "Deepika Padukone"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDdkNTY1MDQtY2I5MC00OTFlLTg5OWQtZWE2YzE5NWFiMDgzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDdkNTY1MDQtY2I5MC00OTFlLTg5OWQtZWE2YzE5NWFiMDgzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "747",
+    title: "Panch Kriti",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Panch Kriti, a stellar Bollywood production.",
+    cast: [
+      "Sarika Bahroliya",
+      "Umesh Bajpai"
+    ],
+    runtime: "114 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzAyZWE0NzktNDU2Yy00YTVhLWFjNTQtYWZhZGI5ZDQ3MzgyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzAyZWE0NzktNDU2Yy00YTVhLWFjNTQtYWZhZGI5ZDQ3MzgyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "748",
+    title: "Once Upon Two Times",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Once Upon Two Times, a stellar Bollywood production.",
+    cast: [
+      "Harsh Chaudhary",
+      "Anud Singh Dhaka"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGQ5NTM3ZWUtNDAyNS00OTkyLTkxMTAtOGJiYzk3NjUyMDFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGQ5NTM3ZWUtNDAyNS00OTkyLTkxMTAtOGJiYzk3NjUyMDFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "749",
+    title: "OMG 2",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of OMG 2, a stellar Bollywood production.",
+    cast: [
+      "Pankaj Tripathi",
+      "Akshay Kumar"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzRmMDYyZTgtZjhjMS00YzViLWEwMjktOTNiMjFjM2RmNmVhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzRmMDYyZTgtZjhjMS00YzViLWEwMjktOTNiMjFjM2RmNmVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "750",
+    title: "Neeyat",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Neeyat, a stellar Bollywood production.",
+    cast: [
+      "Vidya Balan",
+      "Ram Kapoor"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTNiZTIxZGUtMjZiNC00NzJjLTlhMDItMDA3YzUwMjUwMDBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTNiZTIxZGUtMjZiNC00NzJjLTlhMDItMDA3YzUwMjUwMDBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "751",
+    title: "Mumbaikar",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Mumbaikar, a stellar Bollywood production.",
+    cast: [
+      "Vikrant Massey",
+      "Vijay Sethupathi"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjY5NzM2NDEtMjM1Yi00MjBlLWE5YWYtODEyOWE3ZWFhOTUxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjY5NzM2NDEtMjM1Yi00MjBlLWE5YWYtODEyOWE3ZWFhOTUxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "752",
+    title: "Pill Hai Ke Manta Nahi",
+    year: 1991,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Pill Hai Ke Manta Nahi, a stellar Bollywood production.",
+    cast: [
+      "Aamir Khan",
+      "Pooja Bhatt"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTkxMTE0YWMtMGVjNi00MDFjLWExZjQtMDUxZmJjYTZhNTQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTkxMTE0YWMtMGVjNi00MDFjLWExZjQtMDUxZmJjYTZhNTQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "753",
+    title: "One Friday Night",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of One Friday Night, a stellar Bollywood production.",
+    cast: [
+      "Raveena Tandon",
+      "Milind Soman"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDEwNTM5ODUtYjZiNS00NDlkLWIyNTEtZDdjNzdlODUxYTY0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDEwNTM5ODUtYjZiNS00NDlkLWIyNTEtZDdjNzdlODUxYTY0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "754",
+    title: "Operation Fryday",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Operation Fryday, a stellar Bollywood production.",
+    cast: [
+      "Suniel Shetty",
+      "Randeep Hooda"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmViZmZmNzgtYzI4OC00MjgwLTk5YzktODc0Zjc3ZmI5MDFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmViZmZmNzgtYzI4OC00MjgwLTk5YzktODc0Zjc3ZmI5MDFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "755",
+    title: "Mystery of the Tattoo",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Mystery of the Tattoo, a stellar Bollywood production.",
+    cast: [
+      "Rohit Varma",
+      "Arjun Rampal"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGJiODBiNTYtNjhiYy00YjM2LWEzZDMtYjczYzFjNzlkMzE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGJiODBiNTYtNjhiYy00YjM2LWEzZDMtYjczYzFjNzlkMzE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "756",
+    title: "Rocky Aur Rani Kii Prem Kahaani",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Rocky Aur Rani Kii Prem Kahaani, a stellar Bollywood production.",
+    cast: [
+      "Ranveer Singh",
+      "Alia Bhatt"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTE2YTZlODgtMTRiNS00YjZkLTljN2YtNTM3ZTQ2MzcwZGNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTE2YTZlODgtMTRiNS00YjZkLTljN2YtNTM3ZTQ2MzcwZGNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "757",
+    title: "Pippa",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Pippa, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450",
+    backdropUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450"
+  },
+  {
+    id: "758",
+    title: "Sajini Shinde Ka Viral Video",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Sajini Shinde Ka Viral Video, a stellar Bollywood production.",
+    cast: [
+      "Nimrat Kaur",
+      "Radhika Madan"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTNhYjdiMTEtYmY2MC00NTViLTlkN2ItNDc0ZjM2OWU0MzgxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTNhYjdiMTEtYmY2MC00NTViLTlkN2ItNDc0ZjM2OWU0MzgxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "759",
+    title: "Sachin: The Ultimate Winner",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Sachin: The Ultimate Winner, a stellar Bollywood production.",
+    cast: [
+      "Ved Thappar",
+      "Dhruv Raj"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2VlYTk1YmMtM2Y2ZS00OTU3LTgyMmEtZTM0NzBmNTVhZjY3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2VlYTk1YmMtM2Y2ZS00OTU3LTgyMmEtZTM0NzBmNTVhZjY3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "760",
+    title: "Pyaari Tarawali The True Story",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Pyaari Tarawali The True Story, a stellar Bollywood production.",
+    cast: [
+      "Dollye Tomar",
+      "Rajneeshh Dubey"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzk0YWJiZWMtNjJhZi00YmVjLWEyMTktMDM2NzdjYjczZjUyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzk0YWJiZWMtNjJhZi00YmVjLWEyMTktMDM2NzdjYjczZjUyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "761",
+    title: "Sab Moh Maaya Hai",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Sab Moh Maaya Hai, a stellar Bollywood production.",
+    cast: [
+      "Rohit Chaudhary",
+      "Rupesh Chauhan"
+    ],
+    runtime: "139 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDFmOTA1ZjctNjg3My00MjQxLWFhYjEtMGUxZDVhMDNiMmQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDFmOTA1ZjctNjg3My00MjQxLWFhYjEtMGUxZDVhMDNiMmQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "762",
+    title: "Pyaar Hai Toh Hai",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Pyaar Hai Toh Hai, a stellar Bollywood production.",
+    cast: [
+      "Karan Hariharan",
+      "Paanie Kashyap"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjk3NTFlZDgtMDZmYi00MDg4LTkyMDQtMTYzOWEwOWQ2YzBjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjk3NTFlZDgtMDZmYi00MDg4LTkyMDQtMTYzOWEwOWQ2YzBjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "763",
+    title: "Romanticc Tukde",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Romanticc Tukde, a stellar Bollywood production.",
+    cast: [
+      "Nikunj Malik",
+      "Brijeshkumar Jha"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Q5MzhiOTUtOGMyNy00NjgzLTgwMzgtMmJhY2EyYTcwMDk4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Q5MzhiOTUtOGMyNy00NjgzLTgwMzgtMmJhY2EyYTcwMDk4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "764",
+    title: "Safed",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Safed, a stellar Bollywood production.",
+    cast: [
+      "Manish Agrahari",
+      "Barkha Bisht"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2VkZTY3ZDEtMTY5MS00OTlhLTgyZDEtMmRhOTA4Y2FkYjQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2VkZTY3ZDEtMTY5MS00OTlhLTgyZDEtMmRhOTA4Y2FkYjQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "765",
+    title: "Sam Bahadur",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Sam Bahadur, a stellar Bollywood production.",
+    cast: [
+      "Vicky Kaushal",
+      "Sanya Malhotra"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDVkMjZlMGEtMjZlOS00MzQ3LThhOTUtYjY4YTE2OTZiMjBjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDVkMjZlMGEtMjZlOS00MzQ3LThhOTUtYjY4YTE2OTZiMjBjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "766",
+    title: "Shubh Nikah",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Shubh Nikah, a stellar Bollywood production.",
+    cast: [
+      "Aksha Pardasany",
+      "Rohit Vikkram"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTNhMWEwZTItMjk0MS00OGVhLWIyMWYtYWE3NzY0MDRmYzZlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTNhMWEwZTItMjk0MS00OGVhLWIyMWYtYWE3NzY0MDRmYzZlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "767",
+    title: "Sergeant",
+    year: 1941,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Sergeant, a stellar Bollywood production.",
+    cast: [
+      "Gary Cooper",
+      "Walter Brennan"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzYxMTYzMTMtNjk0Yy00NjMyLWIyMjUtNjk4ZDUwMzFkNDZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzYxMTYzMTMtNjk0Yy00NjMyLWIyMjUtNjk4ZDUwMzFkNDZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "768",
+    title: "Shuddhi",
+    year: 2017,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Shuddhi, a stellar Bollywood production.",
+    cast: [
+      "Lauren Spartano",
+      "Nivedhitha"
+    ],
+    runtime: "139 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWRmYjYwYmYtZDg3Yy00ZGNmLWJlZmYtMmUyNWNiNzFkYzRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWRmYjYwYmYtZDg3Yy00ZGNmLWJlZmYtMmUyNWNiNzFkYzRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "769",
+    title: "Shehzada",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Shehzada, a stellar Bollywood production.",
+    cast: [
+      "Kartik Aaryan",
+      "Kriti Sanon"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWRiYTg2M2ItNDhkNS00ZDI3LWE2OGItM2VhZDE0ZjQ4ZWU0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWRiYTg2M2ItNDhkNS00ZDI3LWE2OGItM2VhZDE0ZjQ4ZWU0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "770",
+    title: "Satyaprem Ki Katha",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Satyaprem Ki Katha, a stellar Bollywood production.",
+    cast: [
+      "Kartik Aaryan",
+      "Kiara Advani"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTVmZDNjMGEtNzc5MC00ODY4LWI1ZTYtMjM2ODhhNGExNzgxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTVmZDNjMGEtNzc5MC00ODY4LWI1ZTYtMjM2ODhhNGExNzgxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "771",
+    title: "Sirf Ek Bandaa Kaafi Hai",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Sirf Ek Bandaa Kaafi Hai, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bajpayee",
+      "Adrija Sinha"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzMzMTY2NDktYjJkNC00MzQ3LWJlZWYtNzRiYzc1NTJkYTI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzMzMTY2NDktYjJkNC00MzQ3LWJlZWYtNzRiYzc1NTJkYTI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "772",
+    title: "Sir Madam Sarpanch",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Sir Madam Sarpanch, a stellar Bollywood production.",
+    cast: [
+      "Seema Biswas",
+      "Ajay Chourey"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzhiYmVjMmYtODM5ZS00NjNjLThlMzctODJhYTFkYmMwYTBkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzhiYmVjMmYtODM5ZS00NjNjLThlMzctODJhYTFkYmMwYTBkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "773",
+    title: "Shiv Shastri Balboa",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Shiv Shastri Balboa, a stellar Bollywood production.",
+    cast: [
+      "Anupam Kher",
+      "Neena Gupta"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGU5ZWI0ODktNzQxZS00YzIwLThkNWEtZDI1MDgxYTMxNGZhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGU5ZWI0ODktNzQxZS00YzIwLThkNWEtZDI1MDgxYTMxNGZhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "774",
+    title: "Selfiee",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Selfiee, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Mrunal Thakur"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGE4ODI5MjQtMmE3NC00NDVlLWJhNzAtNGZkMzlkZGZlNjFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGE4ODI5MjQtMmE3NC00NDVlLWJhNzAtNGZkMzlkZGZlNjFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "775",
+    title: "Shastry Viruddh Shastry",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Shastry Viruddh Shastry, a stellar Bollywood production.",
+    cast: [
+      "Kabir Pahwa",
+      "Paresh Rawal"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGNmMzVjMDMtOTgwMy00YjllLTg3OWYtOTRhYzAxNWJmMzQ1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGNmMzVjMDMtOTgwMy00YjllLTg3OWYtOTRhYzAxNWJmMzQ1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "776",
+    title: "Stolen",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Stolen, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Banerjee",
+      "Mia Maelzer"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOThmMTZjMTUtMTE5OC00OTA0LWIzNjktZTA5NTBmZDc4Mjk0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOThmMTZjMTUtMTE5OC00OTA0LWIzNjktZTA5NTBmZDc4Mjk0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "777",
+    title: "Tejas",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Tejas, a stellar Bollywood production.",
+    cast: [
+      "Kangana Ranaut",
+      "Vinod Tharani"
+    ],
+    runtime: "114 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzUxZDBkNzctMmY3ZC00ZmZmLWIxYTktZWM5YzFiMmY0NWVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzUxZDBkNzctMmY3ZC00ZmZmLWIxYTktZWM5YzFiMmY0NWVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "778",
+    title: "Tarla",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Tarla, a stellar Bollywood production.",
+    cast: [
+      "Huma Qureshi",
+      "Hardik Thakkar"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzZlMjdkNTUtMDZkZS00NWFkLTg4M2EtZjRkNWNkNjZlNGY1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzZlMjdkNTUtMDZkZS00NWFkLTg4M2EtZjRkNWNkNjZlNGY1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "779",
+    title: "Tiku Weds Sheru",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Tiku Weds Sheru, a stellar Bollywood production.",
+    cast: [
+      "Nawazuddin Siddiqui",
+      "Avneet Kaur"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjU1NDM3MTktNzlkNi00Y2IxLTk3ODQtZTIyMWM5NDEwZWJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjU1NDM3MTktNzlkNi00Y2IxLTk3ODQtZTIyMWM5NDEwZWJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "780",
+    title: "Sukhee",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Sukhee, a stellar Bollywood production.",
+    cast: [
+      "Kusha Kapila",
+      "Shilpa Shetty Kundra"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTdmODZjNDUtYmM2MS00OGQ5LTllZDAtNTlmMWU5ZjRlZGFiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTdmODZjNDUtYmM2MS00OGQ5LTllZDAtNTlmMWU5ZjRlZGFiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "781",
+    title: "Tiger 3",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Tiger 3, a stellar Bollywood production.",
+    cast: [
+      "Salman Khan",
+      "Katrina Kaif"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGQ1MzkzZDYtMzg1YS00ODE0LTgyYTYtNDdkOWNjMDFhMmZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGQ1MzkzZDYtMzg1YS00ODE0LTgyYTYtNDdkOWNjMDFhMmZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "782",
+    title: "Starfish",
+    year: 2018,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Starfish, a stellar Bollywood production.",
+    cast: [
+      "Virginia Gardner",
+      "Christina Masterson"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTdmZjA2ODUtYjEyMi00YzllLTg0OTUtNzBiMjE1Yzg1NThlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTdmZjA2ODUtYjEyMi00YzllLTg0OTUtNzBiMjE1Yzg1NThlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "783",
+    title: "Sumo Didi",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Sumo Didi, a stellar Bollywood production.",
+    cast: [
+      "Shriyam Bhagnani",
+      "Raghav Dhir"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWMxZmUxYzctNmQ5OC00ODg1LWE3ODYtNjkxZWYxMTg1NTdiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWMxZmUxYzctNmQ5OC00ODg1LWE3ODYtNjkxZWYxMTg1NTdiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "784",
+    title: "Thank You for Coming",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Thank You for Coming, a stellar Bollywood production.",
+    cast: [
+      "Bhumi Pednekar",
+      "Dolly Singh"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGJlZjU1NGQtZjUwYS00ZWU3LTk5MDMtYmZiZTRmZmIwYjhmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGJlZjU1NGQtZjUwYS00ZWU3LTk5MDMtYmZiZTRmZmIwYjhmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "785",
+    title: "Sultana's Dream",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Sultana's Dream, a stellar Bollywood production.",
+    cast: [
+      "Miren Arrieta",
+      "Ranjitha Rajeevan"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjg0NzhjZTktODZlNC00Y2Q3LTkyNmYtYTUzMGY1ODIyMTliXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjg0NzhjZTktODZlNC00Y2Q3LTkyNmYtYTUzMGY1ODIyMTliXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "786",
+    title: "Walk",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Walk, a stellar Bollywood production.",
+    cast: [
+      "Cooper Hoffman",
+      "David Jonsson"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmE4YmIxNWQtMzJhMy00NDI5LWFmYjEtMGYyMmFhNzdjODVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmE4YmIxNWQtMzJhMy00NDI5LWFmYjEtMGYyMmFhNzdjODVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "787",
+    title: "U-Turn",
+    year: 1997,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of U-Turn, a stellar Bollywood production.",
+    cast: [
+      "Sean Penn",
+      "Jennifer Lopez"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDdkNzFmMmItNTNkOS00MzJkLTg4MjItN2Q4ZDQ1ZWI3YWUxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDdkNzFmMmItNTNkOS00MzJkLTg4MjItN2Q4ZDQ1ZWI3YWUxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "788",
+    title: "Vash: Possessed by the Obsessed",
+    year: 1994,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Vash: Possessed by the Obsessed, a stellar Bollywood production.",
+    cast: [
+      "Shannon Tweed",
+      "Ted Prior"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQxNjEzNDY2NF5BMl5BanBnXkFtZTcwNjk4MjYyMQ@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQxNjEzNDY2NF5BMl5BanBnXkFtZTcwNjk4MjYyMQ@@._V1_.jpg"
+  },
+  {
+    id: "789",
+    title: "Tumse Na Ho Payega",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Tumse Na Ho Payega, a stellar Bollywood production.",
+    cast: [
+      "Ishwak Singh",
+      "Saurabh Sharma"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmYxYWIzZTYtMTFmMy00YjBiLThiYjMtNmVmOGU5NDE0ZWM1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmYxYWIzZTYtMTFmMy00YjBiLThiYjMtNmVmOGU5NDE0ZWM1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "790",
+    title: "Welcome to Kashmir",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Welcome to Kashmir, a stellar Bollywood production.",
+    cast: [
+      "Ahmad Shehab",
+      "Mateena Rajput"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzExZTNjZWUtZDQ2Ni00MDgwLWE2NWItZjA4Y2QxOWJlOTYyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzExZTNjZWUtZDQ2Ni00MDgwLWE2NWItZjA4Y2QxOWJlOTYyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "791",
+    title: "Trial Period",
+    year: 2026,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Trial Period, a stellar Bollywood production.",
+    cast: [
+      "Ekaterina Kuznetsova",
+      "Kirill Parastaev"
+    ],
+    runtime: "92 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDJlNGFmNjItYzNmNS00ODU0LTgzNTctZjkzNjM3Y2RkM2NmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDJlNGFmNjItYzNmNS00ODU0LTgzNTctZjkzNjM3Y2RkM2NmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "792",
+    title: "Yaariyan 2",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Yaariyan 2, a stellar Bollywood production.",
+    cast: [
+      "Divya Khossla",
+      "Yash Daasguptaa"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Y3NjhhOTUtOTM5OS00YWY3LTljNDYtYzM1NzBjZTZlMjJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Y3NjhhOTUtOTM5OS00YWY3LTljNDYtYzM1NzBjZTZlMjJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "793",
+    title: "A Winter Tale at Shimla",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of A Winter Tale at Shimla, a stellar Bollywood production.",
+    cast: [
+      "Gauri Pradhan Tejwani",
+      "Indraneil Sengupta"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTZiMGIxOTQtYTIyNy00ZGE2LTg1YjYtOGJlZmY3ZGQwNDA1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTZiMGIxOTQtYTIyNy00ZGE2LTg1YjYtOGJlZmY3ZGQwNDA1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "794",
+    title: "Tu Jhoothi Main Makkaar",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Tu Jhoothi Main Makkaar, a stellar Bollywood production.",
+    cast: [
+      "Ranbir Kapoor",
+      "Shraddha Kapoor"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2Y0ZmZjNjQtYjIwYi00YWNhLThjNGUtMTU0ZTI3Zjc0YTNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2Y0ZmZjNjQtYjIwYi00YWNhLThjNGUtMTU0ZTI3Zjc0YTNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "795",
+    title: "The Y",
+    year: 2026,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of The Y, a stellar Bollywood production.",
+    cast: [
+      "Brittany Allen",
+      "Christina Bennett Lind"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDA4OGU1ZjQtNDI3ZS00NGE5LThjOWQtODQ1ZWRkNTY2NDcxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDA4OGU1ZjQtNDI3ZS00NGE5LThjOWQtODQ1ZWRkNTY2NDcxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "796",
+    title: "All That Breathes",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of All That Breathes, a stellar Bollywood production.",
+    cast: [
+      "Salik Rehman",
+      "Mohammad Saud"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTE4OTAzMTYtYTBhMi00YTE2LWExOTAtMzViN2RhMTFjNjAwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTE4OTAzMTYtYTBhMi00YTE2LWExOTAtMzViN2RhMTFjNjAwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "797",
+    title: "10 Nahi 40",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of 10 Nahi 40, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bakshi",
+      "Birbal"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2YwOWM4ZjgtZDljMS00NmIwLTgyNGUtMzhmZGNjY2U3ZDRkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2YwOWM4ZjgtZDljMS00NmIwLTgyNGUtMzhmZGNjY2U3ZDRkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "798",
+    title: "Anek",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Anek, a stellar Bollywood production.",
+    cast: [
+      "Ayushmann Khurrana",
+      "Andrea Kevichüsa"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWM5ODZmZDQtN2MyZS00Y2E0LTgxN2YtN2RiZWRmMjQzNDZkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWM5ODZmZDQtN2MyZS00Y2E0LTgxN2YtN2RiZWRmMjQzNDZkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "799",
+    title: "Yaatris",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Yaatris, a stellar Bollywood production.",
+    cast: [
+      "Raghubir Yadav",
+      "Seema Pahwa"
+    ],
+    runtime: "144 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDY2MWVhYzYtMjg4MS00ZWU2LTkyOWMtODU2NmNjYTE1OWI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDY2MWVhYzYtMjg4MS00ZWU2LTkyOWMtODU2NmNjYTE1OWI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "800",
+    title: "36 Farmhouse",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of 36 Farmhouse, a stellar Bollywood production.",
+    cast: [
+      "Vijay Raaz",
+      "Amol Parashar"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzg0NDE0YmUtMzdiOS00OGE1LThiOWMtZDYzMjFkN2YzN2EwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzg0NDE0YmUtMzdiOS00OGE1LThiOWMtZDYzMjFkN2YzN2EwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "801",
+    title: "Ajay Wardhan",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Ajay Wardhan, a stellar Bollywood production.",
+    cast: [
+      "Romil Chaudhary",
+      "Priya Sharma"
+    ],
+    runtime: "92 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGYzZDQxMjItZmI2Yy00NDkxLTg4MGUtNTAzNmFkMjgxMzU0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGYzZDQxMjItZmI2Yy00NDkxLTg4MGUtNTAzNmFkMjgxMzU0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "802",
+    title: "Zara Hatke Zara Bachke",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Zara Hatke Zara Bachke, a stellar Bollywood production.",
+    cast: [
+      "Vicky Kaushal",
+      "Sara Ali Khan"
+    ],
+    runtime: "114 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGZmMjg3ZDEtZDRmZC00ZGNjLTlkZDktYWY4YWFhZTIwYjA0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGZmMjg3ZDEtZDRmZC00ZGNjLTlkZDktYWY4YWFhZTIwYjA0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "803",
+    title: "Zindagi Shatranj Hai",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Zindagi Shatranj Hai, a stellar Bollywood production.",
+    cast: [
+      "Bruna Abdullah",
+      "Shawar Ali"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWMwMGQyZGMtNzY4Zi00YzJmLWE5ODAtZDdjNWMxZmU1ZWY2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWMwMGQyZGMtNzY4Zi00YzJmLWE5ODAtZDdjNWMxZmU1ZWY2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "804",
+    title: "Alingan",
+    year: 1974,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Alingan, a stellar Bollywood production.",
+    cast: [
+      "Romesh Sharma",
+      "Zaheera"
+    ],
+    runtime: "101 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2JmZGEwYWMtNjlkYi00NTk5LWIyZTQtYWI5N2Q1ZTg5NDQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2JmZGEwYWMtNjlkYi00NTk5LWIyZTQtYWI5N2Q1ZTg5NDQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "805",
+    title: "Anth The End",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Anth The End, a stellar Bollywood production.",
+    cast: [
+      "Arun Bakshi",
+      "Samiksha Bhatnagar"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGU4N2I5ZDktOTdmNy00ZjIyLTkyNTItM2M2ZGY0OWNmNWNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGU4N2I5ZDktOTdmNy00ZjIyLTkyNTItM2M2ZGY0OWNmNWNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "806",
+    title: "Ardh",
+    year: 1999,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Ardh, a stellar Bollywood production.",
+    cast: [
+      "Ahmed Zaki",
+      "Farah"
+    ],
+    runtime: "114 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTZkYWQ3MTgtZGMyMS00MzM1LThiNzgtZWJjNmNlM2RkZTcxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTZkYWQ3MTgtZGMyMS00MzM1LThiNzgtZWJjNmNlM2RkZTcxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "807",
+    title: "Bhediya",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Bhediya, a stellar Bollywood production.",
+    cast: [
+      "Varun Dhawan",
+      "Kriti Sanon"
+    ],
+    runtime: "100 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTIxYjUxMTAtNDM5Zi00ZWU1LThhZDMtNDU5ZjEwMzhjMzVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTIxYjUxMTAtNDM5Zi00ZWU1LThhZDMtNDU5ZjEwMzhjMzVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "808",
+    title: "Aye Zindagi",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Aye Zindagi, a stellar Bollywood production.",
+    cast: [
+      "Revathi",
+      "Satyajeet Dubey"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGE5ZjIxMjYtZDQ2YS00MjUwLWIyOTAtMTI5ZTE4NDc5NjE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGE5ZjIxMjYtZDQ2YS00MjUwLWIyOTAtMTI5ZTE4NDc5NjE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "809",
+    title: "Bachchhan Paandey",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Bachchhan Paandey, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Kriti Sanon"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzIxNDhjZjQtMWJmMy00NTZhLTg3NDYtODY0YjAzYTMyMzIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzIxNDhjZjQtMWJmMy00NTZhLTg3NDYtODY0YjAzYTMyMzIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "810",
+    title: "Bal Naren",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Bal Naren, a stellar Bollywood production.",
+    cast: [
+      "Bidita Bag",
+      "Yagya Bhasin"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTUzN2M4MWItMGMyZS00MDZmLTk1YzEtOGFkNTcxZTNhZGIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTUzN2M4MWItMGMyZS00MDZmLTk1YzEtOGFkNTcxZTNhZGIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "811",
+    title: "Atithi Bhooto Bhava",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Atithi Bhooto Bhava, a stellar Bollywood production.",
+    cast: [
+      "Jackie Shroff",
+      "Pratik Gandhi"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGNhYjg1YjktNDA0Zi00YjJiLWEwZjAtNjNkZmM2MTY0OTI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGNhYjg1YjktNDA0Zi00YjJiLWEwZjAtNjNkZmM2MTY0OTI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "812",
+    title: "Babli Bouncer",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Babli Bouncer, a stellar Bollywood production.",
+    cast: [
+      "Tamannaah Bhatia",
+      "Abhishek Bajaj"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWYxMzViMTktOTc3NC00ZWEwLWI5NDYtY2MwYzM3YjVmYmVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWYxMzViMTktOTc3NC00ZWEwLWI5NDYtY2MwYzM3YjVmYmVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "813",
+    title: "Attack: Part 1",
+    year: 2015,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Attack: Part 1, a stellar Bollywood production.",
+    cast: [
+      "Brandon Potter",
+      "Monica Rial"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDY3NmQ4ZTgtNTE3NC00OWFhLTg5MjQtZDkxMTE2YjgxODdmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDY3NmQ4ZTgtNTE3NC00OWFhLTg5MjQtZDkxMTE2YjgxODdmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "814",
+    title: "Badhaai Do",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Badhaai Do, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Bhumi Pednekar"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTUyMmNmOGMtZjgxYi00YzE5LTkzYjItNjdlNjg0YjlkMTQ0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTUyMmNmOGMtZjgxYi00YzE5LTkzYjItNjdlNjg0YjlkMTQ0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "815",
+    title: "Before You Die",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Before You Die, a stellar Bollywood production.",
+    cast: [
+      "Sergio Caballero",
+      "Cristina Fernández Pintado"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzM3MjdlZWEtY2U1ZS00MjU0LThlYzQtNWY0MjBhYTZlY2JlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzM3MjdlZWEtY2U1ZS00MjU0LThlYzQtNWY0MjBhYTZlY2JlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "816",
+    title: "Blurr",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Blurr, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Gulshan Devaiah"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDdiODE0NzMtMmI1YS00YzQ4LWI2OTAtZDZiZjIyZTg2MjQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDdiODE0NzMtMmI1YS00YzQ4LWI2OTAtZDZiZjIyZTg2MjQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "817",
+    title: "Brahmāstra: Part One – Shiva",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Brahmāstra: Part One – Shiva, a stellar Bollywood production.",
+    cast: [
+      "Amitabh Bachchan",
+      "Ranbir Kapoor"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjZiOTE2Y2ItMTY4My00ZjE0LTlkZTAtYWY4M2I4OTVkMjQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjZiOTE2Y2ItMTY4My00ZjE0LTlkZTAtYWY4M2I4OTVkMjQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "818",
+    title: "Cuttputlli",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Cuttputlli, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Rakul Preet Singh"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjU3MTE5NjgtMzUxNy00MjIxLThkMDUtZDYxZWQ3YTY1MTljXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjU3MTE5NjgtMzUxNy00MjIxLThkMDUtZDYxZWQ3YTY1MTljXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "819",
+    title: "Cobalt Blue",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Cobalt Blue, a stellar Bollywood production.",
+    cast: [
+      "Neelay Mehendale",
+      "Prateik Patil Babbar"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjBhYWQ0NjctN2U4ZC00YWY3LTk4NTEtZWRiZGZlMWVjMzA4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjBhYWQ0NjctN2U4ZC00YWY3LTk4NTEtZWRiZGZlMWVjMzA4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "820",
+    title: "Chup: Revenge of the Artist",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Chup: Revenge of the Artist, a stellar Bollywood production.",
+    cast: [
+      "Dulquer Salmaan",
+      "Shreya Dhanwanthary"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjMyZTZkYTMtMzk3MS00NGY3LTgzNzQtYTgwZmIwODRmNmJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjMyZTZkYTMtMzk3MS00NGY3LTgzNzQtYTgwZmIwODRmNmJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "821",
+    title: "Dahini: The Witch",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Dahini: The Witch, a stellar Bollywood production.",
+    cast: [
+      "Tannishtha Chatterjee",
+      "J.D. Chakravarthi"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTRkOWU4YjctNWNiMy00YzA2LTlmN2ItZGMyOTI4NTM1ZTg3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTRkOWU4YjctNWNiMy00YzA2LTlmN2ItZGMyOTI4NTM1ZTg3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "822",
+    title: "Bhool Bhulaiyaa 2",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Bhool Bhulaiyaa 2, a stellar Bollywood production.",
+    cast: [
+      "Tabu",
+      "Kartik Aaryan"
+    ],
+    runtime: "100 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTZhY2NjMGItODAyOS00MGVlLTk5ZDYtNzBjMjQ3ZDdkYmZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTZhY2NjMGItODAyOS00MGVlLTk5ZDYtNzBjMjQ3ZDdkYmZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "823",
+    title: "Code Name: Tiranga",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Code Name: Tiranga, a stellar Bollywood production.",
+    cast: [
+      "Parineeti Chopra",
+      "Harrdy Sandhu"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTRmMmM4NDEtODA3OC00MzUxLWFjMWYtNzVkN2QwZTRmN2E3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTRmMmM4NDEtODA3OC00MzUxLWFjMWYtNzVkN2QwZTRmN2E3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "824",
+    title: "Dangerous",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Dangerous, a stellar Bollywood production.",
+    cast: [
+      "Hassie Harrison",
+      "Jai Courtney"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTg5M2ZjNjItZThiZi00NDFiLTg3NmYtMmFhZTkxZWQ2OWVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTg5M2ZjNjItZThiZi00NDFiLTg3NmYtMmFhZTkxZWQ2OWVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "825",
+    title: "Cirkus",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Cirkus, a stellar Bollywood production.",
+    cast: [
+      "Ranveer Singh",
+      "Varun Sharma"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTM2NDQ3ZjAtZWFlZC00NDNkLThhODktMjc3YTk3ZWQ1ZDM0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTM2NDQ3ZjAtZWFlZC00NDNkLThhODktMjc3YTk3ZWQ1ZDM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "826",
+    title: "Dasvi",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Dasvi, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Bachchan",
+      "Nimrat Kaur"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjVmZTViMzUtODZkMC00OTQyLTliZWMtMWFiZjJjYTI5Y2Q5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjVmZTViMzUtODZkMC00OTQyLTliZWMtMWFiZjJjYTI5Y2Q5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "827",
+    title: "Dedh Lakh Ka Dulha",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Dedh Lakh Ka Dulha, a stellar Bollywood production.",
+    cast: [
+      "Dhruv Chheda",
+      "Istiyak Khan"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDNjYWI0ODItN2ExNy00ZWUzLWE5MmQtNTc3MGNjNGE2MDJmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDNjYWI0ODItN2ExNy00ZWUzLWE5MmQtNTc3MGNjNGE2MDJmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "828",
+    title: "Dobaaraa",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Dobaaraa, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Pavail Gulati"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGI4ZjVjYzgtNjM5My00YmFmLWE4Y2MtY2I0NTFmYmY0ZDgzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGI4ZjVjYzgtNjM5My00YmFmLWE4Y2MtY2I0NTFmYmY0ZDgzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "829",
+    title: "Dhaakad",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Dhaakad, a stellar Bollywood production.",
+    cast: [
+      "Arjun Rampal",
+      "Divya Dutta"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDg5M2IzZWEtZDQ4Mi00OTVlLTkwZjYtYzUyYWVhYmFlZWMwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDg5M2IzZWEtZDQ4Mi00OTVlLTkwZjYtYzUyYWVhYmFlZWMwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "830",
+    title: "Dhokha: Round D Corner",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Dhokha: Round D Corner, a stellar Bollywood production.",
+    cast: [
+      "Madhavan",
+      "Khushali Kumar"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTBiNThkMjctMjZhNS00MmE0LWE2MmQtNmQ0OWEwOTdhOWY0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTBiNThkMjctMjZhNS00MmE0LWE2MmQtNmQ0OWEwOTdhOWY0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "831",
+    title: "Dehati Disco",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Dehati Disco, a stellar Bollywood production.",
+    cast: [
+      "Ganesh Acharya",
+      "Ravi Kishan"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzJmOWY2YjgtOGVlNi00ZWJiLTljMjAtZjU2MDQ2MGNmNDIyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzJmOWY2YjgtOGVlNi00ZWJiLTljMjAtZjU2MDQ2MGNmNDIyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "832",
+    title: "Dongalunnaru Jaagratha",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Dongalunnaru Jaagratha, a stellar Bollywood production.",
+    cast: [
+      "Bindu Chandramouli",
+      "Sri Simha Koduri"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzIyN2Y2NmQtZWZlMS00NjFiLWEzNTItYmM1ZjIwYmIyZjljXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzIyN2Y2NmQtZWZlMS00NjFiLWEzNTItYmM1ZjIwYmIyZjljXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "833",
+    title: "Darlings",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Darlings, a stellar Bollywood production.",
+    cast: [
+      "Alia Bhatt",
+      "Shefali Shah"
+    ],
+    runtime: "101 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWU5ZmQ1MjctODI4Zi00NTA0LWFjNmYtNDc0MjIxMDI5M2IyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWU5ZmQ1MjctODI4Zi00NTA0LWFjNmYtNDc0MjIxMDI5M2IyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "834",
+    title: "Dear Dia",
+    year: 1993,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Dear Dia, a stellar Bollywood production.",
+    cast: [
+      "Nanni Moretti",
+      "Renato Carpentieri"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWE1YzNlMmEtZGQwYy00YTFlLTk5NzQtZDJlZDdiMmM3OTE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWE1YzNlMmEtZGQwYy00YTFlLTk5NzQtZDJlZDdiMmM3OTE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "835",
+    title: "Doctor G",
+    year: 2017,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Doctor G, a stellar Bollywood production.",
+    cast: [
+      "Freddie Highmore",
+      "Richard Schiff"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjY0ZWNkNjMtYzdkOC00MmM4LThjYzUtN2UyZWMxODk0ZjhiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjY0ZWNkNjMtYzdkOC00MmM4LThjYzUtN2UyZWMxODk0ZjhiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "836",
+    title: "Ek Chup",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Ek Chup, a stellar Bollywood production.",
+    cast: [
+      "Joy Sengupta",
+      "Harshit Sharma"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjQxZGYyM2QtZTYzZS00YmMzLWIzNDQtNGY0MmI1ZWEwZjVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjQxZGYyM2QtZTYzZS00YmMzLWIzNDQtNGY0MmI1ZWEwZjVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "837",
+    title: "Drishyam 2",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Drishyam 2, a stellar Bollywood production.",
+    cast: [
+      "Ajay Devgn",
+      "Akshaye Khanna"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGYyY2I5MzktMDg2MC00Nzc4LWIwNmYtMjg3NzE1ODQyMDllXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGYyY2I5MzktMDg2MC00Nzc4LWIwNmYtMjg3NzE1ODQyMDllXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "838",
+    title: "Gangubai Kathiawadi",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Gangubai Kathiawadi, a stellar Bollywood production.",
+    cast: [
+      "Alia Bhatt",
+      "Shantanu Maheshwari"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjliYjA0MWUtMjVkNi00MDc0LTg1MDgtYWExNGM0OWQ1NjBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjliYjA0MWUtMjVkNi00MDc0LTg1MDgtYWExNGM0OWQ1NjBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "839",
+    title: "Faraaz",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Faraaz, a stellar Bollywood production.",
+    cast: [
+      "Jatin Sarin",
+      "Anirban Adhikary"
+    ],
+    runtime: "118 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzFmNTE2MmQtODEwNS00MTcxLTgyMmItY2NlNzI3YzhmM2I1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzFmNTE2MmQtODEwNS00MTcxLTgyMmItY2NlNzI3YzhmM2I1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "840",
+    title: "Double XL",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Double XL, a stellar Bollywood production.",
+    cast: [
+      "Sonakshi Sinha",
+      "Huma Qureshi"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDhhNTBkOWYtMjFhZS00NTcyLTliY2MtMjI4MDcwZTRjOTQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDhhNTBkOWYtMjFhZS00NTcyLTliY2MtMjI4MDcwZTRjOTQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "841",
+    title: "Forensic",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Forensic, a stellar Bollywood production.",
+    cast: [
+      "Radhika Apte",
+      "Vikrant Massey"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzUzZjg0MWItZmRiYy00YTU2LTgyN2UtZDg0Mjg3OWZjOTI5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzUzZjg0MWItZmRiYy00YTU2LTgyN2UtZDg0Mjg3OWZjOTI5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "842",
+    title: "Good Luck Jerry",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Good Luck Jerry, a stellar Bollywood production.",
+    cast: [
+      "Janhvi Kapoor",
+      "Jaswant Dalal"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTcwOGNlYzUtNmRmMi00ZWNkLTgzYjAtMjU3MzEzNTAxYzZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTcwOGNlYzUtNmRmMi00ZWNkLTgzYjAtMjU3MzEzNTAxYzZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "843",
+    title: "Freddy",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Freddy, a stellar Bollywood production.",
+    cast: [
+      "Kartik Aaryan",
+      "Alaya F"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODRlMDU2MWQtNDUwNy00ODlmLWJiMzgtOTlmNzFjNGM2MGIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODRlMDU2MWQtNDUwNy00ODlmLWJiMzgtOTlmNzFjNGM2MGIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "844",
+    title: "Gehraiyaan",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Gehraiyaan, a stellar Bollywood production.",
+    cast: [
+      "Deepika Padukone",
+      "Siddhant Chaturvedi"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTVkYzgyMmUtMmRkNi00MjMyLTk4NmYtNjlkMjU4NzVjZTIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTVkYzgyMmUtMmRkNi00MjMyLTk4NmYtNjlkMjU4NzVjZTIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "845",
+    title: "Ek Villain Returns",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Ek Villain Returns, a stellar Bollywood production.",
+    cast: [
+      "John Abraham",
+      "Disha Patani"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzg0YmExNWItOGI4ZC00OTZmLTgxMjctMmU2ZTBmZjY5MDdkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzg0YmExNWItOGI4ZC00OTZmLTgxMjctMmU2ZTBmZjY5MDdkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "846",
+    title: "Goodbye",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Goodbye, a stellar Bollywood production.",
+    cast: [
+      "Helen Mirren",
+      "Timothy Spall"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjNlOTQ4OGUtODk4OC00MDMxLTliNjQtNzZkMDk0MTk4MjMzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjNlOTQ4OGUtODk4OC00MDMxLTliNjQtNzZkMDk0MTk4MjMzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "847",
+    title: "Haemolymph: Invisible Blood",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Haemolymph: Invisible Blood, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450",
+    backdropUrl: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=300&h=450"
+  },
+  {
+    id: "848",
+    title: "Hero of Nation Chandra Shekhar Azad",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Hero of Nation Chandra Shekhar Azad, a stellar Bollywood production.",
+    cast: [
+      "Ahmad Kabir Shadan",
+      "Ritu P Sood"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTg5YTNjZjUtZDNkZC00OWM3LTg1ZjktZDI1Y2Y5YWRhNDlhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTg5YTNjZjUtZDNkZC00OWM3LTg1ZjktZDI1Y2Y5YWRhNDlhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "849",
+    title: "Holy Cow",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Holy Cow, a stellar Bollywood production.",
+    cast: [
+      "Clément Faveau",
+      "Maïwene Barthelemy"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmMwMjRjMWQtZDhmYy00MGY5LThiODgtYjE4YWQzZmYwNjIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmMwMjRjMWQtZDhmYy00MGY5LThiODgtYjE4YWQzZmYwNjIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "850",
+    title: "Hurdang",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Hurdang, a stellar Bollywood production.",
+    cast: [
+      "Sunny Kaushal",
+      "Nushrratt Bharuccha"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGI2YjE5ZDEtM2MwNS00YjNhLTg5OWYtMGM5YjRhNjEwOWE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGI2YjE5ZDEtM2MwNS00YjNhLTg5OWYtMGM5YjRhNjEwOWE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "851",
+    title: "Hai Tujhe Salaam India",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Hai Tujhe Salaam India, a stellar Bollywood production.",
+    cast: [
+      "Ajaz Khan",
+      "Arya Babbar"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjhjZDkzZGEtODM5Yy00MjI2LWEzZDctMmE5YTUyM2IxYmQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjhjZDkzZGEtODM5Yy00MjI2LWEzZDctMmE5YTUyM2IxYmQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "852",
+    title: "Heropanti 2",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Heropanti 2, a stellar Bollywood production.",
+    cast: [
+      "Kriti Sanon",
+      "Tiger Shroff"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTIyZjU4YzgtMGUwYi00ODQ3LWE3N2MtMTI2MmY4YTlmMGJiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTIyZjU4YzgtMGUwYi00ODQ3LWE3N2MtMTI2MmY4YTlmMGJiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "853",
+    title: "Govinda Naam Mera",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Govinda Naam Mera, a stellar Bollywood production.",
+    cast: [
+      "Vicky Kaushal",
+      "Kiara Advani"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Q0NTAzN2ItYWUwYS00N2VhLThmY2UtMzgyNTE2ZTBmYzA4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Q0NTAzN2ItYWUwYS00N2VhLThmY2UtMzgyNTE2ZTBmYzA4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "854",
+    title: "Haryana",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Haryana, a stellar Bollywood production.",
+    cast: [
+      "Yash Tonk",
+      "Ashlesha Sawant"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTMyODJhMTItMGVjZi00ZGVkLWJiMjEtMWUzNzJlMjdiYzBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTMyODJhMTItMGVjZi00ZGVkLWJiMjEtMWUzNzJlMjdiYzBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "855",
+    title: "HIT: The First Case",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of HIT: The First Case, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Sanya Malhotra"
+    ],
+    runtime: "108 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Q2Nzk0OGYtNzE1Yy00NTA2LTg4ZWUtM2QyZWZlOGYwYTdiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Q2Nzk0OGYtNzE1Yy00NTA2LTg4ZWUtM2QyZWZlOGYwYTdiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "856",
+    title: "Jalsa",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Jalsa, a stellar Bollywood production.",
+    cast: [
+      "Vidya Balan",
+      "Shefali Shah"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzE5MDBjMjgtZGVhMi00ZGNiLWFmZDMtYTBhNzMwY2ViYTdjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzE5MDBjMjgtZGVhMi00ZGNiLWFmZDMtYTBhNzMwY2ViYTdjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "857",
+    title: "Ittu Si Baat",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Ittu Si Baat, a stellar Bollywood production.",
+    cast: [
+      "Aakash Ahuja",
+      "Gayatri Bhardwaj"
+    ],
+    runtime: "149 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTI3M2YxZWMtMmU0YS00MmVhLTkyYjItYjA3ZTI2MTI1ODE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTI3M2YxZWMtMmU0YS00MmVhLTkyYjItYjA3ZTI2MTI1ODE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "858",
+    title: "Jaadugar",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Jaadugar, a stellar Bollywood production.",
+    cast: [
+      "Jitendra Kumar",
+      "Arushi Sharma"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTMzMGNhNDYtNjkyMC00ZTg0LTk2NzEtZmNmYjAzZWEzOWVlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTMzMGNhNDYtNjkyMC00ZTg0LTk2NzEtZmNmYjAzZWEzOWVlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "859",
+    title: "Ishq Pashmina",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Ishq Pashmina, a stellar Bollywood production.",
+    cast: [
+      "Kainaat Arora",
+      "Bhavin Bhanushali"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTI5ZTIxMzMtZmVlYy00M2I2LWIyMjEtYmE0YWVmYWMzMGE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTI5ZTIxMzMtZmVlYy00M2I2LWIyMjEtYmE0YWVmYWMzMGE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "860",
+    title: "Jahaan Chaar Yaar",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Jahaan Chaar Yaar, a stellar Bollywood production.",
+    cast: [
+      "Swara Bhasker",
+      "Meher Vij"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjYwNDQ4YmItMTMxMi00MDY0LThiNmMtYTM3MjNkNjFmN2QyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjYwNDQ4YmItMTMxMi00MDY0LThiNmMtYTM3MjNkNjFmN2QyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "861",
+    title: "India Lockdown",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of India Lockdown, a stellar Bollywood production.",
+    cast: [
+      "Prateik Patil Babbar",
+      "Sai Tamhankar"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmRiMDMyYjYtMWY0Ni00ZmM3LWFjNGEtMjFmMjYwYTJjMjFjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmRiMDMyYjYtMWY0Ni00ZmM3LWFjNGEtMjFmMjYwYTJjMjFjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "862",
+    title: "Jaggu Ki Lalten",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Jaggu Ki Lalten, a stellar Bollywood production.",
+    cast: [
+      "Rambir Aryam",
+      "Aakriti Bharti"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTIxOTliZjktMzc3ZS00ZTM0LThmMzQtYTlmNmZhZDZlMmFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTIxOTliZjktMzc3ZS00ZTM0LThmMzQtYTlmNmZhZDZlMmFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "863",
+    title: "Janhit Mein Jaari",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Janhit Mein Jaari, a stellar Bollywood production.",
+    cast: [
+      "Vikram Kochhar",
+      "Nushrratt Bharuccha"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGU2ZTEyNjEtMGRjMS00YzE3LWFmOWMtMzM2NDZlMjQwY2EyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGU2ZTEyNjEtMGRjMS00YzE3LWFmOWMtMzM2NDZlMjQwY2EyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "864",
+    title: "Jayeshbhai Jordaar",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Jayeshbhai Jordaar, a stellar Bollywood production.",
+    cast: [
+      "Pratik Nanda",
+      "Ranveer Singh"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTA1NjgyMWQtMTFjNi00NWM2LWFhMWYtN2MzMTU1NDQ1NmFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTA1NjgyMWQtMTFjNi00NWM2LWFhMWYtN2MzMTU1NDQ1NmFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "865",
+    title: "India's Sons",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of India's Sons, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "108 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTdhMGQyMGMtM2M2Yi00OWY4LWI5ZjQtOWM3MjRhNjNjZTM1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTdhMGQyMGMtM2M2Yi00OWY4LWI5ZjQtOWM3MjRhNjNjZTM1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "866",
+    title: "Jugjugg Jeeyo",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Jugjugg Jeeyo, a stellar Bollywood production.",
+    cast: [
+      "Varun Dhawan",
+      "Anil Kapoor"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjViMGE2ZGItMDk0Yi00ODc0LWI5ZDUtMjdlMjBhMzk1MDQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjViMGE2ZGItMDk0Yi00ODc0LWI5ZDUtMjdlMjBhMzk1MDQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "867",
+    title: "Kapil Sharma: I'm Not Done Yet",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Kapil Sharma: I'm Not Done Yet, a stellar Bollywood production.",
+    cast: [
+      "Kapil Sharma"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTA5MzZhMzQtM2EwZC00MTA2LThhNmQtZjQwY2U1YzVmOGQ4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTA5MzZhMzQtM2EwZC00MTA2LThhNmQtZjQwY2U1YzVmOGQ4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "868",
+    title: "Khuda Haafiz: Chapter 2 – Agni Pariksha",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Khuda Haafiz: Chapter 2 – Agni Pariksha, a stellar Bollywood production.",
+    cast: [
+      "Vidyut Jammwal",
+      "Shivaleeka Oberoi"
+    ],
+    runtime: "115 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTBhM2U3ZGMtMjdkYy00NDE3LWI0MmQtNjAxNWJiNmY5YWQxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTBhM2U3ZGMtMjdkYy00NDE3LWI0MmQtNjAxNWJiNmY5YWQxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "869",
+    title: "Jhund",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Jhund, a stellar Bollywood production.",
+    cast: [
+      "Amitabh Bachchan",
+      "Bharat Kumar Bhograt"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDI1YTMzNTctNGU5Yy00ZDZiLWIxOWUtMTgxYzVjZmJmMTI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDI1YTMzNTctNGU5Yy00ZDZiLWIxOWUtMTgxYzVjZmJmMTI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "870",
+    title: "Judaa Hoke Bhi",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Judaa Hoke Bhi, a stellar Bollywood production.",
+    cast: [
+      "Akshay Oberoi",
+      "Aindrita Ray"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODRmODFiOTgtMDYyZC00MjgzLTgzZGQtMGNjMjYxY2NkNzQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODRmODFiOTgtMDYyZC00MjgzLTgzZGQtMGNjMjYxY2NkNzQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "871",
+    title: "Kaun Pravin Tambe?",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Kaun Pravin Tambe?, a stellar Bollywood production.",
+    cast: [
+      "Shreyas Talpade",
+      "Ashish Vidyarthi"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGFlYTZlY2YtYzljYi00YmRmLTkwNzctYWFlNGM3ZTFmYjhiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGFlYTZlY2YtYzljYi00YmRmLTkwNzctYWFlNGM3ZTFmYjhiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "872",
+    title: "Jogi",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Jogi, a stellar Bollywood production.",
+    cast: [
+      "Diljit Dosanjh",
+      "Kumud Mishra"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzYyZTU5YmQtN2U2OC00NzE3LTk4ODItMTZhMGI5NzdmMGZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzYyZTU5YmQtN2U2OC00NzE3LTk4ODItMTZhMGI5NzdmMGZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "873",
+    title: "Kacchey Limbu",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Kacchey Limbu, a stellar Bollywood production.",
+    cast: [
+      "Sukhita Aiyar",
+      "Rajat Barmecha"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmYxMTY5YjUtNmU2Ny00ZDFlLWE4YzQtZGQwOWE5MmEwNWI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmYxMTY5YjUtNmU2Ny00ZDFlLWE4YzQtZGQwOWE5MmEwNWI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "874",
+    title: "Jungle Cry",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Jungle Cry, a stellar Bollywood production.",
+    cast: [
+      "Abhay Deol",
+      "Emily Shah"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjE5ODY1YTItODlmMS00Zjc3LTgwNWYtODA4ODYyMzZlMjBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjE5ODY1YTItODlmMS00Zjc3LTgwNWYtODA4ODYyMzZlMjBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "875",
+    title: "Kiss",
+    year: 2005,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Kiss, a stellar Bollywood production.",
+    cast: [
+      "Robert Downey Jr.",
+      "Val Kilmer"
+    ],
+    runtime: "133 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTY5NDExMDA3M15BMl5BanBnXkFtZTYwNTc2MzA3._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTY5NDExMDA3M15BMl5BanBnXkFtZTYwNTc2MzA3._V1_.jpg"
+  },
+  {
+    id: "876",
+    title: "Liger",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Liger, a stellar Bollywood production.",
+    cast: [
+      "Vijay Deverakonda",
+      "Ananya Panday"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjBmM2NlMzItZTY1Ny00ZjcxLThmMDAtMmZjNjIzZDIzOWRiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjBmM2NlMzItZTY1Ny00ZjcxLThmMDAtMmZjNjIzZDIzOWRiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "877",
+    title: "Ladki: Dragon Girl",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Ladki: Dragon Girl, a stellar Bollywood production.",
+    cast: [
+      "Pooja Bhalekar",
+      "Ravi Kale"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGMzYmU5YTItYzZkOS00ZmM5LTg2ZjQtMGU3OTNiN2Y4YWU3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGMzYmU5YTItYzZkOS00ZmM5LTg2ZjQtMGU3OTNiN2Y4YWU3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "878",
+    title: "Looop Lapeta",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Looop Lapeta, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Tahir Raj Bhasin"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTVlOTkzYWMtMDdkZi00YTdkLWExOWEtZTI1OWYzZTNjMWNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTVlOTkzYWMtMDdkZi00YTdkLWExOWEtZTI1OWYzZTNjMWNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "879",
+    title: "Lalanna's Song",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Lalanna's Song, a stellar Bollywood production.",
+    cast: [
+      "Nakshatra Indrajith",
+      "Rima Kallingal"
+    ],
+    runtime: "149 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmI2ZTM1MWMtNGQ3Yy00ZWRiLWJmZTQtYTY1MDlmNWYxNGI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmI2ZTM1MWMtNGQ3Yy00ZWRiLWJmZTQtYTY1MDlmNWYxNGI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "880",
+    title: "Love Hostel",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Love Hostel, a stellar Bollywood production.",
+    cast: [
+      "Bobby Deol",
+      "Vikrant Massey"
+    ],
+    runtime: "136 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmViZjNlOGYtNDNiMy00MzU5LWFiNzQtMjlhYTc0Y2YzMDE1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmViZjNlOGYtNDNiMy00MzU5LWFiNzQtMjlhYTc0Y2YzMDE1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "881",
+    title: "Laal Singh Chaddha",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Laal Singh Chaddha, a stellar Bollywood production.",
+    cast: [
+      "Aamir Khan",
+      "Ahmad Ibn Umar"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTI1MDgyMmEtNDBmYy00ODJjLWI2ODUtNjMzZWM2ODZlODJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTI1MDgyMmEtNDBmYy00ODJjLWI2ODUtNjMzZWM2ODZlODJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "882",
+    title: "Love in Ukraine",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Love in Ukraine, a stellar Bollywood production.",
+    cast: [
+      "Vipin Kaushik",
+      "Irma Balan"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTRlOGNkMjgtYjYyNi00YmM2LWJhNzQtMzI5MDhkNDFlMTBiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTRlOGNkMjgtYjYyNi00YmM2LWJhNzQtMzI5MDhkNDFlMTBiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "883",
+    title: "Life's Good",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Life's Good, a stellar Bollywood production.",
+    cast: [
+      "Saniya Anklesaria",
+      "Sunita Sen Gupta"
+    ],
+    runtime: "133 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmJjNjYyNTctOTJkZi00ZWE5LWIwZDktZjhjN2Q4N2Y1NmY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmJjNjYyNTctOTJkZi00ZWE5LWIwZDktZjhjN2Q4N2Y1NmY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "884",
+    title: "Maarrich",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Maarrich, a stellar Bollywood production.",
+    cast: [
+      "Tusshar Kapoor",
+      "Chelsha Gosai"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjk5MjM2ZTctZTk3NS00ZWUxLTkxMDUtNTUyYWJjZTVhOWNmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjk5MjM2ZTctZTk3NS00ZWUxLTkxMDUtNTUyYWJjZTVhOWNmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "885",
+    title: "Love You Hamesha",
+    year: 1999,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Love You Hamesha, a stellar Bollywood production.",
+    cast: [
+      "Rishma Malik",
+      "Rohit Bal"
+    ],
+    runtime: "136 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzYyMjRiOTMtZjNjNC00NzhhLTlhOGQtMmFlMzQ2NWE2NTI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzYyMjRiOTMtZjNjNC00NzhhLTlhOGQtMmFlMzQ2NWE2NTI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "886",
+    title: "Muqaam",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Muqaam, a stellar Bollywood production.",
+    cast: [
+      "Natasha Ali",
+      "Sumaiyya Buksh"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTVlYTIzODctYjY1Zi00ZTA3LTkwNzMtM2E1NjZkZTkyMjQwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTVlYTIzODctYjY1Zi00ZTA3LTkwNzMtM2E1NjZkZTkyMjQwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "887",
+    title: "Mister Mummy",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Mister Mummy, a stellar Bollywood production.",
+    cast: [
+      "Riteish Deshmukh",
+      "Genelia Deshmukh"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjhlYTRhNDUtNzU2Mi00ZjY4LTkyYTQtNzMwMjg1YmU5Y2EwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjhlYTRhNDUtNzU2Mi00ZjY4LTkyYTQtNzMwMjg1YmU5Y2EwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "888",
+    title: "Mili",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Mili, a stellar Bollywood production.",
+    cast: [
+      "Janhvi Kapoor",
+      "Manoj Pahwa"
+    ],
+    runtime: "149 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDExMTY5Y2ItN2Y4ZS00ZDJlLTg0MzctYWY4YWZhNTFkNGRlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDExMTY5Y2ItN2Y4ZS00ZDJlLTg0MzctYWY4YWZhNTFkNGRlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "889",
+    title: "Naam Tha Kanhaiyalal",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Naam Tha Kanhaiyalal, a stellar Bollywood production.",
+    cast: [
+      "Amitabh Bachchan",
+      "Salim Khan"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmEwNGVkMjAtZDU3OS00MWE2LTgzMzMtMTY3NzkxN2ZhNTc4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmEwNGVkMjAtZDU3OS00MWE2LTgzMzMtMTY3NzkxN2ZhNTc4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "890",
+    title: "Matto Ki Saikil",
+    year: 2020,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Matto Ki Saikil, a stellar Bollywood production.",
+    cast: [
+      "Bobina",
+      "Anil Chaturvedi"
+    ],
+    runtime: "140 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjI2ZjIxZTItM2QxMy00ZTlmLWE2MzgtZmE4MTdkNGNmOWI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjI2ZjIxZTItM2QxMy00ZTlmLWE2MzgtZmE4MTdkNGNmOWI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "891",
+    title: "Monica, O My Darling",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Monica, O My Darling, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Huma Qureshi"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2JkNTU0MDEtMzdhNC00NTZkLWI0YTMtZTdlZDkxM2Q0MTZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2JkNTU0MDEtMzdhNC00NTZkLWI0YTMtZTdlZDkxM2Q0MTZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "892",
+    title: "The Miniaturist of Junagadh",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of The Miniaturist of Junagadh, a stellar Bollywood production.",
+    cast: [
+      "Naseeruddin Shah",
+      "Rasika Dugal"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWJhOTRkZDQtMTVkOC00NzEwLWFjNTAtM2RmN2I3NWVmOGQ1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWJhOTRkZDQtMTVkOC00NzEwLWFjNTAtM2RmN2I3NWVmOGQ1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "893",
+    title: "Maja Ma",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Maja Ma, a stellar Bollywood production.",
+    cast: [
+      "Madhuri Dixit",
+      "Ritwik Bhowmik"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmIzNDg4MmEtYWU5Ni00OTc2LThjZDItN2NjOGY2MDIwNTA3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmIzNDg4MmEtYWU5Ni00OTc2LThjZDItN2NjOGY2MDIwNTA3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "894",
+    title: "Middle Class Love",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Middle Class Love, a stellar Bollywood production.",
+    cast: [
+      "Prit Kamani",
+      "Eisha Singh"
+    ],
+    runtime: "112 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDAxZTNlYjgtZDMyNi00ZmZlLTlhZjktZjBkMjBlODg3Yjg0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDAxZTNlYjgtZDMyNi00ZmZlLTlhZjktZjBkMjBlODg3Yjg0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "895",
+    title: "Masoom Sawaal",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Masoom Sawaal, a stellar Bollywood production.",
+    cast: [
+      "Nitanshi Goel",
+      "Ekavali Khanna"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzJhMWYyOTItY2MzMS00OWVhLTkzOWUtMTYwMTg5ZmZlOTIyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzJhMWYyOTItY2MzMS00OWVhLTkzOWUtMTYwMTg5ZmZlOTIyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "896",
+    title: "Phone Bhoot",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Phone Bhoot, a stellar Bollywood production.",
+    cast: [
+      "Katrina Kaif",
+      "Ishaan Khatter"
+    ],
+    runtime: "140 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjYxYzg4MTItZTJmYy00ZTg4LWI1MjUtYWQ5YTk4Yzg3MTI5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjYxYzg4MTItZTJmYy00ZTg4LWI1MjUtYWQ5YTk4Yzg3MTI5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "897",
+    title: "Radhe Shyam",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Radhe Shyam, a stellar Bollywood production.",
+    cast: [
+      "Prabhas",
+      "Pooja Hegde"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGE3MmVlYmItZjA5Ny00YzNhLTg0ZGMtNWZhMmUwNjljN2IwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGE3MmVlYmItZjA5Ny00YzNhLTg0ZGMtNWZhMmUwNjljN2IwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "898",
+    title: "Qala",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Qala, a stellar Bollywood production.",
+    cast: [
+      "Triptii Dimri",
+      "Babil Khan"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGFjYTliNzAtOTRlYi00NjNkLThmMGMtMmNhZjUyM2UyYWZhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGFjYTliNzAtOTRlYi00NjNkLThmMGMtMmNhZjUyM2UyYWZhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "899",
+    title: "Nikamma",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Nikamma, a stellar Bollywood production.",
+    cast: [
+      "Abhimanyu Dasani",
+      "Shilpa Shetty Kundra"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWMwNGQ1M2EtMGU5Zi00NmVkLTgyNjEtYWUzMTQ2ZTY2YzRjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWMwNGQ1M2EtMGU5Zi00NmVkLTgyNjEtYWUzMTQ2ZTY2YzRjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "900",
+    title: "Prem Geet 3",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Prem Geet 3, a stellar Bollywood production.",
+    cast: [
+      "Pradeep Khadka",
+      "Kristina Gurung"
+    ],
+    runtime: "122 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTJkYTUyNTQtMTBjZC00ZmU5LWFjYzktMjE5Y2NjNTdlNmE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTJkYTUyNTQtMTBjZC00ZmU5LWFjYzktMjE5Y2NjNTdlNmE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "901",
+    title: "Pyar Mein Thoda Twist",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Pyar Mein Thoda Twist, a stellar Bollywood production.",
+    cast: [
+      "Mukesh J Bharti",
+      "Richa Mukherjee"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWNhNzMyMmMtMTE0MS00NWZlLWFkMmMtMTg5MTE2ZWQ5MjM4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWNhNzMyMmMtMTE0MS00NWZlLWFkMmMtMTg5MTE2ZWQ5MjM4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "902",
+    title: "Nazar Andaaz",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Nazar Andaaz, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Banerjee",
+      "Shyam Bhimsaria"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjllMmYxNmQtZjhhMC00NzQyLTk4NDktOTQzMTdiMGNmOTFmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjllMmYxNmQtZjhhMC00NzQyLTk4NDktOTQzMTdiMGNmOTFmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "903",
+    title: "Odd Couple",
+    year: 1968,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Odd Couple, a stellar Bollywood production.",
+    cast: [
+      "Jack Lemmon",
+      "Walter Matthau"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjgwOTg4NDQtMWQxNy00OTlkLTkzMGQtZjJmYTAxMWY2MGU5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjgwOTg4NDQtMWQxNy00OTlkLTkzMGQtZjJmYTAxMWY2MGU5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "904",
+    title: "Plan A Plan B",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Plan A Plan B, a stellar Bollywood production.",
+    cast: [
+      "Riteish Deshmukh",
+      "Tamannaah Bhatia"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BN2M3NTFlODQtOWUzNC00YzU1LThlM2YtZmY3YTBkNmVlNzYxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BN2M3NTFlODQtOWUzNC00YzU1LThlM2YtZmY3YTBkNmVlNzYxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "905",
+    title: "Raksha Bandhan",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Raksha Bandhan, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Salim Siddiqui"
+    ],
+    runtime: "148 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTU4MmM4M2MtMzdmYi00YzVhLTgxNTItM2YwYWE1ZWY4ZjgwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTU4MmM4M2MtMzdmYi00YzVhLTgxNTItM2YwYWE1ZWY4ZjgwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "906",
+    title: "Rocketry: The Nambi Effect",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Rocketry: The Nambi Effect, a stellar Bollywood production.",
+    cast: [
+      "Madhavan",
+      "Simran"
+    ],
+    runtime: "139 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODkyMDUwNWUtOWMxNC00YWZlLWE4MjAtNDZjYTgyN2VmOGJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODkyMDUwNWUtOWMxNC00YWZlLWE4MjAtNDZjYTgyN2VmOGJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "907",
+    title: "Ram Setu",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Ram Setu, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Jacqueline Fernandez"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTc2YjMzZDUtMDhiOC00NzNjLWJhZWYtZDYzZTEwOTgyNzQ1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTc2YjMzZDUtMDhiOC00NzNjLWJhZWYtZDYzZTEwOTgyNzQ1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "908",
+    title: "Salaam Venky",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Salaam Venky, a stellar Bollywood production.",
+    cast: [
+      "Aamir Khan",
+      "Kajol"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWJiYTIyNjUtNTdjMi00MjE1LWIxNDYtNmE1OGZkNDhjZmUwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWJiYTIyNjUtNTdjMi00MjE1LWIxNDYtNmE1OGZkNDhjZmUwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "909",
+    title: "Shabaash Mithu",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Shabaash Mithu, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Vijay Raaz"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWYyODQ0YjAtNmNiNi00MDU3LTkxODQtNzhmZjMyNDdlZmE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWYyODQ0YjAtNmNiNi00MDU3LTkxODQtNzhmZjMyNDdlZmE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "910",
+    title: "Saroj Ka Rishta",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Saroj Ka Rishta, a stellar Bollywood production.",
+    cast: [
+      "Monika Agnihotrie",
+      "Syed Arsalan"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWJhNjU4ZmMtZTViYi00NzBjLTk1NGMtZjI3YTA5MjgzODY2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWJhNjU4ZmMtZTViYi00NzBjLTk1NGMtZjI3YTA5MjgzODY2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "911",
+    title: "Rocket Gang",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Rocket Gang, a stellar Bollywood production.",
+    cast: [
+      "Aditya Seal",
+      "Nikita Dutta"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTM3M2YzYjAtYmE0ZC00OTM3LWJiNjctNDNiMTg1OWI0MjQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTM3M2YzYjAtYmE0ZC00OTM3LWJiNjctNDNiMTg1OWI0MjQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "912",
+    title: "Rashtra Kavach Om",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Rashtra Kavach Om, a stellar Bollywood production.",
+    cast: [
+      "Petrosyan Armen",
+      "Vicky Arora"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGFjOWI2NGQtYTg5OS00NjA0LWFiMmUtNDBiZTFhNTZmMDU2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGFjOWI2NGQtYTg5OS00NjA0LWFiMmUtNDBiZTFhNTZmMDU2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "913",
+    title: "Samrat Prithviraj",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Samrat Prithviraj, a stellar Bollywood production.",
+    cast: [
+      "Akshay Kumar",
+      "Sanjay Dutt"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGQ3OTA3YzQtZDhjMC00MjIxLTg5ZDQtOTFjYTU4MDA0ZmI5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGQ3OTA3YzQtZDhjMC00MjIxLTg5ZDQtOTFjYTU4MDA0ZmI5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "914",
+    title: "Runway 34",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Runway 34, a stellar Bollywood production.",
+    cast: [
+      "Ajay Devgn",
+      "Amitabh Bachchan"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGRiNWFiZWMtYWViMi00MjcyLWEyNTUtNTJlMTM4Zjg3OTIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGRiNWFiZWMtYWViMi00MjcyLWEyNTUtNTJlMTM4Zjg3OTIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "915",
+    title: "Shadow Assassins",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Shadow Assassins, a stellar Bollywood production.",
+    cast: [
+      "Anurag Sinha",
+      "Mishti Chakravarty"
+    ],
+    runtime: "123 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzgzNTg1MDUtYzA1ZC00ZjMxLTg1YjAtNzBmZGFjN2QzOTE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzgzNTg1MDUtYzA1ZC00ZjMxLTg1YjAtNzBmZGFjN2QzOTE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "916",
+    title: "Sherdil: The Pilibhit Saga",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Sherdil: The Pilibhit Saga, a stellar Bollywood production.",
+    cast: [
+      "Pankaj Tripathi",
+      "Sayani Gupta"
+    ],
+    runtime: "116 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjk4YjVmMDUtMzkxMy00MWVhLTljYTYtNGEwODdjZmIyNWE0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjk4YjVmMDUtMzkxMy00MWVhLTljYTYtNGEwODdjZmIyNWE0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "917",
+    title: "Thank God",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Thank God, a stellar Bollywood production.",
+    cast: [
+      "Sidharth Malhotra",
+      "Ajay Devgn"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTBmNTgxMTEtZWY1Ny00MTJmLTlhYmQtOGRhZGZhN2QzYzliXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTBmNTgxMTEtZWY1Ny00MTJmLTlhYmQtOGRhZGZhN2QzYzliXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "918",
+    title: "Three of Us",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Three of Us, a stellar Bollywood production.",
+    cast: [
+      "Shefali Shah",
+      "Jaideep Ahlawat"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWM3ZDUwYjMtMmEyZS00YmZiLTk0NWItOWViM2U2ZGRmOTIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWM3ZDUwYjMtMmEyZS00YmZiLTk0NWItOWViM2U2ZGRmOTIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "919",
+    title: "Thar",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Thar, a stellar Bollywood production.",
+    cast: [
+      "Anil Kapoor",
+      "Harshvardhan Kapoor"
+    ],
+    runtime: "144 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmQxYWMxYTEtYWY4NC00MzM1LWE4YTYtMzFhZDczNmU2ZTUzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmQxYWMxYTEtYWY4NC00MzM1LWE4YTYtMzFhZDczNmU2ZTUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "920",
+    title: "Shamshera",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Shamshera, a stellar Bollywood production.",
+    cast: [
+      "Ranbir Kapoor",
+      "Sanjay Dutt"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTlkMmQ3MGQtZTg0Zi00MWMyLWE2MTEtNjU5M2MwZWQ1YzhlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTlkMmQ3MGQtZTg0Zi00MWMyLWE2MTEtNjU5M2MwZWQ1YzhlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "921",
+    title: "Tara vs Bilal",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Tara vs Bilal, a stellar Bollywood production.",
+    cast: [
+      "Sonia Rathee",
+      "Harshvardhan Rane"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzcwNTY1NmItYjgxZC00MWQ4LTlkMjAtMDA0YmQ2YmUwYmFkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzcwNTY1NmItYjgxZC00MWQ4LTlkMjAtMDA0YmQ2YmUwYmFkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "922",
+    title: "Sharmaji Namkeen",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Sharmaji Namkeen, a stellar Bollywood production.",
+    cast: [
+      "Rishi Kapoor",
+      "Paresh Rawal"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGZhMTYwOGUtZWQ3Ny00Y2VjLTkxNTktMTk3NzdiYTY3ZDE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGZhMTYwOGUtZWQ3Ny00Y2VjLTkxNTktMTk3NzdiYTY3ZDE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "923",
+    title: "Thai Massage",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Thai Massage, a stellar Bollywood production.",
+    cast: [
+      "Gajraj Rao",
+      "Divyendu Sharma"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmU0Njg0NTUtOTRhYy00MzZiLTlhNDAtNzA5YzU5YjU5YzBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmU0Njg0NTUtOTRhYy00MzZiLTlhNDAtNzA5YzU5YjU5YzBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "924",
+    title: "The Storyteller",
+    year: 1987,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of The Storyteller, a stellar Bollywood production.",
+    cast: [
+      "John Hurt",
+      "Brian Henson"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjAyNzY2Nzg4M15BMl5BanBnXkFtZTgwODk2MzkwMzE@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjAyNzY2Nzg4M15BMl5BanBnXkFtZTgwODk2MzkwMzE@._V1_.jpg"
+  },
+  {
+    id: "925",
+    title: "Tadka",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Tadka, a stellar Bollywood production.",
+    cast: [
+      "Aliya Naaz",
+      "Priyanka Haldar"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGYwMDY0YTYtNTY3Yy00YjYyLWE4ODMtMjRiZDJiZDExMWJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGYwMDY0YTYtNTY3Yy00YjYyLWE4ODMtMjRiZDJiZDExMWJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "926",
+    title: "Vadh",
+    year: 2025,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Vadh, a stellar Bollywood production.",
+    cast: [
+      "Sanjay Mishra",
+      "Neena Gupta"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjM1OWU5N2QtMTQwYy00N2Q5LTg5NjUtYWZhOTgwZjkxOWFlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjM1OWU5N2QtMTQwYy00N2Q5LTg5NjUtYWZhOTgwZjkxOWFlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "927",
+    title: "Unpaused: Naya Safar",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Unpaused: Naya Safar, a stellar Bollywood production.",
+    cast: [
+      "Neena Kulkarni",
+      "Darshana Rajendran"
+    ],
+    runtime: "100 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzNiNzAxMzUtMzU3My00MTA3LWFiNjMtMDFlMGE3YWJjOTI4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzNiNzAxMzUtMzU3My00MTA3LWFiNjMtMDFlMGE3YWJjOTI4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "928",
+    title: "Vakeel Babu",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Vakeel Babu, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Banerjee",
+      "Loveleen Mishra"
+    ],
+    runtime: "90 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmMyMmEzZTUtYzVmNi00NDEwLTlmZTUtMzU1YjE1Y2NhYTM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmMyMmEzZTUtYzVmNi00NDEwLTlmZTUtMzU1YjE1Y2NhYTM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "929",
+    title: "Titu Ambani",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Titu Ambani, a stellar Bollywood production.",
+    cast: [
+      "Tushar Pandey",
+      "Deepika Singh Goyal"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGQwMGM2NDUtYzg1NC00NjhkLTkzNGItOWFhZDBjNWI3ZjdkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGQwMGM2NDUtYzg1NC00NjhkLTkzNGItOWFhZDBjNWI3ZjdkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "930",
+    title: "A Thursday",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of A Thursday, a stellar Bollywood production.",
+    cast: [
+      "Yami Gautam",
+      "Atul Kulkarni"
+    ],
+    runtime: "140 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzhiZjhmMTctZjZlNi00MjcwLWFjMWQtNTRjMjU0NTIyMDk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzhiZjhmMTctZjZlNi00MjcwLWFjMWQtNTRjMjU0NTIyMDk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "931",
+    title: "To Kill a Tiger",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of To Kill a Tiger, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "133 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmFhNzY5MDEtNmUxZi00MTA2LTg2OTYtM2VkNmY3MTEwMTJjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmFhNzY5MDEtNmUxZi00MTA2LTg2OTYtM2VkNmY3MTEwMTJjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "932",
+    title: "Trahimam",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Trahimam, a stellar Bollywood production.",
+    cast: [
+      "Anurag Singh Tomar",
+      "Nair Aryann"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2RjOGY0NzEtNGQzMC00YzRlLWIxMDgtOThlOTdhODY1NTEyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2RjOGY0NzEtNGQzMC00YzRlLWIxMDgtOThlOTdhODY1NTEyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "933",
+    title: "Uunchai",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Uunchai, a stellar Bollywood production.",
+    cast: [
+      "Amitabh Bachchan",
+      "Anupam Kher"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmEwM2JjNzEtMTMyNC00NDU2LTlhMTgtYWYxMjFiZTcxMWE4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmEwM2JjNzEtMTMyNC00NDU2LTlhMTgtYWYxMjFiZTcxMWE4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "934",
+    title: "Vikram Vedha",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Vikram Vedha, a stellar Bollywood production.",
+    cast: [
+      "Saif Ali Khan",
+      "Hrithik Roshan"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjc2YjVhNWQtYzVmZC00YzAyLTljNTItMmUxMTk1NjcyMThhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjc2YjVhNWQtYzVmZC00YzAyLTljNTItMmUxMTk1NjcyMThhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "935",
+    title: "Toolsidas Junior",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Toolsidas Junior, a stellar Bollywood production.",
+    cast: [
+      "Sanjay Dutt",
+      "Rajeev Kapoor"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjc1ZWU2MTUtYWFmOC00MTQ3LThmZDUtNDYzMjZmYmVhZGVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjc1ZWU2MTUtYWFmOC00MTQ3LThmZDUtNDYzMjZmYmVhZGVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "936",
+    title: "83",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of 83, a stellar Bollywood production.",
+    cast: [
+      "Ranveer Singh",
+      "Deepika Padukone"
+    ],
+    runtime: "146 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmNlNGY2NWEtODBiYi00YWIxLTkyNmItNTUwMmRjOTY4NzNkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmNlNGY2NWEtODBiYi00YWIxLTkyNmItNTUwMmRjOTY4NzNkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "937",
+    title: "1232 KMS",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of 1232 KMS, a stellar Bollywood production.",
+    cast: [
+      "Bollywood Actor",
+      "Bollywood Actress"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTlhZTQ0MzQtYjMyYy00MjEzLWIzNjgtMTMzMmM4ZDQxNWMyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTlhZTQ0MzQtYjMyYy00MjEzLWIzNjgtMTMzMmM4ZDQxNWMyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "938",
+    title: "Aafat-E-Ishq",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Aafat-E-Ishq, a stellar Bollywood production.",
+    cast: [
+      "Neha Sharma",
+      "Ila Arun"
+    ],
+    runtime: "99 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTcyNzBkMmItZTg2NC00ODc4LTliYzgtYjk0NzhhYTVjODgwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTcyNzBkMmItZTg2NC00ODc4LTliYzgtYjk0NzhhYTVjODgwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "939",
+    title: "12 'O' Clock",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of 12 'O' Clock, a stellar Bollywood production.",
+    cast: [
+      "Mithun Chakraborty",
+      "Makrand Deshpande"
+    ],
+    runtime: "126 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTM2YzQ2ZWUtZGFmNy00NWYyLTk3NDctZjFhM2VhOWNmOGEwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTM2YzQ2ZWUtZGFmNy00NWYyLTk3NDctZjFhM2VhOWNmOGEwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "940",
+    title: "Zwigato",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Zwigato, a stellar Bollywood production.",
+    cast: [
+      "Kapil Sharma",
+      "Shahana Goswami"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjZkMDhjMjYtYWYzMS00MTcwLTgwYzMtYjliMDZkMmQ2MDI2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjZkMDhjMjYtYWYzMS00MTcwLTgwYzMtYjliMDZkMmQ2MDI2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "941",
+    title: "14 Phere",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of 14 Phere, a stellar Bollywood production.",
+    cast: [
+      "Vikrant Massey",
+      "Kriti Kharbanda"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWZlOWVmZWQtOGM3ZS00ZDE3LWI3ZGYtODE1MWFjZDMzY2NjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWZlOWVmZWQtOGM3ZS00ZDE3LWI3ZGYtODE1MWFjZDMzY2NjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "942",
+    title: "Ajeeb Daastaans",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Ajeeb Daastaans, a stellar Bollywood production.",
+    cast: [
+      "Fatima Sana Shaikh",
+      "Jaideep Ahlawat"
+    ],
+    runtime: "113 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTljZWJlNjYtMGQ2Yi00ODcyLTk1OWUtYzg1YmE5YmE2NTJlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTljZWJlNjYtMGQ2Yi00ODcyLTk1OWUtYzg1YmE5YmE2NTJlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "943",
+    title: "420 IPC",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of 420 IPC, a stellar Bollywood production.",
+    cast: [
+      "Rohan Mehra",
+      "Vinay Pathak"
+    ],
+    runtime: "110 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjhhNmNjNDgtOWI5Yy00YjExLTk5YWItZjM2N2FlMWNjYmQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjhhNmNjNDgtOWI5Yy00YjExLTk5YWItZjM2N2FlMWNjYmQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "944",
+    title: "Alpha Beta Gamma",
+    year: 2022,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Alpha Beta Gamma, a stellar Bollywood production.",
+    cast: [
+      "Reena Aggarwal",
+      "Saavi Kundra"
+    ],
+    runtime: "137 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOTc0Zjc3MmQtZGRiOS00MTEzLTk0ZGEtZDhkNzE5ZGYyMDM0XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOTc0Zjc3MmQtZGRiOS00MTEzLTk0ZGEtZDhkNzE5ZGYyMDM0XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "945",
+    title: "200: Halla Ho",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of 200: Halla Ho, a stellar Bollywood production.",
+    cast: [
+      "Ray Aksh",
+      "Saloni Batra"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmQyY2NjNGYtZmI3Yi00NzU4LTgzYWUtNTZjYWRmYWMyMDkyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmQyY2NjNGYtZmI3Yi00NzU4LTgzYWUtNTZjYWRmYWMyMDkyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "946",
+    title: "Cash",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Cash, a stellar Bollywood production.",
+    cast: [
+      "John Travolta",
+      "Kristin Davis"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDQ5OGRiMWItOWI4ZC00NGViLWI2ZjctNTg3YzAwN2Y0NmM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDQ5OGRiMWItOWI4ZC00NGViLWI2ZjctNTg3YzAwN2Y0NmM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "947",
+    title: "Bob Biswas",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Bob Biswas, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Bachchan",
+      "Chitrangda Singh"
+    ],
+    runtime: "139 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGM0MThhMmItODA4OC00YjMxLWFiNTgtOTM5OGJlNzRkYzVhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGM0MThhMmItODA4OC00YjMxLWFiNTgtOTM5OGJlNzRkYzVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "948",
+    title: "Bell Bottom",
+    year: 2019,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Bell Bottom, a stellar Bollywood production.",
+    cast: [
+      "Rishab Shetty",
+      "Haripriya"
+    ],
+    runtime: "140 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTc4ODA2MjQyMF5BMl5BanBnXkFtZTgwMTY3MDI1NzM@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTc4ODA2MjQyMF5BMl5BanBnXkFtZTgwMTY3MDI1NzM@._V1_.jpg"
+  },
+  {
+    id: "949",
+    title: "Bhoot Police",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Bhoot Police, a stellar Bollywood production.",
+    cast: [
+      "Saif Ali Khan",
+      "Arjun Kapoor"
+    ],
+    runtime: "128 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzg4ZDU2Y2YtNzFiMC00OGYyLTgwYjgtMDA1MzBhMWE3ZmVkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzg4ZDU2Y2YtNzFiMC00OGYyLTgwYjgtMDA1MzBhMWE3ZmVkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "950",
+    title: "Atrangi Re",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Atrangi Re, a stellar Bollywood production.",
+    cast: [
+      "Dhanush",
+      "Rakesh Poonia"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOWU2MjRlZTYtMTA3MC00ZWFiLTlkYTMtZTJmMzM4MjQ0NjU2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOWU2MjRlZTYtMTA3MC00ZWFiLTlkYTMtZTJmMzM4MjQ0NjU2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "951",
+    title: "Babloo Bachelor",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Babloo Bachelor, a stellar Bollywood production.",
+    cast: [
+      "Aakkash Dabhade",
+      "Akshat"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmM5ZjZlZWQtOWRhYy00NWM5LWFmYjctZDUyZjM5ZTg0OTY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmM5ZjZlZWQtOWRhYy00NWM5LWFmYjctZDUyZjM5ZTg0OTY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "952",
+    title: "Ankahi Kahaniya",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Ankahi Kahaniya, a stellar Bollywood production.",
+    cast: [
+      "Abhishek Banerjee",
+      "T.J. Bhanu"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODM4NTJkYzAtZTc2MS00NTVhLTk4ZDEtMGQ3NzUyOGY3MDk2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODM4NTJkYzAtZTc2MS00NTVhLTk4ZDEtMGQ3NzUyOGY3MDk2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "953",
+    title: "Bunty Aur Babli 2",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Bunty Aur Babli 2, a stellar Bollywood production.",
+    cast: [
+      "Saif Ali Khan",
+      "Rani Mukerji"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Q1MDdhMTgtNjM2Mi00MzRjLTg4MWItYzc0Y2EyMDQ3ZjE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Q1MDdhMTgtNjM2Mi00MzRjLTg4MWItYzc0Y2EyMDQ3ZjE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "954",
+    title: "Andaman",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Andaman, a stellar Bollywood production.",
+    cast: [
+      "Vishal Agiran",
+      "Arav Aryavanshi"
+    ],
+    runtime: "135 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYWMzYjhjZTYtMjQxOC00OWE4LTlmYjgtYzRhNWNlMjQ3NGQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYWMzYjhjZTYtMjQxOC00OWE4LTlmYjgtYzRhNWNlMjQ3NGQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "955",
+    title: "Bhavai",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Bhavai, a stellar Bollywood production.",
+    cast: [
+      "Pratik Gandhi",
+      "Aindrita Ray"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmYzZTg2ZTctNzI5Zi00MjI5LTljNDYtYmY3NjFjNGI1YjdjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmYzZTg2ZTctNzI5Zi00MjI5LTljNDYtYmY3NjFjNGI1YjdjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "956",
+    title: "Dybbuk",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Dybbuk, a stellar Bollywood production.",
+    cast: [
+      "Emraan Hashmi",
+      "Nikita Dutta"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjc3MTY2MjEtOGZlMC00ODhlLThjZmQtM2JlYjBjOTJjMTY5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjc3MTY2MjEtOGZlMC00ODhlLThjZmQtM2JlYjBjOTJjMTY5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "957",
+    title: "Chehre",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Chehre, a stellar Bollywood production.",
+    cast: [
+      "Amitabh Bachchan",
+      "Emraan Hashmi"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNGUwMTZjYTMtY2RmMC00N2MxLWE0MjktZGRiNjAwNjk3ZTQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNGUwMTZjYTMtY2RmMC00N2MxLWE0MjktZGRiNjAwNjk3ZTQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "958",
+    title: "Chalo Koi Baat Nahi",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Chalo Koi Baat Nahi, a stellar Bollywood production.",
+    cast: [
+      "Vinay Pathak",
+      "Ranvir Shorey"
+    ],
+    runtime: "91 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDk2NGI4MzYtNWYxMC00ZDZmLWJhNmItNzI3OGZiMzExMTNjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDk2NGI4MzYtNWYxMC00ZDZmLWJhNmItNzI3OGZiMzExMTNjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "959",
+    title: "Dhamaka",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.5,
+    synopsis: "Experience the epic journey of Dhamaka, a stellar Bollywood production.",
+    cast: [
+      "Kartik Aaryan",
+      "Mrunal Thakur"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzc3OWNkNTktNGVkZi00ZWIyLWIxNDMtMDVlM2E4MDJlYjYzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzc3OWNkNTktNGVkZi00ZWIyLWIxNDMtMDVlM2E4MDJlYjYzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "960",
+    title: "Dial 100",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Dial 100, a stellar Bollywood production.",
+    cast: [
+      "Manoj Bajpayee",
+      "Neena Gupta"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODUwNmVmODctN2M1ZC00NWNhLWFiNmEtM2RlM2M3NTlkM2ZlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODUwNmVmODctN2M1ZC00NWNhLWFiNmEtM2RlM2M3NTlkM2ZlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "961",
+    title: "D Company",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of D Company, a stellar Bollywood production.",
+    cast: [
+      "Sandeep Bose",
+      "Abhilash Chaudhary"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNzZmOWZmOTItNzE0OS00MjliLWFmMzktODIzY2QxZGVjNDgzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNzZmOWZmOTItNzE0OS00MjliLWFmMzktODIzY2QxZGVjNDgzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "962",
+    title: "Chandigarh Kare Aashiqui",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Chandigarh Kare Aashiqui, a stellar Bollywood production.",
+    cast: [
+      "Ayushmann Khurrana",
+      "Vaani Kapoor"
+    ],
+    runtime: "106 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2FlZTczODAtYjFlNy00MDc3LWE1YWYtMmVjYzEyZjJlZDBkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2FlZTczODAtYjFlNy00MDc3LWE1YWYtMmVjYzEyZjJlZDBkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "963",
+    title: "Fire in the Mountains",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Fire in the Mountains, a stellar Bollywood production.",
+    cast: [
+      "Vinamrata Rai",
+      "Chandan Bisht"
+    ],
+    runtime: "102 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjM4NDljNDQtYWNlOS00YmM3LTk4YjMtMjliOTJhNTA1YzY1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjM4NDljNDQtYWNlOS00YmM3LTk4YjMtMjliOTJhNTA1YzY1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "964",
+    title: "Collar Bomb",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Collar Bomb, a stellar Bollywood production.",
+    cast: [
+      "Jimmy Shergill",
+      "Sparsh Shrivastava"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzM2ODRhYzItMTMzNC00YzZmLTg1N2YtMzg0NmZhNDg2ZGRhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzM2ODRhYzItMTMzNC00YzZmLTg1N2YtMzg0NmZhNDg2ZGRhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "965",
+    title: "Choices",
+    year: 1981,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Choices, a stellar Bollywood production.",
+    cast: [
+      "Paul Carafotes",
+      "Victor French"
+    ],
+    runtime: "94 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNjdhYWMzNjUtYWE3Yi00OWFmLWEwNzItZDU4ZDFiZDc2YWM2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNjdhYWMzNjUtYWE3Yi00OWFmLWEwNzItZDU4ZDFiZDc2YWM2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "966",
+    title: "Flight",
+    year: 2012,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Flight, a stellar Bollywood production.",
+    cast: [
+      "Denzel Washington",
+      "Kelly Reilly"
+    ],
+    runtime: "129 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTUxMjI1OTMxNl5BMl5BanBnXkFtZTcwNjc3NTY1OA@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTUxMjI1OTMxNl5BMl5BanBnXkFtZTcwNjc3NTY1OA@@._V1_.jpg"
+  },
+  {
+    id: "967",
+    title: "Hum Bhi Akele Tum Bhi Akele",
+    year: 2019,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Hum Bhi Akele Tum Bhi Akele, a stellar Bollywood production.",
+    cast: [
+      "Anshuman Jha",
+      "Zareen Khan"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMGJkZjI3ZTktYTk1MC00NjJkLTkzNjYtOWQyYTNjYjViMDQ3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMGJkZjI3ZTktYTk1MC00NjJkLTkzNjYtOWQyYTNjYjViMDQ3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "968",
+    title: "Highway Nights",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Highway Nights, a stellar Bollywood production.",
+    cast: [
+      "Krishna Bansal",
+      "Prakash Jha"
+    ],
+    runtime: "133 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNDE0YTFhMjktNjU2NC00YmYyLTk1YjAtZTUyODczZGJlZDU5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNDE0YTFhMjktNjU2NC00YmYyLTk1YjAtZTUyODczZGJlZDU5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "969",
+    title: "Happy Birthday Mummyji",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of Happy Birthday Mummyji, a stellar Bollywood production.",
+    cast: [
+      "Shefali Shah"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmI1MzJhYWEtYjgxNS00N2Y5LWE4YTItNzI4MzQ0M2I4NWZmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmI1MzJhYWEtYjgxNS00N2Y5LWE4YTItNzI4MzQ0M2I4NWZmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "970",
+    title: "Helmet",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Helmet, a stellar Bollywood production.",
+    cast: [
+      "Aparshakti Khurana",
+      "Abhishek Banerjee"
+    ],
+    runtime: "109 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjcwMjAyNmYtMTZiZS00YTE0LTkwZWYtNTg1NWZhNDlhZmZjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjcwMjAyNmYtMTZiZS00YTE0LTkwZWYtNTg1NWZhNDlhZmZjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "971",
+    title: "Hello Charlie",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Hello Charlie, a stellar Bollywood production.",
+    cast: [
+      "Aadar Jain",
+      "Jackie Shroff"
+    ],
+    runtime: "100 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmYyZWZkZTYtMDVkMi00ZjRmLTgwZjYtOWY2ZTZjYmU3MzExXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmYyZWZkZTYtMDVkMi00ZjRmLTgwZjYtOWY2ZTZjYmU3MzExXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "972",
+    title: "Haseen Dillruba",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Haseen Dillruba, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Vikrant Massey"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDg0NGU2ZjgtM2M0YS00NWM2LTkwNjAtYWY5YTY0N2IzYWUwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDg0NGU2ZjgtM2M0YS00NWM2LTkwNjAtYWY5YTY0N2IzYWUwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "973",
+    title: "Hum Do Hamare Do",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Hum Do Hamare Do, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Kriti Sanon"
+    ],
+    runtime: "98 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMDAzZDc2ZDUtMzg4MC00ZTliLWExNGYtMGRhYjYwN2M2Mjc4XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMDAzZDc2ZDUtMzg4MC00ZTliLWExNGYtMGRhYjYwN2M2Mjc4XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "974",
+    title: "Hungama 2",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Hungama 2, a stellar Bollywood production.",
+    cast: [
+      "Paresh Rawal",
+      "Meezaan Jafri"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDQwMGQ5YzQtOTczYy00YmI3LTg2N2UtYjk3N2RmODFlMTEyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDQwMGQ5YzQtOTczYy00YmI3LTg2N2UtYjk3N2RmODFlMTEyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "975",
+    title: "The Girl on the Train",
+    year: 2016,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of The Girl on the Train, a stellar Bollywood production.",
+    cast: [
+      "Emily Blunt",
+      "Haley Bennett"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTg4MGViYTMtYTFkMC00YzVlLWExZDItOTM4NTUwMjc2NTE2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTg4MGViYTMtYTFkMC00YzVlLWExZDItOTM4NTUwMjc2NTE2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "976",
+    title: "The Interview",
+    year: 2014,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of The Interview, a stellar Bollywood production.",
+    cast: [
+      "James Franco",
+      "Seth Rogen"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQzMTcwMzgyMV5BMl5BanBnXkFtZTgwMzAyMzQ2MzE@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQzMTcwMzgyMV5BMl5BanBnXkFtZTgwMzAyMzQ2MzE@._V1_.jpg"
+  },
+  {
+    id: "977",
+    title: "Koi Jaane Na",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Koi Jaane Na, a stellar Bollywood production.",
+    cast: [
+      "Kunal Kapoor",
+      "Amyra Dastur"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMjdkZWQxNjEtNTUzNC00ZGE1LWFmZDUtOTdmYjg5NGMxMjE5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMjdkZWQxNjEtNTUzNC00ZGE1LWFmZDUtOTdmYjg5NGMxMjE5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "978",
+    title: "Kaagaz",
+    year: 1959,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Kaagaz, a stellar Bollywood production.",
+    cast: [
+      "Waheeda Rehman",
+      "Guru Dutt"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYTg5YmY3MjMtZGZmZC00NmNkLTg1NDktNThlNmJiZDc4ODQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYTg5YmY3MjMtZGZmZC00NmNkLTg1NDktNThlNmJiZDc4ODQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "979",
+    title: "Madam Chief Minister",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Madam Chief Minister, a stellar Bollywood production.",
+    cast: [
+      "Richa Chadha",
+      "Manav Kaul"
+    ],
+    runtime: "105 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTcyNzAwMjctNWE5Zi00OTIyLWFhYzAtOTdkODRiZDZjNjBhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTcyNzAwMjctNWE5Zi00OTIyLWFhYzAtOTdkODRiZDZjNjBhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "980",
+    title: "Kya Meri Sonam Gupta Bewafa Hai?",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Kya Meri Sonam Gupta Bewafa Hai?, a stellar Bollywood production.",
+    cast: [
+      "Jassie Gill",
+      "Surbhi Jyoti"
+    ],
+    runtime: "138 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYjE2ZmU2ODctZjBlMy00ZjU4LTgyZDItNGYwN2QzODZjZDIzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYjE2ZmU2ODctZjBlMy00ZjU4LTgyZDItNGYwN2QzODZjZDIzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "981",
+    title: "Love in the Times of Corona",
+    year: 2007,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Love in the Times of Corona, a stellar Bollywood production.",
+    cast: [
+      "Javier Bardem",
+      "Giovanna Mezzogiorno"
+    ],
+    runtime: "95 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQ3OTE0OTM4N15BMl5BanBnXkFtZTcwNDg3OTI1MQ@@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMTQ3OTE0OTM4N15BMl5BanBnXkFtZTcwNDg3OTI1MQ@@._V1_.jpg"
+  },
+  {
+    id: "982",
+    title: "Meenakshi Sundareshwar",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Meenakshi Sundareshwar, a stellar Bollywood production.",
+    cast: [
+      "Sanya Malhotra",
+      "Abhimanyu Dasani"
+    ],
+    runtime: "132 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTEwOGFjNjQtMDhiNC00YzMwLTkwMzItYWU5ZjZlYjEwOGI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTEwOGFjNjQtMDhiNC00YzMwLTkwMzItYWU5ZjZlYjEwOGI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "983",
+    title: "Main Mulayam Singh Yadav",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Main Mulayam Singh Yadav, a stellar Bollywood production.",
+    cast: [
+      "Amyth Sethi",
+      "Govind Namdeo"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMmVmODIzODgtY2RkOS00ODliLTlkODItYTFkN2ViNzc1Y2VmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMmVmODIzODgtY2RkOS00ODliLTlkODItYTFkN2ViNzc1Y2VmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "984",
+    title: "Lahore Confidential",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Lahore Confidential, a stellar Bollywood production.",
+    cast: [
+      "Richa Chadha",
+      "Fareed Khan"
+    ],
+    runtime: "143 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZWI1YzExMDktZjgyOS00M2U3LTg0ZjQtZmMxODIzNjA1MzM5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZWI1YzExMDktZjgyOS00M2U3LTg0ZjQtZmMxODIzNjA1MzM5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "985",
+    title: "Kaadan",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Kaadan, a stellar Bollywood production.",
+    cast: [
+      "Srinath Alnath",
+      "Raghu Babu"
+    ],
+    runtime: "119 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWUxZDg2YjctM2ZhNy00MGI1LTlhMzYtMGQ0Mzc2YzFmZTAzXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWUxZDg2YjctM2ZhNy00MGI1LTlhMzYtMGQ0Mzc2YzFmZTAzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "986",
+    title: "Murder at Teesri Manzil 302",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.3,
+    synopsis: "Experience the epic journey of Murder at Teesri Manzil 302, a stellar Bollywood production.",
+    cast: [
+      "Irrfan Khan",
+      "Ranvir Shorey"
+    ],
+    runtime: "114 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDczZDAwNzctYzg5ZC00YTcwLTkxYWItZDMzNjExZWE1Y2Q5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDczZDAwNzctYzg5ZC00YTcwLTkxYWItZDMzNjExZWE1Y2Q5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "987",
+    title: "Oye Mamu!",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Oye Mamu!, a stellar Bollywood production.",
+    cast: [
+      "Govardhan Asrani",
+      "Tanay Chheda"
+    ],
+    runtime: "142 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODljMjJmNDUtYzJlYS00MmRkLWEwMTktMzUzODFjYjI3NWNiXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODljMjJmNDUtYzJlYS00MmRkLWEwMTktMzUzODFjYjI3NWNiXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "988",
+    title: "A Night of Knowing Nothing",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of A Night of Knowing Nothing, a stellar Bollywood production.",
+    cast: [
+      "Bhumisuta Das"
+    ],
+    runtime: "111 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BOGJhMzkyYzEtNzA4Mi00NDk4LTk3MzEtZTZkNDk0NzU3ZWIxXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BOGJhMzkyYzEtNzA4Mi00NDk4LTk3MzEtZTZkNDk0NzU3ZWIxXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "989",
+    title: "Nyaay: The Justice",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Nyaay: The Justice, a stellar Bollywood production.",
+    cast: [
+      "Atsede Addy Ethio",
+      "Kushi Anand"
+    ],
+    runtime: "117 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BODEyMDg1NzgtZDNmNy00MTI2LTg4MjMtNTk0NWNhOWZjMDlkXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BODEyMDg1NzgtZDNmNy00MTI2LTg4MjMtNTk0NWNhOWZjMDlkXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "990",
+    title: "Nail Polish",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Nail Polish, a stellar Bollywood production.",
+    cast: [
+      "Arjun Rampal",
+      "Manav Kaul"
+    ],
+    runtime: "97 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2IzNjcxMjQtNDIzMi00ZTY0LWIyMWMtODE0NjY4YTk3ZGU1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2IzNjcxMjQtNDIzMi00ZTY0LWIyMWMtODE0NjY4YTk3ZGU1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "991",
+    title: "Mind Mera Mind",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Mind Mera Mind, a stellar Bollywood production.",
+    cast: [
+      "Gautam Arora",
+      "Pew Banerjee"
+    ],
+    runtime: "120 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTY3ZjJmZTgtNWE1Mi00ZWJkLWJlMmUtMTI2MDEwYzkxMWI1XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTY3ZjJmZTgtNWE1Mi00ZWJkLWJlMmUtMTI2MDEwYzkxMWI1XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "992",
+    title: "Mimi (2021 Hindi film)",
+    year: 2023,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Mimi (2021 Hindi film), a stellar Bollywood production.",
+    cast: [
+      "Poonam Chauhan",
+      "Pardeep Sharma"
+    ],
+    runtime: "141 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZDg0NmUzMGUtNTIwYy00NDI5LTk3YjYtZjIyNjY4ZDgwZTk2XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZDg0NmUzMGUtNTIwYy00NDI5LTk3YjYtZjIyNjY4ZDgwZTk2XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "993",
+    title: "Parvaaz: The Journey",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.5,
+    synopsis: "Experience the epic journey of Parvaaz: The Journey, a stellar Bollywood production.",
+    cast: [
+      "Kirti Arneja",
+      "Mandeep Brar"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNmM0Zjc1NTctYWY2NS00YjE1LTg0NjctMTc4NjgwNGVkYmQyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNmM0Zjc1NTctYWY2NS00YjE1LTg0NjctMTc4NjgwNGVkYmQyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "994",
+    title: "Pagglait",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Pagglait, a stellar Bollywood production.",
+    cast: [
+      "Sanya Malhotra",
+      "Sayani Gupta"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzgxY2UyZmYtZjljMi00NzZiLWE1NzItYjU3NGVkMWY2ZjdhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzgxY2UyZmYtZjljMi00NzZiLWE1NzItYjU3NGVkMWY2ZjdhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "995",
+    title: "Mumbai Saga",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Mumbai Saga, a stellar Bollywood production.",
+    cast: [
+      "John Abraham",
+      "Emraan Hashmi"
+    ],
+    runtime: "145 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmMyNmMwZjItNTA2Zi00YjhhLTlkZWQtMTQxMzdlNmJiMzQ5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmMyNmMwZjItNTA2Zi00YjhhLTlkZWQtMTQxMzdlNmJiMzQ5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "996",
+    title: "Roohi",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 5,
+    synopsis: "Experience the epic journey of Roohi, a stellar Bollywood production.",
+    cast: [
+      "Rajkummar Rao",
+      "Janhvi Kapoor"
+    ],
+    runtime: "134 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzc5OGI3Y2YtOTY0ZS00NDI1LTliMDktYTI2YmU4MGI5MDBmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzc5OGI3Y2YtOTY0ZS00NDI1LTliMDktYTI2YmU4MGI5MDBmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "997",
+    title: "RK/RKay",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of RK/RKay, a stellar Bollywood production.",
+    cast: [
+      "Rajat Kapoor",
+      "Mallika Sherawat"
+    ],
+    runtime: "104 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYzFlNTIyMzctOTlkYS00ZTg5LTkwMWItZDk2NmZmNTE1YmNlXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYzFlNTIyMzctOTlkYS00ZTg5LTkwMWItZDk2NmZmNTE1YmNlXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "998",
+    title: "Saina",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4,
+    synopsis: "Experience the epic journey of Saina, a stellar Bollywood production.",
+    cast: [
+      "Mukesh Agrohari",
+      "Olga Anand"
+    ],
+    runtime: "139 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BYmIwZDZjMDQtZGNiOC00NzY1LWFmMDMtYmZlYmM5YWM1MmJhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BYmIwZDZjMDQtZGNiOC00NzY1LWFmMDMtYmZlYmM5YWM1MmJhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "999",
+    title: "Sardar Udham",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.7,
+    synopsis: "Experience the epic journey of Sardar Udham, a stellar Bollywood production.",
+    cast: [
+      "Vicky Kaushal",
+      "Shaun Scott"
+    ],
+    runtime: "125 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzI5ZTIxOTgtNzU4Zi00YmE4LTlkMTMtNjhkODc0ZjdjZGI3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzI5ZTIxOTgtNzU4Zi00YmE4LTlkMTMtNjhkODc0ZjdjZGI3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1000",
+    title: "The Rapist",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of The Rapist, a stellar Bollywood production.",
+    cast: [
+      "Konkona Sen Sharma",
+      "Arjun Rampal"
+    ],
+    runtime: "147 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWY3NzZmNWUtZGUzYy00M2Y3LTg3YmUtNGFhNjljZTU4MTIyXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWY3NzZmNWUtZGUzYy00M2Y3LTg3YmUtNGFhNjljZTU4MTIyXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1001",
+    title: "Sardar Ka Grandson",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.6,
+    synopsis: "Experience the epic journey of Sardar Ka Grandson, a stellar Bollywood production.",
+    cast: [
+      "Rakul Preet Singh",
+      "John Abraham"
+    ],
+    runtime: "96 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZGYxMjEyZDMtZjMzMi00MTI5LWIzM2YtNzllYTdmMzIwODIwXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZGYxMjEyZDMtZjMzMi00MTI5LWIzM2YtNzllYTdmMzIwODIwXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1002",
+    title: "Rashmi Rocket",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.9,
+    synopsis: "Experience the epic journey of Rashmi Rocket, a stellar Bollywood production.",
+    cast: [
+      "Taapsee Pannu",
+      "Priyanshu Painyuli"
+    ],
+    runtime: "131 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZmE1Mzg3M2EtZDI0MS00NTRiLWEzMTktY2E0ZTQwMGQzYTBmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZmE1Mzg3M2EtZDI0MS00NTRiLWEzMTktY2E0ZTQwMGQzYTBmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1003",
+    title: "Sandeep Aur Pinky Faraar",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.8,
+    synopsis: "Experience the epic journey of Sandeep Aur Pinky Faraar, a stellar Bollywood production.",
+    cast: [
+      "Jaideep Ahlawat",
+      "Parineeti Chopra"
+    ],
+    runtime: "107 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNTBlMDdmZWItZTE4ZC00NGM5LWE3ZmYtYWM5MDNiYWU3ZjNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNTBlMDdmZWItZTE4ZC00NGM5LWE3ZmYtYWM5MDNiYWU3ZjNhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1004",
+    title: "Raat Baaki Hai",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.2,
+    synopsis: "Experience the epic journey of Raat Baaki Hai, a stellar Bollywood production.",
+    cast: [
+      "Paoli Dam",
+      "Anup Soni"
+    ],
+    runtime: "103 min",
+    language: "Hindi",
+    moodTags: [
+      "😢 Cry",
+      "😂 Laugh"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BY2ViM2E0NGMtZjBkYS00YTBhLWIwM2YtNzE3Y2IzZTYwNTk5XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BY2ViM2E0NGMtZjBkYS00YTBhLWIwM2YtNzE3Y2IzZTYwNTk5XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1005",
+    title: "The Power (2021 Indian film)",
+    year: 2024,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.8,
+    synopsis: "Experience the epic journey of The Power (2021 Indian film), a stellar Bollywood production.",
+    cast: [
+      "Howard Suber"
+    ],
+    runtime: "127 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😱 Thrill"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjdmZDVkOTItZTkxYy00OTZlLWJhOWUtZjdkOWRlYWE5OWVhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZjdmZDVkOTItZTkxYy00OTZlLWJhOWUtZjdkOWRlYWE5OWVhXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1006",
+    title: "Shaadisthan",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 3.7,
+    synopsis: "Experience the epic journey of Shaadisthan, a stellar Bollywood production.",
+    cast: [
+      "Sanya Bansal",
+      "Shenpenn Khymsar"
+    ],
+    runtime: "130 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMzdlNTVmMTctODlmMy00ZmZjLTgxMWItZjBjYTIwMjM0ODhjXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMzdlNTVmMTctODlmMy00ZmZjLTgxMWItZjBjYTIwMjM0ODhjXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1007",
+    title: "Shershaah",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.6,
+    synopsis: "Experience the epic journey of Shershaah, a stellar Bollywood production.",
+    cast: [
+      "Sidharth Malhotra",
+      "Kiara Advani"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "🤯 Mind-Blown",
+      "😢 Cry"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZTAzNzg0OGUtZmY1My00Y2VmLTk2YzYtNDU3MjlmNzU5ZjE3XkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BZTAzNzg0OGUtZmY1My00Y2VmLTk2YzYtNDU3MjlmNzU5ZjE3XkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1008",
+    title: "Skater Girl",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.9,
+    synopsis: "Experience the epic journey of Skater Girl, a stellar Bollywood production.",
+    cast: [
+      "Anurag Arora",
+      "Waheeda Rehman"
+    ],
+    runtime: "93 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BM2Q0YmFhNzQtYmNjOC00MjM4LWI2NmYtMmQxZDg3OTQ1MzczXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BM2Q0YmFhNzQtYmNjOC00MjM4LWI2NmYtMmQxZDg3OTQ1MzczXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1009",
+    title: "Sherni",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.4,
+    synopsis: "Experience the epic journey of Sherni, a stellar Bollywood production.",
+    cast: [
+      "Vidya Balan",
+      "Vijay Raaz"
+    ],
+    runtime: "121 min",
+    language: "Hindi",
+    moodTags: [
+      "😱 Thrill",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BMWM4MGY0OWItNTBmNC00NDg5LTk5YWQtMmZiODUyMWY5OWVmXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BMWM4MGY0OWItNTBmNC00NDg5LTk5YWQtMmZiODUyMWY5OWVmXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    id: "1010",
+    title: "Satyameva Jayate 2",
+    year: 2021,
+    genres: [
+      "Drama",
+      "Bollywood",
+      "Romance"
+    ],
+    rating: 4.1,
+    synopsis: "Experience the epic journey of Satyameva Jayate 2, a stellar Bollywood production.",
+    cast: [
+      "John Abraham",
+      "Divya Khossla"
+    ],
+    runtime: "124 min",
+    language: "Hindi",
+    moodTags: [
+      "😂 Laugh",
+      "🤯 Mind-Blown"
+    ],
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BNWE0OTE0ODUtY2Q0ZS00NDQxLTlhMmItYjM1MmI3MDVkMjNhXkEyXkFqcGc@._V1_.jpg",
+    backdropUrl: "https://m.media-amazon.com/images/M/MV5BNWE0OTE0ODUtY2Q0ZS00NDQxLTlhMmItYjM1MmI3MDVkMjNhXkEyXkFqcGc@._V1_.jpg"
+  }
+];
+
+
+export const mockUsers = [
+  { id: "u1", name: "Alice Wonderland", email: "user@demo.com", role: "user", avatar: "A", joinDate: "2023-01-15", status: "active", watchlist: ["1", "3", "5"], genres: ["Action", "Sci-Fi"] },
+  { id: "u2", name: "Bob Builder", email: "bob@demo.com", role: "user", avatar: "B", joinDate: "2023-05-20", status: "active", watchlist: ["2", "4"], genres: ["Comedy", "Drama"] },
+  { id: "u3", name: "Charlie Chaplin", email: "charlie@demo.com", role: "user", avatar: "C", joinDate: "2024-02-10", status: "banned", watchlist: ["6", "7"], genres: ["Horror", "Thriller"] },
+  { id: "u4", name: "Diana Prince", email: "diana@demo.com", role: "user", avatar: "D", joinDate: "2023-11-05", status: "active", watchlist: ["8", "9", "10"], genres: ["Romance", "Drama"] },
+  { id: "u5", name: "Ethan Hunt", email: "ethan@demo.com", role: "user", avatar: "E", joinDate: "2024-03-22", status: "active", watchlist: ["11", "12"], genres: ["Action", "Thriller"] }
+];
+
+export const mockAdmins = [
+  { id: "a1", name: "Admin One", email: "admin@demo.com", role: "admin", avatar: "A1", joinDate: "2022-01-01", status: "active" },
+  { id: "a2", name: "Super Admin", email: "super@demo.com", role: "admin", avatar: "SA", joinDate: "2021-06-15", status: "active" },
+  { id: "a3", name: "Mod Mike", email: "mod@demo.com", role: "admin", avatar: "MM", joinDate: "2023-08-30", status: "active" }
+];
+
+export const mockReviews = [
+  { id: "r1", userId: "u1", movieId: "1", rating: 5, text: "An absolute masterpiece. Visuals are stunning.", date: "2024-03-10", status: "approved" },
+  { id: "r2", userId: "u2", movieId: "1", rating: 4, text: "Great sequel, but a bit long.", date: "2024-03-12", status: "approved" },
+  { id: "r3", userId: "u3", movieId: "5", rating: 1, text: "Didn't get the hype. Too weird.", date: "2024-02-15", status: "flagged" },
+  { id: "r4", userId: "u4", movieId: "9", rating: 5, text: "Made me cry so much. Beautiful storytelling.", date: "2024-01-20", status: "pending" },
+  { id: "r5", userId: "u1", movieId: "2", rating: 5, text: "A brain-bending classic.", date: "2023-11-05", status: "approved" },
+];
