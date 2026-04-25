@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { Search, SlidersHorizontal, Grid, List as ListIcon, ChevronDown } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { MovieCard } from '../components/MovieCard';
+import { LazyImage } from '../components/LazyImage';
 
 export function SearchPage() {
   const { movies } = useAppContext();
@@ -98,7 +99,7 @@ export function SearchPage() {
           {displayedMovies.map((movie: any) => (
             <div key={movie.id} className="flex gap-6 bg-white/5 rounded-2xl overflow-hidden border border-white/10 p-3 items-center group cursor-pointer hover:bg-white/10 transition-colors">
               <div className="w-24 h-36 shrink-0 relative overflow-hidden rounded-xl">
-                <img src={movie.posterUrl} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                <LazyImage src={movie.posterUrl} alt={movie.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
               </div>
               <div className="flex flex-col justify-center py-2 flex-1 relative">
                 <h3 className="text-xl font-serif font-bold mb-2 uppercase">{movie.title}</h3>

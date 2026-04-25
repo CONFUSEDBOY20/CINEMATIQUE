@@ -6,62 +6,83 @@
   --font-serif: "Playfair Display", Georgia, ui-serif, serif;
 
   --color-brand-gold: #FFD700;
-  --color-brand-crimson: #E50914; /* Updated crimson */
+  --color-brand-crimson: #E50914;
   --color-brand-black: #0A0A0A;
   --color-brand-dark: #121212;
-  --color-brand-gray: #1A1A1A; /* Updated gray based on reference */
+  --color-brand-gray: #1A1A1A;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Prevent overscroll bounce lag on mobile */
+    overscroll-behavior: none;
+  }
+
   body {
     @apply bg-brand-black text-white font-sans antialiased overflow-x-hidden;
+    /* Prevent layout shifts from scrollbar appearing */
+    scrollbar-gutter: stable;
+    /* Smoother text rendering */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
   }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* ── Scrollbar ─────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand-gold); }
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+  /* GPU-accelerated horizontal scroll */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-brand-dark);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-brand-gold);
-}
-
+/* ── Glass ─────────────────────────────────────────────────────────────── */
 .glass-panel {
   @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl;
 }
 
-/* Performance Optimizations */
+/* ── Performance ───────────────────────────────────────────────────────── */
+
+/* Skip layout/paint for off-screen sections */
 section {
   content-visibility: auto;
-  contain-intrinsic-size: 1px 5000px;
+  contain-intrinsic-size: 1px 400px;
 }
 
-.gpu-accelerated {
-  transform: translateZ(0);
-  backface-visibility: hidden;
+/* Isolate card paint — prevents whole-page repaint on hover */
+.group {
+  contain: layout style;
 }
 
+/* GPU composite layer for animated elements */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Promote hero image to its own composite layer */
+img[fetchpriority="high"] {
+  will-change: auto;
+}
+
+/* Images: dark bg while loading */
 img {
-  @apply bg-brand-gray; /* Show dark background while loading */
+  @apply bg-brand-gray;
+  /* Prevent layout shift */
+  font-style: italic;
 }
 
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+/* GPU-accelerated hover scale on cards */
+.group:hover {
+  transform: translateZ(0);
 }
-

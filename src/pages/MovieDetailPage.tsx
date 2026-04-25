@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { ArrowLeft, Star, Play, Heart, Share2, Clock, Calendar, MessageSquare, Check, X, Plus } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { motion, AnimatePresence } from 'motion/react';
+import { LazyImage } from '../components/LazyImage';
 
 export function MovieDetailPage({ movieId }: { movieId: string }) {
   const { movies, navigate, watchlist, addToWatchlist, removeFromWatchlist, user } = useAppContext();
@@ -9,17 +10,19 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
   const [userRating, setUserRating] = useState(0);
   const [reviewText, setReviewText] = useState('');
   
-  const movie = movies.find(m => m.id === movieId);
+  const movie = movies.find((m: any) => m.id === movieId);
   if (!movie) return <div className="p-8 text-center text-gray-400">Movie not found.</div>;
 
   const isWatchlisted = watchlist.includes(movie.id);
 
-  const toggleWatchlist = () => {
-    if (isWatchlisted) removeFromWatchlist(movie.id);
-    else addToWatchlist(movie.id);
-  };
+  const toggleWatchlist = useCallback(() => {
+    isWatchlisted ? removeFromWatchlist(movie.id) : addToWatchlist(movie.id);
+  }, [isWatchlisted, movie.id, addToWatchlist, removeFromWatchlist]);
 
-  const similar = movies.filter(m => m.id !== movie.id && m.genres.some((g: string) => movie.genres.includes(g))).slice(0, 5);
+  const similar = useMemo(
+    () => movies.filter((m: any) => m.id !== movie.id && m.genres.some((g: string) => movie.genres.includes(g))).slice(0, 5),
+    [movies, movie.id, movie.genres]
+  );
 
   return (
     <div className="relative min-h-full bg-brand-black pb-20">
@@ -32,7 +35,13 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
           <ArrowLeft className="w-5 h-5" />
         </button>
 
-        <img src={movie.backdropUrl} className="w-full h-full object-cover" alt={movie.title} />
+        <img
+          src={movie.backdropUrl}
+          className="w-full h-full object-cover"
+          alt={movie.title}
+          fetchPriority="high"
+          decoding="async"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/60 to-transparent z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-brand-black via-brand-black/40 to-transparent z-10"></div>
       </div>
@@ -126,7 +135,7 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
             {similar.map(m => (
               <div key={m.id} onClick={() => navigate('user', { movieId: m.id })} className="cursor-pointer group">
                 <div className="aspect-[2/3] rounded-lg overflow-hidden bg-brand-gray mb-2">
-                  <img src={m.posterUrl} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <LazyImage src={m.posterUrl} alt={m.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                 </div>
                 <h4 className="font-medium text-sm truncate">{m.title}</h4>
               </div>
