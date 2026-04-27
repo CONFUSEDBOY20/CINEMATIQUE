@@ -1,5 +1,5 @@
 const TMDB_KEY = '56f9ab6f362ed8d049e4075ba9897765';
-const BASE_URL = 'https://api.themoviedb.org/3';
+const BASE_URL = 'https://api.tmdb.org/3';
 
 // Map TMDB genre IDs to strings
 const GENRE_MAP: Record<number, string> = {
