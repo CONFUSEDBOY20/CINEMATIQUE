@@ -27,6 +27,28 @@ export const HomePage = memo(function HomePage() {
     }).catch(console.error);
   }, []);
 
+  const featured = trending[0];
+  const isWatchlisted = useMemo(() => watchlist.includes(featured?.id), [watchlist, featured?.id]);
+
+  const handleToggleWatchlist = useCallback(() => {
+    if (!user) {
+      navigate('auth');
+      return;
+    }
+    if (featured) {
+      isWatchlisted ? removeFromWatchlist(featured.id) : addToWatchlist(featured.id);
+    }
+  }, [user, navigate, isWatchlisted, featured, addToWatchlist, removeFromWatchlist]);
+
+  const handleFeaturedClick = useCallback(
+    () => {
+      if (featured) {
+        navigate('user', { movieId: featured.id });
+      }
+    },
+    [navigate, featured]
+  );
+
   if (loading) {
     return (
       <div className="pb-12 pt-4 md:pt-8 px-4 md:px-8">
@@ -40,22 +62,6 @@ export const HomePage = memo(function HomePage() {
       </div>
     );
   }
-
-  const featured = trending[0];
-  const isWatchlisted = useMemo(() => watchlist.includes(featured?.id), [watchlist, featured?.id]);
-
-  const handleToggleWatchlist = useCallback(() => {
-    if (!user) {
-      navigate('auth');
-      return;
-    }
-    isWatchlisted ? removeFromWatchlist(featured.id) : addToWatchlist(featured.id);
-  }, [user, navigate, isWatchlisted, featured?.id, addToWatchlist, removeFromWatchlist]);
-
-  const handleFeaturedClick = useCallback(
-    () => navigate('user', { movieId: featured.id }),
-    [navigate, featured?.id]
-  );
 
   if (!featured) return null;
 

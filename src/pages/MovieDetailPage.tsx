@@ -27,22 +27,24 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
     }).catch(console.error);
   }, [movieId]);
 
-  if (loading) return (
-     <div className="min-h-screen flex items-center justify-center pb-32">
-        <div className="w-12 h-12 border-4 border-brand-gold border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
-     </div>
-  );
-  if (!movie) return <div className="p-8 text-center text-gray-400">Movie not found.</div>;
-
-  const isWatchlisted = watchlist.includes(movie.id);
+  const isWatchlisted = movie ? watchlist.includes(movie.id) : false;
 
   const toggleWatchlist = useCallback(() => {
     if (!user) {
       navigate('auth');
       return;
     }
-    isWatchlisted ? removeFromWatchlist(movie.id) : addToWatchlist(movie.id);
-  }, [user, navigate, isWatchlisted, movie.id, addToWatchlist, removeFromWatchlist]);
+    if (movie) {
+      isWatchlisted ? removeFromWatchlist(movie.id) : addToWatchlist(movie.id);
+    }
+  }, [user, navigate, isWatchlisted, movie, addToWatchlist, removeFromWatchlist]);
+
+  if (loading) return (
+     <div className="min-h-screen flex items-center justify-center pb-32">
+        <div className="w-12 h-12 border-4 border-brand-gold border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
+     </div>
+  );
+  if (!movie) return <div className="p-8 text-center text-gray-400">Movie not found.</div>;
 
   return (
     <div className="relative min-h-full bg-brand-black pb-20">
