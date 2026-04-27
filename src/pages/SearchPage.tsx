@@ -3,9 +3,11 @@ import { Search, SlidersHorizontal, Grid, List as ListIcon, ChevronDown } from '
 import { useAppContext } from '../context/AppContext';
 import { MovieCard } from '../components/MovieCard';
 import { LazyImage } from '../components/LazyImage';
+import { searchMovies, getPopular } from '../lib/tmdb';
 
 export function SearchPage() {
-  const { movies } = useAppContext();
+  const [movies, setMovies] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('All');
@@ -23,17 +25,28 @@ export function SearchPage() {
     setVisibleCount(30);
   }, [debouncedQuery, selectedGenre]);
 
+  useEffect(() => {
+    setLoading(true);
+    const fetchMovies = async () => {
+      try {
+        const data = debouncedQuery ? await searchMovies(debouncedQuery) : await getPopular();
+        setMovies(data);
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchMovies();
+  }, [debouncedQuery]);
+
   const genres = ['All', 'Action', 'Sci-Fi', 'Drama', 'Comedy', 'Thriller', 'Horror', 'Romance'];
 
   const filteredMovies = useMemo(() => {
-    const q = debouncedQuery.toLowerCase();
     return movies.filter((m: any) => {
-      const matchQuery = m.title.toLowerCase().includes(q) || 
-                         m.cast.some((c: string) => c.toLowerCase().includes(q));
-      const matchGenre = selectedGenre === 'All' || m.genres.includes(selectedGenre);
-      return matchQuery && matchGenre;
+      return selectedGenre === 'All' || m.genres.includes(selectedGenre);
     });
-  }, [movies, debouncedQuery, selectedGenre]);
+  }, [movies, selectedGenre]);
 
   const displayedMovies = useMemo(() => filteredMovies.slice(0, visibleCount), [filteredMovies, visibleCount]);
 
@@ -88,7 +101,13 @@ export function SearchPage() {
         </div>
       </div>
 
-      {viewMode === 'grid' ? (
+      {loading ? (
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+          {[...Array(12)].map((_, i) => (
+             <div key={i} className="aspect-[2/3] w-full shrink-0 rounded-2xl bg-white/5 animate-pulse border border-white/5" />
+          ))}
+        </div>
+      ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
           {displayedMovies.map((movie: any) => (
             <MovieCard key={movie.id} movie={movie} />
@@ -119,14 +138,14 @@ export function SearchPage() {
         </div>
       )}
 
-      {filteredMovies.length === 0 && (
+      {!loading && filteredMovies.length === 0 && (
         <div className="flex flex-col items-center justify-center py-20 text-gray-500">
           <Search className="w-16 h-16 mb-4 opacity-50" />
           <p className="text-lg">No movies found matching your criteria.</p>
         </div>
       )}
 
-      {filteredMovies.length > visibleCount && (
+      {!loading && filteredMovies.length > visibleCount && (
         <div className="flex justify-center mt-12 mb-8">
           <button 
             onClick={() => setVisibleCount(v => v + 30)}

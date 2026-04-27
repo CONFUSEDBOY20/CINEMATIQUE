@@ -4,15 +4,19 @@ import { useAppContext } from '../context/AppContext';
 import { LazyImage } from './LazyImage';
 
 export const MovieCard = memo(({ movie }: { movie: any }) => {
-  const { navigate, watchlist, addToWatchlist, removeFromWatchlist } = useAppContext();
+  const { user, navigate, watchlist, addToWatchlist, removeFromWatchlist } = useAppContext();
   const isWatchlisted = watchlist.includes(movie.id);
 
   const handleClick = useCallback(() => navigate('user', { movieId: movie.id }), [movie.id, navigate]);
 
   const toggleWatchlist = useCallback((e: React.MouseEvent) => {
     e.stopPropagation();
+    if (!user) {
+      navigate('auth');
+      return;
+    }
     isWatchlisted ? removeFromWatchlist(movie.id) : addToWatchlist(movie.id);
-  }, [isWatchlisted, movie.id, addToWatchlist, removeFromWatchlist]);
+  }, [user, navigate, isWatchlisted, movie.id, addToWatchlist, removeFromWatchlist]);
 
   return (
     <div

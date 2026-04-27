@@ -1,25 +1,56 @@
-import { useMemo, useCallback, memo } from 'react';
+import { useMemo, useCallback, memo, useState, useEffect } from 'react';
 import { Play, Plus, Check } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { MovieCard } from '../components/MovieCard';
 import { LazyImage } from '../components/LazyImage';
 import { motion } from 'motion/react';
+import { getTrending, getUpcoming, getPopular, getTopRated } from '../lib/tmdb';
 
 // Stagger children with a lightweight CSS animation instead of per-item motion.div
 const MOODS = ['😂 Laugh', '😱 Thrill', '😢 Cry', '🤯 Mind-Blown'];
 
 export const HomePage = memo(function HomePage() {
-  const { movies, navigate, watchlist, addToWatchlist, removeFromWatchlist } = useAppContext();
+  const { user, navigate, watchlist, addToWatchlist, removeFromWatchlist } = useAppContext();
+  const [trending, setTrending] = useState<any[]>([]);
+  const [newReleases, setNewReleases] = useState<any[]>([]);
+  const [popular, setPopular] = useState<any[]>([]);
+  const [topRated, setTopRated] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const featured = movies[0];
+  useEffect(() => {
+    Promise.all([getTrending(), getUpcoming(), getPopular(), getTopRated()]).then(([t, u, p, tr]) => {
+      setTrending(t);
+      setNewReleases(u);
+      setPopular(p);
+      setTopRated(tr);
+      setLoading(false);
+    }).catch(console.error);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="pb-12 pt-4 md:pt-8 px-4 md:px-8">
+        <div className="h-[60vh] md:h-[75vh] w-full rounded-3xl bg-white/5 animate-pulse mb-12 border border-white/5" />
+        <div className="mb-6 h-4 w-48 bg-white/5 rounded animate-pulse" />
+        <div className="flex gap-4 overflow-hidden">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="aspect-[2/3] w-44 md:w-56 shrink-0 rounded-2xl bg-white/5 animate-pulse border border-white/5" />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const featured = trending[0];
   const isWatchlisted = useMemo(() => watchlist.includes(featured?.id), [watchlist, featured?.id]);
 
-  const trending   = useMemo(() => [...movies].sort((a, b) => b.rating - a.rating).slice(0, 10), [movies]);
-  const newReleases = useMemo(() => [...movies].sort((a, b) => b.year - a.year).slice(0, 6), [movies]);
-
   const handleToggleWatchlist = useCallback(() => {
+    if (!user) {
+      navigate('auth');
+      return;
+    }
     isWatchlisted ? removeFromWatchlist(featured.id) : addToWatchlist(featured.id);
-  }, [isWatchlisted, featured?.id, addToWatchlist, removeFromWatchlist]);
+  }, [user, navigate, isWatchlisted, featured?.id, addToWatchlist, removeFromWatchlist]);
 
   const handleFeaturedClick = useCallback(
     () => navigate('user', { movieId: featured.id }),
@@ -90,6 +121,30 @@ export const HomePage = memo(function HomePage() {
         {/* Removed per-card motion.div — scroll smoothness > stagger animation here */}
         <div className="flex gap-4 overflow-x-auto pb-6 pt-2 snap-x px-2 -mx-2 custom-scrollbar">
           {trending.map(movie => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+        </div>
+      </section>
+
+      {/* ── Popular Row ─────────────────────────────────────────────── */}
+      <section className="mt-8 relative z-10 px-4 md:px-8">
+        <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 flex items-center gap-4 mb-6">
+          Popular Cinema <span className="h-px flex-1 max-w-[100px] bg-white/10" />
+        </h2>
+        <div className="flex gap-4 overflow-x-auto pb-6 pt-2 snap-x px-2 -mx-2 custom-scrollbar">
+          {popular.map(movie => (
+            <MovieCard key={movie.id} movie={movie} />
+          ))}
+        </div>
+      </section>
+
+      {/* ── Top Rated Row ─────────────────────────────────────────────── */}
+      <section className="mt-8 relative z-10 px-4 md:px-8">
+        <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 flex items-center gap-4 mb-6">
+          Top Rated Cinema <span className="h-px flex-1 max-w-[100px] bg-white/10" />
+        </h2>
+        <div className="flex gap-4 overflow-x-auto pb-6 pt-2 snap-x px-2 -mx-2 custom-scrollbar">
+          {topRated.map(movie => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>

@@ -38,7 +38,7 @@ function Router() {
         <Suspense fallback={<PageSkeleton />}>
           {page === 'auth'                            && <AuthPage />}
           {user?.role === 'admin' && page !== 'auth'  && <AdminDashboard />}
-          {user?.role === 'user'  && page !== 'auth'  && <UserLayout />}
+          {user?.role !== 'admin' && page !== 'auth'  && <UserLayout />}
         </Suspense>
       </motion.div>
     </AnimatePresence>

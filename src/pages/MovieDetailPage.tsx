@@ -1,28 +1,48 @@
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { ArrowLeft, Star, Play, Heart, Share2, Clock, Calendar, MessageSquare, Check, X, Plus } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { motion, AnimatePresence } from 'motion/react';
 import { LazyImage } from '../components/LazyImage';
+import { getMovieDetails, getSimilarMovies } from '../lib/tmdb';
 
 export function MovieDetailPage({ movieId }: { movieId: string }) {
-  const { movies, navigate, watchlist, addToWatchlist, removeFromWatchlist, user } = useAppContext();
+  const { navigate, watchlist, addToWatchlist, removeFromWatchlist, user } = useAppContext();
   const [showTrailer, setShowTrailer] = useState(false);
   const [userRating, setUserRating] = useState(0);
   const [reviewText, setReviewText] = useState('');
   
-  const movie = movies.find((m: any) => m.id === movieId);
+  const [movie, setMovie] = useState<any>(null);
+  const [similar, setSimilar] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    Promise.all([
+      getMovieDetails(movieId),
+      getSimilarMovies(movieId)
+    ]).then(([m, s]) => {
+      setMovie(m);
+      setSimilar(s.slice(0, 5));
+      setLoading(false);
+    }).catch(console.error);
+  }, [movieId]);
+
+  if (loading) return (
+     <div className="min-h-screen flex items-center justify-center pb-32">
+        <div className="w-12 h-12 border-4 border-brand-gold border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
+     </div>
+  );
   if (!movie) return <div className="p-8 text-center text-gray-400">Movie not found.</div>;
 
   const isWatchlisted = watchlist.includes(movie.id);
 
   const toggleWatchlist = useCallback(() => {
+    if (!user) {
+      navigate('auth');
+      return;
+    }
     isWatchlisted ? removeFromWatchlist(movie.id) : addToWatchlist(movie.id);
-  }, [isWatchlisted, movie.id, addToWatchlist, removeFromWatchlist]);
-
-  const similar = useMemo(
-    () => movies.filter((m: any) => m.id !== movie.id && m.genres.some((g: string) => movie.genres.includes(g))).slice(0, 5),
-    [movies, movie.id, movie.genres]
-  );
+  }, [user, navigate, isWatchlisted, movie.id, addToWatchlist, removeFromWatchlist]);
 
   return (
     <div className="relative min-h-full bg-brand-black pb-20">
@@ -89,8 +109,9 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
 
             <div className="flex flex-wrap items-center gap-4 mb-12">
               <button 
-                onClick={() => setShowTrailer(true)}
-                className="flex items-center gap-2 bg-brand-crimson text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-red-700 transition-colors shadow-[0_0_20px_rgba(229,9,20,0.3)]"
+                onClick={() => movie.trailerKey && setShowTrailer(true)}
+                disabled={!movie.trailerKey}
+                className={`flex items-center gap-2 px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs transition-colors shadow-[0_0_20px_rgba(229,9,20,0.3)] ${movie.trailerKey ? 'bg-brand-crimson text-white hover:bg-red-700' : 'bg-gray-800 text-white/40 cursor-not-allowed'}`}
               >
                 <Play className="w-4 h-4 fill-current" />
                 PLAY TRAILER
@@ -115,12 +136,19 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
               Top Cast <span className="h-px w-12 bg-white/10"></span>
             </h3>
             <div className="flex flex-wrap gap-4">
-              {movie.cast.map((actor: string, i: number) => (
-                <div key={i} className="flex items-center gap-3 bg-brand-gray/50 px-4 py-2 rounded-full border border-white/5">
-                  <div className="w-8 h-8 rounded-full bg-brand-gray flex items-center justify-center text-xs font-bold text-brand-gold">
-                    {actor.charAt(0)}
+              {(movie.castDetails || []).slice(0, 6).map((actor: any, i: number) => (
+                <div key={i} className="flex items-center gap-3 bg-brand-gray/50 px-4 py-2 rounded-full border border-white/5 pr-6">
+                  <div className="w-10 h-10 rounded-full bg-brand-gray overflow-hidden border border-white/10 shrink-0">
+                    {actor.profile_path ? (
+                       <img src={`https://image.tmdb.org/t/p/w185${actor.profile_path}`} className="w-full h-full object-cover" alt={actor.name} />
+                    ) : (
+                       <div className="w-full h-full flex items-center justify-center text-xs font-bold text-brand-gold">{actor.name.charAt(0)}</div>
+                    )}
                   </div>
-                  <span className="text-sm font-medium">{actor}</span>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-medium">{actor.name}</span>
+                    <span className="text-[9px] text-white/40 uppercase tracking-widest truncate max-w-[120px]">{actor.character}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -167,7 +195,14 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
                placeholder="What did you think of the movie?"
                className="w-full bg-brand-black/50 border border-white/10 rounded-xl p-4 text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold transition-colors resize-none h-32 mb-4"
             ></textarea>
-            <button className="bg-brand-crimson text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition-colors">
+            <button 
+              onClick={() => {
+                if (!user) {
+                  navigate('auth');
+                }
+              }}
+              className="bg-brand-crimson text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition-colors"
+            >
               Submit Review
             </button>
           </div>
@@ -182,18 +217,26 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
           >
-            <div className="w-full max-w-4xl relative aspect-video bg-black rounded-xl overflow-hidden border border-white/10">
+            <div className="w-full max-w-4xl relative aspect-video bg-black rounded-xl overflow-hidden border border-white/10 shadow-2xl">
               <button 
                 onClick={() => setShowTrailer(false)}
-                className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:text-brand-crimson transition-all"
+                className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/20 hover:text-brand-crimson transition-all border border-white/10"
               >
                 <X className="w-6 h-6" />
               </button>
-              <div className="w-full h-full flex flex-col items-center justify-center text-gray-500">
-                <Play className="w-16 h-16 text-brand-gold/50 fill-brand-gold/50 mb-4" />
-                <p>YouTube Trailer API placeholder</p>
-                <p className="text-sm">Imagine an epic trailer playing right now.</p>
-              </div>
+              {movie.trailerKey ? (
+                 <iframe 
+                   src={`https://www.youtube.com/embed/${movie.trailerKey}?autoplay=1&rel=0`}
+                   className="w-full h-full border-0"
+                   allow="autoplay; encrypted-media"
+                   allowFullScreen
+                 />
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center text-gray-500">
+                  <Play className="w-16 h-16 text-brand-gold/50 fill-brand-gold/50 mb-4" />
+                  <p>No Official Trailer Available</p>
+                </div>
+              )}
             </div>
           </motion.div>
         )}

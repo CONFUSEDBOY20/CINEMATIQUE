@@ -29,7 +29,7 @@ export const LazyImage = memo(({ src, alt, className = '' }: LazyImageProps) => 
       ref={imgRef}
       src={inView ? (error ? '/placeholder-poster.svg' : src) : undefined}
       alt={alt}
-      className={`${className} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+      className={`${className} transition-all duration-700 ease-out ${loaded ? 'opacity-100 blur-0 scale-100' : 'opacity-0 blur-md scale-105'}`}
       onLoad={() => setLoaded(true)}
       onError={() => { setError(true); setLoaded(true); }}
       decoding="async"

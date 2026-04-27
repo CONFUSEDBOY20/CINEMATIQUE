@@ -1,17 +1,36 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BookmarkMinus, Play } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { MovieCard } from '../components/MovieCard';
 import { motion, AnimatePresence } from 'motion/react';
+import { getMovieDetails } from '../lib/tmdb';
 
 export function WatchlistPage() {
-  const { movies, watchlist, navigate, removeFromWatchlist } = useAppContext();
+  const { watchlist, navigate, removeFromWatchlist } = useAppContext();
   const [filter, setFilter] = useState<'All'|'Watched'|'Unwatched'>('All');
+  const [watchlistedMovies, setWatchlistedMovies] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
-  const watchlistedMovies = movies.filter(m => watchlist.includes(m.id));
+  useEffect(() => {
+    const fetchMissing = async () => {
+      const missingIds = watchlist.filter(id => !watchlistedMovies.find(m => m.id === id));
+      if (missingIds.length > 0) {
+        try {
+          const newMovies = await Promise.all(missingIds.map(id => getMovieDetails(id)));
+          setWatchlistedMovies(prev => [...prev, ...newMovies]);
+        } catch (err) {
+          console.error("Failed to fetch watchlist details", err);
+        }
+      }
+      setLoading(false);
+    };
+    fetchMissing();
+  }, [watchlist]);
+
+  const displayMovies = watchlistedMovies.filter(m => watchlist.includes(m.id));
 
   // In a real app we'd have a watched status, here we mock it
-  const filtered = watchlistedMovies.filter(m => {
+  const filtered = displayMovies.filter(m => {
     if (filter === 'All') return true;
     const isMockWatched = parseInt(m.id) > 10; 
     if (filter === 'Watched') return isMockWatched;
@@ -24,7 +43,7 @@ export function WatchlistPage() {
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
         <div>
           <h1 className="text-3xl font-serif font-bold mb-2 uppercase tracking-tighter">My Watchlist</h1>
-          <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">{watchlistedMovies.length} Saved Titles</p>
+          <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">{displayMovies.length} Saved Titles</p>
         </div>
 
         <div className="flex bg-white/5 rounded-full p-1 border border-white/10">
@@ -40,7 +59,11 @@ export function WatchlistPage() {
         </div>
       </div>
 
-      {watchlistedMovies.length === 0 ? (
+      {loading ? (
+        <div className="flex justify-center py-32">
+          <div className="w-12 h-12 border-4 border-brand-gold border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
+        </div>
+      ) : displayMovies.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-32 text-center">
           <div className="w-24 h-24 border border-white/10 rounded-full flex items-center justify-center mb-6 bg-white/5">
             <BookmarkMinus className="w-8 h-8 text-white/40" />

@@ -11,6 +11,7 @@ interface AppState {
   watchlist: string[];
   searchQuery: string;
   authLoading: boolean;
+  moviesLoading: boolean;
 }
 
 interface AuthResult {
@@ -40,7 +41,7 @@ const USER_KEY  = 'cinematique_user';
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
-  const [page, setPage] = useState<string>("auth");
+  const [page, setPage] = useState<string>("home");
   const [pageParams, setPageParams] = useState<any>(null);
   const [movies, setMovies] = useState<Movie[]>([]);
   const [moviesLoading, setMoviesLoading] = useState(true);
@@ -69,7 +70,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
               localStorage.removeItem(TOKEN_KEY);
               localStorage.removeItem(USER_KEY);
               setUser(null);
-              setPage('auth');
+              setPage('home');
             } else {
               return r.json();
             }
@@ -193,7 +194,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     localStorage.removeItem(USER_KEY);
     setUser(null);
     setWatchlist([]);
-    setPage("auth");
+    setPage("home");
   }, []);
 
   const navigate = useCallback((newPage: string, params?: any) => {
@@ -255,7 +256,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   // ── Loading screen ──────────────────────────────────────────────────────────
-  if (authLoading || moviesLoading) {
+  if (authLoading) {
     return (
       <div className="min-h-screen bg-brand-black flex flex-col items-center justify-center gap-4">
         <div className="w-16 h-16 border-4 border-brand-gold border-t-transparent rounded-full animate-spin shadow-[0_0_15px_rgba(212,175,55,0.5)]"></div>
@@ -266,7 +267,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AppContext.Provider value={{
-      user, page, movies, watchlist, searchQuery, authLoading,
+      user, page, movies, watchlist, searchQuery, authLoading, moviesLoading,
       login, register, logout, navigate, pageParams,
       addToWatchlist, removeFromWatchlist, setSearchQuery,
       registerMode, setRegisterMode,

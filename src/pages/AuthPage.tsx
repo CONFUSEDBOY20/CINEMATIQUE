@@ -2,7 +2,7 @@ import React, { useState, useId } from 'react';
 import { useAppContext } from '../context/AppContext';
 import {
   Mail, Lock, User, ArrowRight, Film,
-  Eye, EyeOff, CheckCircle2, AlertCircle, Loader2, ShieldAlert
+  Eye, EyeOff, CheckCircle2, AlertCircle, Loader2, ShieldAlert, ArrowLeft
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -17,7 +17,7 @@ interface FieldError {
 }
 
 export function AuthPage() {
-  const { login, register } = useAppContext();
+  const { login, register, navigate } = useAppContext();
   const id = useId();
 
   const [mode, setMode] = useState<Mode>('login');
@@ -106,6 +106,15 @@ export function AuthPage() {
       >
         <div className="absolute inset-0 bg-brand-black/85 backdrop-blur-sm" />
       </div>
+
+      {/* Back to Home Button */}
+      <button 
+        onClick={() => navigate('home')}
+        className="absolute top-6 left-6 md:top-8 md:left-8 z-20 flex items-center gap-2 px-4 py-2 bg-black/50 border border-white/10 backdrop-blur rounded-full text-white hover:bg-white/20 transition-colors text-xs font-bold uppercase tracking-widest"
+      >
+        <ArrowLeft className="w-4 h-4" />
+        Back
+      </button>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.97 }}
