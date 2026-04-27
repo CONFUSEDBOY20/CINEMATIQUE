@@ -1,15 +1,5 @@
-import mongoose from 'mongoose';
-
-let cached = global._mongooseConn;
-
+// MongoDB connection removed. Use _supabase.js for database access.
+// This file is kept as a no-op stub so any remaining imports don't break at startup.
 export async function connectDB() {
-  if (cached && mongoose.connection.readyState === 1) return cached;
-
-  if (!process.env.MONGODB_URI) {
-    throw new Error('MONGODB_URI environment variable is not set.');
-  }
-
-  cached = await mongoose.connect(process.env.MONGODB_URI);
-  global._mongooseConn = cached;
-  return cached;
+  // No-op: connection is now managed by the Supabase client in _supabase.js
 }

@@ -1,59 +1,78 @@
-import mongoose from 'mongoose';
 import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
+import bcrypt from 'bcryptjs';
 import { fileURLToPath } from 'url';
-import { Movie } from './models/Movie.js';
-import { User } from './models/User.js';
+import { createClient } from '@supabase/supabase-js';
 
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname  = path.dirname(__filename);
+
+if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+  console.error('❌ SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set in .env');
+  process.exit(1);
+}
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+);
 
 async function seedDatabase() {
-  if (!process.env.MONGODB_URI) {
-    console.error("❌ MONGODB_URI is not defined in .env");
-    process.exit(1);
-  }
-
   try {
-    await mongoose.connect(process.env.MONGODB_URI);
-    console.log("✅ Connected to MongoDB");
+    console.log('🌱 Starting database seeding...');
 
-    // Clear existing data
-    await Movie.deleteMany({});
-    await User.deleteMany({});
-    console.log("🧹 Cleared existing collections");
-
-    // Seed Movies from movies.json
+    // ── Movies ────────────────────────────────────────────────────────────────
     const moviesPath = path.join(__dirname, '..', 'public', 'movies.json');
     if (fs.existsSync(moviesPath)) {
       const moviesData = JSON.parse(fs.readFileSync(moviesPath, 'utf8'));
-      // Remove local string IDs so Mongo can assign ObjectIds
-      const sanitizedMovies = moviesData.map(m => {
-        const { id, ...rest } = m;
-        return rest;
-      });
-      await Movie.insertMany(sanitizedMovies);
-      console.log(`🍿 Seeded ${sanitizedMovies.length} movies!`);
+
+      // Clear existing movies
+      const { error: delMoviesErr } = await supabase.from('movies').delete().neq('id', 0);
+      if (delMoviesErr) console.warn('⚠️ Could not clear movies:', delMoviesErr.message);
+
+      // Map to Supabase column names (snake_case)
+      const sanitized = moviesData.map(({ id, moodTags, posterUrl, backdropUrl, ...rest }) => ({
+        ...rest,
+        mood_tags:    moodTags    ?? [],
+        poster_url:   posterUrl   ?? '',
+        backdrop_url: backdropUrl ?? ''
+      }));
+
+      const { error: insertMoviesErr } = await supabase.from('movies').insert(sanitized);
+      if (insertMoviesErr) throw insertMoviesErr;
+      console.log(`🍿 Seeded ${sanitized.length} movies!`);
     } else {
-      console.log("⚠️ public/movies.json not found. Skipping movies.");
+      console.log('⚠️ public/movies.json not found. Skipping movies.');
     }
 
-    // Seed Users
+    // ── Users ─────────────────────────────────────────────────────────────────
     const mockUsers = [
-      { name: "Alice Wonderland", email: "user@demo.com", password: "password", role: "user", avatar: "A", joinDate: "2023-01-15", status: "active", genres: ["Action", "Sci-Fi"] },
-      { name: "Bob Builder", email: "bob@demo.com", password: "password", role: "user", avatar: "B", joinDate: "2023-05-20", status: "active", genres: ["Comedy", "Drama"] },
-      { name: "Super Admin", email: "admin@demo.com", password: "password", role: "admin", avatar: "SA", joinDate: "2021-06-15", status: "active" }
+      { name: 'Alice Wonderland', email: 'user@demo.com',  password: 'password', role: 'user',  status: 'active', genres: ['Action', 'Sci-Fi'] },
+      { name: 'Bob Builder',      email: 'bob@demo.com',   password: 'password', role: 'user',  status: 'active', genres: ['Comedy', 'Drama']  },
+      { name: 'Super Admin',      email: 'admin@demo.com', password: 'password', role: 'admin', status: 'active', genres: []                    }
     ];
-    await User.insertMany(mockUsers);
+
+    for (const u of mockUsers) {
+      const salt = await bcrypt.genSalt(10);
+      const hashedPassword = await bcrypt.hash(u.password, salt);
+
+      const { error } = await supabase
+        .from('users')
+        .upsert(
+          { ...u, password: hashedPassword, avatar: '', cover_photo: '', bio: '', watchlist: [] },
+          { onConflict: 'email' }
+        );
+      if (error) console.warn(`⚠️ Could not upsert ${u.email}:`, error.message);
+    }
     console.log(`👤 Seeded ${mockUsers.length} users!`);
 
-    console.log("🎉 Database seeding complete!");
+    console.log('🎉 Database seeding complete!');
     process.exit(0);
   } catch (error) {
-    console.error("❌ Seeding failed:", error);
+    console.error('❌ Seeding failed:', error);
     process.exit(1);
   }
 }

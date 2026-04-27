@@ -1,6 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { connectDB } from './_db.js';
-import { User } from './_models/User.js';
+import { supabase } from './_supabase.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'cinematique_dev_secret_change_in_production';
 
@@ -20,10 +19,20 @@ export default async function handler(req, res) {
 
   try {
     const payload = jwt.verify(token, JWT_SECRET);
-    await connectDB();
-    const user = await User.findById(payload.id);
+
+    const { data: users, error } = await supabase
+      .from('users')
+      .select('*')
+      .eq('id', payload.id)
+      .limit(1);
+
+    if (error) throw error;
+
+    const user = users?.[0];
     if (!user) return res.status(404).json({ error: 'User not found' });
-    return res.status(200).json({ user: user.toPublicJSON() });
+
+    const { password: _pw, ...publicUser } = user;
+    return res.status(200).json({ user: publicUser });
   } catch {
     return res.status(401).json({ error: 'Invalid or expired token' });
   }
