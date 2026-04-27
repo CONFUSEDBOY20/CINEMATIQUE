@@ -12,8 +12,15 @@ export default async function handler(req, res) {
 
     if (error) throw error;
 
-    // Normalise id field for frontend compatibility
-    const formatted = (movies || []).map(m => ({ ...m, id: m.id ?? m.id }));
+    // Remap snake_case DB columns → camelCase for frontend compatibility
+    const formatted = (movies || []).map(({ cast_members, mood_tags, poster_url, backdrop_url, ...m }) => ({
+      ...m,
+      cast:        cast_members ?? [],
+      moodTags:    mood_tags    ?? [],
+      posterUrl:   poster_url   ?? '',
+      backdropUrl: backdrop_url ?? ''
+    }));
+
     return res.status(200).json(formatted);
   } catch (err) {
     console.error('Movies fetch error:', err);

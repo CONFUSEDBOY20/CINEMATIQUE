@@ -50,7 +50,16 @@ app.get('/api/movies', async (req, res) => {
       .select('*');
 
     if (error) throw error;
-    res.json(movies || []);
+
+    // Remap snake_case DB columns → camelCase for frontend compatibility
+    const formatted = (movies || []).map(({ cast_members, mood_tags, poster_url, backdrop_url, ...m }) => ({
+      ...m,
+      cast:        cast_members ?? [],
+      moodTags:    mood_tags    ?? [],
+      posterUrl:   poster_url   ?? '',
+      backdropUrl: backdrop_url ?? ''
+    }));
+    res.json(formatted);
   } catch (error) {
     console.error('Movies fetch error:', error);
     res.status(500).json({ error: 'Failed to fetch movies' });

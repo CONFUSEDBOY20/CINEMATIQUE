@@ -30,12 +30,13 @@ async function seedDatabase() {
       const moviesData = JSON.parse(fs.readFileSync(moviesPath, 'utf8'));
 
       // Clear existing movies
-      const { error: delMoviesErr } = await supabase.from('movies').delete().neq('id', 0);
+      const { error: delMoviesErr } = await supabase.from('movies').delete().gt('created_at', '1970-01-01');
       if (delMoviesErr) console.warn('⚠️ Could not clear movies:', delMoviesErr.message);
 
       // Map to Supabase column names (snake_case)
-      const sanitized = moviesData.map(({ id, moodTags, posterUrl, backdropUrl, ...rest }) => ({
+      const sanitized = moviesData.map(({ id, cast, moodTags, posterUrl, backdropUrl, ...rest }) => ({
         ...rest,
+        cast_members: cast        ?? [],
         mood_tags:    moodTags    ?? [],
         poster_url:   posterUrl   ?? '',
         backdrop_url: backdropUrl ?? ''
