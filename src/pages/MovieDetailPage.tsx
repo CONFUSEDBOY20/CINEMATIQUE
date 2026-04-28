@@ -1,9 +1,9 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
-import { ArrowLeft, Star, Play, Heart, Share2, Clock, Calendar, MessageSquare, Check, X, Plus } from 'lucide-react';
+import { ArrowLeft, Star, Play, Heart, Share2, Clock, Calendar, MessageSquare, Check, X, Plus, Film } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
 import { motion, AnimatePresence } from 'motion/react';
 import { LazyImage } from '../components/LazyImage';
-import { getMovieDetails, getSimilarMovies } from '../lib/tmdb';
+import { getMovieDetails, getMoreLikeThis } from '../lib/tmdb';
 
 export function MovieDetailPage({ movieId }: { movieId: string }) {
   const { navigate, watchlist, addToWatchlist, removeFromWatchlist, user } = useAppContext();
@@ -12,19 +12,37 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
   const [reviewText, setReviewText] = useState('');
   
   const [movie, setMovie] = useState<any>(null);
-  const [similar, setSimilar] = useState<any[]>([]);
+  const [moreLikeThis, setMoreLikeThis] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [moreLikeLoading, setMoreLikeLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
-    Promise.all([
-      getMovieDetails(movieId),
-      getSimilarMovies(movieId)
-    ]).then(([m, s]) => {
-      setMovie(m);
-      setSimilar(s.slice(0, 5));
-      setLoading(false);
-    }).catch(console.error);
+    setMoreLikeLoading(true);
+    setMoreLikeThis([]);
+
+    getMovieDetails(movieId)
+      .then((m) => {
+        setMovie(m);
+        setLoading(false);
+
+        // Extract cast IDs for the "More Like This" engine
+        const castIds = (m.castDetails || [])
+          .slice(0, 5)
+          .map((c: any) => c.id)
+          .filter(Boolean);
+
+        return getMoreLikeThis(movieId, m.genres || [], m.year, castIds);
+      })
+      .then((related) => {
+        setMoreLikeThis(related);
+        setMoreLikeLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
+        setMoreLikeLoading(false);
+      });
   }, [movieId]);
 
   const isWatchlisted = movie ? watchlist.includes(movie.id) : false;
@@ -158,19 +176,91 @@ export function MovieDetailPage({ movieId }: { movieId: string }) {
           </motion.div>
         </div>
 
-        {/* Similar Movies */}
-        <div className="mt-16 pt-8 border-t border-white/10">
-          <h2 className="text-2xl font-serif font-bold mb-6">You might also like</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {similar.map(m => (
-              <div key={m.id} onClick={() => navigate('user', { movieId: m.id })} className="cursor-pointer group">
-                <div className="aspect-[2/3] rounded-lg overflow-hidden bg-brand-gray mb-2">
-                  <LazyImage src={m.posterUrl} alt={m.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                </div>
-                <h4 className="font-medium text-sm truncate">{m.title}</h4>
-              </div>
-            ))}
+        {/* ── More Like This ───────────────────────────────────────── */}
+        <div className="mt-16 pt-10 border-t border-white/10">
+          <div className="flex items-center gap-4 mb-8">
+            <Film className="w-6 h-6 text-brand-gold" />
+            <h2 className="text-2xl md:text-3xl font-serif font-bold uppercase tracking-tight">More Like This</h2>
+            <span className="h-px flex-1 bg-white/10" />
+            {!moreLikeLoading && moreLikeThis.length > 0 && (
+              <span className="text-xs text-white/40 tracking-widest uppercase">{moreLikeThis.length} titles</span>
+            )}
           </div>
+
+          {moreLikeLoading ? (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+              {Array.from({ length: 10 }).map((_, i) => (
+                <div key={i} className="animate-pulse">
+                  <div className="aspect-[2/3] rounded-xl bg-white/5 mb-3" />
+                  <div className="h-4 w-3/4 rounded bg-white/5 mb-2" />
+                  <div className="h-3 w-1/2 rounded bg-white/5" />
+                </div>
+              ))}
+            </div>
+          ) : moreLikeThis.length === 0 ? (
+            <div className="text-center py-16 text-white/30">
+              <Film className="w-12 h-12 mx-auto mb-4 opacity-30" />
+              <p className="text-sm uppercase tracking-widest">No related movies found</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+              {moreLikeThis.map((m, idx) => (
+                <motion.div
+                  key={m.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.04, duration: 0.35 }}
+                  onClick={() => navigate('user', { movieId: m.id })}
+                  className="cursor-pointer group relative"
+                >
+                  {/* Card */}
+                  <div className="relative aspect-[2/3] rounded-xl overflow-hidden bg-brand-gray border border-white/5 shadow-lg">
+                    <LazyImage
+                      src={m.posterUrl}
+                      alt={m.title}
+                      className="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                    />
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent pointer-events-none" />
+
+                    {/* Rating badge */}
+                    <div className="absolute top-2.5 left-2.5 flex items-center gap-1 bg-black/60 border border-white/10 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                      <Star className="w-3 h-3 fill-brand-gold text-brand-gold" />
+                      {m.rating}
+                    </div>
+
+                    {/* Year badge */}
+                    <div className="absolute top-2.5 right-2.5 bg-black/60 border border-white/10 backdrop-blur-sm text-white/70 text-[10px] font-bold px-2 py-0.5 rounded-full">
+                      {m.year}
+                    </div>
+
+                    {/* Bottom info — always visible */}
+                    <div className="absolute bottom-0 left-0 right-0 p-3 z-10">
+                      <h4 className="font-bold text-sm leading-tight truncate text-white uppercase tracking-wide">{m.title}</h4>
+                      <div className="flex flex-wrap gap-1 mt-1.5">
+                        {(m.genres || []).slice(0, 2).map((g: string) => (
+                          <span key={g} className="text-[8px] text-brand-gold/80 bg-brand-gold/10 border border-brand-gold/20 px-1.5 py-0.5 rounded uppercase tracking-widest font-semibold">
+                            {g}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-crimson/90 via-brand-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 z-20">
+                      <h4 className="font-bold text-base leading-tight text-white uppercase mb-1">{m.title}</h4>
+                      <p className="text-[10px] text-white/60 uppercase tracking-wider mb-2">{m.genres?.slice(0, 2).join(' • ')} • {m.year}</p>
+                      <p className="text-xs text-white/70 line-clamp-3 mb-3">{m.synopsis}</p>
+                      <div className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur border border-white/20 py-2 rounded-full text-xs font-bold tracking-widest uppercase text-white">
+                        <Play className="w-3 h-3 fill-current" />
+                        View Details
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Review Section */}
