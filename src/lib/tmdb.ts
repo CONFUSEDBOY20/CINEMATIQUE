@@ -45,23 +45,31 @@ export const mapMovie = (m: any) => ({
   language: m.original_language ? m.original_language.toUpperCase() : 'EN'
 });
 
-export const getTrending = async () => {
+export const getTrending = async (lang?: string) => {
+  if (lang) {
+    const data = await fetchTMDB('/discover/movie', { 
+      with_original_language: lang, 
+      sort_by: 'popularity.desc',
+      ...(lang === 'hi' ? { region: 'IN' } : {})
+    });
+    return data.results.map(mapMovie);
+  }
   const data = await fetchTMDB('/trending/movie/day');
   return data.results.map(mapMovie);
 };
 
-export const getPopular = async () => {
-  const data = await fetchTMDB('/movie/popular');
+export const getPopular = async (lang?: string) => {
+  const data = await fetchTMDB('/movie/popular', lang ? { with_original_language: lang } : { region: lang === 'hi' ? 'IN' : undefined });
   return data.results.map(mapMovie);
 };
 
-export const getTopRated = async () => {
-  const data = await fetchTMDB('/movie/top_rated');
+export const getTopRated = async (lang?: string) => {
+  const data = await fetchTMDB('/movie/top_rated', lang ? { with_original_language: lang, region: lang === 'hi' ? 'IN' : undefined } : {});
   return data.results.map(mapMovie);
 };
 
-export const getUpcoming = async () => {
-  const data = await fetchTMDB('/movie/upcoming');
+export const getUpcoming = async (lang?: string) => {
+  const data = await fetchTMDB('/movie/upcoming', lang ? { with_original_language: lang, region: lang === 'hi' ? 'IN' : undefined } : {});
   return data.results.map(mapMovie);
 };
 
@@ -115,19 +123,19 @@ export const GENRE_LIST: { id: number; name: string; emoji: string }[] = [
 /**
  * Discover movies by genre — fetches 2 pages (≈40 results) sorted by
  * popularity so the user always sees recognisable titles first.
+ * Now supports multiple genre IDs (comma-separated) and optional language.
  */
-export const discoverByGenre = async (genreId: number) => {
+export const discoverByGenre = async (genreIds: number | number[], lang?: string) => {
+  const ids = Array.isArray(genreIds) ? genreIds.join(',') : genreIds.toString();
+  const params: any = {
+    with_genres: ids,
+    sort_by: 'popularity.desc',
+  };
+  if (lang) params.with_original_language = lang;
+  
   const [p1, p2] = await Promise.all([
-    fetchTMDB('/discover/movie', {
-      with_genres: genreId.toString(),
-      sort_by: 'popularity.desc',
-      page: '1',
-    }),
-    fetchTMDB('/discover/movie', {
-      with_genres: genreId.toString(),
-      sort_by: 'popularity.desc',
-      page: '2',
-    }),
+    fetchTMDB('/discover/movie', { ...params, page: '1' }),
+    fetchTMDB('/discover/movie', { ...params, page: '2' }),
   ]);
 
   const seen = new Set<string>();

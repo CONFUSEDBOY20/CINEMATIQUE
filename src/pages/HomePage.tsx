@@ -8,9 +8,16 @@ import { getTrending, getUpcoming, getPopular, getTopRated, GENRE_LIST, discover
 
 // Stagger children with a lightweight CSS animation instead of per-item motion.div
 const MOODS = ['😂 Laugh', '😱 Thrill', '😢 Cry', '🤯 Mind-Blown'];
+const MOOD_TO_GENRE: Record<string, number> = {
+  '😂 Laugh': 35,
+  '😱 Thrill': 53,
+  '😢 Cry': 18,
+  '🤯 Mind-Blown': 878
+};
 
 export const HomePage = memo(function HomePage() {
-  const { user, navigate, watchlist, addToWatchlist, removeFromWatchlist } = useAppContext();
+  const { user, navigate, watchlist, addToWatchlist, removeFromWatchlist, library, setLibrary } = useAppContext();
+  const langCode = library === 'bollywood' ? 'hi' : 'en';
   const [trending, setTrending] = useState<any[]>([]);
   const [newReleases, setNewReleases] = useState<any[]>([]);
   const [popular, setPopular] = useState<any[]>([]);
@@ -19,40 +26,71 @@ export const HomePage = memo(function HomePage() {
 
   // ── My Vibe state ──────────────────────────────────────
   const [vibeOpen, setVibeOpen] = useState(false);
-  const [vibeGenre, setVibeGenre] = useState<{ id: number; name: string; emoji: string } | null>(null);
+  const [selectedVibes, setSelectedVibes] = useState<{ id: number; name: string; emoji: string }[]>([]);
+  const [showVibeResults, setShowVibeResults] = useState(false);
   const [vibeMovies, setVibeMovies] = useState<any[]>([]);
   const [vibeLoading, setVibeLoading] = useState(false);
 
-  const handleGenrePick = useCallback((genre: { id: number; name: string; emoji: string }) => {
-    setVibeGenre(genre);
+  const handleToggleVibe = useCallback((genre: { id: number; name: string; emoji: string }) => {
+    setSelectedVibes(prev => 
+      prev.find(v => v.id === genre.id) 
+        ? prev.filter(v => v.id !== genre.id)
+        : [...prev, genre]
+    );
+  }, []);
+
+  const handleGenerateVibe = useCallback(() => {
+    if (selectedVibes.length === 0) return;
+    setShowVibeResults(true);
     setVibeLoading(true);
     setVibeMovies([]);
-    discoverByGenre(genre.id)
+    discoverByGenre(selectedVibes.map(v => v.id), langCode)
       .then(setVibeMovies)
       .catch(console.error)
       .finally(() => setVibeLoading(false));
-  }, []);
+  }, [selectedVibes, langCode]);
 
   const handleVibeBack = useCallback(() => {
-    setVibeGenre(null);
+    setShowVibeResults(false);
     setVibeMovies([]);
   }, []);
 
   const handleVibeClose = useCallback(() => {
     setVibeOpen(false);
     // reset after exit animation
-    setTimeout(() => { setVibeGenre(null); setVibeMovies([]); }, 300);
+    setTimeout(() => { 
+      setSelectedVibes([]); 
+      setShowVibeResults(false);
+      setVibeMovies([]); 
+    }, 300);
   }, []);
 
+  const handleMoodClick = useCallback((mood: string) => {
+    const genreId = MOOD_TO_GENRE[mood];
+    const genre = GENRE_LIST.find(g => g.id === genreId);
+    if (genre) {
+      setVibeOpen(true);
+      setSelectedVibes([genre]);
+      setShowVibeResults(true);
+      setVibeLoading(true);
+      setVibeMovies([]);
+      discoverByGenre([genre.id], langCode)
+        .then(setVibeMovies)
+        .catch(console.error)
+        .finally(() => setVibeLoading(false));
+    }
+  }, [langCode]);
+
   useEffect(() => {
-    Promise.all([getTrending(), getUpcoming(), getPopular(), getTopRated()]).then(([t, u, p, tr]) => {
+    setLoading(true);
+    Promise.all([getTrending(langCode), getUpcoming(langCode), getPopular(langCode), getTopRated(langCode)]).then(([t, u, p, tr]) => {
       setTrending(t);
       setNewReleases(u);
       setPopular(p);
       setTopRated(tr);
       setLoading(false);
     }).catch(console.error);
-  }, []);
+  }, [langCode]);
 
   const featured = trending[0];
   const isWatchlisted = useMemo(() => watchlist.includes(featured?.id), [watchlist, featured?.id]);
@@ -159,6 +197,24 @@ export const HomePage = memo(function HomePage() {
         </motion.button>
       </div>
 
+      {/* ── Library Switch ─────────────────────────────────────────── */}
+      <div className="px-4 md:px-8 mt-12 flex items-center justify-between">
+        <div className="flex items-center gap-1 p-1 bg-white/5 rounded-full border border-white/10 backdrop-blur-md">
+          <button
+            onClick={() => setLibrary('hollywood')}
+            className={`px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${library === 'hollywood' ? 'bg-brand-crimson text-white shadow-lg' : 'text-white/40 hover:text-white'}`}
+          >
+            Hollywood
+          </button>
+          <button
+            onClick={() => setLibrary('bollywood')}
+            className={`px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all ${library === 'bollywood' ? 'bg-brand-crimson text-white shadow-lg' : 'text-white/40 hover:text-white'}`}
+          >
+            Bollywood
+          </button>
+        </div>
+      </div>
+
       {/* ── Trending Row ─────────────────────────────────────────────── */}
       <section className="mt-12 relative z-10 px-4 md:px-8">
         <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-white/60 flex items-center gap-4 mb-6">
@@ -203,7 +259,11 @@ export const HomePage = memo(function HomePage() {
         </h2>
         <div className="flex flex-wrap gap-3">
           {MOODS.map(mood => (
-            <button key={mood} className="bg-white/5 border border-white/10 hover:border-brand-gold hover:bg-brand-gold/10 text-xs font-bold tracking-[0.1em] py-3 px-6 rounded-full transition-colors uppercase">
+            <button
+              key={mood}
+              onClick={() => handleMoodClick(mood)}
+              className="bg-white/5 border border-white/10 hover:border-brand-gold hover:bg-brand-gold/10 text-xs font-bold tracking-[0.1em] py-3 px-6 rounded-full transition-colors uppercase"
+            >
               {mood}
             </button>
           ))}
@@ -238,7 +298,7 @@ export const HomePage = memo(function HomePage() {
             {/* Top bar */}
             <div className="sticky top-0 z-10 flex items-center justify-between px-6 py-4 bg-brand-black/80 backdrop-blur-md border-b border-white/5">
               <div className="flex items-center gap-3">
-                {vibeGenre && (
+                {showVibeResults && (
                   <button
                     onClick={handleVibeBack}
                     className="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
@@ -248,7 +308,7 @@ export const HomePage = memo(function HomePage() {
                 )}
                 <Sparkles className="w-5 h-5 text-brand-gold" />
                 <h2 className="text-lg font-bold uppercase tracking-widest">
-                  {vibeGenre ? `${vibeGenre.emoji} ${vibeGenre.name}` : 'Pick Your Vibe'}
+                  {showVibeResults ? 'Your Tailored Vibe' : 'Pick Your Vibes'}
                 </h2>
               </div>
               <button
@@ -262,7 +322,7 @@ export const HomePage = memo(function HomePage() {
             <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
               <AnimatePresence mode="wait">
                 {/* ── Genre grid (no genre selected yet) ──────────── */}
-                {!vibeGenre && (
+                {!showVibeResults && (
                   <motion.div
                     key="genre-grid"
                     initial={{ opacity: 0, y: 20 }}
@@ -270,33 +330,53 @@ export const HomePage = memo(function HomePage() {
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.25 }}
                   >
-                    <p className="text-white/50 text-center text-sm mb-10 tracking-wide">
-                      What are you in the mood for? Pick a genre below.
-                    </p>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                      {GENRE_LIST.map((genre, idx) => (
+                    <div className="flex flex-col items-center mb-10">
+                      <p className="text-white/50 text-center text-sm tracking-wide mb-4">
+                        What are you in the mood for? Select multiple categories below.
+                      </p>
+                      {selectedVibes.length > 0 && (
                         <motion.button
-                          key={genre.id}
-                          initial={{ opacity: 0, scale: 0.9 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: idx * 0.03 }}
-                          whileHover={{ scale: 1.06, y: -4 }}
-                          whileTap={{ scale: 0.95 }}
-                          onClick={() => handleGenrePick(genre)}
-                          className="flex flex-col items-center gap-3 py-6 px-4 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-brand-gold/50 hover:bg-brand-gold/5 transition-colors group"
+                          initial={{ scale: 0.9, opacity: 0 }}
+                          animate={{ scale: 1, opacity: 1 }}
+                          onClick={handleGenerateVibe}
+                          className="bg-brand-crimson text-white px-10 py-3 rounded-full font-bold text-sm tracking-[0.2em] uppercase shadow-[0_0_20px_rgba(229,9,20,0.4)] flex items-center gap-3"
                         >
-                          <span className="text-3xl group-hover:scale-110 transition-transform">{genre.emoji}</span>
-                          <span className="text-xs font-bold uppercase tracking-[0.15em] text-white/70 group-hover:text-brand-gold transition-colors">{genre.name}</span>
+                          Generate Recommendations ({selectedVibes.length})
                         </motion.button>
-                      ))}
+                      )}
+                    </div>
+
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                      {GENRE_LIST.map((genre, idx) => {
+                        const isSelected = selectedVibes.find(v => v.id === genre.id);
+                        return (
+                          <motion.button
+                            key={genre.id}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: idx * 0.03 }}
+                            whileHover={{ scale: 1.06, y: -4 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={() => handleToggleVibe(genre)}
+                            className={`flex flex-col items-center gap-3 py-6 px-4 rounded-2xl border transition-all group ${
+                              isSelected 
+                                ? 'bg-brand-crimson/20 border-brand-crimson shadow-[0_0_15px_rgba(229,9,20,0.2)]' 
+                                : 'bg-white/[0.03] border-white/10 hover:border-brand-gold/50 hover:bg-brand-gold/5'
+                            }`}
+                          >
+                            <span className={`text-3xl transition-transform ${isSelected ? 'scale-110' : 'group-hover:scale-110'}`}>{genre.emoji}</span>
+                            <span className={`text-xs font-bold uppercase tracking-[0.15em] transition-colors ${isSelected ? 'text-white' : 'text-white/70 group-hover:text-brand-gold'}`}>{genre.name}</span>
+                          </motion.button>
+                        );
+                      })}
                     </div>
                   </motion.div>
                 )}
 
                 {/* ── Results grid (genre selected) ───────────────── */}
-                {vibeGenre && (
+                {showVibeResults && (
                   <motion.div
-                    key={`results-${vibeGenre.id}`}
+                    key="vibe-results"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}

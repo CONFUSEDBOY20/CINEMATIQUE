@@ -12,6 +12,7 @@ interface AppState {
   searchQuery: string;
   authLoading: boolean;
   moviesLoading: boolean;
+  library: 'hollywood' | 'bollywood';
 }
 
 interface AuthResult {
@@ -32,6 +33,7 @@ interface AppContextType extends AppState {
   setRegisterMode: (val: boolean) => void;
   updateProfile: (fields: Partial<{ name: string; bio: string; avatar: string; coverPhoto: string; genres: string[] }>) => Promise<AuthResult>;
   changePassword: (currentPassword: string, newPassword: string) => Promise<AuthResult>;
+  setLibrary: (lib: 'hollywood' | 'bollywood') => void;
 }
 
 const AppContext = createContext<AppContextType | null>(null);
@@ -49,6 +51,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [watchlist, setWatchlist] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [registerMode, setRegisterMode] = useState(false);
+  const [library, setLibrary] = useState<'hollywood' | 'bollywood'>('hollywood');
 
   // ── Restore session from localStorage on mount ──────────────────────────────
   useEffect(() => {
@@ -271,7 +274,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       login, register, logout, navigate, pageParams,
       addToWatchlist, removeFromWatchlist, setSearchQuery,
       registerMode, setRegisterMode,
-      updateProfile, changePassword
+      updateProfile, changePassword,
+      library, setLibrary
     }}>
       {children}
     </AppContext.Provider>
