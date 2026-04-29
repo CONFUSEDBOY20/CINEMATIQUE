@@ -74,7 +74,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     } finally {
       setAuthLoading(false);
     }
-  }, [page]);
+  }, []); // Removed 'page' dependency to prevent effect loop
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -88,7 +88,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       } else {
         setUser(null);
         setAccessToken(null);
-        setPage('home');
+        // Only reset to home if we aren't already on the auth page
+        setPage(prev => prev === 'auth' ? 'auth' : 'home');
         setAuthLoading(false);
       }
     });
