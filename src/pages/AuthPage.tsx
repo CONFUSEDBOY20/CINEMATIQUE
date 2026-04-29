@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-type Mode = 'login' | 'register' | 'admin';
+type Mode = 'login' | 'register' | 'admin' | 'forgot' | 'reset';
 
 interface FieldError {
   email?: string;
@@ -17,7 +17,7 @@ interface FieldError {
 }
 
 export function AuthPage() {
-  const { login, register, navigate } = useAppContext();
+  const { login, register, navigate, forgotPassword, resetPassword, signInWithGoogle } = useAppContext();
   const id = useId();
 
   const [mode, setMode] = useState<Mode>('login');
@@ -29,6 +29,7 @@ export function AuthPage() {
   const [email, setEmail]                     = useState('');
   const [password, setPassword]               = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [resetToken, setResetToken]           = useState('');
 
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm]   = useState(false);
@@ -43,6 +44,7 @@ export function AuthPage() {
     setEmail('');
     setPassword('');
     setConfirmPassword('');
+    setResetToken('');
     setShowPassword(false);
     setShowConfirm(false);
   };
@@ -76,6 +78,27 @@ export function AuthPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     clearErrors();
+    
+    if (mode === 'forgot') {
+      if (!email) { setErrors({ email: 'Email is required' }); return; }
+      setLoading(true);
+      const res = await forgotPassword(email);
+      setLoading(false);
+      if (res.ok) setSuccess('Check your console for the reset token (Demo Mode)');
+      else setErrors({ form: res.error });
+      return;
+    }
+
+    if (mode === 'reset') {
+      if (!resetToken || !password) { setErrors({ form: 'All fields required' }); return; }
+      setLoading(true);
+      const res = await resetPassword(resetToken, password);
+      setLoading(false);
+      if (res.ok) { setSuccess('Password reset! Please log in.'); setMode('login'); }
+      else setErrors({ form: res.error });
+      return;
+    }
+
     if (!validate()) return;
 
     setLoading(true);
@@ -84,14 +107,19 @@ export function AuthPage() {
         const result = await register(name.trim(), email.trim(), password);
         if (!result.ok) setErrors({ form: result.error });
       } else {
-        // Both 'login' and 'admin' use email+password.
-        // Server returns role='admin' → AppContext routes to admin_dashboard.
         const result = await login(email.trim(), password);
         if (!result.ok) setErrors({ form: result.error });
       }
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleGoogleLogin = async () => {
+    setLoading(true);
+    const result = await signInWithGoogle();
+    setLoading(false);
+    if (!result.ok) setErrors({ form: result.error });
   };
 
   const isRegister = mode === 'register';
@@ -133,7 +161,7 @@ export function AuthPage() {
             CINE<span className="text-white">MATIQUE</span>
           </div>
           <p className="text-white/40 text-xs uppercase tracking-[0.3em] font-medium">
-            {isRegister ? 'Create your account' : isAdmin ? 'Admin portal' : 'Premium Experience'}
+            {isRegister ? 'Create your account' : isAdmin ? 'Admin portal' : mode === 'forgot' ? 'Recover Account' : mode === 'reset' ? 'Set New Password' : 'Premium Experience'}
           </p>
         </div>
 
@@ -243,7 +271,41 @@ export function AuthPage() {
               />
             </InputWrapper>
             <FieldError msg={errors.password} />
+            {!isRegister && !isAdmin && mode === 'login' && (
+              <div className="flex justify-end mt-2">
+                <button 
+                  type="button" 
+                  onClick={() => switchMode('forgot')}
+                  className="text-[10px] text-brand-gold hover:text-white uppercase font-bold tracking-widest transition-colors"
+                >
+                  Forgot Password?
+                </button>
+              </div>
+            )}
           </div>
+
+          {/* Reset Token — reset mode only */}
+          <AnimatePresence mode="popLayout">
+            {mode === 'reset' && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+              >
+                <FieldLabel htmlFor="token">Reset Token</FieldLabel>
+                <InputWrapper icon={<ShieldAlert className="w-4 h-4" />}>
+                  <input
+                    id="token"
+                    type="text"
+                    value={resetToken}
+                    onChange={e => setResetToken(e.target.value)}
+                    placeholder="Enter token from console"
+                    className={inputClass}
+                  />
+                </InputWrapper>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <AnimatePresence mode="popLayout">
             {/* Confirm Password — register only */}
@@ -342,11 +404,30 @@ export function AuthPage() {
               <Loader2 className="w-4 h-4 animate-spin" />
             ) : (
               <>
-                {isRegister ? 'Create Account' : isAdmin ? 'Access Admin' : 'Sign In'}
+                {mode === 'forgot' ? 'Send Reset Link' : mode === 'reset' ? 'Reset Password' : isRegister ? 'Create Account' : isAdmin ? 'Access Admin' : 'Sign In'}
                 <ArrowRight className="w-4 h-4" />
               </>
             )}
           </button>
+
+          {/* Google Login — only for member login/register */}
+          {!isAdmin && (mode === 'login' || mode === 'register') && (
+            <div className="pt-4 space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="h-px flex-1 bg-white/5" />
+                <span className="text-[10px] uppercase tracking-widest text-white/20 font-bold">OR</span>
+                <div className="h-px flex-1 bg-white/5" />
+              </div>
+              <button
+                type="button"
+                onClick={handleGoogleLogin}
+                className="w-full py-3.5 bg-white text-brand-black rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center justify-center gap-3 hover:bg-gray-100 transition-all border border-white/10"
+              >
+                <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" className="w-4 h-4" />
+                Continue with Google
+              </button>
+            </div>
+          )}
         </form>
 
         {/* Footer links */}
@@ -371,10 +452,13 @@ export function AuthPage() {
 
           <button
             id="toggle-admin-mode"
-            onClick={() => switchMode(isAdmin ? 'login' : 'admin')}
+            onClick={() => {
+              if (mode === 'forgot' || mode === 'reset') setMode('login');
+              else switchMode(isAdmin ? 'login' : 'admin');
+            }}
             className="text-[10px] uppercase tracking-widest text-white/20 hover:text-white/50 transition-colors font-bold"
           >
-            {isAdmin ? '← Back to Member Login' : 'Admin Access'}
+            {mode === 'forgot' || mode === 'reset' ? '← Back to Login' : isAdmin ? '← Back to Member Login' : 'Admin Access'}
           </button>
         </div>
       </motion.div>

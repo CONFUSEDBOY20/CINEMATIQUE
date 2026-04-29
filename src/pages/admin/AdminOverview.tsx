@@ -4,16 +4,16 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { useAppContext } from '../../context/AppContext';
 
 export function AdminOverview() {
-  const { movies } = useAppContext();
+  const { movies, accessToken } = useAppContext();
   const [statsData, setStatsData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchStats = async () => {
-      const token = localStorage.getItem('cinematique_token');
+      if (!accessToken) return;
       try {
         const res = await fetch('/api/admin/stats', {
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${accessToken}` }
         });
         if (res.ok) {
           const data = await res.json();
@@ -26,7 +26,7 @@ export function AdminOverview() {
       }
     };
     fetchStats();
-  }, []);
+  }, [accessToken]);
 
   const stats = [
     { label: 'Total Movies', value: statsData?.totalMovies || movies.length, icon: Film, color: 'text-brand-gold', bg: 'bg-brand-gold/10' },

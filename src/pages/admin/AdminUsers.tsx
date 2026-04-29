@@ -1,16 +1,18 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Search, ShieldAlert, ShieldCheck } from 'lucide-react';
+import { useAppContext } from '../../context/AppContext';
 
 export function AdminUsers() {
+  const { accessToken } = useAppContext();
   const [users, setUsers] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
 
   const fetchUsers = useCallback(async () => {
-    const token = localStorage.getItem('cinematique_token');
+    if (!accessToken) return;
     try {
       const res = await fetch('/api/admin/users', {
-        headers: { Authorization: `Bearer ${token}` }
+        headers: { Authorization: `Bearer ${accessToken}` }
       });
       if (res.ok) {
         const data = await res.json();
@@ -21,21 +23,21 @@ export function AdminUsers() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [accessToken]);
 
   useEffect(() => {
     fetchUsers();
   }, [fetchUsers]);
 
   const toggleStatus = async (userId: string, currentStatus: string) => {
-    const token = localStorage.getItem('cinematique_token');
+    if (!accessToken) return;
     const newStatus = currentStatus === 'active' ? 'banned' : 'active';
     try {
       const res = await fetch(`/api/admin/users/${userId}/status`, {
         method: 'PATCH',
         headers: { 
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}` 
+          Authorization: `Bearer ${accessToken}` 
         },
         body: JSON.stringify({ status: newStatus })
       });
@@ -48,8 +50,8 @@ export function AdminUsers() {
   };
 
   const filtered = users.filter(u => 
-    u.name.toLowerCase().includes(query.toLowerCase()) || 
-    u.email.toLowerCase().includes(query.toLowerCase())
+    (u.name?.toLowerCase() || '').includes(query.toLowerCase()) || 
+    (u.email?.toLowerCase() || '').includes(query.toLowerCase())
   );
 
   if (loading) {

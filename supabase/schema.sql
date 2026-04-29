@@ -61,9 +61,32 @@ CREATE TRIGGER movies_updated_at
 -- ─── Row-Level Security (optional but recommended) ───────────
 -- Disable RLS for server-side service role access (default).
 -- Enable and add policies if you want frontend-direct access via anon key.
-ALTER TABLE public.users  DISABLE ROW LEVEL SECURITY;
-ALTER TABLE public.movies DISABLE ROW LEVEL SECURITY;
+-- ─── User Profile Sync Trigger ───────────────────────────────────────────
+-- This function automatically creates a profile in public.users 
+-- whenever a new user signs up via Supabase Auth (Email or Google).
 
--- Allow service role full access (already granted by default in Supabase)
+CREATE OR REPLACE FUNCTION public.handle_new_user()
+RETURNS TRIGGER AS $$
+BEGIN
+  INSERT INTO public.users (id, name, email, role, status, avatar)
+  VALUES (
+    NEW.id,
+    COALESCE(NEW.raw_user_meta_data->>'name', NEW.email),
+    NEW.email,
+    'user',
+    'active',
+    COALESCE(NEW.raw_user_meta_data->>'avatar_url', '')
+  );
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE OR REPLACE TRIGGER on_auth_user_created
+  AFTER INSERT ON auth.users
+  FOR EACH ROW EXECUTE FUNCTION public.handle_new_user();
+
+-- Allow service role full access
 GRANT ALL ON public.users  TO service_role;
 GRANT ALL ON public.movies TO service_role;
+ALTER TABLE public.users ADD COLUMN IF NOT EXISTS reset_token TEXT;
+ALTER TABLE public.users ADD COLUMN IF NOT EXISTS reset_token_expires TIMESTAMPTZ;

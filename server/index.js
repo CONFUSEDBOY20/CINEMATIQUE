@@ -28,17 +28,31 @@ app.use(cors());
 app.use(express.json());
 
 // ─── Auth Middleware ──────────────────────────────────────────────────────────
-function authMiddleware(req, res, next) {
+async function authMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     return res.status(401).json({ error: 'No token provided' });
   }
   try {
     const token = authHeader.split(' ')[1];
-    req.user = jwt.verify(token, JWT_SECRET);
+    // Verify token with Supabase
+    const { data: { user }, error } = await supabase.auth.getUser(token);
+    
+    if (error || !user) {
+      return res.status(401).json({ error: 'Invalid or expired token' });
+    }
+
+    // Fetch full profile from our public.users table
+    const { data: profile } = await supabase
+      .from('users')
+      .select('id, role')
+      .eq('id', user.id)
+      .single();
+
+    req.user = { ...user, role: profile?.role || 'user' };
     next();
-  } catch {
-    res.status(401).json({ error: 'Invalid or expired token' });
+  } catch (err) {
+    res.status(401).json({ error: 'Authentication failed' });
   }
 }
 
@@ -74,118 +88,20 @@ app.get('/api/movies', async (req, res) => {
   }
 });
 
-// ─── Register ─────────────────────────────────────────────────────────────────
-app.post('/api/register', async (req, res) => {
-  try {
-    const { name, email, password } = req.body;
-
-    if (!name || !email || !password) {
-      return res.status(400).json({ error: 'All fields are required' });
-    }
-    if (password.length < 6) {
-      return res.status(400).json({ error: 'Password must be at least 6 characters' });
-    }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return res.status(400).json({ error: 'Invalid email address' });
-    }
-
-    // Check for duplicate email
-    const { data: existing } = await supabase
-      .from('users')
-      .select('id')
-      .eq('email', email.toLowerCase())
-      .limit(1);
-
-    if (existing && existing.length > 0) {
-      return res.status(409).json({ error: 'An account with this email already exists' });
-    }
-
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
-
-    const { data: newUsers, error } = await supabase
-      .from('users')
-      .insert([{
-        name: name.trim(),
-        email: email.toLowerCase(),
-        password: hashedPassword,
-        role: 'user',
-        avatar: '',
-        cover_photo: '',
-        bio: '',
-        status: 'active',
-        watchlist: [],
-        genres: []
-      }])
-      .select('*');
-
-    if (error) throw error;
-
-    const user = newUsers[0];
-    const token = jwt.sign({ id: user.id, role: user.role }, JWT_SECRET, { expiresIn: JWT_EXPIRES });
-
-    const { password: _pw, ...publicUser } = user;
-    res.status(201).json({ token, user: publicUser });
-  } catch (error) {
-    console.error('Registration error:', error);
-    res.status(500).json({ error: 'Registration failed. Please try again.' });
-  }
-});
-
-// ─── Login ────────────────────────────────────────────────────────────────────
-app.post('/api/login', async (req, res) => {
-  try {
-    const { email, password } = req.body;
-
-    if (!email || !password) {
-      return res.status(400).json({ error: 'Email and password are required' });
-    }
-
-    const { data: users, error } = await supabase
-      .from('users')
-      .select('*')
-      .eq('email', email.toLowerCase())
-      .limit(1);
-
-    if (error) throw error;
-
-    const user = users?.[0];
-    if (!user) {
-      return res.status(401).json({ error: 'Invalid email or password' });
-    }
-
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) {
-      return res.status(401).json({ error: 'Invalid email or password' });
-    }
-
-    const token = jwt.sign({ id: user.id, role: user.role }, JWT_SECRET, { expiresIn: JWT_EXPIRES });
-
-    const { password: _pw, ...publicUser } = user;
-    res.json({ token, user: publicUser });
-  } catch (error) {
-    console.error('Login error:', error);
-    res.status(500).json({ error: 'Login failed. Please try again.' });
-  }
-});
+// Auth endpoints (Registration/Login/Forgot) are now handled by Supabase SDK in the frontend.
+// The backend only provides protected profile and data endpoints.
 
 // ─── Get current user (protected) ────────────────────────────────────────────
 app.get('/api/me', authMiddleware, async (req, res) => {
   try {
-    const { data: users, error } = await supabase
+    const { data: profile, error } = await supabase
       .from('users')
       .select('*')
       .eq('id', req.user.id)
-      .limit(1);
+      .single();
 
-    if (error) throw error;
-
-    const user = users?.[0];
-    if (!user) return res.status(404).json({ error: 'User not found' });
-
-    const { password: _pw, ...publicUser } = user;
-    res.json({ user: publicUser });
+    if (error || !profile) return res.status(404).json({ error: 'User profile not found' });
+    res.json({ user: profile });
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch user' });
   }
@@ -206,62 +122,18 @@ app.patch('/api/user/update', authMiddleware, async (req, res) => {
       .from('users')
       .update(updates)
       .eq('id', req.user.id)
-      .select('*');
+      .select('*')
+      .single();
 
     if (error) throw error;
-
-    const user = updated?.[0];
-    if (!user) return res.status(404).json({ error: 'User not found' });
-
-    const { password: _pw, ...publicUser } = user;
-    res.json({ user: publicUser });
+    res.json({ user: updated });
   } catch (error) {
     console.error('Profile update error:', error);
     res.status(500).json({ error: 'Failed to update profile' });
   }
 });
 
-// ─── Change Password (protected) ──────────────────────────────────────────────
-app.patch('/api/user/change-password', authMiddleware, async (req, res) => {
-  try {
-    const { currentPassword, newPassword } = req.body;
-    if (!currentPassword || !newPassword) {
-      return res.status(400).json({ error: 'Both current and new password are required' });
-    }
-    if (newPassword.length < 6) {
-      return res.status(400).json({ error: 'New password must be at least 6 characters' });
-    }
-
-    const { data: users, error: fetchError } = await supabase
-      .from('users')
-      .select('password')
-      .eq('id', req.user.id)
-      .limit(1);
-
-    if (fetchError) throw fetchError;
-
-    const user = users?.[0];
-    if (!user) return res.status(404).json({ error: 'User not found' });
-
-    const isMatch = await bcrypt.compare(currentPassword, user.password);
-    if (!isMatch) return res.status(401).json({ error: 'Current password is incorrect' });
-
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(newPassword, salt);
-
-    const { error: updateError } = await supabase
-      .from('users')
-      .update({ password: hashedPassword })
-      .eq('id', req.user.id);
-
-    if (updateError) throw updateError;
-
-    res.json({ message: 'Password changed successfully' });
-  } catch (error) {
-    console.error('Password change error:', error);
-    res.status(500).json({ error: 'Failed to change password' });
-  }
-});
+// Forgot and Reset Password endpoints removed. Handled by Supabase SDK.
 
 // ─── Admin Endpoints ──────────────────────────────────────────────────────────
 

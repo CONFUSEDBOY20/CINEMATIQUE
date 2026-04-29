@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { LogOut, LayoutDashboard, Film, Users, MessageSquare, BarChart, Settings, Bell } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
+import { AdminOverview } from './admin/AdminOverview';
 import { AdminUsers } from './admin/AdminUsers';
 import { AdminReviews } from './admin/AdminReviews';
 import { AdminAnalytics } from './admin/AdminAnalytics';
