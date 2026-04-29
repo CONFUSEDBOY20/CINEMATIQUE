@@ -105,10 +105,18 @@ export function AuthPage() {
     try {
       if (mode === 'register') {
         const result = await register(name.trim(), email.trim(), password);
-        if (!result.ok) setErrors({ form: result.error });
+        if (!result.ok) {
+          setErrors({ form: result.error });
+        } else {
+          navigate('home');
+        }
       } else {
         const result = await login(email.trim(), password);
-        if (!result.ok) setErrors({ form: result.error });
+        if (!result.ok) {
+          setErrors({ form: result.error });
+        } else {
+          navigate('home');
+        }
       }
     } finally {
       setLoading(false);

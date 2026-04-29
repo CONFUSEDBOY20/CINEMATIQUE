@@ -65,7 +65,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
         setUser(profile);
         setAccessToken(token);
         setWatchlist(profile.watchlist || []);
-        if (profile.role === 'admin' && page === 'home') setPage('admin_dashboard');
+        if (profile.role === 'admin' && (page === 'home' || page === 'auth')) {
+          setPage('admin_dashboard');
+        }
       }
     } catch (err) {
       console.error("Profile sync error:", err);
