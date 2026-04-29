@@ -42,6 +42,14 @@ function authMiddleware(req, res, next) {
   }
 }
 
+function adminMiddleware(req, res, next) {
+  if (req.user && req.user.role === 'admin') {
+    next();
+  } else {
+    res.status(403).json({ error: 'Access denied: Admin only' });
+  }
+}
+
 // ─── Movies ───────────────────────────────────────────────────────────────────
 app.get('/api/movies', async (req, res) => {
   try {
@@ -252,6 +260,70 @@ app.patch('/api/user/change-password', authMiddleware, async (req, res) => {
   } catch (error) {
     console.error('Password change error:', error);
     res.status(500).json({ error: 'Failed to change password' });
+  }
+});
+
+// ─── Admin Endpoints ──────────────────────────────────────────────────────────
+
+app.get('/api/admin/users', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { data: users, error } = await supabase
+      .from('users')
+      .select('id, name, email, role, status, created_at, avatar')
+      .order('created_at', { ascending: false });
+
+    if (error) throw error;
+    res.json(users);
+  } catch (error) {
+    console.error('Admin users fetch error:', error);
+    res.status(500).json({ error: 'Failed to fetch users' });
+  }
+});
+
+app.patch('/api/admin/users/:id/status', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+
+    if (!['active', 'banned'].includes(status)) {
+      return res.status(400).json({ error: 'Invalid status' });
+    }
+
+    const { data: updated, error } = await supabase
+      .from('users')
+      .update({ status })
+      .eq('id', id)
+      .select('*');
+
+    if (error) throw error;
+    res.json(updated[0]);
+  } catch (error) {
+    console.error('Admin status update error:', error);
+    res.status(500).json({ error: 'Failed to update user status' });
+  }
+});
+
+app.get('/api/admin/stats', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { count: usersCount } = await supabase.from('users').select('*', { count: 'exact', head: true });
+    const { count: moviesCount } = await supabase.from('movies').select('*', { count: 'exact', head: true });
+    
+    // Get new users in last 7 days
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
+    const { count: newUsers } = await supabase
+      .from('users')
+      .select('*', { count: 'exact', head: true })
+      .gt('created_at', sevenDaysAgo);
+
+    res.json({
+      totalUsers: usersCount || 0,
+      totalMovies: moviesCount || 0,
+      newUsersLastWeek: newUsers || 0,
+      activeUsers: usersCount || 0 // Mock for now if sessions aren't tracked
+    });
+  } catch (error) {
+    console.error('Admin stats error:', error);
+    res.status(500).json({ error: 'Failed to fetch stats' });
   }
 });
 

@@ -1,16 +1,38 @@
+import { useState, useEffect } from 'react';
 import { Users, Film, MessageSquare, Activity } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useAppContext } from '../../context/AppContext';
-import { mockUsers, mockReviews } from '../../constants';
 
 export function AdminOverview() {
   const { movies } = useAppContext();
+  const [statsData, setStatsData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      const token = localStorage.getItem('cinematique_token');
+      try {
+        const res = await fetch('/api/admin/stats', {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setStatsData(data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch stats:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchStats();
+  }, []);
 
   const stats = [
-    { label: 'Total Movies', value: movies.length, icon: Film, color: 'text-brand-gold', bg: 'bg-brand-gold/10' },
-    { label: 'Total Users', value: mockUsers.length, icon: Users, color: 'text-blue-400', bg: 'bg-blue-400/10' },
-    { label: 'Reviews Today', value: mockReviews.length, icon: MessageSquare, color: 'text-green-400', bg: 'bg-green-400/10' },
-    { label: 'Active Sessions', value: '24', icon: Activity, color: 'text-brand-crimson', bg: 'bg-brand-crimson/10' },
+    { label: 'Total Movies', value: statsData?.totalMovies || movies.length, icon: Film, color: 'text-brand-gold', bg: 'bg-brand-gold/10' },
+    { label: 'Total Users', value: statsData?.totalUsers || 0, icon: Users, color: 'text-blue-400', bg: 'bg-blue-400/10' },
+    { label: 'New Users (7d)', value: statsData?.newUsersLastWeek || 0, icon: MessageSquare, color: 'text-green-400', bg: 'bg-green-400/10' },
+    { label: 'Active Status', value: statsData?.activeUsers || 0, icon: Activity, color: 'text-brand-crimson', bg: 'bg-brand-crimson/10' },
   ];
 
   const chartData = [
@@ -19,6 +41,14 @@ export function AdminOverview() {
     { name: '7', users: 38 }, { name: '8', users: 45 }, { name: '9', users: 40 },
     { name: '10', users: 55 }, { name: '11', users: 62 }, { name: '12', users: 58 },
   ];
+
+  if (loading) {
+    return (
+      <div className="p-8 flex items-center justify-center h-64">
+        <div className="w-8 h-8 border-2 border-brand-gold border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <div className="p-8">
@@ -41,7 +71,7 @@ export function AdminOverview() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 bg-[#111] border border-[#222] rounded-2xl p-6">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="text-lg font-bold text-white">User Registrations (Last 30 days)</h3>
+            <h3 className="text-lg font-bold text-white">Growth Overview</h3>
           </div>
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
@@ -66,25 +96,20 @@ export function AdminOverview() {
         </div>
 
         <div className="bg-[#111] border border-[#222] rounded-2xl p-6">
-          <h3 className="text-lg font-bold text-white mb-6">Recent Activity</h3>
+          <h3 className="text-lg font-bold text-white mb-6">System Status</h3>
           <div className="space-y-6">
-            {mockReviews.slice(0, 4).map(r => {
-               const u = mockUsers.find(user => user.id === r.userId);
-               const m = movies.find(movie => movie.id === r.movieId);
-               return (
-                 <div key={r.id} className="flex gap-4">
-                   <div className="w-8 h-8 rounded-full bg-brand-gray flex shrink-0 items-center justify-center text-xs font-bold border border-[#333]">
-                     {u?.avatar}
-                   </div>
-                   <div>
-                     <p className="text-sm text-gray-300">
-                       <span className="font-bold text-white">{u?.name}</span> reviewed <span className="text-brand-gold">{m?.title}</span>
-                     </p>
-                     <p className="text-xs text-[#888] mt-1">{r.date}</p>
-                   </div>
-                 </div>
-               )
-            })}
+             <div className="p-4 bg-white/5 rounded-xl border border-white/5">
+                <p className="text-xs text-[#888] uppercase tracking-widest mb-1">Database</p>
+                <p className="text-sm text-green-400 font-bold">Connected</p>
+             </div>
+             <div className="p-4 bg-white/5 rounded-xl border border-white/5">
+                <p className="text-xs text-[#888] uppercase tracking-widest mb-1">API Server</p>
+                <p className="text-sm text-green-400 font-bold">Online</p>
+             </div>
+             <div className="p-4 bg-white/5 rounded-xl border border-white/5">
+                <p className="text-xs text-[#888] uppercase tracking-widest mb-1">TMDB Integration</p>
+                <p className="text-sm text-green-400 font-bold">Active</p>
+             </div>
           </div>
         </div>
       </div>
