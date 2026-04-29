@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { LogOut, LayoutDashboard, Film, Users, MessageSquare, BarChart, Settings, Bell } from 'lucide-react';
 import { useAppContext } from '../context/AppContext';
-import { AdminOverview } from './admin/AdminOverview';
-import { AdminMovies } from './admin/AdminMovies';
 import { AdminUsers } from './admin/AdminUsers';
 import { AdminReviews } from './admin/AdminReviews';
+import { AdminAnalytics } from './admin/AdminAnalytics';
+import { AdminSettings } from './admin/AdminSettings';
 
 export function AdminDashboard() {
   const { user, logout } = useAppContext();
@@ -12,7 +12,6 @@ export function AdminDashboard() {
 
   const navItems = [
     { id: 'overview', icon: LayoutDashboard, label: 'Overview' },
-    { id: 'movies', icon: Film, label: 'Manage Movies' },
     { id: 'users', icon: Users, label: 'Manage Users' },
     { id: 'reviews', icon: MessageSquare, label: 'Moderation' },
     { id: 'analytics', icon: BarChart, label: 'Analytics' },
@@ -22,10 +21,10 @@ export function AdminDashboard() {
   const renderContent = () => {
     switch (activeTab) {
       case 'overview': return <AdminOverview />;
-      case 'movies': return <AdminMovies />;
       case 'users': return <AdminUsers />;
       case 'reviews': return <AdminReviews />;
-      case 'analytics': return <div className="p-8"><h2 className="text-2xl font-bold font-serif">Analytics</h2><p className="opacity-50 mt-4">Feature in development.</p></div>;
+      case 'analytics': return <AdminAnalytics />;
+      case 'settings': return <AdminSettings />;
       default: return <AdminOverview />;
     }
   };
