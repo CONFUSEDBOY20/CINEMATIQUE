@@ -89,15 +89,15 @@ export function WatchlistPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                className="relative group"
+                className="relative flex flex-col gap-2"
               >
+                <MovieCard movie={movie} />
                 <button 
                   onClick={(e) => { e.stopPropagation(); removeFromWatchlist(movie.id); }}
-                  className="absolute -top-2 -right-2 z-20 w-8 h-8 bg-brand-crimson rounded-full flex items-center justify-center text-white border-2 border-brand-black opacity-0 group-hover:opacity-100 transition-opacity hover:scale-110 shadow-lg"
+                  className="w-full py-2 bg-white/5 border border-white/10 hover:bg-brand-crimson hover:border-brand-crimson hover:text-white rounded text-[10px] font-bold uppercase tracking-widest text-white/50 transition-colors flex items-center justify-center gap-1"
                 >
-                  <BookmarkMinus className="w-4 h-4" />
+                  <BookmarkMinus className="w-3 h-3" /> Remove
                 </button>
-                <MovieCard movie={movie} />
               </motion.div>
             ))}
           </AnimatePresence>

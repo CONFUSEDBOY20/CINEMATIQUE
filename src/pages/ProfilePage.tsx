@@ -1,11 +1,13 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  Camera, Edit3, Save, X, Heart, Star, Clock,
+  Edit3, Save, X, Heart, Star,
   Lock, Eye, EyeOff, CheckCircle2, AlertCircle,
-  Loader2, Trash2, User as UserIcon, ImagePlus, ShieldCheck
+  Loader2, User as UserIcon, ShieldCheck, BookmarkMinus
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAppContext } from '../context/AppContext';
+import { MovieCard } from '../components/MovieCard';
+import { getMovieDetails } from '../lib/tmdb';
 
 const ALL_GENRES = [
   'Action', 'Adventure', 'Animation', 'Comedy', 'Crime',
@@ -13,10 +15,10 @@ const ALL_GENRES = [
   'Romance', 'Sci-Fi', 'Thriller', 'Western', 'Musical'
 ];
 
-type Tab = 'info' | 'genres' | 'password';
+type Tab = 'info' | 'genres' | 'watchlist' | 'password';
 
 export function ProfilePage() {
-  const { user, watchlist, updateProfile, changePassword } = useAppContext();
+  const { user, watchlist, updateProfile, changePassword, removeFromWatchlist } = useAppContext();
 
   // ── Tab state ──────────────────────────────────────────────────────────────
   const [tab, setTab] = useState<Tab>('info');
@@ -24,8 +26,9 @@ export function ProfilePage() {
   // ── Info form state ────────────────────────────────────────────────────────
   const [name, setName]             = useState(user?.name || '');
   const [bio, setBio]               = useState(user?.bio || '');
-  const [avatarPreview, setAvatarPreview]     = useState<string>(user?.avatar || '');
-  const [coverPreview, setCoverPreview]       = useState<string>(user?.coverPhoto || '');
+  const [age, setAge]               = useState(user?.age || '');
+  const [country, setCountry]       = useState(user?.country || '');
+  
   const [infoLoading, setInfoLoading]         = useState(false);
   const [infoMsg, setInfoMsg]                 = useState<{ ok: boolean; text: string } | null>(null);
 
@@ -44,34 +47,27 @@ export function ProfilePage() {
   const [pwLoading, setPwLoading]             = useState(false);
   const [pwMsg, setPwMsg]                     = useState<{ ok: boolean; text: string } | null>(null);
 
-  // ── File input refs ────────────────────────────────────────────────────────
-  const avatarInputRef = useRef<HTMLInputElement>(null);
-  const coverInputRef  = useRef<HTMLInputElement>(null);
+  // ── Watchlist state ────────────────────────────────────────────────────────
+  const [watchlistedMovies, setWatchlistedMovies] = useState<any[]>([]);
+  const [watchlistLoading, setWatchlistLoading] = useState(true);
 
-  // ── Image helpers ──────────────────────────────────────────────────────────
-  const readFile = (file: File): Promise<string> =>
-    new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result as string);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-
-  const handleAvatarPick = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const dataUrl = await readFile(file);
-    setAvatarPreview(dataUrl);
-    e.target.value = '';
-  }, []);
-
-  const handleCoverPick = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const dataUrl = await readFile(file);
-    setCoverPreview(dataUrl);
-    e.target.value = '';
-  }, []);
+  useEffect(() => {
+    const fetchMissing = async () => {
+      if (tab !== 'watchlist') return;
+      const missingIds = watchlist.filter(id => !watchlistedMovies.find(m => m.id === id));
+      if (missingIds.length > 0) {
+        setWatchlistLoading(true);
+        try {
+          const newMovies = await Promise.all(missingIds.map(id => getMovieDetails(id)));
+          setWatchlistedMovies(prev => [...prev, ...newMovies]);
+        } catch (err) {
+          console.error("Failed to fetch watchlist details", err);
+        }
+      }
+      setWatchlistLoading(false);
+    };
+    fetchMissing();
+  }, [watchlist, tab, watchlistedMovies]);
 
   // ── Save info ──────────────────────────────────────────────────────────────
   const handleSaveInfo = async (e: React.FormEvent) => {
@@ -81,8 +77,8 @@ export function ProfilePage() {
     const result = await updateProfile({
       name: name.trim(),
       bio,
-      avatar: avatarPreview,
-      coverPhoto: coverPreview,
+      age: age.toString().trim(),
+      country: country.trim()
     });
     setInfoLoading(false);
     setInfoMsg({ ok: result.ok, text: result.ok ? 'Profile updated!' : result.error || 'Update failed' });
@@ -118,84 +114,38 @@ export function ProfilePage() {
     }
   };
 
-  // ── Avatar display ─────────────────────────────────────────────────────────
-  const avatarInitial = user?.name?.[0]?.toUpperCase() || 'U';
+  const displayWatchlist = watchlistedMovies.filter(m => watchlist.includes(m.id));
 
   return (
-    <div className="min-h-screen pb-12">
+    <div className="min-h-screen pb-12 bg-brand-black">
 
-      {/* ── Cover Photo ────────────────────────────────────────────────────── */}
-      <div className="relative h-52 md:h-64 overflow-hidden group">
-        {coverPreview ? (
-          <img src={coverPreview} alt="Cover" className="w-full h-full object-cover" />
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-crimson/30 via-brand-black to-brand-gold/20" />
-        )}
-        <div className="absolute inset-0 bg-black/30" />
-
-        {/* Change cover button */}
-        <button
-          onClick={() => coverInputRef.current?.click()}
-          className="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity bg-black/40 text-white text-xs uppercase tracking-widest font-bold"
-        >
-          <ImagePlus className="w-5 h-5" /> Change Cover Photo
-        </button>
-        <input ref={coverInputRef} type="file" accept="image/*" className="hidden" onChange={handleCoverPick} />
-      </div>
-
-      {/* ── Avatar + Name header ────────────────────────────────────────────── */}
-      <div className="max-w-4xl mx-auto px-4 md:px-8">
-        <div className="relative flex items-end gap-5 -mt-14 mb-6">
-          {/* Avatar */}
-          <div className="relative group flex-shrink-0 z-10">
-            <div
-              className="w-24 h-24 md:w-28 md:h-28 rounded-full border-4 border-brand-black overflow-hidden bg-brand-crimson flex items-center justify-center shadow-[0_0_30px_rgba(229,9,20,0.4)]"
-            >
-              {avatarPreview
-                ? <img src={avatarPreview} alt="Avatar" className="w-full h-full object-cover" />
-                : <span className="text-4xl font-bold text-white font-serif">{avatarInitial}</span>
-              }
-            </div>
-            <button
-              onClick={() => avatarInputRef.current?.click()}
-              className="absolute inset-0 rounded-full bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-              title="Change photo"
-            >
-              <Camera className="w-6 h-6 text-white" />
-            </button>
-            <input ref={avatarInputRef} type="file" accept="image/*" className="hidden" onChange={handleAvatarPick} />
-          </div>
-
-          {/* Name & join date */}
+      {/* ── Header ────────────────────────────────────────────── */}
+      <div className="pt-24 max-w-4xl mx-auto px-4 md:px-8">
+        <div className="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="pb-2">
-            <h1 className="text-2xl md:text-3xl font-serif font-bold uppercase tracking-tight">{user?.name}</h1>
-            <p className="text-brand-gold text-[10px] uppercase font-bold tracking-[0.2em]">
+            <h1 className="text-3xl md:text-4xl font-serif font-bold uppercase tracking-tight text-white">{user?.name}</h1>
+            <p className="text-brand-gold text-xs uppercase font-bold tracking-[0.2em]">
               {user?.email}
             </p>
           </div>
         </div>
 
         {/* ── Stats row ───────────────────────────────────────────────────── */}
-        <div className="grid grid-cols-3 gap-3 mb-8">
-          {[
-            { icon: <Heart className="w-4 h-4 text-brand-crimson" />, label: 'Watchlist', value: watchlist.length },
-            { icon: <Star className="w-4 h-4 text-brand-gold" />, label: 'Reviews', value: 0 },
-            { icon: <Clock className="w-4 h-4 text-blue-400" />, label: 'Hrs Watched', value: 142 },
-          ].map(s => (
-            <div key={s.label} className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center backdrop-blur-xl">
-              <div className="flex justify-center mb-1">{s.icon}</div>
-              <div className="text-2xl font-bold font-serif text-brand-gold">{s.value}</div>
-              <div className="text-[9px] uppercase tracking-widest text-white/40 font-bold">{s.label}</div>
+        <div className="mb-8">
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-xl w-full max-w-xs">
+              <div className="flex justify-center mb-2"><Heart className="w-5 h-5 text-brand-crimson" /></div>
+              <div className="text-3xl font-bold font-serif text-brand-gold">{watchlist.length}</div>
+              <div className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Watchlist Items</div>
             </div>
-          ))}
         </div>
 
         {/* ── Edit Tabs ────────────────────────────────────────────────────── */}
-        <div className="flex gap-1 bg-white/5 border border-white/10 p-1 rounded-2xl mb-6">
+        <div className="flex flex-wrap gap-1 bg-white/5 border border-white/10 p-1 rounded-2xl mb-6">
           {([
-            { id: 'info',     label: 'Profile Info',  icon: <UserIcon className="w-3.5 h-3.5" /> },
-            { id: 'genres',   label: 'Genres',        icon: <Star className="w-3.5 h-3.5" /> },
-            { id: 'password', label: 'Password',      icon: <ShieldCheck className="w-3.5 h-3.5" /> },
+            { id: 'info',      label: 'Profile Info',  icon: <UserIcon className="w-3.5 h-3.5" /> },
+            { id: 'genres',    label: 'Genres',        icon: <Star className="w-3.5 h-3.5" /> },
+            { id: 'watchlist', label: 'Watchlist',     icon: <Heart className="w-3.5 h-3.5" /> },
+            { id: 'password',  label: 'Password',      icon: <ShieldCheck className="w-3.5 h-3.5" /> },
           ] as { id: Tab; label: string; icon: React.ReactNode }[]).map(t => (
             <button
               key={t.id}
@@ -224,66 +174,54 @@ export function ProfilePage() {
               <form onSubmit={handleSaveInfo} className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-xl space-y-6">
                 <SectionTitle icon={<Edit3 className="w-4 h-4" />}>Edit Profile Info</SectionTitle>
 
-                {/* Avatar & Cover quick-change buttons */}
-                <div className="flex flex-wrap gap-3">
-                  <button
-                    type="button"
-                    onClick={() => avatarInputRef.current?.click()}
-                    className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:border-brand-gold hover:text-brand-gold transition-all"
-                  >
-                    <Camera className="w-4 h-4" /> Change Avatar
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => coverInputRef.current?.click()}
-                    className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:border-brand-gold hover:text-brand-gold transition-all"
-                  >
-                    <ImagePlus className="w-4 h-4" /> Change Cover
-                  </button>
-                  {avatarPreview && (
-                    <button
-                      type="button"
-                      onClick={() => setAvatarPreview('')}
-                      className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest hover:border-red-400 hover:text-red-400 transition-all"
-                    >
-                      <Trash2 className="w-4 h-4" /> Remove Avatar
-                    </button>
-                  )}
-                </div>
-
-                {/* Avatar live preview */}
-                {avatarPreview && (
-                  <div className="flex items-center gap-4 p-4 bg-black/30 rounded-2xl border border-white/10">
-                    <img src={avatarPreview} alt="Preview" className="w-14 h-14 rounded-full object-cover border-2 border-brand-gold" />
-                    <div>
-                      <p className="text-xs font-bold text-white/60 uppercase tracking-widest">Avatar Preview</p>
-                      <p className="text-[10px] text-white/30 mt-1">This is how your avatar will appear</p>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Name */}
+                  <div>
+                    <FieldLabel>Full Name</FieldLabel>
+                    <input
+                      type="text"
+                      value={name}
+                      onChange={e => setName(e.target.value)}
+                      placeholder="Your display name"
+                      className={inputCls}
+                    />
                   </div>
-                )}
 
-                {/* Name */}
-                <div>
-                  <FieldLabel>Full Name</FieldLabel>
-                  <input
-                    type="text"
-                    value={name}
-                    onChange={e => setName(e.target.value)}
-                    placeholder="Your display name"
-                    className={inputCls}
-                  />
-                </div>
+                  {/* Email (read-only) */}
+                  <div>
+                    <FieldLabel>Email Address</FieldLabel>
+                    <input
+                      type="email"
+                      value={user?.email || ''}
+                      disabled
+                      className={`${inputCls} opacity-40 cursor-not-allowed`}
+                    />
+                    <p className="text-[10px] text-white/20 uppercase tracking-widest mt-1.5 ml-2">Cannot be changed</p>
+                  </div>
+                  
+                  {/* Age */}
+                  <div>
+                    <FieldLabel>Age</FieldLabel>
+                    <input
+                      type="number"
+                      value={age}
+                      onChange={e => setAge(e.target.value)}
+                      placeholder="Your age"
+                      className={inputCls}
+                    />
+                  </div>
 
-                {/* Email (read-only) */}
-                <div>
-                  <FieldLabel>Email Address</FieldLabel>
-                  <input
-                    type="email"
-                    value={user?.email || ''}
-                    disabled
-                    className={`${inputCls} opacity-40 cursor-not-allowed`}
-                  />
-                  <p className="text-[10px] text-white/20 uppercase tracking-widest mt-1.5 ml-2">Cannot be changed</p>
+                  {/* Country */}
+                  <div>
+                    <FieldLabel>Country</FieldLabel>
+                    <input
+                      type="text"
+                      value={country}
+                      onChange={e => setCountry(e.target.value)}
+                      placeholder="Your country"
+                      className={inputCls}
+                    />
+                  </div>
                 </div>
 
                 {/* Bio */}
@@ -370,6 +308,47 @@ export function ProfilePage() {
                   {genreLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Save className="w-4 h-4" />}
                   {genreLoading ? 'Saving…' : 'Save Genres'}
                 </button>
+              </div>
+            )}
+
+            {/* ── WATCHLIST TAB ───────────────────────────────────────────── */}
+            {tab === 'watchlist' && (
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-xl">
+                <SectionTitle icon={<Heart className="w-4 h-4" />}>My Watchlist</SectionTitle>
+                
+                {watchlistLoading ? (
+                  <div className="flex justify-center py-16">
+                    <div className="w-10 h-10 border-4 border-brand-gold border-t-transparent rounded-full animate-spin"></div>
+                  </div>
+                ) : displayWatchlist.length === 0 ? (
+                  <div className="flex flex-col items-center justify-center py-16 text-center">
+                    <BookmarkMinus className="w-12 h-12 text-white/20 mb-4" />
+                    <p className="text-white/40 text-sm uppercase tracking-widest">Your watchlist is empty.</p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6">
+                    <AnimatePresence>
+                      {displayWatchlist.map((movie: any) => (
+                        <motion.div 
+                          key={movie.id}
+                          layout
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, scale: 0.9 }}
+                          className="relative flex flex-col gap-2"
+                        >
+                          <MovieCard movie={movie} />
+                          <button 
+                            onClick={(e) => { e.stopPropagation(); removeFromWatchlist(movie.id); }}
+                            className="w-full py-2 bg-white/5 border border-white/10 hover:bg-brand-crimson hover:border-brand-crimson hover:text-white rounded text-[10px] font-bold uppercase tracking-widest text-white/50 transition-colors flex items-center justify-center gap-1"
+                          >
+                            <BookmarkMinus className="w-3 h-3" /> Remove
+                          </button>
+                        </motion.div>
+                      ))}
+                    </AnimatePresence>
+                  </div>
+                )}
               </div>
             )}
 

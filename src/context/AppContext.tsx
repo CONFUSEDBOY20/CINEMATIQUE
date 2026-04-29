@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from "react";
-import { supabase } from "../lib/supabase";
+import { auth, db, googleProvider } from "../lib/firebase";
+import { onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, signInWithPopup, sendPasswordResetEmail, updatePassword } from "firebase/auth";
+import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
 
 type User = any;
 type Movie = any;
@@ -32,7 +34,7 @@ interface AppContextType extends AppState {
   setSearchQuery: (query: string) => void;
   registerMode: boolean;
   setRegisterMode: (val: boolean) => void;
-  updateProfile: (fields: Partial<{ name: string; bio: string; avatar: string; coverPhoto: string; genres: string[] }>) => Promise<AuthResult>;
+  updateProfile: (fields: Partial<{ name: string; bio: string; age: string; country: string; genres: string[] }>) => Promise<AuthResult>;
   changePassword: (currentPassword: string, newPassword: string) => Promise<AuthResult>;
   setLibrary: (lib: 'hollywood' | 'bollywood') => void;
   forgotPassword: (email: string) => Promise<AuthResult>;
@@ -55,116 +57,148 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [library, setLibrary] = useState<'hollywood' | 'bollywood'>('hollywood');
   const [accessToken, setAccessToken] = useState<string | null>(null);
 
-  const fetchUserProfile = useCallback(async (userId: string, token: string) => {
+  const fetchUserProfile = useCallback(async (userId: string, token?: string) => {
     try {
-      const res = await fetch('/api/me', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      if (res.ok) {
-        const { user: profile } = await res.json();
-        setUser(profile);
-        setAccessToken(token);
+      const docRef = doc(db, "users", userId);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const profile = docSnap.data();
+        if (profile.status === 'banned') {
+          await signOut(auth);
+          setUser(null);
+          setAccessToken(null);
+          setPage('auth');
+          alert("Your account has been restricted by an administrator.");
+          return;
+        }
+        setUser({ id: userId, ...profile });
+        setAccessToken(token || null);
         setWatchlist(profile.watchlist || []);
         if (profile.role === 'admin' && (page === 'home' || page === 'auth')) {
           setPage('admin_dashboard');
         }
+      } else {
+        // Fallback user state if profile not found
+        setUser({ id: userId });
       }
     } catch (err) {
       console.error("Profile sync error:", err);
     } finally {
       setAuthLoading(false);
     }
-  }, []); // Removed 'page' dependency to prevent effect loop
+  }, [page]);
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) fetchUserProfile(session.user.id, session.access_token);
-      else setAuthLoading(false);
-    });
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (session) {
-        fetchUserProfile(session.user.id, session.access_token);
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser) {
+        const token = await firebaseUser.getIdToken();
+        fetchUserProfile(firebaseUser.uid, token);
       } else {
         setUser(null);
         setAccessToken(null);
-        // Only reset to home if we aren't already on the auth page
         setPage(prev => prev === 'auth' ? 'auth' : 'home');
         setAuthLoading(false);
       }
     });
 
-    return () => subscription.unsubscribe();
+    return () => unsubscribe();
   }, [fetchUserProfile]);
 
   const login = async (email: string, password: string): Promise<AuthResult> => {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error) return { ok: false, error: error.message };
-    return { ok: true };
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      return { ok: true };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
+    }
   };
 
   const register = async (name: string, email: string, password: string): Promise<AuthResult> => {
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { data: { name } }
-    });
-    if (error) return { ok: false, error: error.message };
-    return { ok: true };
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      await setDoc(doc(db, "users", user.uid), {
+        name,
+        email,
+        role: 'user',
+        status: 'active',
+        watchlist: [],
+        createdAt: new Date().toISOString()
+      });
+      return { ok: true };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
+    }
   };
 
   const logout = async () => {
-    await supabase.auth.signOut();
+    await signOut(auth);
   };
 
   const signInWithGoogle = async (): Promise<AuthResult> => {
-    const { error } = await supabase.auth.signInWithOAuth({ 
-      provider: 'google',
-      options: { redirectTo: window.location.origin }
-    });
-    if (error) return { ok: false, error: error.message };
-    return { ok: true };
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const user = result.user;
+      const docRef = doc(db, "users", user.uid);
+      const docSnap = await getDoc(docRef);
+      if (!docSnap.exists()) {
+        await setDoc(docRef, {
+          name: user.displayName,
+          email: user.email,
+          role: 'user',
+          status: 'active',
+          watchlist: [],
+          createdAt: new Date().toISOString()
+        });
+      }
+      return { ok: true };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
+    }
   };
 
   const forgotPassword = async (email: string): Promise<AuthResult> => {
-    const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: window.location.origin,
-    });
-    return { ok: !error, error: error?.message };
+    try {
+      await sendPasswordResetEmail(auth, email);
+      return { ok: true };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
+    }
   };
 
   const resetPassword = async (_token: string, newPass: string): Promise<AuthResult> => {
-    const { error } = await supabase.auth.updateUser({ password: newPass });
-    return { ok: !error, error: error?.message };
+    try {
+      if (auth.currentUser) {
+        await updatePassword(auth.currentUser, newPass);
+        return { ok: true };
+      }
+      return { ok: false, error: "Not logged in" };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
+    }
   };
 
   const updateProfile = async (fields: any): Promise<AuthResult> => {
-    const { data: { session } } = await supabase.auth.getSession();
-    if (!session) return { ok: false, error: 'Not authenticated' };
-
+    if (!auth.currentUser) return { ok: false, error: 'Not authenticated' };
     try {
-      const res = await fetch('/api/user/update', {
-        method: 'PATCH',
-        headers: { 
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${session.access_token}` 
-        },
-        body: JSON.stringify(fields)
-      });
-      const data = await res.json();
-      if (res.ok) {
-        setUser(data.user);
-        return { ok: true };
-      }
-      return { ok: false, error: data.error };
-    } catch {
-      return { ok: false, error: 'Network error' };
+      await updateDoc(doc(db, "users", auth.currentUser.uid), fields);
+      setUser(prev => prev ? { ...prev, ...fields } : null);
+      return { ok: true };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
     }
   };
 
   const changePassword = async (curr: string, next: string): Promise<AuthResult> => {
-    const { error } = await supabase.auth.updateUser({ password: next });
-    return { ok: !error, error: error?.message };
+    try {
+      if (auth.currentUser) {
+        await updatePassword(auth.currentUser, next);
+        return { ok: true };
+      }
+      return { ok: false, error: "Not logged in" };
+    } catch (error: any) {
+      return { ok: false, error: error.message };
+    }
   };
 
   const navigate = useCallback((p: string, params?: any) => {
@@ -175,7 +209,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setMoviesLoading(true);
-    fetch('/api/movies')
+    fetch('/movies.json')
       .then(r => r.json())
       .then(data => {
         setMovies(data);
@@ -184,12 +218,29 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       .catch(() => setMoviesLoading(false));
   }, []);
 
+  const updateWatchlistInDB = async (newWatchlist: string[]) => {
+    if (auth.currentUser) {
+      await updateDoc(doc(db, "users", auth.currentUser.uid), {
+        watchlist: newWatchlist
+      });
+    }
+  };
+
   const addToWatchlist = useCallback((id: string) => {
-    setWatchlist(prev => prev.includes(id) ? prev : [...prev, id]);
+    setWatchlist(prev => {
+      if (prev.includes(id)) return prev;
+      const newList = [...prev, id];
+      updateWatchlistInDB(newList);
+      return newList;
+    });
   }, []);
 
   const removeFromWatchlist = useCallback((id: string) => {
-    setWatchlist(prev => prev.filter(mid => mid !== id));
+    setWatchlist(prev => {
+      const newList = prev.filter(mid => mid !== id);
+      updateWatchlistInDB(newList);
+      return newList;
+    });
   }, []);
 
   if (authLoading) {
